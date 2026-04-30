@@ -1,0 +1,20 @@
+---
+pagetitle: "Registration details"
+---
+
+## Registration
+
+**Registration for WOMBAT will open nearer to the event!**
+
+Attendance will be limited to 20 participants (in-person and online) for each of the 8 tutorials on day 1, and 100 participants (in-person only) for day 2's workshop. We will also have a rich collection of hex stickers available for all to choose from to decorate your laptop!
+
+#### Tutorials
+
+The WOMBAT tutorials offerings feature practical, hands-on training in key topics for data analysis by experts in the field. Each tutorial consists of three hours of content with a 30-minute catered tea break, offered in both morning (AM) and afternoon (PM) sessions, and each tutorial is limited to 20 in-person participants. <!--In the morning, you can choose from sessions on R package development, regression analysis, time series forecasting, or visualising uncertainty; in the afternoon, there are options covering reproducible reporting with Quarto, scientific figure design, accelerating R modelling with C++, or efficiency analysis using Python.-->
+
+#### Workshop (September 30th)
+
+The main day of WOMBAT features a diverse workshop program designed to highlight the latest data analysis tools and techniques. The workshop features a keynote presentation<!-- by data visualisation specialist Nicola Rennie-->, followed by invited talks from leading data analysts from academia, government, and industry.<!-- Key topics featured throughout the conference include data storytelling, effective data visualisation, workflow and team management, open-source tools, and reproducibility in data analysis. More details about the workshop are detailed below.-->
+
+<br/>
+<br/>

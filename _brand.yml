@@ -1,0 +1,13 @@
+typography:
+  fonts: 
+    - family: Cabin 
+      source: bunny
+    - family: Noto Sans 
+      source: bunny
+    - family: PT Sans 
+      source: bunny
+  headings:
+    family: Cabin 
+  base:
+    family: PT Sans
+

@@ -1,0 +1,66 @@
+---
+{{yml}}
+---
+
+:::::: {.grid style="width: 100vw;  transform: translateX(-20%);"}
+::: {#sponsors_banner .g-col-12 .title}
+# {{title}}
+
+### {{time}}
+:::
+
+::: {.g-col-12 .full_text_block style="min-width: 640px; max-width:1080px; margin: 0 auto"}
+
+{{abstract}}
+
+{{#is_tutorial}}
+
+:::{.register-btn style="width: 20%; margin: 0 auto; display: block"}
+[Register for this tutorial](https://events.humanitix.com/wombat-2026-day-1-tutorials)
+:::
+
+{{/is_tutorial}}
+
+{{#is_workshop}}
+
+:::{.register-btn style="width: 20%; margin: 0 auto; display: block"}
+[Register for the workshop](https://events.humanitix.com/wombat-2026-day-2-workshop)
+:::
+
+{{/is_workshop}}
+
+
+{{#speakers}}
+::: speaker
+
+:::{.speaker-header}
+![]({{avatar_url}}) 
+:::
+
+:::{.speaker-name}
+{{name}}
+:::
+
+:::{.speaker-bio}
+{{biography}}
+:::
+
+:::
+
+{{/speakers}}
+
+
+:::
+
+<div>
+
+</div>
+::::::
+
+```{=html}
+<style>
+#title-block-header {
+display: none !important;
+}
+</style>
+```

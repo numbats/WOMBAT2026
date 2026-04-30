@@ -1,0 +1,51 @@
+- name: Mitchell O'Hara-Wild
+  role: General chair (tutorials)
+  thumbnail: https://avatars.githubusercontent.com/u/16127127?v=4
+  social:
+  - github: https://github.com/mitchelloharawild
+  - website: https://mitchelloharawild.com
+  - bluesky: https://bsky.app/profile/mitchelloharawild.com
+  - linkedin: https://www.linkedin.com/in/mitchelloharawild
+
+- name: Cynthia Huang
+  role: General chair (workshop)
+  thumbnail: https://avatars.githubusercontent.com/u/29718979?v=4
+  social:
+  - github: https://github.com/cynthiahqy
+  - website: http://cynthiahqy.com/
+  - linkedin: https://www.linkedin.com/in/cynthiahqy/
+
+- name: Hannah Comiskey
+  role: Visitor logistics
+  thumbnail: https://avatars.githubusercontent.com/u/56960311?v=4
+  social:
+  - github: https://github.com/hannahcomiskey
+  - linkedin: https://www.linkedin.com/in/hannah-comiskey-85a284130/
+
+- name: Janith Wanniarachchi
+  role: Webmaster
+  thumbnail: https://avatars.githubusercontent.com/u/8599256?v=4
+  social:
+  - github: https://github.com/janithwanni
+  - website: http://janithwanni.netlify.app/
+  - bluesky: https://bsky.app/profile/janithwanni.bsky.social
+  - linkedin: https://www.linkedin.com/in/janith-wanniarachchi/
+
+- name: Elio Campitelli
+  role: Social media
+  thumbnail: https://avatars.githubusercontent.com/u/8617595?v=4
+  social:
+  - github: https://github.com/eliocamp
+
+- name: Maliny Po
+  role: Marketing and Graphics
+  thumbnail: img/maliny.jpeg
+  social:
+  - github: https://github.com/maliny12
+  - linkedin: https://www.linkedin.com/in/malinypo
+
+- name: Krisanat Anukarnsakulchularp
+  role: Volunteer lead
+  thumbnail: https://numbat.space/people/current/anukarnsakulchularp-krisanat/avatar.png
+  social:
+  - github: https://github.com/KrisanatA

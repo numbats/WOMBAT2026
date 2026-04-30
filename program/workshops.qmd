@@ -1,0 +1,20 @@
+---
+pagetitle: "Workshops"
+listing:
+  contents: workshops
+  type: default
+  sort: "date"
+  fields: [title, time, speakerlist, room, slides, description ]
+---
+
+```{=html}
+<style>
+/* I know very bad but quick fixes go brrr */
+.quarto-post > .metadata > .metadata-value.listing-slides a{
+color: #006dae 
+font-weight: bold;
+font-size: 1rem;
+text-decoration: underline
+}
+</style>
+```

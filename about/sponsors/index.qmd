@@ -1,0 +1,27 @@
+---
+pagetitle: "Sponsorship"
+
+listing:
+  - id: sponsors
+    template: sponsors.ejs
+    contents: sponsors.yml
+---
+
+::::::: grid
+::: {#sponsors_banner .g-col-12 .title}
+# Sponsorship
+:::
+
+::: {#sponsors .g-col-12}
+:::
+
+::: {#sponsorship .g-col-12 .full_text_block}
+## Sponsorship Details
+
+Sponsorship opportunities to be announced.
+:::
+
+<!-- <div> -->
+
+<!-- </div> -->
+:::::::

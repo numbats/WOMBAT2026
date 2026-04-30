@@ -1,0 +1,23 @@
+---
+pagetitle: "Organising Committee"
+aliases:
+  - /about/committee.html
+listing:
+  - id: committee
+    template: committee.ejs
+    contents: committee.yml
+---
+
+
+:::::: grid
+::: {#sponsors_banner .g-col-12 .title}
+# Organising Committee
+:::
+
+::: {#committee .g-col-12}
+:::
+
+<div>
+
+</div>
+::::::

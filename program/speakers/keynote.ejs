@@ -1,0 +1,15 @@
+```{=html}
+<% for (const speaker of items ) { %>
+<div style="display: flex; flex-direction: row; gap: 1rem; flex-wrap: wrap">
+  <div style="display: flex; flex-direction: column; text-align: center; padding-right: 1rem; max-width: 60%; width: 100%; flex: 2 1 content; gap: 1rem; align-items: center;">
+    <img src="<%- speaker.thumbnail %>" style = "width: 100%; border-radius: 100%; max-width: 250px;"/>
+    <div style="font-weight: bold; font-size: 1.125rem;"> <%= speaker.name %> </div>
+    <div> <%= speaker.bio %> </div>
+  </div>
+  <div style="align-content: center; flex: 2 1 300px">
+    <div style="font-weight: bold; font-size: 1.25rem;"> <%= speaker.title %> </div>
+    <div> <%= speaker.abstract %> </div>
+  </div>
+</div>
+<% } %>
+```

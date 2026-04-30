@@ -1,0 +1,45 @@
+---
+pagetitle: "Schedule"
+listing:
+  - id: tutorials 
+    contents: 
+      - "../tutorials/*.qmd"
+    type: default
+    sort: "date"
+    fields: [title, time, speakerlist, room]
+  - id: workshops
+    contents: 
+      - "../workshops/*.qmd"
+    type: default
+    sort: "date"
+    fields: [title, time, speakerlist, room]
+---
+
+:::::: {.grid style="width: 100vw;  transform: translateX(-20%);"}
+::: {#sponsors_banner .g-col-12 .title}
+# Schedule
+:::
+
+The schedule will be announced nearer to the event.
+
+<!-- 
+::: {.g-col-8 style="grid-column-start: 3"}
+## Day 1 - Tutorial schedule
+:::
+
+::: {#tutorials .g-col-8 style="grid-column-start: 3"}
+:::
+
+::: {.g-col-8 style="grid-column-start: 3"}
+## Day 2 - Workshop schedule
+:::
+
+
+::: {#workshops .g-col-8 style="grid-column-start: 3"}
+::: 
+-->
+
+<div>
+
+</div>
+::::::

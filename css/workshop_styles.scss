@@ -1,0 +1,24 @@
+.speaker {
+  padding: 1rem;
+  border: 1px solid lightgray;
+  background-color: white;
+  box-shadow: lightgray 1px 1px 6px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 2rem auto;
+  border-radius: 2rem;
+}
+.speaker-name {
+  font-size: 2rem !important;
+  font-family: "Cabin", sans-serif;
+}
+.speaker-bio {
+}
+.speaker-header p img {
+  width: 10rem;
+  border-radius: 100%;
+}

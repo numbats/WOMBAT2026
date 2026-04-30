@@ -1,0 +1,72 @@
+project:
+  type: website
+  resources:
+    - "CNAME"
+    - "*.pdf"
+  render:
+    - "*.qmd"
+    - "!*_template.qmd"
+  preview:
+    port: 7878
+    browser: false # setting it for my convenience cause I prefer to refresh the same tab
+
+website:
+  title: "WOMBAT 2026"
+  site-url: "https://wombat2026.numbat.space"
+  sidebar: false
+  favicon: img/wombat/wombat-pixelart.svg
+  open-graph:
+    title: WOMBAT 2026
+    description: |
+      The Annual Workshop Organised by the Monash Business Analytics Team in Melbourne, Australia.
+    #image: img/opengraph-banner.png 
+    #image-width: 1207
+    #image-height: 802
+
+  announcement: 
+    icon: megaphone-fill
+    dismissable: true
+    content: "Stay tuned for more information about WOMBAT 2026! Hope to see you again this year!"
+    type: success
+    position: below-navbar
+    
+  navbar:
+    logo: img/wombat/hex-offwhite.svg
+    background: light
+    pinned: false
+    right:
+      # - text: Schedule
+      #   href: program/schedule
+      # - text: Day 1 - Tutorials
+      #   href: program/tutorials.qmd
+      # - text: Day 2 - Workshop
+      #   href: program/workshops.qmd
+      - text: Contact
+        href: contact.qmd
+      - text: About
+        menu:
+          - text: Code of Conduct
+            href: participation/coc.qmd
+          - text: Organising Committee
+            href: about/committee
+  page-footer: 
+    left: "Workshop Organised by the Monash Business Analytics Team"
+    right: 
+      - icon: globe
+        href: https://numbat.space
+      - icon: github
+        href: https://github.com/numbats
+      - icon: envelope
+        href: mailto:buseco-ebs.wombat@monash.edu
+
+format:
+  html:
+    theme: 
+      light: [cosmo, css/styles.scss]
+      #dark: darkly
+    page-layout: custom
+    toc: false
+    include-after-body: plausible.html
+
+# editor: visual
+

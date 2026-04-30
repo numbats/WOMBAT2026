@@ -1,0 +1,22 @@
+---
+pagetitle: "About WOMBAT"
+---
+
+::: grid
+::: {#about_banner .g-col-12 .title}
+# About WOMBAT
+:::
+
+::: {.g-col-6 .text_block}
+### Previous WOMBAT events
+
+...
+
+:::
+
+::: {.g-col-6 .img_margin}
+![](/img/michael-jerrard-mnHs4boXT_0-unsplash.jpg){.img_block width="100%"}
+:::
+
+<div></div>
+:::
