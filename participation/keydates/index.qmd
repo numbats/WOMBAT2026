@@ -1,10 +1,10 @@
 ---
 pagetitle: "Key Dates"
 
-listing:
-  - id: keydates
-    template: keydates.ejs
-    contents: keydates.yml
+# listing:
+#   - id: keydates
+#     template: keydates.ejs
+#     contents: keydates.yml
 ---
 
 ::: grid
@@ -13,11 +13,12 @@ listing:
 :::
 
 ::: {.g-col-12 style="margin-left: 2%;"}
-The important dates are highlighted below.
+<!-- The important dates are highlighted below. -->
+The important dates will be published nearer to the event.
 :::
 
-::: {#keydates .g-col-6}
-:::
+<!-- ::: {#keydates .g-col-6}
+::: -->
 
 ::: {.g-col-6 .img_margin}
 ![](/img/conf-image.jpg){.img_block width="100%"}
