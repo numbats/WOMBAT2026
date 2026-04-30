@@ -29,11 +29,11 @@
 #   - bluesky: https://bsky.app/profile/janithwanni.bsky.social
 #   - linkedin: https://www.linkedin.com/in/janith-wanniarachchi/
 
-# - name: Elio Campitelli
-#   role: Social media
-#   thumbnail: https://avatars.githubusercontent.com/u/8617595?v=4
-#   social:
-#   - github: https://github.com/eliocamp
+- name: Elio Campitelli
+  role: Social media
+  thumbnail: https://avatars.githubusercontent.com/u/8617595?v=4
+  social:
+  - github: https://github.com/eliocamp
 
 # - name: Maliny Po
 #   role: Marketing and Graphics
