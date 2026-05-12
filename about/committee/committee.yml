@@ -13,21 +13,21 @@
   social:
   - github: https://github.com/KrisanatA
 
-# - name: Hannah Comiskey
-#   role: Visitor logistics
-#   thumbnail: https://avatars.githubusercontent.com/u/56960311?v=4
-#   social:
-#   - github: https://github.com/hannahcomiskey
-#   - linkedin: https://www.linkedin.com/in/hannah-comiskey-85a284130/
+- name: Maliny Po
+  role: Visit logistics
+  thumbnail: img/maliny.jpeg
+  social:
+  - github: https://github.com/maliny12
+  - linkedin: https://www.linkedin.com/in/malinypo
 
-# - name: Janith Wanniarachchi
-#   role: Webmaster
-#   thumbnail: https://avatars.githubusercontent.com/u/8599256?v=4
-#   social:
-#   - github: https://github.com/janithwanni
-#   - website: http://janithwanni.netlify.app/
-#   - bluesky: https://bsky.app/profile/janithwanni.bsky.social
-#   - linkedin: https://www.linkedin.com/in/janith-wanniarachchi/
+- name: Janith Wanniarachchi
+  role: Webmaster
+  thumbnail: https://avatars.githubusercontent.com/u/8599256?v=4
+  social:
+  - github: https://github.com/janithwanni
+  - website: http://janithwanni.netlify.app/
+  - bluesky: https://bsky.app/profile/janithwanni.bsky.social
+  - linkedin: https://www.linkedin.com/in/janith-wanniarachchi/
 
 - name: Elio Campitelli
   role: Social media
@@ -35,15 +35,9 @@
   social:
   - github: https://github.com/eliocamp
 
-# - name: Maliny Po
-#   role: Marketing and Graphics
-#   thumbnail: img/maliny.jpeg
-#   social:
-#   - github: https://github.com/maliny12
-#   - linkedin: https://www.linkedin.com/in/malinypo
 
-# - name: Krisanat Anukarnsakulchularp
+# - name: 
 #   role: Volunteer lead
-#   thumbnail: https://numbat.space/people/current/anukarnsakulchularp-krisanat/avatar.png
+#   thumbnail: 
 #   social:
-#   - github: https://github.com/KrisanatA
+#   - github: 
