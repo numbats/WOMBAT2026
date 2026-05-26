@@ -14,7 +14,7 @@
   - github: https://github.com/KrisanatA
 
 - name: Maliny Po
-  role: Visit logistics
+  role: Visitor logistics
   thumbnail: img/maliny.jpeg
   social:
   - github: https://github.com/maliny12
@@ -35,9 +35,9 @@
   social:
   - github: https://github.com/eliocamp
 
-
-# - name: 
-#   role: Volunteer lead
-#   thumbnail: 
-#   social:
-#   - github: 
+- name: Xuan Nhat Minh Nguyen
+  role: Volunteer lead
+  thumbnail: img/minh.jpeg
+  social:
+  - github: https://github.com/yvesypher
+  - linkedin: https://www.linkedin.com/in/minhnxnm/
