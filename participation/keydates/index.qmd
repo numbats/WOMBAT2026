@@ -20,8 +20,8 @@ The important dates will be published nearer to the event.
 <!-- ::: {#keydates .g-col-6}
 ::: -->
 
-::: {.g-col-6 .img_margin}
-![](/img/conf-image.jpg){.img_block width="100%"}
+::: {.g-col-6 .margin_img}
+![](/img/conf-image.jpg){.block_img width="100%"}
 :::
 
 <div></div>

@@ -21,18 +21,27 @@ listing:
 :::::: {.grid style="width: 100vw; transform: translateX(-20%); padding-bottom: 2rem;"}
 ::::: {.g-col-12 .title style="grid-template-columns: 1fr"}
 :::: {style="display: flex; flex-direction: column; align-items:center; text-align: center"}
-::: {style="font-weight: bold; font-size: 3.25rem"}
+::: {style="font-weight: bold; font-size: 4.5rem; line-height: 1;"}
 WOMBAT 2026
 :::
 
-**The Annual Workshop Organised by the Monash Business Analytics Team.**  
-**November 2026**  
+::: {style="font-size: 1.9rem; font-weight: 600; margin-top: 0.5rem; line-height: 1.2;"}
+<span><strong>W</strong>orkshop <strong>O</strong>rganised by the <strong>M</strong>onash <strong>B</strong>usiness <strong>A</strong>nalytics <strong>T</strong>eam.</span>
+:::
+
+::: {style="font-size: 2.5rem; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.7; margin-top: 0.35rem; line-height: 1.05;"}
+Save the Date
+:::
+::: {style="font-size: 2.25rem; font-weight: bold; margin-top: 0.25rem; line-height: 1.15;"}
+30 November – 1 December 2026
+:::
+
 ::::
 :::::
 ::::::
 
 ```{=html}
-<div class="img-grid">
+<div class="grid_img">
   <div><img src="img/thank-you/IMG_4401.webp" /></div>
   <div><img src="img/thank-you/IMG_4473.webp" /></div>
   <div><img src="img/thank-you/IMG_4492.webp" /></div>
@@ -85,7 +94,7 @@ This session highlights practical tools and skills for presenting data in compel
 
 Join Professor Rob Hyndman and Dr. Nick Tierney, hosted by Cynthia Huang, as they discuss what research software engineering, open-source development, and reproducibility mean in practice. The conversation will demystify how statistical software and R packages are created and maintained, and why open-source tools matter for advancing and sharing data analysis.
 
-#### Showcase: Recent Software from NUMBATs
+#### Showcase: Recent Software from  NUMBATs
 
 See the latest data analysis tools developed by staff and students at Monash University’s Non-Uniform Monash Business Analytics Team (NUMBATs). This session features new R packages designed to help you discover patterns in your data.
 

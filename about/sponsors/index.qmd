@@ -15,7 +15,7 @@ listing:
 ::: {#sponsors .g-col-12}
 :::
 
-::: {#sponsorship .g-col-12 .full_text_block}
+::: {#sponsorship .g-col-12 .block_full_text}
 ## Sponsorship Details
 
 Sponsorship opportunities to be announced.

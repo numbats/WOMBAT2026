@@ -2,14 +2,20 @@
 pagetitle: "Code of Conduct"
 ---
 
+<style>
+#quarto-content .block_text {
+  margin-left: 0;
+}
+</style>
+
 ::::: grid
 ::: {#about_banner .g-col-12 .title}
 # Code of Conduct
 :::
 
-<!-- ::: {.g-col-6 .text_block} -->
+<!-- ::: {.g-col-6 .block_text} -->
 
-::: {.g-col-12 .text_block}
+::: {.g-col-12 .block_text}
 ### Code of Conduct
 
 The organizers of **WOMBAT 2026** are dedicated to providing a harassment-free conference experience for everyone regardless of gender, gender expression, sexual orientation, disability, physical appearance, body size, race, or religion (or lack thereof). Organizers will enforce this code throughout and expect cooperation in ensuring a safe environment for all.
@@ -54,9 +60,9 @@ If you are being harassed, notice that someone else is being harassed, or have a
 *Adapted from [user2018.r-project.org](https://user2018.r-project.org), and [http://ropensci.org/coc](http://ropensci.org/coc).*
 :::
 
-<!-- ::: {.g-col-6 .img_margin} -->
+<!-- ::: {.g-col-6 .margin_img} -->
 
-<!-- ![](/img/user-conf.png){.img_block width="100%"} -->
+<!-- ![](/img/user-conf.png){.block_img width="100%"} -->
 
 <!-- ::: -->
 

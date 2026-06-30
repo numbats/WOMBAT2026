@@ -1,15 +1,15 @@
 ```{=html}
 <div class='speakersFooter'>
-<div class="card-columns">
+<div class="card_columns">
   <% for (const item of items) { %>
     <div class="card">
       <img class="card-img-top" src="<%- item.thumbnail %>" alt="<%= item.name %> picture">
       <div class="card-body">
-        <h5 class="card-title"><%= item.name %></h5>
-        <p class="card-text"><%= item.role %></p>
-        <ul class="social-list">
+        <h5 class="card_title"><%= item.name %></h5>
+        <p class="card_text"><%= item.role %></p>
+        <ul class="list_social">
   		  	<% for (const tile of item.social) { %>
-  		  	  <li class="socialIcons">
+  		  	  <li class="icons_social">
   		  	  <% if (tile.website) { %> 
                 <a class="" href="<%- tile.website %>" >
                   <i class="bi bi-globe" ></i> 
