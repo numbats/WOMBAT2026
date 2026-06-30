@@ -26,7 +26,7 @@ website:
   announcement: 
     icon: megaphone-fill
     dismissable: true
-    content: "Stay tuned for more information about WOMBAT 2026! Hope to see you again this year!"
+    content: "Save the date: Nov 30 - Dec 1 for WOMBAT 2026!"
     type: success
     position: below-navbar
     
