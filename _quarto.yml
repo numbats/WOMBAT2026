@@ -14,6 +14,7 @@ website:
   title: "WOMBAT 2026"
   site-url: "https://wombat2026.numbat.space"
   sidebar: false
+  search: false
   favicon: img/wombat/wombat-pixelart.svg
   open-graph:
     title: WOMBAT 2026
@@ -23,17 +24,19 @@ website:
     #image-width: 1207
     #image-height: 802
 
-  announcement: 
-    icon: megaphone-fill
-    dismissable: true
-    content: "Save the date: Nov 30 - Dec 1 for WOMBAT 2026!"
-    type: success
-    position: below-navbar
+  # announcement: 
+  #   icon: megaphone-fill
+  #   dismissable: true
+  #   content: "Save the date: Nov 30 - Dec 1 for WOMBAT 2026!"
+  #   type: success
+  #   position: below-navbar
     
   navbar:
-    logo: img/wombat/hex-offwhite.svg
+    title: "WOMBAT"
     background: light
-    pinned: false
+    pinned: true
+    collapse-below: sm
+    toggle-position: right
     right:
       # - text: Schedule
       #   href: program/schedule
@@ -49,6 +52,8 @@ website:
             href: participation/coc.qmd
           - text: Organising Committee
             href: about/committee
+      - text: Register
+        href: participation/register.qmd
   page-footer: 
     left: "Workshop Organised by the Monash Business Analytics Team"
     right: 
@@ -62,11 +67,14 @@ website:
 format:
   html:
     theme: 
-      light: [cosmo, css/styles.scss]
+      light: [css/theme.scss]
       #dark: darkly
     page-layout: custom
     toc: false
-    include-after-body: plausible.html
+    include-after-body:
+      - plausible.html
+      - js/hero-navbar.html
+      - js/hero-wave.html
 
 # editor: visual
 
