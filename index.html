@@ -24,15 +24,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
 <link href="./img/wombat/wombat-pixelart.svg" rel="icon" type="image/svg+xml">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -45,22 +38,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0c4a7fe1330c771575e476e660d3a5e4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-0c4a7fe1330c771575e476e660d3a5e4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-0c4a7fe1330c771575e476e660d3a5e4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5703612a953ae019ae71788641886f1b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-5703612a953ae019ae71788641886f1b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5703612a953ae019ae71788641886f1b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -75,66 +56,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-sponsors .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-name','listing-href','listing-thumbnail',{ data: ['index'] },{ data: ['categories'] }],
-      
-      searchColumns: ["listing-name","listing-href","listing-thumbnail"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-sponsors'] = new List('listing-sponsors', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
+<link rel="stylesheet" href="css/hero.css">
 <meta property="og:title" content="WOMBAT 2026">
 <meta property="og:description" content="The Annual Workshop Organised by the Monash Business Analytics Team in Melbourne, Australia.">
 <meta property="og:site_name" content="WOMBAT 2026">
@@ -144,18 +68,13 @@ window.Quarto = {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-sm " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./img/wombat/hex-offwhite.svg" alt="" class="navbar-logo light-content">
-    <img src="./img/wombat/hex-offwhite.svg" alt="" class="navbar-logo dark-content">
-    </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">WOMBAT 2026</span>
+    <span class="navbar-title">WOMBAT</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -186,9 +105,6 @@ window.Quarto = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <div id="quarto-announcement" data-announcement-id="96c5fb88e62558e47b2e8009ff8ed848" class="alert alert-success hidden"><i class="bi bi-megaphone-fill quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p>Stay tuned for more information about WOMBAT 2026! Hope to see you again this year!</p>
-</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
@@ -199,99 +115,408 @@ window.Quarto = {
 
 
 
-<!-- Truly not proud of this banner honestly. But eh c'est la vie -->
-<div class="grid" style="width: 100vw; transform: translateX(-20%); padding-bottom: 2rem;">
-<div class="g-col-12 title" style="grid-template-columns: 1fr">
-<div style="display: flex; flex-direction: column; align-items:center; text-align: center">
-<div style="font-weight: bold; font-size: 3.25rem">
-<p>WOMBAT 2026</p>
-</div>
-<p><strong>The Annual Workshop Organised by the Monash Business Analytics Team.</strong><br>
-<strong>November 2026</strong></p>
-</div>
-</div>
-</div>
-<div class="img-grid">
-  <div><img src="img/thank-you/IMG_4401.webp"></div>
-  <div><img src="img/thank-you/IMG_4473.webp"></div>
-  <div><img src="img/thank-you/IMG_4492.webp"></div>
-
-  <div><img src="img/thank-you/IMG_4538.webp"></div> 
-  <div><img src="img/thank-you/IMG_4579.webp"></div>
-  <div><img src="img/thank-you/IMG_4621.webp"></div>
-
-  <div><img src="img/thank-you/IMG_4652.webp"></div>
-  <div><img src="img/thank-you/IMG_4679.webp"></div>
-  <div><img src="img/thank-you/IMG_4738.webp"></div>
-
-</div>
-<p>The annual WOMBAT workshop brings together analysts from academia, industry and government to learn and discuss new open source tools for business analytics and data science. <!-- The theme of this year's event is **designing data driven discoveries**, which will feature tutorials and talks on statistical software, research collaboration, and impactful data analysis. --> You should come if you are an analytics professional, or leading a team of analysts or a developer of new open source tools.</p>
-<section id="registration" class="level2">
-<h2 data-anchor-id="registration">Registration</h2>
-<p><strong>Registration for WOMBAT will open nearer to the event!</strong></p>
-<p>Attendance will be limited to 20 participants (in-person and online) for each of the 8 tutorials on day 1, and 100 participants (in-person only) for day 2’s workshop. We will also have a rich collection of hex stickers available for all to choose from to decorate your laptop!</p>
-<section id="tutorials" class="level4">
-<h4 data-anchor-id="tutorials">Tutorials</h4>
-<p>The WOMBAT tutorials offerings feature practical, hands-on training in key topics for data analysis by experts in the field. Each tutorial consists of three hours of content with a 30-minute catered tea break, offered in both morning (AM) and afternoon (PM) sessions, and each tutorial is limited to 20 in-person participants. <!-- In the morning, you can choose from sessions on R package development, regression analysis, time series forecasting, or visualising uncertainty; in the afternoon, there are options covering reproducible reporting with Quarto, scientific figure design, accelerating R modelling with C++, or efficiency analysis using Python. --></p>
-</section>
-<section id="workshop" class="level4">
-<h4 data-anchor-id="workshop">Workshop</h4>
-<p>The main day of WOMBAT features a diverse workshop program designed to highlight the latest data analysis tools and techniques. The workshop features a keynote presentation<!-- by data visualisation specialist Nicola Rennie-->, followed by invited talks from leading data analysts from academia, government, and industry. <!--Key topics featured throughout the conference include data storytelling, effective data visualisation, workflow and team management, open-source tools, and reproducibility in data analysis.--> More details about the workshop will be shared nearer to the event.</p>
-<!-- We will also have a rich collection of hex stickers available on both days for all to choose from to decorate your laptop! -->
-<!-- ## Keynote
-
-::: {#keynote}
-::: -->
-<!-- ## Sessions
-
-#### Invited Talks: Data Storytelling & Communication
-
-This session highlights practical tools and skills for presenting data in compelling, audience-friendly ways. It features a presentation by James Goldie on making “scrollytelling” articles with Quarto and Closeread, this presentation format is highly engaging for data stories as visualisations can animate to match the story as readers scroll through the article.
-
-#### In Conversation: Rob Hyndman & Nick Tierney on Research Software
-
-Join Professor Rob Hyndman and Dr. Nick Tierney, hosted by Cynthia Huang, as they discuss what research software engineering, open-source development, and reproducibility mean in practice. The conversation will demystify how statistical software and R packages are created and maintained, and why open-source tools matter for advancing and sharing data analysis.
-
-#### Showcase: Recent Software from NUMBATs
-
-See the latest data analysis tools developed by staff and students at Monash University’s Non-Uniform Monash Business Analytics Team (NUMBATs). This session features new R packages designed to help you discover patterns in your data.
-
-#### Invited Talks: Designing Workflows & Team
-
-This session provides practical insights into effective team and workflow management in data projects. Saras Windecker will share lessons from implementing peer code review in a multi-institutional research consortium focused on epidemic forecasting and analytics. Tyler Reysenbach will discuss real-world strategies for building new data teams in government, including balancing early stakeholder demands with long-term capability building. -->
-<div id="listing-sponsors" class="g-col-12 quarto-listing quarto-listing-container-custom">
-<div class="sponsorsFooter">
-  <h1 id="sponsorTitle" data-default-title="<strong>Sponsors</strong>"><strong>Sponsors</strong></h1>
-  <ul>
-    
-          <li><a href="https://www.monash.edu" target="_blank" class="sblogos__link"><img class="sblogos__img" src="./img/monash-logo-mono.svg" alt="Monash University logo"></a></li>
-    
+<!-- 
+Design inspiration:
+https://wif.nixtla.io/
+https://conf.posit.co/2026/
+-->
+<section id="wombat" class="level1 hero">
+<h1>WOMBAT</h1>
+<p><span class="hero-tagline"><strong>W</strong>orkshop <strong>O</strong>rganised by the <strong>M</strong>onash <strong>B</strong>usiness <strong>A</strong>nalytics <strong>T</strong>eam</span></p>
+<p><span class="hero-call">30 Nov – 1 Dec 2026 · Melbourne, Australia</span></p>
+<p><span class="hero-desc"><em>Learn and discuss open-source tools for business analytics and data science.</em></span></p>
+<div class="btn-group save-the-date-dropdown" role="group">
+  <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Save the Date
+  </button>
+  <ul class="dropdown-menu">
+    <li>
+      <a class="dropdown-item" id="cal-google" href="#" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 48 48" style="margin-right:.5em;vertical-align:-.2em"><path fill="#4285F4" d="M45.5 24.5c0-1.4-.1-2.7-.4-4H24v7.6h12.1c-.5 2.7-2.1 5-4.4 6.5v5.4h7.1c4.2-3.9 6.7-9.6 6.7-15.5z"></path><path fill="#34A853" d="M24 46c6.1 0 11.2-2 14.8-5.5l-7.1-5.4c-2 1.3-4.5 2.1-7.7 2.1-5.9 0-10.9-4-12.7-9.3H4v5.6C7.6 41.3 15.3 46 24 46z"></path><path fill="#FBBC04" d="M11.3 27.9c-.5-1.3-.7-2.6-.7-4s.3-2.7.7-4V14.3H4C2.4 17.4 1.5 20.6 1.5 24s.9 6.6 2.5 9.7l7.3-5.8z"></path><path fill="#EA4335" d="M24 10.7c3.3 0 6.3 1.1 8.6 3.4l6.4-6.4C35.2 4 29.8 2 24 2 15.3 2 7.6 6.7 4 14.3l7.3 5.6C13.1 14.7 18.1 10.7 24 10.7z"></path></svg>
+        Google Calendar
+      </a>
+    </li>
+    <li>
+      <a class="dropdown-item" id="cal-outlook" href="#" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 48 48" style="margin-right:.5em;vertical-align:-.2em"><rect width="26" height="26" x="20" y="20" fill="#0078d4" rx="2"></rect><rect width="26" height="26" x="2" y="2" fill="#28a8e0" rx="2"></rect><path fill="#fff" d="M12 10c-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zm0 9c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z"></path></svg>
+        Outlook (web)
+      </a>
+    </li>
+    <li><hr class="dropdown-divider"></li>
+    <li>
+      <a class="dropdown-item" id="cal-ical" href="#" download="WOMBAT-2026.ics">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewbox="0 0 16 16" style="margin-right:.5em;vertical-align:-.2em"><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"></path></svg>
+        Apple Calendar (.ics)
+      </a>
+    </li>
+    <li>
+      <a class="dropdown-item" id="cal-ics" href="#" download="WOMBAT-2026.ics">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewbox="0 0 16 16" style="margin-right:.5em;vertical-align:-.2em"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"></path><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"></path></svg>
+        Download .ics
+      </a>
+    </li>
   </ul>
 </div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
+
 <script>
-  function updatePretalxScheduleFormat() {
-    const schedule = document.querySelectorAll('pretalx-schedule');
-    if (!schedule) return;
-    if (document.body.offsetWidth > 1492) {
-      schedule.forEach(x => x.setAttribute('format', 'grid'));
-    } else {
-      schedule.forEach(x => x.setAttribute('format', 'list'));
-    }
+(function () {
+  var event = {
+    title:       'WOMBAT 2026',
+    description: 'Workshop Organised by the Monash Business Analytics Team. Learn and discuss open-source tools for business analytics and data science.',
+    location:    'Melbourne, Australia',
+    url:         'https://wombat.numbat.space',
+    startDate:   '20261130',   // YYYYMMDD (all-day)
+    endDate:     '20261202',   // iCal end is exclusive, so +1 day after last day
+    startDateHuman: '2026-11-30',
+    endDateHuman:   '2026-12-01'
+  };
+
+  // ── iCal content ────────────────────────────────────────────────────────────
+  var ics = [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//WOMBAT 2026//EN',
+    'CALSCALE:GREGORIAN',
+    'METHOD:PUBLISH',
+    'BEGIN:VEVENT',
+    'UID:wombat-2026@numbat.space',
+    'DTSTAMP:' + new Date().toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z',
+    'DTSTART;VALUE=DATE:' + event.startDate,
+    'DTEND;VALUE=DATE:'   + event.endDate,
+    'SUMMARY:'      + event.title,
+    'DESCRIPTION:'  + event.description,
+    'LOCATION:'     + event.location,
+    'URL:'          + event.url,
+    'END:VEVENT',
+    'END:VCALENDAR'
+  ].join('\r\n');
+
+  var icsDataURI = 'data:text/calendar;charset=utf-8,' + encodeURIComponent(ics);
+
+  // ── Google Calendar URL ──────────────────────────────────────────────────────
+  var googleURL = 'https://calendar.google.com/calendar/render?action=TEMPLATE' +
+    '&text='     + encodeURIComponent(event.title) +
+    '&dates='    + event.startDate + '/' + event.endDate +
+    '&details='  + encodeURIComponent(event.description) +
+    '&location=' + encodeURIComponent(event.location) +
+    '&sprop=website:' + encodeURIComponent(event.url);
+
+  // ── Outlook Web URL ──────────────────────────────────────────────────────────
+  var outlookURL = 'https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent' +
+    '&subject='   + encodeURIComponent(event.title) +
+    '&startdt='   + event.startDateHuman +
+    '&enddt='     + event.endDateHuman +
+    '&body='      + encodeURIComponent(event.description) +
+    '&location='  + encodeURIComponent(event.location) +
+    '&allday=true';
+
+  document.getElementById('cal-google').href  = googleURL;
+  document.getElementById('cal-outlook').href = outlookURL;
+  document.getElementById('cal-ical').href    = icsDataURI;
+  document.getElementById('cal-ics').href     = icsDataURI;
+})();
+</script>
+<div class="hero-gallery" aria-label="WOMBAT photo marquee">
+  <div class="hero-gallery-track">
+    <div class="hero-gallery-set">
+      <img src="img/thank-you/IMG_4401.webp" alt="WOMBAT workshop photo 1">
+      <img src="img/thank-you/IMG_4473.webp" alt="WOMBAT workshop photo 2">
+      <img src="img/thank-you/IMG_4492.webp" alt="WOMBAT workshop photo 3">
+      <img src="img/thank-you/IMG_4538.webp" alt="WOMBAT workshop photo 4">
+      <img src="img/thank-you/IMG_4579.webp" alt="WOMBAT workshop photo 5">
+      <img src="img/thank-you/IMG_4621.webp" alt="WOMBAT workshop photo 6">
+      <img src="img/thank-you/IMG_4652.webp" alt="WOMBAT workshop photo 7">
+      <img src="img/thank-you/IMG_4679.webp" alt="WOMBAT workshop photo 8">
+      <img src="img/thank-you/IMG_4738.webp" alt="WOMBAT workshop photo 9">
+    </div>
+    <div class="hero-gallery-set" aria-hidden="true">
+      <img src="img/thank-you/IMG_4401.webp" alt="">
+      <img src="img/thank-you/IMG_4473.webp" alt="">
+      <img src="img/thank-you/IMG_4492.webp" alt="">
+      <img src="img/thank-you/IMG_4538.webp" alt="">
+      <img src="img/thank-you/IMG_4579.webp" alt="">
+      <img src="img/thank-you/IMG_4621.webp" alt="">
+      <img src="img/thank-you/IMG_4652.webp" alt="">
+      <img src="img/thank-you/IMG_4679.webp" alt="">
+      <img src="img/thank-you/IMG_4738.webp" alt="">
+    </div>
+  </div>
+</div>
+</section>
+<!-- 
+::: {.program-section}
+
+
+```{=html}
+<div class="program-nav">
+<div class="program-nav-inner">
+<a class="program-nav-item is-active" id="nav-day1" href="#day1">
+<h4>Day 1</h4>
+<h3>Tutorials</h3>
+<p>30 Nov 2026</p>
+</a>
+<a class="program-nav-item" id="nav-day2" href="#day2">
+<h4>Day 2</h4>
+<h3>Workshop</h3>
+<p>1 Dec 2026</p>
+</a>
+</div>
+</div>
+```
+
+
+::: {.program-day #day1}
+::: {.program-day-inner}
+
+### Day 1 — Tutorials
+
+Practical, hands-on training by field experts. Eight tutorials run in parallel morning or afternoon sessions — up to 20 participants each.
+
+::: {.instructor-grid}
+::: {.instructor-card}
+![](img/user.png){.instructor-photo}
+
+**Instructor TBA**  
+Tutorial AM
+:::
+
+::: {.instructor-card}
+![](img/user.png){.instructor-photo}
+
+**Instructor TBA**  
+Tutorial AM
+:::
+
+::: {.instructor-card}
+![](img/user.png){.instructor-photo}
+
+**Instructor TBA**  
+Tutorial AM
+:::
+
+::: {.instructor-card}
+![](img/user.png){.instructor-photo}
+
+**Instructor TBA**  
+Tutorial AM
+:::
+
+::: {.instructor-card}
+![](img/user.png){.instructor-photo}
+
+**Instructor TBA**  
+Tutorial PM
+:::
+
+::: {.instructor-card}
+![](img/user.png){.instructor-photo}
+
+**Instructor TBA**  
+Tutorial PM
+:::
+
+::: {.instructor-card}
+![](img/user.png){.instructor-photo}
+
+**Instructor TBA**  
+Tutorial PM
+:::
+
+::: {.instructor-card}
+![](img/user.png){.instructor-photo}
+
+**Instructor TBA**  
+Tutorial PM
+:::
+:::
+
+[View all tutorials →](program/tutorials.html){.btn .btn-outline-secondary}
+
+:::
+:::
+
+::: {.program-day #day2}
+::: {.program-day-inner}
+
+### Day 2 — Workshop
+
+A full-day program with a keynote and invited talks from data scientists across academia, government, and industry.
+
+::: {.keynote-hero}
+![](img/keynote.png){alt="Rob J Hyndman"}
+
+::: {.keynote-hero-body}
+#### Keynote
+
+### Rob J Hyndman
+
+Vice-Chancellor's Distinguished Professor of Statistics, Monash University
+
+Title to be announced.
+:::
+:::
+
+#### Session overview
+
+::: {.session-overview}
+
+::: {.session-card}
+### Invited Talks
+
+#### Time Series Analysis &amp; Forecasting
+
+Session details will be announced closer to the event.
+
+::: {.speaker-bubbles}
+::: {.speaker-bubble role="button" tabindex="0" aria-haspopup="dialog" aria-label="Open details for invited talks" data-modal="invited-talks"}
+![](img/user.png){alt="Presenter photo placeholder" loading="lazy"}
+
+TBA
+:::
+:::
+:::
+
+::: {.session-card}
+### In Conversation
+
+#### Research Software
+
+Session details will be announced closer to the event.
+
+::: {.speaker-bubbles}
+::: {.speaker-bubble role="button" tabindex="0" aria-haspopup="dialog" aria-label="Open details for in conversation" data-modal="in-conversation"}
+![](img/user.png){alt="Presenter photo placeholder" loading="lazy"}
+
+TBA
+:::
+:::
+:::
+
+::: {.session-card}
+### Showcase
+
+#### Recent Software from NUMBATs
+
+Session details will be announced closer to the event.
+
+::: {.speaker-bubbles}
+::: {.speaker-bubble role="button" tabindex="0" aria-haspopup="dialog" aria-label="Open details for showcase" data-modal="showcase"}
+![](img/user.png){alt="Presenter photo placeholder" loading="lazy"}
+
+TBA
+:::
+:::
+:::
+
+::: {.session-card}
+### Invited Talks
+
+#### AI Workflows
+
+Session details will be announced closer to the event.
+
+::: {.speaker-bubbles}
+::: {.speaker-bubble role="button" tabindex="0" aria-haspopup="dialog" aria-label="Open details for workflows and team" data-modal="workflows"}
+![](img/user.png){alt="Presenter photo placeholder" loading="lazy"}
+
+TBA
+:::
+:::
+:::
+
+:::
+
+[View workshop program →](program/workshops.html){.btn .btn-outline-secondary}
+
+:::
+:::
+
+::: -->
+<script>
+(function () {
+  var nav1 = document.getElementById('nav-day1');
+  var nav2 = document.getElementById('nav-day2');
+  var day2 = document.getElementById('day2');
+
+  if (!nav1 || !nav2 || !day2) return;
+
+  function update() {
+    var switchAt = window.innerHeight * 0.4;
+    var showDay2 = day2.getBoundingClientRect().top <= switchAt;
+    nav1.classList.toggle('is-active', !showDay2);
+    nav2.classList.toggle('is-active', showDay2);
   }
 
-  // Run on load
-  updatePretalxScheduleFormat();
-
-  // Retrigger on window resize
-  window.addEventListener('resize', updatePretalxScheduleFormat);
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+})();
 </script>
+<!-- 
+::: {.meta}
+
+::: {.meta-grid}
+
+::: {.meta-item}
+## Dates
+
+30 Nov – 1 Dec 2026
+:::
+
+::: {.meta-item}
+## Location
+
+Melbourne, Australia
+:::
+
+::: {.meta-item}
+## Tutorials
+
+20 participants each
+:::
+
+::: {.meta-item}
+## Workshop
+
+100 participants, in person only
+:::
+
+:::
+
+::: 
+-->
+<!-- 
+::: {.gallery}
+![](img/thank-you/IMG_4401.webp)
+![](img/thank-you/IMG_4473.webp)
+![](img/thank-you/IMG_4492.webp)
+![](img/thank-you/IMG_4538.webp)
+![](img/thank-you/IMG_4579.webp)
+![](img/thank-you/IMG_4621.webp)
+![](img/thank-you/IMG_4652.webp)
+![](img/thank-you/IMG_4679.webp)
+![](img/thank-you/IMG_4738.webp)
+:::
+
+The annual WOMBAT workshop brings together analysts from academia, industry and government to learn and discuss open source tools for business analytics and data science.
+
+You should come if you are an analytics professional, lead a team of analysts, or develop open source tools.
+
+## Registration
+
+Registration for WOMBAT will open nearer to the event.
+
+Attendance will be limited to 20 participants (in-person and online) for each of the 8 tutorials on day 1, and 100 participants (in-person only) for day 2's workshop. We will also have a rich collection of hex stickers available for all to choose from to decorate your laptop.
+
+### Tutorials
+
+The WOMBAT tutorials offer practical, hands-on training in key topics for data analysis by experts in the field. Each tutorial includes three hours of content with a 30-minute catered tea break, offered in both morning (AM) and afternoon (PM) sessions.
+
+### Workshop
+
+The main day of WOMBAT features a diverse workshop program designed to highlight the latest data analysis tools and techniques. The workshop includes a keynote presentation, followed by invited talks from leading data analysts from academia, government, and industry. More details about the workshop will be shared nearer to the event.
+ -->
 
 
-
-</section>
-</section>
 
 
 <!-- Privacy-friendly analytics by Plausible -->
@@ -299,6 +524,131 @@ This session provides practical insights into effective team and workflow manage
 <script>
   window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
   plausible.init()
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const hero = document.querySelector('.hero');
+  const header = document.querySelector('#quarto-header');
+
+  if (!hero || !header) return;
+
+  document.body.classList.add('has-hero-navbar');
+
+  const updateState = () => {
+    const heroRect = hero.getBoundingClientRect();
+    document.body.classList.toggle('hero-navbar-scrolled', heroRect.bottom <= 0);
+  };
+
+  updateState();
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(updateState, {
+      root: null,
+      threshold: 0,
+      rootMargin: '0px 0px -1px 0px',
+    });
+
+    observer.observe(hero);
+  } else {
+    window.addEventListener('scroll', updateState, { passive: true });
+    window.addEventListener('resize', updateState);
+  }
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const hero = document.querySelector('.hero');
+  if (!hero) return;
+
+  // SVG tile width (doubled for seamless looping animation).
+  // All sine frequencies are integers so the waveform tiles exactly.
+  const TILE = 2880;
+  const W    = TILE * 2;
+  const H    = 160;
+  const PTS  = 500; // points per path — enough for smooth curves
+
+  function waveY(x, center, comps) {
+    return center + comps.reduce(
+      (sum, [amp, freq, phase]) =>
+        sum + amp * Math.sin(2 * Math.PI * freq * x / TILE + phase),
+      0
+    );
+  }
+
+  // Build an SVG path string; optionally closed to y=H for a filled area.
+  function buildPath(center, comps, close) {
+    const parts = [];
+    for (let i = 0; i <= PTS; i++) {
+      const x = (i / PTS) * W;
+      const y = waveY(x, center, comps);
+      parts.push((i === 0 ? 'M' : 'L') + x.toFixed(1) + ' ' + y.toFixed(1));
+    }
+    if (close) parts.push(`L${W} ${H} L0 ${H} Z`);
+    return parts.join(' ');
+  }
+
+  const ns = 'http://www.w3.org/2000/svg';
+
+  // Three wave layers at different depths and speeds.
+  // Components: [amplitude, integer-frequency, phase-offset]
+  const layers = [
+    {
+      // Slow background wave — wide swings, filled underbelly
+      center: H * 0.68,
+      comps: [[38, 3, 0.5], [18, 7, 1.2], [10, 11, 2.0], [6, 2, 0.3]],
+      fill:        'rgba(160, 100, 5, 0.08)',
+      stroke:      'rgba(140,  85, 5, 0.22)',
+      strokeWidth: '2',
+      speed:       '48s',
+    },
+    {
+      // Mid wave — slightly faster, lighter fill
+      center: H * 0.58,
+      comps: [[28, 4, 1.8], [14, 9, 0.5], [8, 14, 1.5], [5, 2, 2.6]],
+      fill:        'rgba(195, 135, 15, 0.06)',
+      stroke:      'rgba(155,  95, 5, 0.14)',
+      strokeWidth: '1.5',
+      speed:       '32s',
+    },
+    {
+      // Fast foreground detail line — small, tight oscillations, no fill
+      center: H * 0.76,
+      comps: [[18, 5, 2.2], [9, 12, 0.7], [5, 19, 1.5]],
+      fill:        'none',
+      stroke:      'rgba(120,  68, 5, 0.11)',
+      strokeWidth: '1',
+      speed:       '20s',
+    },
+  ];
+
+  layers.forEach(layer => {
+    const svg = document.createElementNS(ns, 'svg');
+    svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+    svg.setAttribute('preserveAspectRatio', 'none');
+
+    if (layer.fill !== 'none') {
+      const fillEl = document.createElementNS(ns, 'path');
+      fillEl.setAttribute('d', buildPath(layer.center, layer.comps, true));
+      fillEl.setAttribute('fill', layer.fill);
+      fillEl.setAttribute('stroke', 'none');
+      svg.appendChild(fillEl);
+    }
+
+    const strokeEl = document.createElementNS(ns, 'path');
+    strokeEl.setAttribute('d', buildPath(layer.center, layer.comps, false));
+    strokeEl.setAttribute('fill', 'none');
+    strokeEl.setAttribute('stroke', layer.stroke);
+    strokeEl.setAttribute('stroke-width', layer.strokeWidth);
+    svg.appendChild(strokeEl);
+
+    const wrap = document.createElement('div');
+    wrap.className = 'hero-wave';
+    wrap.style.animationDuration = layer.speed;
+    wrap.setAttribute('aria-hidden', 'true');
+    wrap.appendChild(svg);
+    hero.appendChild(wrap);
+  });
+});
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
