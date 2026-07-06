@@ -27,14 +27,350 @@ https://conf.posit.co/2026/
 
 [**W**orkshop **O**rganised by the **M**onash **B**usiness **A**nalytics **T**eam]{.hero-tagline}
 
-[Open source tools for business analytics and data science]{.hero-desc}
-
 [30 Nov – 1 Dec 2026 · Melbourne, Australia]{.hero-call}
 
-[Save the Date](participation/register.qmd){.btn .btn-primary .btn-lg}
+[*Learn and discuss open-source tools for business analytics and data science.*]{.hero-desc}
+
+```{=html}
+<div class="btn-group save-the-date-dropdown" role="group">
+  <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Save the Date
+  </button>
+  <ul class="dropdown-menu">
+    <li>
+      <a class="dropdown-item" id="cal-google" href="#" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 48 48" style="margin-right:.5em;vertical-align:-.2em"><path fill="#4285F4" d="M45.5 24.5c0-1.4-.1-2.7-.4-4H24v7.6h12.1c-.5 2.7-2.1 5-4.4 6.5v5.4h7.1c4.2-3.9 6.7-9.6 6.7-15.5z"/><path fill="#34A853" d="M24 46c6.1 0 11.2-2 14.8-5.5l-7.1-5.4c-2 1.3-4.5 2.1-7.7 2.1-5.9 0-10.9-4-12.7-9.3H4v5.6C7.6 41.3 15.3 46 24 46z"/><path fill="#FBBC04" d="M11.3 27.9c-.5-1.3-.7-2.6-.7-4s.3-2.7.7-4V14.3H4C2.4 17.4 1.5 20.6 1.5 24s.9 6.6 2.5 9.7l7.3-5.8z"/><path fill="#EA4335" d="M24 10.7c3.3 0 6.3 1.1 8.6 3.4l6.4-6.4C35.2 4 29.8 2 24 2 15.3 2 7.6 6.7 4 14.3l7.3 5.6C13.1 14.7 18.1 10.7 24 10.7z"/></svg>
+        Google Calendar
+      </a>
+    </li>
+    <li>
+      <a class="dropdown-item" id="cal-outlook" href="#" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 48 48" style="margin-right:.5em;vertical-align:-.2em"><rect width="26" height="26" x="20" y="20" fill="#0078d4" rx="2"/><rect width="26" height="26" x="2" y="2" fill="#28a8e0" rx="2"/><path fill="#fff" d="M12 10c-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zm0 9c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z"/></svg>
+        Outlook (web)
+      </a>
+    </li>
+    <li><hr class="dropdown-divider"></li>
+    <li>
+      <a class="dropdown-item" id="cal-ical" href="#" download="WOMBAT-2026.ics">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="margin-right:.5em;vertical-align:-.2em"><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/></svg>
+        Apple Calendar (.ics)
+      </a>
+    </li>
+    <li>
+      <a class="dropdown-item" id="cal-ics" href="#" download="WOMBAT-2026.ics">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="margin-right:.5em;vertical-align:-.2em"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
+        Download .ics
+      </a>
+    </li>
+  </ul>
+</div>
+
+<script>
+(function () {
+  var event = {
+    title:       'WOMBAT 2026',
+    description: 'Workshop Organised by the Monash Business Analytics Team. Learn and discuss open-source tools for business analytics and data science.',
+    location:    'Melbourne, Australia',
+    url:         'https://wombat.numbat.space',
+    startDate:   '20261130',   // YYYYMMDD (all-day)
+    endDate:     '20261202',   // iCal end is exclusive, so +1 day after last day
+    startDateHuman: '2026-11-30',
+    endDateHuman:   '2026-12-01'
+  };
+
+  // ── iCal content ────────────────────────────────────────────────────────────
+  var ics = [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//WOMBAT 2026//EN',
+    'CALSCALE:GREGORIAN',
+    'METHOD:PUBLISH',
+    'BEGIN:VEVENT',
+    'UID:wombat-2026@numbat.space',
+    'DTSTAMP:' + new Date().toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z',
+    'DTSTART;VALUE=DATE:' + event.startDate,
+    'DTEND;VALUE=DATE:'   + event.endDate,
+    'SUMMARY:'      + event.title,
+    'DESCRIPTION:'  + event.description,
+    'LOCATION:'     + event.location,
+    'URL:'          + event.url,
+    'END:VEVENT',
+    'END:VCALENDAR'
+  ].join('\r\n');
+
+  var icsDataURI = 'data:text/calendar;charset=utf-8,' + encodeURIComponent(ics);
+
+  // ── Google Calendar URL ──────────────────────────────────────────────────────
+  var googleURL = 'https://calendar.google.com/calendar/render?action=TEMPLATE' +
+    '&text='     + encodeURIComponent(event.title) +
+    '&dates='    + event.startDate + '/' + event.endDate +
+    '&details='  + encodeURIComponent(event.description) +
+    '&location=' + encodeURIComponent(event.location) +
+    '&sprop=website:' + encodeURIComponent(event.url);
+
+  // ── Outlook Web URL ──────────────────────────────────────────────────────────
+  var outlookURL = 'https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent' +
+    '&subject='   + encodeURIComponent(event.title) +
+    '&startdt='   + event.startDateHuman +
+    '&enddt='     + event.endDateHuman +
+    '&body='      + encodeURIComponent(event.description) +
+    '&location='  + encodeURIComponent(event.location) +
+    '&allday=true';
+
+  document.getElementById('cal-google').href  = googleURL;
+  document.getElementById('cal-outlook').href = outlookURL;
+  document.getElementById('cal-ical').href    = icsDataURI;
+  document.getElementById('cal-ics').href     = icsDataURI;
+})();
+</script>
+```
+
+```{=html}
+<div class="hero-gallery" aria-label="WOMBAT photo marquee">
+  <div class="hero-gallery-track">
+    <div class="hero-gallery-set">
+      <img src="img/thank-you/IMG_4401.webp" alt="WOMBAT workshop photo 1">
+      <img src="img/thank-you/IMG_4473.webp" alt="WOMBAT workshop photo 2">
+      <img src="img/thank-you/IMG_4492.webp" alt="WOMBAT workshop photo 3">
+      <img src="img/thank-you/IMG_4538.webp" alt="WOMBAT workshop photo 4">
+      <img src="img/thank-you/IMG_4579.webp" alt="WOMBAT workshop photo 5">
+      <img src="img/thank-you/IMG_4621.webp" alt="WOMBAT workshop photo 6">
+      <img src="img/thank-you/IMG_4652.webp" alt="WOMBAT workshop photo 7">
+      <img src="img/thank-you/IMG_4679.webp" alt="WOMBAT workshop photo 8">
+      <img src="img/thank-you/IMG_4738.webp" alt="WOMBAT workshop photo 9">
+    </div>
+    <div class="hero-gallery-set" aria-hidden="true">
+      <img src="img/thank-you/IMG_4401.webp" alt="">
+      <img src="img/thank-you/IMG_4473.webp" alt="">
+      <img src="img/thank-you/IMG_4492.webp" alt="">
+      <img src="img/thank-you/IMG_4538.webp" alt="">
+      <img src="img/thank-you/IMG_4579.webp" alt="">
+      <img src="img/thank-you/IMG_4621.webp" alt="">
+      <img src="img/thank-you/IMG_4652.webp" alt="">
+      <img src="img/thank-you/IMG_4679.webp" alt="">
+      <img src="img/thank-you/IMG_4738.webp" alt="">
+    </div>
+  </div>
+</div>
+```
 
 :::
 
+
+
+<!-- 
+::: {.program-section}
+
+
+```{=html}
+<div class="program-nav">
+<div class="program-nav-inner">
+<a class="program-nav-item is-active" id="nav-day1" href="#day1">
+<h4>Day 1</h4>
+<h3>Tutorials</h3>
+<p>30 Nov 2026</p>
+</a>
+<a class="program-nav-item" id="nav-day2" href="#day2">
+<h4>Day 2</h4>
+<h3>Workshop</h3>
+<p>1 Dec 2026</p>
+</a>
+</div>
+</div>
+```
+
+
+::: {.program-day #day1}
+::: {.program-day-inner}
+
+### Day 1 — Tutorials
+
+Practical, hands-on training by field experts. Eight tutorials run in parallel morning or afternoon sessions — up to 20 participants each.
+
+::: {.instructor-grid}
+::: {.instructor-card}
+![](img/user.png){.instructor-photo}
+
+**Instructor TBA**  
+Tutorial AM
+:::
+
+::: {.instructor-card}
+![](img/user.png){.instructor-photo}
+
+**Instructor TBA**  
+Tutorial AM
+:::
+
+::: {.instructor-card}
+![](img/user.png){.instructor-photo}
+
+**Instructor TBA**  
+Tutorial AM
+:::
+
+::: {.instructor-card}
+![](img/user.png){.instructor-photo}
+
+**Instructor TBA**  
+Tutorial AM
+:::
+
+::: {.instructor-card}
+![](img/user.png){.instructor-photo}
+
+**Instructor TBA**  
+Tutorial PM
+:::
+
+::: {.instructor-card}
+![](img/user.png){.instructor-photo}
+
+**Instructor TBA**  
+Tutorial PM
+:::
+
+::: {.instructor-card}
+![](img/user.png){.instructor-photo}
+
+**Instructor TBA**  
+Tutorial PM
+:::
+
+::: {.instructor-card}
+![](img/user.png){.instructor-photo}
+
+**Instructor TBA**  
+Tutorial PM
+:::
+:::
+
+[View all tutorials →](program/tutorials.html){.btn .btn-outline-secondary}
+
+:::
+:::
+
+::: {.program-day #day2}
+::: {.program-day-inner}
+
+### Day 2 — Workshop
+
+A full-day program with a keynote and invited talks from data scientists across academia, government, and industry.
+
+::: {.keynote-hero}
+![](img/keynote.png){alt="Rob J Hyndman"}
+
+::: {.keynote-hero-body}
+#### Keynote
+
+### Rob J Hyndman
+
+Vice-Chancellor's Distinguished Professor of Statistics, Monash University
+
+Title to be announced.
+:::
+:::
+
+#### Session overview
+
+::: {.session-overview}
+
+::: {.session-card}
+### Invited Talks
+
+#### Time Series Analysis &amp; Forecasting
+
+Session details will be announced closer to the event.
+
+::: {.speaker-bubbles}
+::: {.speaker-bubble role="button" tabindex="0" aria-haspopup="dialog" aria-label="Open details for invited talks" data-modal="invited-talks"}
+![](img/user.png){alt="Presenter photo placeholder" loading="lazy"}
+
+TBA
+:::
+:::
+:::
+
+::: {.session-card}
+### In Conversation
+
+#### Research Software
+
+Session details will be announced closer to the event.
+
+::: {.speaker-bubbles}
+::: {.speaker-bubble role="button" tabindex="0" aria-haspopup="dialog" aria-label="Open details for in conversation" data-modal="in-conversation"}
+![](img/user.png){alt="Presenter photo placeholder" loading="lazy"}
+
+TBA
+:::
+:::
+:::
+
+::: {.session-card}
+### Showcase
+
+#### Recent Software from NUMBATs
+
+Session details will be announced closer to the event.
+
+::: {.speaker-bubbles}
+::: {.speaker-bubble role="button" tabindex="0" aria-haspopup="dialog" aria-label="Open details for showcase" data-modal="showcase"}
+![](img/user.png){alt="Presenter photo placeholder" loading="lazy"}
+
+TBA
+:::
+:::
+:::
+
+::: {.session-card}
+### Invited Talks
+
+#### AI Workflows
+
+Session details will be announced closer to the event.
+
+::: {.speaker-bubbles}
+::: {.speaker-bubble role="button" tabindex="0" aria-haspopup="dialog" aria-label="Open details for workflows and team" data-modal="workflows"}
+![](img/user.png){alt="Presenter photo placeholder" loading="lazy"}
+
+TBA
+:::
+:::
+:::
+
+:::
+
+[View workshop program →](program/workshops.html){.btn .btn-outline-secondary}
+
+:::
+:::
+
+::: -->
+
+<script>
+(function () {
+  var nav1 = document.getElementById('nav-day1');
+  var nav2 = document.getElementById('nav-day2');
+  var day2 = document.getElementById('day2');
+
+  if (!nav1 || !nav2 || !day2) return;
+
+  function update() {
+    var switchAt = window.innerHeight * 0.4;
+    var showDay2 = day2.getBoundingClientRect().top <= switchAt;
+    nav1.classList.toggle('is-active', !showDay2);
+    nav2.classList.toggle('is-active', showDay2);
+  }
+
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+})();
+</script>
+
+
+
+<!-- 
 ::: {.meta}
 
 ::: {.meta-grid}
@@ -65,8 +401,9 @@ Melbourne, Australia
 
 :::
 
-:::
-
+::: 
+-->
+<!-- 
 ::: {.gallery}
 ![](img/thank-you/IMG_4401.webp)
 ![](img/thank-you/IMG_4473.webp)
@@ -96,3 +433,4 @@ The WOMBAT tutorials offer practical, hands-on training in key topics for data a
 ### Workshop
 
 The main day of WOMBAT features a diverse workshop program designed to highlight the latest data analysis tools and techniques. The workshop includes a keynote presentation, followed by invited talks from leading data analysts from academia, government, and industry. More details about the workshop will be shared nearer to the event.
+ -->
