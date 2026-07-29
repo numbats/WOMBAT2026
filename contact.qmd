@@ -1,19 +1,15 @@
 ---
 pagetitle: "Contact us"
+format:
+  html:
+    css: [css/contact.css]
 ---
 
 
-:::::::: {.grid style="width: 100vw; transform: translateX(-20%)"}
-::: {.g-col-12 .title style="grid-template-columns: 1fr"}
-::: {style="display: flex; flex-direction: column; align-items:center; text-align: center"}
-::: {style="font-weight: bold; font-size: 3.25rem"} 
-Contact Us
-:::
-:::
-:::
-:::::::: 
-
-## Contact Us    
-
-Reach out to us at [buseco-ebs.wombat@monash.edu](mailto:buseco-ebs.wombat@monash.edu)
-
+<section class="contact-section">
+    <h2>Reach out to a human</h2>
+    <p class="contact-desc">
+      Have a question, need some help, or just want to say hello? Our team is always here for you.
+    </p>
+    <a href="mailto:buseco-ebs.wombat@monash.edu" class="btn-primary">Send a message</a>
+  </section>

@@ -38,8 +38,8 @@ website:
     collapse-below: sm
     toggle-position: right
     right:
-      # - text: Schedule
-      #   href: program/schedule
+      - text: Schedule
+        href: program/schedule
       # - text: Day 1 - Tutorials
       #   href: program/tutorials.qmd
       # - text: Day 2 - Workshop
@@ -52,8 +52,8 @@ website:
             href: participation/coc.qmd
           - text: Organising Committee
             href: about/committee
-      # - text: Register
-      #   href: participation/register.qmd
+      - text: Register
+        href: participation/register.qmd
   page-footer: 
     left: "Workshop Organised by the Monash Business Analytics Team"
     right: 

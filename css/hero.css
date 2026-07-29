@@ -56,7 +56,6 @@ body:has(.hero).hero-navbar-scrolled #quarto-header .navbar-brand-container > .n
   /* Full-bleed band */
   width: 100vw;
   margin-inline: calc(50% - 50vw);
-  background: #fff4c2;
   padding-block: clamp(2rem, 6vw, 3.5rem);
   color: var(--bs-body-color);
   /* Layout */
@@ -325,15 +324,6 @@ body:has(.hero).hero-navbar-scrolled #quarto-header .navbar-brand-container > .n
   margin-inline: auto;
   padding-inline: clamp(1rem, 2vw, 2rem);
   box-sizing: border-box;
-}
-
-#day1.program-day {
-  background: #ffffff;
-}
-
-#day2.program-day {
-  background: #F5EFE3;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .program-day h3.day-heading,

@@ -2,7 +2,7 @@
 title: ""
 format:
   html:
-    css: css/hero.css
+    css: [css/hero.css, css/program.css, css/keynote.css, css/community.css, css/contact.css]
 # listing:
   # - id: keynote
     # template: program/speakers/keynote.ejs
@@ -65,6 +65,7 @@ https://conf.posit.co/2026/
   </ul>
 </div>
 
+
 <script>
 (function () {
   var event = {
@@ -124,297 +125,147 @@ https://conf.posit.co/2026/
 })();
 </script>
 ```
+:::
+
+# Keynote
 
 ```{=html}
-<div class="hero-gallery" aria-label="WOMBAT photo marquee">
-  <div class="hero-gallery-track">
-    <div class="hero-gallery-set">
-      <img src="img/thank-you/IMG_4401.webp" alt="WOMBAT workshop photo 1">
-      <img src="img/thank-you/IMG_4473.webp" alt="WOMBAT workshop photo 2">
-      <img src="img/thank-you/IMG_4492.webp" alt="WOMBAT workshop photo 3">
-      <img src="img/thank-you/IMG_4538.webp" alt="WOMBAT workshop photo 4">
-      <img src="img/thank-you/IMG_4579.webp" alt="WOMBAT workshop photo 5">
-      <img src="img/thank-you/IMG_4621.webp" alt="WOMBAT workshop photo 6">
-      <img src="img/thank-you/IMG_4652.webp" alt="WOMBAT workshop photo 7">
-      <img src="img/thank-you/IMG_4679.webp" alt="WOMBAT workshop photo 8">
-      <img src="img/thank-you/IMG_4738.webp" alt="WOMBAT workshop photo 9">
+
+  <div class="keynote-card">
+    
+    <!-- Header: Speaker Info -->
+    <div class="profile-section">
+      <div class="avatar-wrapper">
+        <img src="img/keynote.png" alt="Rob J Hyndman" class="avatar">
+      </div>
+      <h2 class="speaker-name">Rob J Hyndman</h2>
+      <p class="speaker-role">Vice-Chancellor's Distinguished Professor of Statistics <br/> Monash University</p>
     </div>
-    <div class="hero-gallery-set" aria-hidden="true">
-      <img src="img/thank-you/IMG_4401.webp" alt="">
-      <img src="img/thank-you/IMG_4473.webp" alt="">
-      <img src="img/thank-you/IMG_4492.webp" alt="">
-      <img src="img/thank-you/IMG_4538.webp" alt="">
-      <img src="img/thank-you/IMG_4579.webp" alt="">
-      <img src="img/thank-you/IMG_4621.webp" alt="">
-      <img src="img/thank-you/IMG_4652.webp" alt="">
-      <img src="img/thank-you/IMG_4679.webp" alt="">
-      <img src="img/thank-you/IMG_4738.webp" alt="">
+
+    <!-- Body: Topic and Expandable Content -->
+    <div class="content-section">
+      <h3 class="topic-title">Title to be announced</h3>
+      <span class="topic-label">1st of December at 10:00 AM</span>
+      
+      <!-- Foldable Text Container -->
+      <details>
+        <summary>Read Bio & Abstract</summary>
+        <div class="folded-content">
+          <h4>Topic Abstract</h4>
+          <p>Need content here</p>
+          
+          <h4>About the Speaker</h4>
+          <p>Need content here</p>
+        </div>
+      </details>
     </div>
+
   </div>
-</div>
 ```
 
-:::
 
+# Program
 
-
-<!-- 
-::: {.program-section}
-
+::: {.program}
 
 ```{=html}
-<div class="program-nav">
-<div class="program-nav-inner">
-<a class="program-nav-item is-active" id="nav-day1" href="#day1">
-<h4>Day 1</h4>
-<h3>Tutorials</h3>
-<p>30 Nov 2026</p>
-</a>
-<a class="program-nav-item" id="nav-day2" href="#day2">
-<h4>Day 2</h4>
-<h3>Workshop</h3>
-<p>1 Dec 2026</p>
-</a>
-</div>
-</div>
+<!-- Day Highlights Grid -->
+  <div class="highlights-grid">
+    
+    <!-- Day 1 Card Preview -->
+    <div class="day-preview-box">
+      <div class="day-badge-top">Day 1 • Nov 31</div>
+      <h4 class="day-theme">Tutorials & Hands-On R</h4>
+      <ul class="highlight-list">
+        <li><strong>09:00 AM:</strong> Intro to Regression, Visualising Uncertainty, R Packages, Time Series</li>
+        <li><strong>01:30 PM:</strong> C++ for R, Quarto Reporting, Scientific Figure Design</li>
+      </ul>
+      <a href="" class="btn-register-day" target="_blank">Register for Day 1</a>
+    </div>
+
+    <!-- Day 2 Card Preview -->
+    <div class="day-preview-box">
+      <div class="day-badge-top">Day 2 • Dec 1</div>
+      <h4 class="day-theme">Workshops & Keynotes</h4>
+      <ul class="highlight-list">
+        <li><strong>09:00 AM:</strong> Decision-Making Visualisations (Nicola Rennie)</li>
+        <li><strong>01:40 PM:</strong> Rob Hyndman &amp; Nick Tierney on Research Software</li>
+        <li><strong>03:30 PM:</strong> Data Teams &amp; Infrastructure (Ben Harrap)</li>
+      </ul>
+      <a href="" class="btn-register-day" target="_blank">Register for Day 2</a>
+    </div>
+
+  </div>
+
+  <!-- Footer Actions -->
+  <div class="card-footer-actions">
+    <a href="program/schedule/" class="btn-full-schedule">View Full Schedule &amp; All Sessions →</a>
+  </div>
+```
+
+:::
+
+```{=html}
+<section class="community-section">
+    <h2>Community @ WOMBAT</h1>
+    <p class="community-desc">
+      At WOMBAT, Community is made up in the people you meet in between. Be it with food or coffee in hand, connecting with like minded people is always encouraged and made easy in WOMBAT 2026.
+    </p>
+
+    <!-- Gallery Sub-section -->
+    <div class="gallery">
+      <img src="img/thank-you/IMG_4401.webp" alt="Community gathering moment 1" loading="lazy">
+      <img src="img/thank-you/IMG_4473.webp" alt="Community gathering moment 2" loading="lazy">
+      <img src="img/thank-you/IMG_4492.webp" alt="Community gathering moment 3" loading="lazy">
+      <img src="img/thank-you/IMG_4538.webp" alt="Community gathering moment 4" loading="lazy">
+      <img src="img/thank-you/IMG_4579.webp" alt="Community gathering moment 5" loading="lazy">
+      <img src="img/thank-you/IMG_4621.webp" alt="Community gathering moment 6" loading="lazy">
+      <img src="img/thank-you/IMG_4652.webp" alt="Community gathering moment 7" loading="lazy">
+      <img src="img/thank-you/IMG_4679.webp" alt="Community gathering moment 8" loading="lazy">
+      <img src="img/thank-you/IMG_4738.webp" alt="Community gathering moment 9" loading="lazy">
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll(".gallery img");
+
+  const observerOptions = {
+    root: null, // uses the viewport
+    rootMargin: "0px",
+    threshold: 0.15 // Triggers when 15% of the image is visible
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Scrolled IN view
+        entry.target.classList.add("is-visible");
+      } else {
+        // Scrolled OUT of view
+        entry.target.classList.remove("is-visible");
+      }
+    });
+  }, observerOptions);
+
+  images.forEach(img => observer.observe(img));
+});
+    </script>
+```
+
+```{=html}
+<section class="contact-section">
+    <h2>Reach out to a human</h2>
+    <p class="contact-desc">
+      Have a question, need some help, or just want to say hello? Our team is always here for you.
+    </p>
+    <a href="mailto:buseco-ebs.wombat@monash.edu" class="btn-primary">Send a message</a>
+  </section>
 ```
 
 
-::: {.program-day #day1}
-::: {.program-day-inner}
-
-### Day 1 — Tutorials
-
-Practical, hands-on training by field experts. Eight tutorials run in parallel morning or afternoon sessions — up to 20 participants each.
-
-::: {.instructor-grid}
-::: {.instructor-card}
-![](img/user.png){.instructor-photo}
-
-**Instructor TBA**  
-Tutorial AM
-:::
-
-::: {.instructor-card}
-![](img/user.png){.instructor-photo}
-
-**Instructor TBA**  
-Tutorial AM
-:::
-
-::: {.instructor-card}
-![](img/user.png){.instructor-photo}
-
-**Instructor TBA**  
-Tutorial AM
-:::
-
-::: {.instructor-card}
-![](img/user.png){.instructor-photo}
-
-**Instructor TBA**  
-Tutorial AM
-:::
-
-::: {.instructor-card}
-![](img/user.png){.instructor-photo}
-
-**Instructor TBA**  
-Tutorial PM
-:::
-
-::: {.instructor-card}
-![](img/user.png){.instructor-photo}
-
-**Instructor TBA**  
-Tutorial PM
-:::
-
-::: {.instructor-card}
-![](img/user.png){.instructor-photo}
-
-**Instructor TBA**  
-Tutorial PM
-:::
-
-::: {.instructor-card}
-![](img/user.png){.instructor-photo}
-
-**Instructor TBA**  
-Tutorial PM
-:::
-:::
-
-[View all tutorials →](program/tutorials.html){.btn .btn-outline-secondary}
-
-:::
-:::
-
-::: {.program-day #day2}
-::: {.program-day-inner}
-
-### Day 2 — Workshop
-
-A full-day program with a keynote and invited talks from data scientists across academia, government, and industry.
-
-::: {.keynote-hero}
-![](img/keynote.png){alt="Rob J Hyndman"}
-
-::: {.keynote-hero-body}
-#### Keynote
-
-### Rob J Hyndman
-
-Vice-Chancellor's Distinguished Professor of Statistics, Monash University
-
-Title to be announced.
-:::
-:::
-
-#### Session overview
-
-::: {.session-overview}
-
-::: {.session-card}
-### Invited Talks
-
-#### Time Series Analysis &amp; Forecasting
-
-Session details will be announced closer to the event.
-
-::: {.speaker-bubbles}
-::: {.speaker-bubble role="button" tabindex="0" aria-haspopup="dialog" aria-label="Open details for invited talks" data-modal="invited-talks"}
-![](img/user.png){alt="Presenter photo placeholder" loading="lazy"}
-
-TBA
-:::
-:::
-:::
-
-::: {.session-card}
-### In Conversation
-
-#### Research Software
-
-Session details will be announced closer to the event.
-
-::: {.speaker-bubbles}
-::: {.speaker-bubble role="button" tabindex="0" aria-haspopup="dialog" aria-label="Open details for in conversation" data-modal="in-conversation"}
-![](img/user.png){alt="Presenter photo placeholder" loading="lazy"}
-
-TBA
-:::
-:::
-:::
-
-::: {.session-card}
-### Showcase
-
-#### Recent Software from NUMBATs
-
-Session details will be announced closer to the event.
-
-::: {.speaker-bubbles}
-::: {.speaker-bubble role="button" tabindex="0" aria-haspopup="dialog" aria-label="Open details for showcase" data-modal="showcase"}
-![](img/user.png){alt="Presenter photo placeholder" loading="lazy"}
-
-TBA
-:::
-:::
-:::
-
-::: {.session-card}
-### Invited Talks
-
-#### AI Workflows
-
-Session details will be announced closer to the event.
-
-::: {.speaker-bubbles}
-::: {.speaker-bubble role="button" tabindex="0" aria-haspopup="dialog" aria-label="Open details for workflows and team" data-modal="workflows"}
-![](img/user.png){alt="Presenter photo placeholder" loading="lazy"}
-
-TBA
-:::
-:::
-:::
-
-:::
-
-[View workshop program →](program/workshops.html){.btn .btn-outline-secondary}
-
-:::
-:::
-
-::: -->
-
-<script>
-(function () {
-  var nav1 = document.getElementById('nav-day1');
-  var nav2 = document.getElementById('nav-day2');
-  var day2 = document.getElementById('day2');
-
-  if (!nav1 || !nav2 || !day2) return;
-
-  function update() {
-    var switchAt = window.innerHeight * 0.4;
-    var showDay2 = day2.getBoundingClientRect().top <= switchAt;
-    nav1.classList.toggle('is-active', !showDay2);
-    nav2.classList.toggle('is-active', showDay2);
-  }
-
-  window.addEventListener('scroll', update, { passive: true });
-  update();
-})();
-</script>
-
-
-
 <!-- 
-::: {.meta}
 
-::: {.meta-grid}
-
-::: {.meta-item}
-## Dates
-
-30 Nov – 1 Dec 2026
-:::
-
-::: {.meta-item}
-## Location
-
-Melbourne, Australia
-:::
-
-::: {.meta-item}
-## Tutorials
-
-20 participants each
-:::
-
-::: {.meta-item}
-## Workshop
-
-100 participants, in person only
-:::
-
-:::
-
-::: 
--->
-<!-- 
-::: {.gallery}
-![](img/thank-you/IMG_4401.webp)
-![](img/thank-you/IMG_4473.webp)
-![](img/thank-you/IMG_4492.webp)
-![](img/thank-you/IMG_4538.webp)
-![](img/thank-you/IMG_4579.webp)
-![](img/thank-you/IMG_4621.webp)
-![](img/thank-you/IMG_4652.webp)
-![](img/thank-you/IMG_4679.webp)
-![](img/thank-you/IMG_4738.webp)
-:::
 
 The annual WOMBAT workshop brings together analysts from academia, industry and government to learn and discuss open source tools for business analytics and data science.
 
