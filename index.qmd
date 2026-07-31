@@ -44,7 +44,7 @@ https://conf.posit.co/2026/
     Register
   </a>
   <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="background: none; border-radius: 0.5rem">
-    Save the Date
+    Add to calendar
   </button>
   <ul class="dropdown-menu">
     <li>
@@ -273,7 +273,7 @@ https://conf.posit.co/2026/
 <section class="contact-section">
     <h2>Got a question?</h2>
     <p class="contact-desc">
-      Have a question, need some help, or just want to say hello? Our team is always here for you.
+      Reach out to us with any question you have!
     </p>
     <a href="mailto:buseco-ebs.wombat@monash.edu" class="btn-primary">Send a message</a>
   </section>
