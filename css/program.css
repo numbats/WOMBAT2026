@@ -1,0 +1,93 @@
+/* Grid Layout */
+.highlights-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.day-preview-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+.day-preview-box:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+.day-badge-top {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #0284c7;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.day-theme {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  color: #0f172a;
+}
+
+.highlight-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 1.25rem 0;
+  font-size: 0.85rem;
+  color: #475569;
+  line-height: 1.5;
+}
+
+.highlight-list li {
+  margin-bottom: 6px;
+}
+
+/* Buttons */
+.btn-register-day {
+  display: block;
+  text-align: center;
+  background: #0d6efd;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.btn-register-day:hover {
+  background: rgb(11.05, 93.5, 215.05);
+}
+
+.card-footer-actions {
+  text-align: center;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 1.25rem;
+}
+
+.btn-full-schedule {
+  color: #0284c7;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-full-schedule:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+}
