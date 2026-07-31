@@ -1,4 +1,7 @@
+/*-- scss:functions --*/
 
+/*-- scss:defaults --*/
+@import "theme.scss"; 
     /* =========================================
        Contact Section
        ========================================= */
@@ -21,7 +24,7 @@
 
     .contact-section .btn-primary {
       display: inline-block;
-      background-color: #000;
+      background-color: $primary;
       color: #fff;
       text-decoration: none;
       padding: 1rem 2.5rem;
@@ -32,6 +35,6 @@
     }
 
     .contact-section .btn-primary:hover {
-      background-color: #333;
+      background-color: darken($primary, 30%);
       transform: scale(1.02);
     }

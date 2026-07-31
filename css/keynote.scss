@@ -1,0 +1,209 @@
+/*-- scss:functions --*/
+
+/*-- scss:defaults --*/
+@import "theme.scss"; 
+
+$primary-color: $secondary;
+$bg-gradient-start: lighten($primary, 40%);
+$bg-gradient-end: lighten($primary, 40%);
+$bg-gradient: linear-gradient(135deg, $bg-gradient-start 0%, $bg-gradient-end 100%);
+$card-bg: #ffffff;
+$text-main: #2d3748;
+$text-muted: #4a5568;
+
+/* Card Container: Mobile First (Stacked) */
+.keynote-card {
+  display: flex;
+  flex-direction: column;
+  background: $card-bg;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  margin: 2rem auto;
+  overflow: hidden;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.keynote-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Profile Section */
+.profile-section {
+  background: $bg-gradient;
+  padding: 2.5rem 2rem 1.5rem;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid #edf2f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.avatar-wrapper {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 1.25rem;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.status-badge {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  background: #fff;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  font-size: 0.9rem;
+}
+
+.speaker-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: $text-main;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.5px;
+}
+
+.speaker-role {
+  font-size: 0.92rem;
+  color: $text-muted;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.highlight-title {
+  font-weight: 600;
+}
+
+.institution {
+  font-style: italic;
+  font-size: 0.88rem;
+}
+
+/* Content Section */
+.content-section {
+  padding: 2rem;
+  flex: 1;
+}
+
+.topic-title {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: $text-main;
+  margin: 0 0 1.25rem;
+}
+
+.abstract-section p {
+  font-size: 0.95rem;
+  color: $text-muted;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.code-badge {
+  background: #edf2f7;
+  color: #d53f8c;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+/* Interactive Toggle Button */
+.expand-toggle {
+  width: 100%;
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  color: $primary-color;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 1rem;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.expand-toggle:hover {
+  background: #edf2f7;
+  border-color: #cbd5e0;
+}
+
+.chevron-icon {
+  transition: transform 0.3s ease;
+}
+
+/* Collapsible Folded Content */
+.folded-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.folded-content.open {
+  max-height: 800px;
+}
+
+.keynote-card.is-expanded .chevron-icon {
+  transform: rotate(180deg);
+}
+
+.inner-scroll {
+  padding-top: 1.5rem;
+  border-top: 1px dashed #edf2f7;
+}
+
+.content-block h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: $text-main;
+  margin: 0 0 0.75rem;
+}
+
+.content-block p {
+  font-size: 0.9rem;
+  color: $text-muted;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* =========================================
+   Desktop Layout (Side-by-Side Flexbox)
+   ========================================= */
+@media (min-width: 768px) {
+  .keynote-card {
+    flex-direction: row;
+    align-items: stretch; /* Make both columns equal height */
+  }
+
+  .profile-section {
+    flex: 0 0 320px; /* Fixed width for profile sidebar */
+    border-bottom: none;
+    border-right: 1px solid #edf2f7;
+    padding: 3rem 2rem;
+  }
+
+  .content-section {
+    padding: 3rem;
+  }
+}

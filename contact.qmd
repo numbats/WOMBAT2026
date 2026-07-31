@@ -2,12 +2,14 @@
 pagetitle: "Contact us"
 format:
   html:
-    css: [css/contact.css]
+    theme:
+      light:
+        - css/contact.scss
 ---
 
 
 <section class="contact-section">
-    <h2>Reach out to a human</h2>
+    <h2>Got a question?</h2>
     <p class="contact-desc">
       Have a question, need some help, or just want to say hello? Our team is always here for you.
     </p>

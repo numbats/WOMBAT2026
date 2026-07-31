@@ -1,0 +1,90 @@
+/*-- scss:functions --*/
+
+/*-- scss:defaults --*/
+@import "theme.scss"; 
+/* Base styles for the section */
+  .wombat-registration {
+    color: #333;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  .wombat-registration h2 {
+    font-size: 2rem;
+    color: #111827;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .intro-text {
+    font-size: 1.1rem;
+    color: #4b5563;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  /* Interactive Cards Layout */
+  .event-cards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .event-card {
+    flex: 1 1 calc(50% - 1rem);
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+
+  .event-card h4 {
+    font-size: 1.3rem;
+    color: #111827;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #f3f4f6;
+    padding-bottom: 0.5rem;
+  }
+
+  .event-card p {
+    color: #4b5563;
+    flex-grow: 1; /* Pushes the button to the bottom */
+    margin-bottom: 1.5rem;
+  }
+
+  /* Button Styling */
+  .btn-register {
+    display: block;
+    text-align: center;
+    background-color: $primary;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+  }
+
+  .btn-register:hover {
+    background-color: darken($primary, 30%);
+    color: #ffffff;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .event-cards {
+      flex-direction: column;
+    }
+  }

@@ -1,6 +1,25 @@
 /*-- scss:functions --*/
 
 /*-- scss:defaults --*/
+
+// colors
+$orange: #FBAC27;
+$blue: #288DFA;
+
+$primary:       $orange !default;
+$secondary:     $blue!default;
+
+.banner {
+  background-color: lighten($secondary, 30%);
+  border-left: 4px solid $secondary;
+  color: darken($secondary, 10%);
+  padding: 1rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
 $h2-font-size:          1.6rem !default;
 $headings-font-weight:  500 !default;
 $content-max-width:     1200px !default;

@@ -2,7 +2,12 @@
 title: ""
 format:
   html:
-    css: [css/hero.css, css/program.css, css/keynote.css, css/community.css, css/contact.css]
+    css: [css/hero.css, css/program.css, css/community.css]
+    theme: 
+      light: 
+        - css/keynote.scss
+        - css/contact.scss
+        - css/register.scss
 # listing:
   # - id: keynote
     # template: program/speakers/keynote.ejs
@@ -21,6 +26,8 @@ https://wif.nixtla.io/
 https://conf.posit.co/2026/
 -->
 
+
+
 ::: {.hero}
 
 # WOMBAT
@@ -33,7 +40,10 @@ https://conf.posit.co/2026/
 
 ```{=html}
 <div class="btn-group save-the-date-dropdown" role="group">
-  <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+  <a href="participation/register.html" class="btn btn-primary btn-lg" style="color: white; margin-right: 0.5rem; border-radius: 0.5rem">
+    Register
+  </a>
+  <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="background: none; border-radius: 0.5rem">
     Save the Date
   </button>
   <ul class="dropdown-menu">
@@ -65,7 +75,7 @@ https://conf.posit.co/2026/
   </ul>
 </div>
 
-
+<!-- Data / Calendar Script Provided by User -->
 <script>
 (function () {
   var event = {
@@ -79,7 +89,6 @@ https://conf.posit.co/2026/
     endDateHuman:   '2026-12-01'
   };
 
-  // ── iCal content ────────────────────────────────────────────────────────────
   var ics = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
@@ -101,7 +110,6 @@ https://conf.posit.co/2026/
 
   var icsDataURI = 'data:text/calendar;charset=utf-8,' + encodeURIComponent(ics);
 
-  // ── Google Calendar URL ──────────────────────────────────────────────────────
   var googleURL = 'https://calendar.google.com/calendar/render?action=TEMPLATE' +
     '&text='     + encodeURIComponent(event.title) +
     '&dates='    + event.startDate + '/' + event.endDate +
@@ -109,7 +117,6 @@ https://conf.posit.co/2026/
     '&location=' + encodeURIComponent(event.location) +
     '&sprop=website:' + encodeURIComponent(event.url);
 
-  // ── Outlook Web URL ──────────────────────────────────────────────────────────
   var outlookURL = 'https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent' +
     '&subject='   + encodeURIComponent(event.title) +
     '&startdt='   + event.startDateHuman +
@@ -121,7 +128,6 @@ https://conf.posit.co/2026/
   document.getElementById('cal-google').href  = googleURL;
   document.getElementById('cal-outlook').href = outlookURL;
   document.getElementById('cal-ical').href    = icsDataURI;
-  document.getElementById('cal-ics').href     = icsDataURI;
 })();
 </script>
 ```
@@ -131,36 +137,73 @@ https://conf.posit.co/2026/
 
 ```{=html}
 
-  <div class="keynote-card">
+  <div class="keynote-card" id="keynote-card">
     
-    <!-- Header: Speaker Info -->
+    <!-- Left/Top Column: Speaker Profile -->
     <div class="profile-section">
       <div class="avatar-wrapper">
         <img src="img/keynote.png" alt="Rob J Hyndman" class="avatar">
       </div>
-      <h2 class="speaker-name">Rob J Hyndman</h2>
-      <p class="speaker-role">Vice-Chancellor's Distinguished Professor of Statistics <br/> Monash University</p>
+      <div class="speaker-info">
+        <h2 class="speaker-name" data-anchor-id="keynote">Rob J Hyndman</h2>
+        <p class="speaker-role">
+          <span class="highlight-title">Professor of Statistics</span><br>
+          Department of Econometrics and Business Statistics<br>
+          <span class="institution">Monash Business School</span>
+        </p>
+      </div>
     </div>
 
-    <!-- Body: Topic and Expandable Content -->
+    <!-- Right/Bottom Column: Topic, Abstract & Bio -->
     <div class="content-section">
-      <h3 class="topic-title">Title to be announced</h3>
-      <span class="topic-label">1st of December at 10:00 AM</span>
+      <div class="topic-header">
+        <h3 class="topic-title">Spotting the weird ones</h3>
+      </div>
       
-      <!-- Foldable Text Container -->
-      <details>
-        <summary>Read Bio & Abstract</summary>
-        <div class="folded-content">
-          <h4>Topic Abstract</h4>
-          <p>Need content here</p>
-          
-          <h4>About the Speaker</h4>
-          <p>Need content here</p>
+      <!-- Abstract: Visible by Default -->
+      <div class="abstract-section">
+        <p>Data analysis is about finding the stories hidden in the mass of information that make up a data set. Usually we are interested in understanding the major patterns and the relationships that hold true for most of the data. But sometimes we need to look at the weird observations, the mavericks, the ones that don’t follow the crowd and behave differently. These observations are called <strong>‘anomalies’</strong>.</p>
+        <p>I will describe a principled statistical approach to identifying anomalies in diverse data sets, from simple numerical data to complex high-dimensional data objects. The ideas will be illustrated using the <code class="code-badge">{weird}</code> package for R applied to several data analysis problems, including spotting over-priced wines, identifying errors in the records of the Old Faithful Geyser, and uncovering forgotten epidemics in 19th century France.</p>
+      </div>
+
+      <!-- Toggle Trigger for Bio -->
+      <button class="expand-toggle" aria-expanded="false" aria-controls="bio-details">
+        <span class="toggle-text">Read Speaker Bio</span>
+        <svg class="chevron-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+
+      <!-- Folded Content: Collapsible Bio -->
+      <div class="folded-content" id="bio-details">
+        <div class="inner-scroll">
+          <div class="content-block">
+            <h4>About Rob J Hyndman</h4>
+            <p>Prof Hyndman holds the position of Vice-Chancellor’s Distinguished Professor of Statistics at Monash University, and is an internationally recognised expert in time series forecasting.</p>
+            <p>He is a prolific writer, having authored more than 200 research papers and five books in statistical science, and has won awards for his research, teaching, consulting, and graduate supervision.</p>
+            <p>His commitment to open research and teaching with open-source statistical software and online learning materials has had a major impact on the accessibility and practice of forecasting.</p>
+          </div>
         </div>
-      </details>
+      </div>
     </div>
 
-  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const card = document.getElementById("keynote-card");
+  const toggleBtn = card.querySelector(".expand-toggle");
+  const foldedContent = card.querySelector(".folded-content");
+  const toggleText = card.querySelector(".toggle-text");
+
+  toggleBtn.addEventListener("click", () => {
+    const isOpen = card.classList.toggle("is-expanded");
+    foldedContent.classList.toggle("open");
+    
+    // Update accessibility attributes & text contextually
+    toggleBtn.setAttribute("aria-expanded", isOpen);
+    toggleText.textContent = isOpen ? "Hide Speaker Bio" : "Read Speaker Bio";
+  });
+});
+</script>
 ```
 
 
@@ -168,40 +211,13 @@ https://conf.posit.co/2026/
 
 ::: {.program}
 
+<!-- {{< include partials/program.html >}} -->
 ```{=html}
-<!-- Day Highlights Grid -->
-  <div class="highlights-grid">
-    
-    <!-- Day 1 Card Preview -->
-    <div class="day-preview-box">
-      <div class="day-badge-top">Day 1 • Nov 31</div>
-      <h4 class="day-theme">Tutorials & Hands-On R</h4>
-      <ul class="highlight-list">
-        <li><strong>09:00 AM:</strong> Intro to Regression, Visualising Uncertainty, R Packages, Time Series</li>
-        <li><strong>01:30 PM:</strong> C++ for R, Quarto Reporting, Scientific Figure Design</li>
-      </ul>
-      <a href="" class="btn-register-day" target="_blank">Register for Day 1</a>
-    </div>
-
-    <!-- Day 2 Card Preview -->
-    <div class="day-preview-box">
-      <div class="day-badge-top">Day 2 • Dec 1</div>
-      <h4 class="day-theme">Workshops & Keynotes</h4>
-      <ul class="highlight-list">
-        <li><strong>09:00 AM:</strong> Decision-Making Visualisations (Nicola Rennie)</li>
-        <li><strong>01:40 PM:</strong> Rob Hyndman &amp; Nick Tierney on Research Software</li>
-        <li><strong>03:30 PM:</strong> Data Teams &amp; Infrastructure (Ben Harrap)</li>
-      </ul>
-      <a href="" class="btn-register-day" target="_blank">Register for Day 2</a>
-    </div>
-
-  </div>
-
-  <!-- Footer Actions -->
-  <div class="card-footer-actions">
-    <a href="program/schedule/" class="btn-full-schedule">View Full Schedule &amp; All Sessions →</a>
-  </div>
+<div class="banner">
+  Program details will be announced soon!
+</div>
 ```
+
 
 :::
 
@@ -255,7 +271,7 @@ https://conf.posit.co/2026/
 
 ```{=html}
 <section class="contact-section">
-    <h2>Reach out to a human</h2>
+    <h2>Got a question?</h2>
     <p class="contact-desc">
       Have a question, need some help, or just want to say hello? Our team is always here for you.
     </p>
