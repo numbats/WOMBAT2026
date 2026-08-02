@@ -10,8 +10,7 @@ format:
 <section class="contact-section">
     <h2>Got a question?</h2>
     <p class="contact-desc">
-      Have a question, need some help, or just want to say hello? Our team is always here for you.
+      Reach out to us with any question you have!
     </p>
     <a href="mailto:buseco-ebs.wombat@monash.edu" class="btn-primary">Send a message</a>
   </section>
-
