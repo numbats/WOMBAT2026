@@ -3,21 +3,21 @@ title: ""
 format:
   html:
     css: [css/hero.css, css/program.css, css/community.css]
-    theme: 
-      light: 
+    theme:
+      light:
         - css/keynote.scss
         - css/contact.scss
         - css/register.scss
-# listing:
-  # - id: keynote
-    # template: program/speakers/keynote.ejs
-    # contents: program/speakers/keynote.yml
-  # - id: schedule_workshops
-  #   template: program/schedule/schedule.ejs
-  #   contents: program/schedule/workshops.yml
-  # - id: schedule_conference
-  #   template: program/schedule/schedule.ejs
-  #   contents: program/schedule/conference.yml
+        # listing:
+        # - id: keynote
+        # template: program/speakers/keynote.ejs
+        # contents: program/speakers/keynote.yml
+        # - id: schedule_workshops
+        #   template: program/schedule/schedule.ejs
+        #   contents: program/schedule/workshops.yml
+        # - id: schedule_conference
+        #   template: program/schedule/schedule.ejs
+        #   contents: program/schedule/conference.yml
 ---
 
 <!-- 
@@ -26,17 +26,16 @@ https://wif.nixtla.io/
 https://conf.posit.co/2026/
 -->
 
-
-
 ::: {.hero}
-
 # WOMBAT
 
-[**W**orkshop **O**rganised by the **M**onash **B**usiness **A**nalytics **T**eam]{.hero-tagline}
+[**W**orkshop **O**rganised by the **M**onash **B**usiness **A**nalytics
+**T**eam]{.hero-tagline}
 
-[30 Nov – 1 Dec 2026 · Melbourne, Australia]{.hero-call}
+[30 Nov -- 1 Dec 2026 · Melbourne, Australia]{.hero-call}
 
-[*Learn and discuss open-source tools for business analytics and data science.*]{.hero-desc}
+[*Learn and discuss open-source tools for business analytics and data
+science.*]{.hero-desc}
 
 ```{=html}
 <div class="btn-group save-the-date-dropdown" role="group">
@@ -206,19 +205,15 @@ https://conf.posit.co/2026/
 </script>
 ```
 
-
 # Program
 
 ::: {.program}
-
 <!-- {{< include partials/program.html >}} -->
 ```{=html}
 <div class="banner">
   Program details will be announced soon!
 </div>
 ```
-
-
 :::
 
 ```{=html}
@@ -279,7 +274,6 @@ https://conf.posit.co/2026/
   </section>
 ```
 
-
 <!-- 
 
 
@@ -301,3 +295,4 @@ The WOMBAT tutorials offer practical, hands-on training in key topics for data a
 
 The main day of WOMBAT features a diverse workshop program designed to highlight the latest data analysis tools and techniques. The workshop includes a keynote presentation, followed by invited talks from leading data analysts from academia, government, and industry. More details about the workshop will be shared nearer to the event.
  -->
+

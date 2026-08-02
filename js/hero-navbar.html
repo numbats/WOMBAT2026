@@ -1,30 +1,33 @@
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-  const hero = document.querySelector('.hero');
-  const header = document.querySelector('#quarto-header');
+  document.addEventListener("DOMContentLoaded", () => {
+    const hero = document.querySelector(".hero");
+    const header = document.querySelector("#quarto-header");
 
-  if (!hero || !header) return;
+    if (!hero || !header) return;
 
-  document.body.classList.add('has-hero-navbar');
+    document.body.classList.add("has-hero-navbar");
 
-  const updateState = () => {
-    const heroRect = hero.getBoundingClientRect();
-    document.body.classList.toggle('hero-navbar-scrolled', heroRect.bottom <= 0);
-  };
+    const updateState = () => {
+      const heroRect = hero.getBoundingClientRect();
+      document.body.classList.toggle(
+        "hero-navbar-scrolled",
+        heroRect.bottom <= 0,
+      );
+    };
 
-  updateState();
+    updateState();
 
-  if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(updateState, {
-      root: null,
-      threshold: 0,
-      rootMargin: '0px 0px -1px 0px',
-    });
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(updateState, {
+        root: null,
+        threshold: 0,
+        rootMargin: "0px 0px -1px 0px",
+      });
 
-    observer.observe(hero);
-  } else {
-    window.addEventListener('scroll', updateState, { passive: true });
-    window.addEventListener('resize', updateState);
-  }
-});
+      observer.observe(hero);
+    } else {
+      window.addEventListener("scroll", updateState, { passive: true });
+      window.addEventListener("resize", updateState);
+    }
+  });
 </script>

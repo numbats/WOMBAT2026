@@ -1,12 +1,16 @@
 /*-- scss:functions --*/
 
 /*-- scss:defaults --*/
-@import "theme.scss"; 
+@import "theme.scss";
 
 $primary-color: $secondary;
 $bg-gradient-start: lighten($primary, 40%);
 $bg-gradient-end: lighten($primary, 40%);
-$bg-gradient: linear-gradient(135deg, $bg-gradient-start 0%, $bg-gradient-end 100%);
+$bg-gradient: linear-gradient(
+  135deg,
+  $bg-gradient-start 0%,
+  $bg-gradient-end 100%
+);
 $card-bg: #ffffff;
 $text-main: #2d3748;
 $text-muted: #4a5568;
@@ -21,7 +25,9 @@ $text-muted: #4a5568;
   margin: 2rem auto;
   overflow: hidden;
   border: 1px solid rgba(226, 232, 240, 0.8);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .keynote-card:hover {
@@ -69,7 +75,7 @@ $text-muted: #4a5568;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   font-size: 0.9rem;
 }
 
@@ -141,7 +147,9 @@ $text-muted: #4a5568;
   justify-content: center;
   gap: 8px;
   margin-top: 1rem;
-  transition: background 0.2s, border-color 0.2s;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
 }
 
 .expand-toggle:hover {
@@ -207,3 +215,4 @@ $text-muted: #4a5568;
     padding: 3rem;
   }
 }
+

@@ -7,7 +7,6 @@ format:
         - css/contact.scss
 ---
 
-
 <section class="contact-section">
     <h2>Got a question?</h2>
     <p class="contact-desc">
@@ -15,3 +14,4 @@ format:
     </p>
     <a href="mailto:buseco-ebs.wombat@monash.edu" class="btn-primary">Send a message</a>
   </section>
+

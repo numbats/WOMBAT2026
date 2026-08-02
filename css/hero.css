@@ -31,7 +31,9 @@ body.has-hero-navbar #quarto-header .navbar-brand-container > .navbar-brand {
   padding-left: 0;
   pointer-events: none;
   white-space: nowrap;
-  transition: opacity 0.2s ease, max-width 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    max-width 0.2s ease;
 }
 
 body.has-hero-navbar.hero-navbar-scrolled #quarto-header .navbar,
@@ -43,8 +45,14 @@ body:has(.hero).hero-navbar-scrolled #quarto-header .navbar {
   border: 1px solid rgba(255, 255, 255, 0.35);
 }
 
-body.has-hero-navbar.hero-navbar-scrolled #quarto-header .navbar-brand-container > .navbar-brand,
-body:has(.hero).hero-navbar-scrolled #quarto-header .navbar-brand-container > .navbar-brand {
+body.has-hero-navbar.hero-navbar-scrolled
+  #quarto-header
+  .navbar-brand-container
+  > .navbar-brand,
+body:has(.hero).hero-navbar-scrolled
+  #quarto-header
+  .navbar-brand-container
+  > .navbar-brand {
   opacity: 1;
   max-width: 14rem;
   pointer-events: auto;
@@ -107,8 +115,12 @@ body:has(.hero).hero-navbar-scrolled #quarto-header .navbar-brand-container > .n
   margin-top: 1rem;
 }
 
-.hero > :first-child { margin-top: 0; }
-.hero > :last-child  { margin-bottom: 0; }
+.hero > :first-child {
+  margin-top: 0;
+}
+.hero > :last-child {
+  margin-bottom: 0;
+}
 
 /* ── Hero marquee gallery ────────────────────────────────────────────────────*/
 
@@ -152,8 +164,12 @@ body:has(.hero).hero-navbar-scrolled #quarto-header .navbar-brand-container > .n
 }
 
 @keyframes hero-marquee-scroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -165,8 +181,12 @@ body:has(.hero).hero-navbar-scrolled #quarto-header .navbar-brand-container > .n
 /* ── Hero waveform decoration ─────────────────────────────────────────────────*/
 
 @keyframes hero-wave-scroll {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .hero-wave {
@@ -204,7 +224,7 @@ body:has(.hero).hero-navbar-scrolled #quarto-header .navbar-brand-container > .n
   position: sticky;
   top: 4.25rem;
   z-index: 200;
-  background: #F5EFE3;
+  background: #f5efe3;
   border-bottom: 2px solid rgba(0, 0, 0, 0.08);
   box-sizing: border-box;
 }
@@ -223,7 +243,9 @@ body:has(.hero).hero-navbar-scrolled #quarto-header .navbar-brand-container > .n
   min-width: 0;
   padding: 1.1rem clamp(1rem, 3vw, 3rem);
   opacity: 0.4;
-  transition: background-color 0.3s ease, opacity 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    opacity 0.3s ease;
   cursor: pointer;
   user-select: none;
   text-decoration: none;
@@ -372,7 +394,11 @@ body:has(.hero).hero-navbar-scrolled #quarto-header .navbar-brand-container > .n
 }
 
 .instructor-card .instructor-photo {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
 }
 
 .instructor-card img {
@@ -548,7 +574,9 @@ body:has(.hero).hero-navbar-scrolled #quarto-header .navbar-brand-container > .n
   border: 3px solid rgba(255, 255, 255, 0.9);
   box-shadow: 0 0.3rem 0.85rem rgba(0, 0, 0, 0.12);
   background: #fff;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .speaker-bubble > * {
@@ -572,7 +600,9 @@ body:has(.hero).hero-navbar-scrolled #quarto-header .navbar-brand-container > .n
 }
 
 .speaker-bubble:focus-visible img {
-  box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.22), 0 0.45rem 1.15rem rgba(0, 0, 0, 0.16);
+  box-shadow:
+    0 0 0 4px rgba(13, 110, 253, 0.22),
+    0 0.45rem 1.15rem rgba(0, 0, 0, 0.16);
 }
 
 @media (max-width: 900px) {
