@@ -19,7 +19,7 @@
 
 .day-preview-box:hover {
   border-color: #cbd5e1;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
 }
 
 .day-badge-top {
@@ -91,3 +91,4 @@
     grid-template-columns: 1fr;
   }
 }
+

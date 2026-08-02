@@ -35,7 +35,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-cb72b21003d7b551dd0307de8dd8831a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-8e114dbf0485e8bbcc0a8cc189cb1356.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -141,129 +141,149 @@ ul.task-list li input[type="checkbox"] {
   plausible.init()
 </script>
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-  const hero = document.querySelector('.hero');
-  const header = document.querySelector('#quarto-header');
+  document.addEventListener("DOMContentLoaded", () => {
+    const hero = document.querySelector(".hero");
+    const header = document.querySelector("#quarto-header");
 
-  if (!hero || !header) return;
+    if (!hero || !header) return;
 
-  document.body.classList.add('has-hero-navbar');
+    document.body.classList.add("has-hero-navbar");
 
-  const updateState = () => {
-    const heroRect = hero.getBoundingClientRect();
-    document.body.classList.toggle('hero-navbar-scrolled', heroRect.bottom <= 0);
-  };
+    const updateState = () => {
+      const heroRect = hero.getBoundingClientRect();
+      document.body.classList.toggle(
+        "hero-navbar-scrolled",
+        heroRect.bottom <= 0,
+      );
+    };
 
-  updateState();
+    updateState();
 
-  if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(updateState, {
-      root: null,
-      threshold: 0,
-      rootMargin: '0px 0px -1px 0px',
-    });
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(updateState, {
+        root: null,
+        threshold: 0,
+        rootMargin: "0px 0px -1px 0px",
+      });
 
-    observer.observe(hero);
-  } else {
-    window.addEventListener('scroll', updateState, { passive: true });
-    window.addEventListener('resize', updateState);
-  }
-});
+      observer.observe(hero);
+    } else {
+      window.addEventListener("scroll", updateState, { passive: true });
+      window.addEventListener("resize", updateState);
+    }
+  });
 </script>
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-  const hero = document.querySelector('.hero');
-  if (!hero) return;
+  document.addEventListener("DOMContentLoaded", () => {
+    const hero = document.querySelector(".hero");
+    if (!hero) return;
 
-  // SVG tile width (doubled for seamless looping animation).
-  // All sine frequencies are integers so the waveform tiles exactly.
-  const TILE = 2880;
-  const W    = TILE * 2;
-  const H    = 160;
-  const PTS  = 500; // points per path — enough for smooth curves
+    // SVG tile width (doubled for seamless looping animation).
+    // All sine frequencies are integers so the waveform tiles exactly.
+    const TILE = 2880;
+    const W = TILE * 2;
+    const H = 160;
+    const PTS = 500; // points per path — enough for smooth curves
 
-  function waveY(x, center, comps) {
-    return center + comps.reduce(
-      (sum, [amp, freq, phase]) =>
-        sum + amp * Math.sin(2 * Math.PI * freq * x / TILE + phase),
-      0
-    );
-  }
-
-  // Build an SVG path string; optionally closed to y=H for a filled area.
-  function buildPath(center, comps, close) {
-    const parts = [];
-    for (let i = 0; i <= PTS; i++) {
-      const x = (i / PTS) * W;
-      const y = waveY(x, center, comps);
-      parts.push((i === 0 ? 'M' : 'L') + x.toFixed(1) + ' ' + y.toFixed(1));
-    }
-    if (close) parts.push(`L${W} ${H} L0 ${H} Z`);
-    return parts.join(' ');
-  }
-
-  const ns = 'http://www.w3.org/2000/svg';
-
-  // Three wave layers at different depths and speeds.
-  // Components: [amplitude, integer-frequency, phase-offset]
-  const layers = [
-    {
-      // Slow background wave — wide swings, filled underbelly
-      center: H * 0.68,
-      comps: [[38, 3, 0.5], [18, 7, 1.2], [10, 11, 2.0], [6, 2, 0.3]],
-      fill:        'rgba(160, 100, 5, 0.08)',
-      stroke:      'rgba(140,  85, 5, 0.22)',
-      strokeWidth: '2',
-      speed:       '48s',
-    },
-    {
-      // Mid wave — slightly faster, lighter fill
-      center: H * 0.58,
-      comps: [[28, 4, 1.8], [14, 9, 0.5], [8, 14, 1.5], [5, 2, 2.6]],
-      fill:        'rgba(195, 135, 15, 0.06)',
-      stroke:      'rgba(155,  95, 5, 0.14)',
-      strokeWidth: '1.5',
-      speed:       '32s',
-    },
-    {
-      // Fast foreground detail line — small, tight oscillations, no fill
-      center: H * 0.76,
-      comps: [[18, 5, 2.2], [9, 12, 0.7], [5, 19, 1.5]],
-      fill:        'none',
-      stroke:      'rgba(120,  68, 5, 0.11)',
-      strokeWidth: '1',
-      speed:       '20s',
-    },
-  ];
-
-  layers.forEach(layer => {
-    const svg = document.createElementNS(ns, 'svg');
-    svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
-    svg.setAttribute('preserveAspectRatio', 'none');
-
-    if (layer.fill !== 'none') {
-      const fillEl = document.createElementNS(ns, 'path');
-      fillEl.setAttribute('d', buildPath(layer.center, layer.comps, true));
-      fillEl.setAttribute('fill', layer.fill);
-      fillEl.setAttribute('stroke', 'none');
-      svg.appendChild(fillEl);
+    function waveY(x, center, comps) {
+      return (
+        center +
+        comps.reduce(
+          (sum, [amp, freq, phase]) =>
+            sum + amp * Math.sin((2 * Math.PI * freq * x) / TILE + phase),
+          0,
+        )
+      );
     }
 
-    const strokeEl = document.createElementNS(ns, 'path');
-    strokeEl.setAttribute('d', buildPath(layer.center, layer.comps, false));
-    strokeEl.setAttribute('fill', 'none');
-    strokeEl.setAttribute('stroke', layer.stroke);
-    strokeEl.setAttribute('stroke-width', layer.strokeWidth);
-    svg.appendChild(strokeEl);
+    // Build an SVG path string; optionally closed to y=H for a filled area.
+    function buildPath(center, comps, close) {
+      const parts = [];
+      for (let i = 0; i <= PTS; i++) {
+        const x = (i / PTS) * W;
+        const y = waveY(x, center, comps);
+        parts.push((i === 0 ? "M" : "L") + x.toFixed(1) + " " + y.toFixed(1));
+      }
+      if (close) parts.push(`L${W} ${H} L0 ${H} Z`);
+      return parts.join(" ");
+    }
 
-    const wrap = document.createElement('div');
-    wrap.className = 'hero-wave';
-    wrap.style.animationDuration = layer.speed;
-    wrap.setAttribute('aria-hidden', 'true');
-    wrap.appendChild(svg);
-    hero.appendChild(wrap);
+    const ns = "http://www.w3.org/2000/svg";
+
+    // Three wave layers at different depths and speeds.
+    // Components: [amplitude, integer-frequency, phase-offset]
+    const layers = [
+      {
+        // Slow background wave — wide swings, filled underbelly
+        center: H * 0.68,
+        comps: [
+          [38, 3, 0.5],
+          [18, 7, 1.2],
+          [10, 11, 2.0],
+          [6, 2, 0.3],
+        ],
+        fill: "rgba(160, 100, 5, 0.08)",
+        stroke: "rgba(140,  85, 5, 0.22)",
+        strokeWidth: "2",
+        speed: "48s",
+      },
+      {
+        // Mid wave — slightly faster, lighter fill
+        center: H * 0.58,
+        comps: [
+          [28, 4, 1.8],
+          [14, 9, 0.5],
+          [8, 14, 1.5],
+          [5, 2, 2.6],
+        ],
+        fill: "rgba(195, 135, 15, 0.06)",
+        stroke: "rgba(155,  95, 5, 0.14)",
+        strokeWidth: "1.5",
+        speed: "32s",
+      },
+      {
+        // Fast foreground detail line — small, tight oscillations, no fill
+        center: H * 0.76,
+        comps: [
+          [18, 5, 2.2],
+          [9, 12, 0.7],
+          [5, 19, 1.5],
+        ],
+        fill: "none",
+        stroke: "rgba(120,  68, 5, 0.11)",
+        strokeWidth: "1",
+        speed: "20s",
+      },
+    ];
+
+    layers.forEach((layer) => {
+      const svg = document.createElementNS(ns, "svg");
+      svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+      svg.setAttribute("preserveAspectRatio", "none");
+
+      if (layer.fill !== "none") {
+        const fillEl = document.createElementNS(ns, "path");
+        fillEl.setAttribute("d", buildPath(layer.center, layer.comps, true));
+        fillEl.setAttribute("fill", layer.fill);
+        fillEl.setAttribute("stroke", "none");
+        svg.appendChild(fillEl);
+      }
+
+      const strokeEl = document.createElementNS(ns, "path");
+      strokeEl.setAttribute("d", buildPath(layer.center, layer.comps, false));
+      strokeEl.setAttribute("fill", "none");
+      strokeEl.setAttribute("stroke", layer.stroke);
+      strokeEl.setAttribute("stroke-width", layer.strokeWidth);
+      svg.appendChild(strokeEl);
+
+      const wrap = document.createElement("div");
+      wrap.className = "hero-wave";
+      wrap.style.animationDuration = layer.speed;
+      wrap.setAttribute("aria-hidden", "true");
+      wrap.appendChild(svg);
+      hero.appendChild(wrap);
+    });
   });
-});
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
