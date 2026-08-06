@@ -1,5 +1,6 @@
 ---
 title: ""
+pagetitle: "WOMBAT 2026 – Data Science & Analytics Workshop"
 format:
   html:
     css: [css/hero.css, css/program.css, css/community.css]

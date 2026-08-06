@@ -11,13 +11,13 @@ project:
     browser: false # setting it for my convenience cause I prefer to refresh the same tab
 
 website:
-  title: "WOMBAT 2026"
+  title: "WOMBAT 2026 – Data Science & Analytics Workshop"
   site-url: "https://wombat2026.numbat.space"
   sidebar: false
   search: false
   favicon: img/wombat/wombat-pixelart.svg
   open-graph:
-    title: WOMBAT 2026
+    title: "WOMBAT 2026 – Data Science & Analytics Workshop"
     description: |
       The Annual Workshop Organised by the Monash Business Analytics Team in Melbourne, Australia.
     #image: img/opengraph-banner.png 
