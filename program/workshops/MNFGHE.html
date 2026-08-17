@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-12-01">
+<meta name="description" content="Generated summary">
 
-<title>Tutorials – WOMBAT 2026 – Data Science &amp; Analytics Workshop</title>
+<title>WOMBAT 2026: Industry AI integration – WOMBAT 2026 – Data Science &amp; Analytics Workshop</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,25 +31,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<link href="../img/wombat/wombat-pixelart.svg" rel="icon" type="image/svg+xml">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-9e1cc88f78388d8707da7f5286a7203d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-9e1cc88f78388d8707da7f5286a7203d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-9e1cc88f78388d8707da7f5286a7203d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<link href="../../img/wombat/wombat-pixelart.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-9e1cc88f78388d8707da7f5286a7203d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-9e1cc88f78388d8707da7f5286a7203d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-9e1cc88f78388d8707da7f5286a7203d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -63,66 +63,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-time','listing-speakerlist','listing-room','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
+<link rel="stylesheet" href="../../css/talks.css">
 <meta property="og:title" content="WOMBAT 2026 – Data Science &amp; Analytics Workshop">
 <meta property="og:description" content="The Annual Workshop Organised by the Monash Business Analytics Team in Melbourne, Australia.">
 <meta property="og:site_name" content="WOMBAT 2026 – Data Science &amp; Analytics Workshop">
@@ -135,7 +78,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-sm " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">WOMBAT</span>
     </a>
   </div>
@@ -145,11 +88,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../program/schedule"> 
+    <a class="nav-link" href="../../program/schedule"> 
 <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../contact.html"> 
+    <a class="nav-link" href="../../contact.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -158,17 +101,17 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
         <li>
-    <a class="dropdown-item" href="../participation/coc.html">
+    <a class="dropdown-item" href="../../participation/coc.html">
  <span class="dropdown-text">Code of Conduct</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/committee">
+    <a class="dropdown-item" href="../../about/committee">
  <span class="dropdown-text">Organising Committee</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../participation/register.html"> 
+    <a class="nav-link" href="../../participation/register.html"> 
 <span class="menu-text">Register</span></a>
   </li>  
 </ul>
@@ -184,10 +127,88 @@ window.Quarto = {
 <!-- margin-sidebar -->
 <!-- main -->
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Industry AI integration</h1>
+</div>
+
+<div>
+  <div class="description">
+    Generated summary
+  </div>
+</div>
 
 
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 1, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
 
+</header>
+
+
+<div class="talk-container">
+  <article class="talk-card">
+    
+    <!-- Header Section -->
+    <header class="talk-header">
+      <div class="talk-datetime">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512">
+          <path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 64 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 16-16-7.2-16-16V192z"></path>
+        </svg>
+        December 01, 01:20 PM
+      </div>
+      <h1 class="talk-title">Industry AI integration</h1>
+    </header>
+
+    <!-- Body Section -->
+    <div class="talk-body">
+      
+      <!-- Main Description -->
+      <section class="talk-description">
+        TBA
+      </section>
+
+      <!-- Sidebar -->
+      <div class="talk-sidebar">
+        
+        <!-- Interactive CTA -->
+
+        <a href="https://events.humanitix.com/wombat-2026-day-2-workshop" class="btn-register" target="_blank" rel="noopener">
+          Register for the workshop day
+        </a>
+
+        <!-- Speaker Profile -->
+        <div class="speaker-profile">
+          <img src="NA" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <h2 class="speaker-name">
+            Jaffie Yang         
+          </h2>
+          <p class="speaker-bio">
+            NA          
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </article>
+</div>
+<style>
+#title-block-header {
+  display: none !important;
+}
+</style>
 
 
 
@@ -743,195 +764,7 @@ window.Quarto = {
     }
   });
   </script>
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1795989600000" data-listing-file-modified-sort="1786975396079" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="757">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../program/tutorials/CN3WGS.html" class="no-external">Surviving Survival Analysis: A Hands-On Introduction with R</a>
-</h3>
-<div class="delink listing-description"><a href="../program/tutorials/CN3WGS.html" class="no-external">
-<p>Generated summary</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../program/tutorials/CN3WGS.html" class="no-external">
-<div class="metadata-value listing-time">
-09:00 AM
-</div>
-<div class="metadata-value listing-speakerlist">
-Dean Marchiori
-</div>
-<div class="metadata-value listing-room">
-Room 8.42
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1795989600000" data-listing-file-modified-sort="1786975396079" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="572">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../program/tutorials/CUWXCY.html" class="no-external">Getting Started with C++ for Faster Forecasting in R</a>
-</h3>
-<div class="delink listing-description"><a href="../program/tutorials/CUWXCY.html" class="no-external">
-<p>Generated summary</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../program/tutorials/CUWXCY.html" class="no-external">
-<div class="metadata-value listing-time">
-09:00 AM
-</div>
-<div class="metadata-value listing-speakerlist">
-Tomasz Woźniak
-</div>
-<div class="metadata-value listing-room">
-Room 8.44
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1795989600000" data-listing-file-modified-sort="1786975396080" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="529">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../program/tutorials/GH98C8.html" class="no-external">Introduction to Publishing with Quarto</a>
-</h3>
-<div class="delink listing-description"><a href="../program/tutorials/GH98C8.html" class="no-external">
-<p>Generated summary</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../program/tutorials/GH98C8.html" class="no-external">
-<div class="metadata-value listing-time">
-09:00 AM
-</div>
-<div class="metadata-value listing-speakerlist">
-Cynthia Huang
-</div>
-<div class="metadata-value listing-room">
-Room 8.53
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1795989600000" data-listing-file-modified-sort="1786975396081" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="376">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../program/tutorials/SLTKXH.html" class="no-external">Reproducibility with targets</a>
-</h3>
-<div class="delink listing-description"><a href="../program/tutorials/SLTKXH.html" class="no-external">
-<p>Generated summary</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../program/tutorials/SLTKXH.html" class="no-external">
-<div class="metadata-value listing-time">
-09:00 AM
-</div>
-<div class="metadata-value listing-speakerlist">
-Nicholas Tierney
-</div>
-<div class="metadata-value listing-room">
-Room 8.43
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1796002500000" data-listing-file-modified-sort="1786975396078" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="862">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../program/tutorials/3SLZLV.html" class="no-external">Publishing your software</a>
-</h3>
-<div class="delink listing-description"><a href="../program/tutorials/3SLZLV.html" class="no-external">
-<p>Generated summary</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../program/tutorials/3SLZLV.html" class="no-external">
-<div class="metadata-value listing-time">
-12:35 PM
-</div>
-<div class="metadata-value listing-speakerlist">
-Fonti Kar, Dianne Cook
-</div>
-<div class="metadata-value listing-room">
-Room 8.53
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1796002500000" data-listing-file-modified-sort="1786975396079" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="671">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../program/tutorials/EWFCQ8.html" class="no-external">Exploratory Time Series Analysis</a>
-</h3>
-<div class="delink listing-description"><a href="../program/tutorials/EWFCQ8.html" class="no-external">
-<p>Generated summary</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../program/tutorials/EWFCQ8.html" class="no-external">
-<div class="metadata-value listing-time">
-12:35 PM
-</div>
-<div class="metadata-value listing-speakerlist">
-Mitchell O’Hara-Wild
-</div>
-<div class="metadata-value listing-room">
-Room 8.42
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1796002500000" data-listing-file-modified-sort="1786975396080" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="531">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../program/tutorials/HZ7WBW.html" class="no-external">Modern package development with Positron + AI</a>
-</h3>
-<div class="delink listing-description"><a href="../program/tutorials/HZ7WBW.html" class="no-external">
-<p>Generated summary</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../program/tutorials/HZ7WBW.html" class="no-external">
-<div class="metadata-value listing-time">
-12:35 PM
-</div>
-<div class="metadata-value listing-speakerlist">
-Hadley Wickham
-</div>
-<div class="metadata-value listing-room">
-Room 8.44
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-listing-date-sort="1796002500000" data-listing-file-modified-sort="1786975396081" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="375">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../program/tutorials/YGAET3.html" class="no-external">Advanced Reproducibility</a>
-</h3>
-<div class="delink listing-description"><a href="../program/tutorials/YGAET3.html" class="no-external">
-<p>Generated summary</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../program/tutorials/YGAET3.html" class="no-external">
-<div class="metadata-value listing-time">
-12:35 PM
-</div>
-<div class="metadata-value listing-speakerlist">
-Michael Lydeamore
-</div>
-<div class="metadata-value listing-room">
-Room 8.43
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></div> <!-- /content -->
+</div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">

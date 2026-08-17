@@ -1,0 +1,154 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* --- Sticky Day Switcher --- */
+#day-switcher {
+  position: sticky;
+  top: 72px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  z-index: 1000;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #eaeaea;
+}
+
+.switcher-btn {
+  background: #e9ecef;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #495057;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.switcher-btn:hover {
+  background: #dee2e6;
+}
+
+.switcher-btn.active {
+  background: #fbac27;
+  color: white;
+  box-shadow: 0 4px 10px rgba(13, 110, 253, 0.3);
+}
+
+/* --- Section Headers --- */
+section {
+  padding-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+/* --- Grid Layout for Listings --- */
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+#day-2-workshop .list {
+  grid-template-columns: repeat(2, minmax(480px, 1fr));
+}
+
+/* --- Interactive Cards --- */
+.quarto-post {
+  height: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f1f5f9;
+  transition:
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column !important;
+  justify-content: space-between;
+  gap: 0 !important;
+}
+
+.quarto-post:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* --- Card Typography & Links --- */
+.listing-title {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.listing-title a {
+  text-decoration: none;
+  color: #1e293b;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+.quarto-post:hover .listing-title a {
+  color: #288dfa;
+}
+
+.quarto-post:hover .listing-time {
+  color: #288dfa;
+}
+
+/* --- Metadata Formatting --- */
+.metadata a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.metadata {
+  border-top: 1px solid #f1f5f9;
+  padding-top: 1rem;
+  margin-top: auto;
+}
+
+.metadata-value {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.metadata-value.listing-time {
+  font-weight: 700;
+}
+
+.metadata-value.listing-speakerlist {
+  font-weight: 500;
+  color: #334155;
+}
+
+/* Hide empty/no matching states */
+.d-none {
+  display: none !important;
+}
+.listing-no-matching {
+  text-align: center;
+  color: #6c757d;
+  padding: 2rem;
+}

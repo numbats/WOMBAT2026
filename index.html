@@ -2,17 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>WOMBAT 2026</title>
+<title>WOMBAT 2026 – Data Science &amp; Analytics Workshop</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -32,10 +38,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c48b4405fd0a7cfdf7e6f0b692911053.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6a83c87290f378f48947e7d6d6a5c979.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-6a83c87290f378f48947e7d6d6a5c979.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6a83c87290f378f48947e7d6d6a5c979.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -51,14 +61,15 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script type="text/javascript" src="https://conf.nectric.com.au/wombat-2025/schedule/widget/v2.en.js"></script>
 
 
 <link rel="stylesheet" href="css/hero.css">
 <link rel="stylesheet" href="css/program.css">
 <link rel="stylesheet" href="css/community.css">
-<meta property="og:title" content="WOMBAT 2026">
+<meta property="og:title" content="WOMBAT 2026 – Data Science &amp; Analytics Workshop">
 <meta property="og:description" content="The Annual Workshop Organised by the Monash Business Analytics Team in Melbourne, Australia.">
-<meta property="og:site_name" content="WOMBAT 2026">
+<meta property="og:site_name" content="WOMBAT 2026 – Data Science &amp; Analytics Workshop">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -77,6 +88,10 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./program/schedule"> 
+<span class="menu-text">Schedule</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./contact.html"> 
 <span class="menu-text">Contact</span></a>
@@ -252,7 +267,7 @@ https://conf.posit.co/2026/
 
       <!-- Toggle Trigger for Bio -->
       <button class="expand-toggle" aria-expanded="false" aria-controls="bio-details">
-        <span class="toggle-text">Read Speaker Bio</span>
+        <span class="toggle-text">Read more</span>
         <svg class="chevron-icon" viewbox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M6 9l6 6 6-6"></path></svg>
       </button>
 
@@ -284,7 +299,7 @@ https://conf.posit.co/2026/
     
     // Update accessibility attributes & text contextually
     toggleBtn.setAttribute("aria-expanded", isOpen);
-    toggleText.textContent = isOpen ? "Hide Speaker Bio" : "Read Speaker Bio";
+    toggleText.textContent = isOpen ? "Hide Bio" : "Read more";
   });
 });
 </script>
@@ -292,7 +307,6 @@ https://conf.posit.co/2026/
 <section id="program" class="level1">
 <h1>Program</h1>
 <div class="program">
-<!-- {{< include partials/program.html >}} -->
 <div class="banner">
   Program details will be announced soon!
 </div>
@@ -577,13 +591,14 @@ The main day of WOMBAT features a diverse workshop program designed to highlight
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
