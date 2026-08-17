@@ -1,0 +1,103 @@
+---
+pagetitle: 'WOMBAT 2026: In conversation: Hadley Wickham &amp; Damjan Vukcevic on Analysis
+  Workflows, hosted by Cynthia Huang'
+date: 2026-12-01 13:30:00
+time: 01:30 PM
+title: 'In conversation: Hadley Wickham &amp; Damjan Vukcevic on Analysis Workflows, hosted
+  by Cynthia Huang'
+description: Generated summary
+speaker:
+- code: N8BLXD
+  name: Cynthia Huang
+  avatar_url: https://conf.nectric.com.au/media/avatars/VCASXU_BLNvx3U.webp
+- code: NFDCVB
+  name: Hadley Wickham
+  avatar_url: https://conf.nectric.com.au/media/avatars/3ZEQF8_k3GMDrc.webp
+- code: UZXXFD
+  name: Damjan Vukcevic
+  avatar_url: .na.character
+speakerlist: Cynthia Huang, Hadley Wickham, Damjan Vukcevic
+room: Room  8.03
+format:
+  html:
+    css: ../../css/talks.css
+
+---
+
+```{=html}
+<div class="talk-container">
+  <article class="talk-card">
+    
+    <!-- Header Section -->
+    <header class="talk-header">
+      <div class="talk-datetime">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 64 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 16-16-7.2-16-16V192z"/>
+        </svg>
+        December 01, 01:30 PM
+      </div>
+      <h1 class="talk-title">In conversation: Hadley Wickham &amp; Damjan Vukcevic on Analysis Workflows, hosted by Cynthia Huang</h1>
+    </header>
+
+    <!-- Body Section -->
+    <div class="talk-body">
+      
+      <!-- Main Description -->
+      <section class="talk-description">
+        Artificial intelligence is reshaping how we think about software, data analysis, and the relationship between developers and users. In this conversation hosted by Dr. Cynthia Huang with Dr. Hadley Wickham and Assoc. Prof. Damjan Vukcevic, we explore what AI means for data-driven work, how it may change the way we build and use tools, and what it asks of us as mentors, leaders, and collaborators in data and development.
+      </section>
+
+      <!-- Sidebar -->
+      <div class="talk-sidebar">
+        
+        <!-- Interactive CTA -->
+
+        <a href="https://events.humanitix.com/wombat-2026-day-2-workshop" class="btn-register" target="_blank" rel="noopener">
+          Register for the workshop day
+        </a>
+
+        <!-- Speaker Profile -->
+        <div class="speaker-profile">
+          <img src="https://conf.nectric.com.au/media/avatars/VCASXU_BLNvx3U.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <h2 class="speaker-name">
+            Cynthia Huang         
+          </h2>
+          <p class="speaker-bio">
+            Cynthia Huang is a Post-Doctoral Research Fellow at LMU Munich. She uses Quarto extensively for research and teaching. Her research focuses on leveraging generative AI and LLMs for data preparation and data visualisation.          
+          </p>
+        </div>
+        <!-- Speaker Profile -->
+        <div class="speaker-profile">
+          <img src="https://conf.nectric.com.au/media/avatars/3ZEQF8_k3GMDrc.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <h2 class="speaker-name">
+            Hadley Wickham         
+          </h2>
+          <p class="speaker-bio">
+            Hadley is Chief Scientist at Posit PBC, winner of the 2019 COPSS award, and a member of the R Foundation. He builds tools (both computational and cognitive) to make data science easier, faster, and more fun. His work includes packages for data science (like the tidyverse, which includes ggplot2, dplyr, and tidyr) and principled software development (e.g. roxygen2, testthat, and pkgdown). He is also a writer, educator, and speaker promoting the use of R for data science. Learn more on his website, .          
+          </p>
+        </div>
+        <!-- Speaker Profile -->
+        <div class="speaker-profile">
+          <img src="NA" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <h2 class="speaker-name">
+            Damjan Vukcevic         
+          </h2>
+          <p class="speaker-bio">
+            TBC          
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </article>
+</div>
+```
+
+```{=html}
+<style>
+#title-block-header {
+  display: none !important;
+}
+</style>
+```

@@ -1,0 +1,182 @@
+/* Base & Reset */
+.talk-container {
+  color: #334155;
+  /* background-color: #f8fafc; */
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+/* Main Card Layout */
+.talk-card {
+  max-width: 1080px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Header Section */
+.talk-header {
+  background: linear-gradient(135deg, #0f345c 0%, #288dfa 100%);
+  padding: 3rem 4rem;
+  color: #ffffff;
+}
+
+.talk-datetime {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  backdrop-filter: blur(4px);
+  margin-bottom: 1.5rem;
+}
+
+.talk-datetime svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.talk-title {
+  margin: 0;
+  font-size: 2.75rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+/* Body Section */
+.talk-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  padding: 3rem 4rem;
+}
+
+/* Description */
+.talk-description p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  color: #475569;
+}
+
+.talk-description p:last-child {
+  margin-bottom: 0;
+}
+
+.talk-description code {
+  background: #f1f5f9;
+  color: #4f46e5;
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+/* Sidebar (Speaker & CTA) */
+.talk-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Speaker Profile */
+.speaker-profile {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.speaker-profile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+.speaker-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto 1.5rem;
+}
+
+.speaker-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.5rem;
+}
+
+.speaker-pronouns {
+  font-weight: 400;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.speaker-bio {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #64748b;
+  text-align: left;
+  margin: 0;
+}
+
+/* CTA Button */
+.btn-register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fbac27;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 1.25rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.2);
+}
+
+.btn-register:hover {
+  background: #d69422;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .talk-body {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .talk-sidebar {
+    grid-row: 1; /* Move speaker & CTA above text on mobile */
+  }
+}
+
+@media (max-width: 600px) {
+  .talk-header,
+  .talk-body {
+    padding: 2rem;
+  }
+  .talk-title {
+    font-size: 2rem;
+  }
+}

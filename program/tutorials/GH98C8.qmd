@@ -1,0 +1,82 @@
+---
+pagetitle: 'WOMBAT 2026: Introduction to Publishing with Quarto'
+date: 2026-11-30 09:00:00
+time: 09:00 AM
+title: Introduction to Publishing with Quarto
+description: Generated summary
+speaker:
+- code: N8BLXD
+  name: Cynthia Huang
+  avatar_url: https://conf.nectric.com.au/media/avatars/VCASXU_BLNvx3U.webp
+speakerlist: Cynthia Huang
+room: Room  8.53
+format:
+  html:
+    css: ../../css/talks.css
+
+---
+
+```{=html}
+<div class="talk-container">
+  <article class="talk-card">
+    
+    <!-- Header Section -->
+    <header class="talk-header">
+      <div class="talk-datetime">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 64 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 16-16-7.2-16-16V192z"/>
+        </svg>
+        November 30, 09:00 AM
+      </div>
+      <h1 class="talk-title">Introduction to Publishing with Quarto</h1>
+    </header>
+
+    <!-- Body Section -->
+    <div class="talk-body">
+      
+      <!-- Main Description -->
+      <section class="talk-description">
+        This course provides an introduction to scientific and technical publishing using Quarto. We will cover the basic syntax of Quarto documents, including R/python code chunks, selected formats (pdf, presentations and websites), customization options. Additionally, we will discuss ways to leverage agentic assistance (e.g. via Claude Code) in the creation and editing of Quarto documents.
+
+By the end of the workshop participants will:
+
+- Understand the basics of the Quarto publishing framework and related tools including pandoc, knitr, jupyter, typst, LaTex and markdown
+- Render pdf and html outputs using Quarto with format templates (e.g. Typst, LaTex and revealjs)
+- Set up and render a Quarto website with multiple webpages, navigation bar and search
+- Understand how to access, install and personalize AI skills for Quarto.
+      </section>
+
+      <!-- Sidebar -->
+      <div class="talk-sidebar">
+        
+        <!-- Interactive CTA -->
+        <a href="https://events.humanitix.com/wombat-2026-day-1-tutorials" class="btn-register" target="_blank" rel="noopener">
+          Register for this tutorial
+        </a>
+
+
+        <!-- Speaker Profile -->
+        <div class="speaker-profile">
+          <img src="https://conf.nectric.com.au/media/avatars/VCASXU_BLNvx3U.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <h2 class="speaker-name">
+            Cynthia Huang         
+          </h2>
+          <p class="speaker-bio">
+            Cynthia Huang is a Post-Doctoral Research Fellow at LMU Munich. She uses Quarto extensively for research and teaching. Her research focuses on leveraging generative AI and LLMs for data preparation and data visualisation.          
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </article>
+</div>
+```
+
+```{=html}
+<style>
+#title-block-header {
+  display: none !important;
+}
+</style>
+```

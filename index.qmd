@@ -3,22 +3,15 @@ title: ""
 pagetitle: "WOMBAT 2026 – Data Science & Analytics Workshop"
 format:
   html:
+    include-in-header:
+      - text: |
+          <script type="text/javascript" src="https://conf.nectric.com.au/wombat-2025/schedule/widget/v2.en.js"></script>
     css: [css/hero.css, css/program.css, css/community.css]
     theme:
       light:
         - css/keynote.scss
         - css/contact.scss
         - css/register.scss
-        # listing:
-        # - id: keynote
-        # template: program/speakers/keynote.ejs
-        # contents: program/speakers/keynote.yml
-        # - id: schedule_workshops
-        #   template: program/schedule/schedule.ejs
-        #   contents: program/schedule/workshops.yml
-        # - id: schedule_conference
-        #   template: program/schedule/schedule.ejs
-        #   contents: program/schedule/conference.yml
 ---
 
 <!-- 
@@ -168,7 +161,7 @@ science.*]{.hero-desc}
 
       <!-- Toggle Trigger for Bio -->
       <button class="expand-toggle" aria-expanded="false" aria-controls="bio-details">
-        <span class="toggle-text">Read Speaker Bio</span>
+        <span class="toggle-text">Read more</span>
         <svg class="chevron-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M6 9l6 6 6-6"/></svg>
       </button>
 
@@ -200,7 +193,7 @@ science.*]{.hero-desc}
     
     // Update accessibility attributes & text contextually
     toggleBtn.setAttribute("aria-expanded", isOpen);
-    toggleText.textContent = isOpen ? "Hide Speaker Bio" : "Read Speaker Bio";
+    toggleText.textContent = isOpen ? "Hide Bio" : "Read more";
   });
 });
 </script>
@@ -209,7 +202,6 @@ science.*]{.hero-desc}
 # Program
 
 ::: {.program}
-<!-- {{< include partials/program.html >}} -->
 ```{=html}
 <div class="banner">
   Program details will be announced soon!
@@ -296,4 +288,3 @@ The WOMBAT tutorials offer practical, hands-on training in key topics for data a
 
 The main day of WOMBAT features a diverse workshop program designed to highlight the latest data analysis tools and techniques. The workshop includes a keynote presentation, followed by invited talks from leading data analysts from academia, government, and industry. More details about the workshop will be shared nearer to the event.
  -->
-

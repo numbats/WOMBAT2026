@@ -38,8 +38,8 @@ website:
     collapse-below: sm
     toggle-position: right
     right:
-      # - text: Schedule
-      #   href: program/schedule
+      - text: Schedule
+        href: program/schedule
       # - text: Day 1 - Tutorials
       #   href: program/tutorials.qmd
       # - text: Day 2 - Workshop

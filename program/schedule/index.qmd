@@ -1,599 +1,92 @@
 ---
 pagetitle: "Schedule"
 listing:
-  - id: tutorials 
-    contents: 
+  - id: tutorials
+    contents:
       - "../tutorials/*.qmd"
     type: default
-    sort: "date"
+    sort: ["date", "room"]
     fields: [title, time, speakerlist, room]
   - id: workshops
-    contents: 
+    contents:
       - "../workshops/*.qmd"
     type: default
     sort: "date"
     fields: [title, time, speakerlist, room]
+format:
+  html:
+    css: [../../css/schedule.css]
 ---
 
-<!-- The schedule will be announced nearer to the event. -->
-
 ```{=html}
-<style>
-/* Layout Container */
-.wombat-schedule-container {
-  max-width: 900px;
-  margin: 2rem auto;
-  color: #2c3e50;
-}
-
-/* Day Switcher Tabs */
-.schedule-tabs {
-  display: inline-flex;
-  background: #f1f3f5;
-  padding: 6px;
-  border-radius: 50px;
-  gap: 8px;
-}
-
-.tab-btn {
-  background: transparent;
-  border: none;
-  padding: 10px 24px;
-  border-radius: 40px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: all 0.25s ease;
-  color: #495057;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.tab-btn .day-date {
-  font-size: 0.75rem;
-  font-weight: 400;
-  opacity: 0.8;
-}
-
-.tab-btn.active {
-  background: #ffffff;
-  color: #0f4c81;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
-/* Panes */
-.schedule-pane {
-  display: none;
-  animation: fadeIn 0.4s ease-in-out;
-}
-
-.schedule-pane.active {
-  display: block;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(6px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Timeline Styling */
-.timeline {
-  position: relative;
-  padding-left: 90px;
-  margin-top: 2rem;
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 75px;
-  top: 10px;
-  bottom: 10px;
-  width: 2px;
-  background: #e9ecef;
-}
-
-.timeline-item {
-  position: relative;
-  margin-bottom: 1.5rem;
-}
-
-/* Time Badge Column */
-.time-badge {
-  position: absolute;
-  left: -90px;
-  width: 70px;
-  text-align: right;
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: #6c757d;
-  top: 18px;
-}
-
-/* Session Card */
-.session-card {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  padding: 1.25rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.01);
-}
-
-.session-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
-  border-color: #cbd5e1;
-}
-
-.timeline-item.cancelled .session-card {
-  background: #f8fafc;
-  border-style: dashed;
-  opacity: 0.8;
-}
-
-/* Content Details */
-.session-info {
-  flex: 1;
-}
-
-.meta-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 6px;
-}
-
-.badge {
-  font-size: 0.75rem;
-  padding: 3px 8px;
-  border-radius: 6px;
-  font-weight: 500;
-}
-
-.badge.room {
-  background: #e0f2fe;
-  color: #0369a1;
-}
-
-.badge.speaker {
-  background: #f1f5f9;
-  color: #475569;
-}
-
-.session-title {
-  font-size: 1.05rem;
-  font-weight: 600;
-  margin: 4px 0 8px 0;
-  line-height: 1.4;
-}
-
-.session-title a {
-  color: #1e293b;
-  text-decoration: none;
-}
-
-.session-title a:hover {
-  color: #0284c7;
-  text-decoration: underline;
-}
-
-.session-desc {
-  font-size: 0.9rem;
-  color: #64748b;
-  margin: 0;
-  line-height: 1.5;
-}
-
-/* Action button (Slides link) */
-.session-action {
-  margin-left: 1rem;
-  display: flex;
-  align-items: center;
-}
-
-.btn-slide {
-  font-size: 0.8rem;
-  padding: 6px 12px;
-  background: #f8fafc;
-  border: 1px solid #cbd5e1;
-  color: #334155;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.2s;
-  white-space: nowrap;
-}
-
-.btn-slide:hover {
-  background: #0284c7;
-  color: white;
-  border-color: #0284c7;
-}
-
-/* Responsive breakpoint for small screens */
-@media (max-width: 768px) {
-  .timeline {
-    padding-left: 0;
-  }
-  .timeline::before {
-    display: none;
-  }
-  .time-badge {
-    position: static;
-    width: auto;
-    text-align: left;
-    margin-bottom: 6px;
-  }
-  .session-card {
-    flex-direction: column;
-  }
-  .session-action {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-}
-</style>
-
-<script>
-function switchDay(evt, dayId) {
-  // Hide all panes
-  const panes = document.querySelectorAll('.schedule-pane');
-  panes.forEach(pane => pane.classList.remove('active'));
-
-  // Remove active state from all buttons
-  const buttons = document.querySelectorAll('.tab-btn');
-  buttons.forEach(btn => btn.classList.remove('active'));
-
-  // Show target pane and highlight button
-  document.getElementById(dayId).classList.add('active');
-  evt.currentTarget.classList.add('active');
-}
-</script>
-
-<!-- Conference Schedule Widget -->
-<div class="wombat-schedule-container">
-  <!-- Section Header -->
-  <div class="schedule-header text-center mb-5">
-    <span class="badge-pill">WOMBAT 2026</span>
-    <h2 class="fw-bold mt-2">Conference Program</h2>
-    <p class="text-muted">Schedules will be presented here soon.</p>
-    
-    <!-- Day Switcher Tabs -->
-    <div class="schedule-tabs mt-4" role="tablist">
-      <button class="tab-btn active" onclick="switchDay(event, 'day-1')">
-        <span class="day-label">Day 1</span>
-        <span class="day-date">Tutorials & Workshops</span>
-      </button>
-      <button class="tab-btn" onclick="switchDay(event, 'day-2')">
-        <span class="day-label">Day 2</span>
-        <span class="day-date">Keynotes & Talks</span>
-      </button>
-    </div>
-  </div>
-
-  <!-- Schedule Content Wrapper -->
-  <div class="schedule-content">
-    
-    <!-- ================= DAY 1 ================= -->
-    <div id="day-1" class="schedule-pane active">
-      <div class="timeline">
-      
-        <!-- Item 0: Intro to Regression -->
-        <div class="timeline-item">
-          <div class="time-badge">09:00 AM</div>
-          <div class="session-card">
-            <div class="session-info">
-              <div class="meta-tags">
-                <span class="badge room">Room 8.53</span>
-                <span class="badge speaker">Dean Marchiori</span>
-              </div>
-              <h4 class="session-title"><a href="https://wombat2025.numbat.space/program/tutorials/9X7BMV.html">Introduction to Regression Analysis in R</a></h4>
-              <p class="session-desc">Covers linear and generalized linear regression models, model validation, diagnostics, and Poisson regression with hands-on exercises in R.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 1: Visualising Uncertainty -->
-        <div class="timeline-item">
-          <div class="time-badge">09:00 AM</div>
-          <div class="session-card">
-            <div class="session-info">
-              <div class="meta-tags">
-                <span class="badge room">Room 8.43</span>
-                <span class="badge speaker">Dianne Cook, Harriet Mason</span>
-              </div>
-              <h4 class="session-title"><a href="https://wombat2025.numbat.space/program/tutorials/LDTUU8.html">Visualising Uncertainty</a></h4>
-              <p class="session-desc">Introduces the concept of uncertainty, general visual techniques, and creative methods for representing uncertainty in spatial data using R.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 2: Intro to R packages -->
-        <div class="timeline-item">
-          <div class="time-badge">09:00 AM</div>
-          <div class="session-card">
-            <div class="session-info">
-              <div class="meta-tags">
-                <span class="badge room">Room 8.44</span>
-                <span class="badge speaker">Nicholas Tierney</span>
-              </div>
-              <h4 class="session-title"><a href="https://wombat2025.numbat.space/program/tutorials/PLVPUV.html">Introduction to R packages</a></h4>
-              <p class="session-desc">Turn standalone code into shareable packages. Learn about usethis, devtools, roxygen2, testing with testthat, and Git/GitHub integration.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 3: Tidy time series -->
-        <div class="timeline-item">
-          <div class="time-badge">09:00 AM</div>
-          <div class="session-card">
-            <div class="session-info">
-              <div class="meta-tags">
-                <span class="badge room">Room 8.42</span>
-                <span class="badge speaker">Mitchell O’Hara-Wild</span>
-              </div>
-              <h4 class="session-title"><a href="https://wombat2025.numbat.space/program/tutorials/VDYBYE.html">Tidy time series analysis and forecasting</a></h4>
-              <p class="session-desc">Covers tidyverse time series manipulation, ggplot2 visualising patterns, and applying statistical forecasting models with fable.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 4: Cancelled Session -->
-        <div class="timeline-item cancelled">
-          <div class="time-badge">01:30 PM</div>
-          <div class="session-card">
-            <div class="session-info">
-              <div class="meta-tags">
-                <span class="badge room">Room 8.53</span>
-                <span class="badge speaker">Jessica Leung</span>
-                <span class="badge bg-danger text-white">CANCELLED</span>
-              </div>
-              <h4 class="session-title"><a href="https://wombat2025.numbat.space/program/tutorials/C3XGNY.html">Efficiency Analysis in Python: SFA and DEA</a></h4>
-              <p class="session-desc">This workshop has been cancelled.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 5: C++ for R -->
-        <div class="timeline-item">
-          <div class="time-badge">01:30 PM</div>
-          <div class="session-card">
-            <div class="session-info">
-              <div class="meta-tags">
-                <span class="badge room">Room 8.44</span>
-                <span class="badge speaker">Tomasz Woźniak</span>
-              </div>
-              <h4 class="session-title"><a href="https://wombat2025.numbat.space/program/tutorials/KCZEMB.html">Getting Started with C++ for Faster Statistical Modelling in R</a></h4>
-              <p class="session-desc">Integrate fast C++ code seamlessly with R for linear algebra, maximum likelihood estimation, and Gibbs sampling exercises.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 6: Quarto -->
-        <div class="timeline-item">
-          <div class="time-badge">01:30 PM</div>
-          <div class="session-card">
-            <div class="session-info">
-              <div class="meta-tags">
-                <span class="badge room">Room 8.42</span>
-                <span class="badge speaker">Jayani Lakshika, Krisanat Anukarnsakulchularp</span>
-              </div>
-              <h4 class="session-title"><a href="https://wombat2025.numbat.space/program/tutorials/Q3BPJZ.html">Reproducible Reporting and Research with Quarto</a></h4>
-              <p class="session-desc">Build reproducible academic documents, code-integrated slide decks, bibliographies, and outputs in HTML and PDF formats.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 7: Building Figures -->
-        <div class="timeline-item">
-          <div class="time-badge">01:30 PM</div>
-          <div class="session-card">
-            <div class="session-info">
-              <div class="meta-tags">
-                <span class="badge room">Room 8.43</span>
-                <span class="badge speaker">Jess Hopf</span>
-              </div>
-              <h4 class="session-title"><a href="https://wombat2025.numbat.space/program/tutorials/XY8EW8.html">Building Better Figures: A Scientific Graphic Design Workshop</a></h4>
-              <p class="session-desc">Covers core graphic design principles, cognitive load, visual hierarchies, and a practical process for building better scientific figures.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- ================= DAY 2 ================= -->
-    <div id="day-2" class="schedule-pane">
-      <div class="timeline">
-      
-        <!-- Day 2 - Item 0 -->
-        <div class="timeline-item">
-          <div class="time-badge">08:45 AM</div>
-          <div class="session-card">
-            <div class="session-info">
-              <div class="meta-tags"><span class="badge room">Room 8.03</span><span class="badge speaker">Mitchell O’Hara-Wild</span></div>
-              <h4 class="session-title"><a href="https://wombat2025.numbat.space/program/workshops/JDA7Q9.html">Welcome &amp; Housekeeping</a></h4>
-              <p class="session-desc">An overview of the day and safety information.</p>
-            </div>
-            <div class="session-action">
-              <a href="https://slides.mitchelloharawild.com/wombat2025-welcome" class="btn-slide">Slides</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Day 2 - Item 1 -->
-        <div class="timeline-item">
-          <div class="time-badge">09:00 AM</div>
-          <div class="session-card">
-            <div class="session-info">
-              <div class="meta-tags"><span class="badge room">Room 8.03</span><span class="badge speaker">Nicola Rennie</span></div>
-              <h4 class="session-title"><a href="https://wombat2025.numbat.space/program/workshops/MBAGKH.html">Designing for decision-making: Effective data visualisations</a></h4>
-              <p class="session-desc">Covers reasons for visualising data, practical chart guidelines, and examples of good vs. poor visualisations.</p>
-            </div>
-            <div class="session-action">
-              <a href="https://wombat2025.numbat.space/slides/Nicola_Rennie_slides.pdf" class="btn-slide">Slides</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Day 2 - Item 2 -->
-        <div class="timeline-item">
-          <div class="time-badge">10:30 AM</div>
-          <div class="session-card">
-            <div class="session-info">
-              <div class="meta-tags"><span class="badge room">Room 8.03</span><span class="badge speaker">James Goldie</span></div>
-              <h4 class="session-title"><a href="https://wombat2025.numbat.space/program/workshops/AN9GFB.html">Closing the scrollytelling gap with Closeread</a></h4>
-              <p class="session-desc">Explores motivations behind Closeread design, lessons from the Posit contest, and upcoming R/Python integrations.</p>
-            </div>
-            <div class="session-action">
-              <a href="https://wombat2025.numbat.space/slides/closeread-talk.pdf" class="btn-slide">Slides</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Day 2 - Item 3 -->
-        <div class="timeline-item">
-          <div class="time-badge">11:00 AM</div>
-          <div class="session-card">
-            <div class="session-info">
-              <div class="meta-tags"><span class="badge room">Room 8.03</span><span class="badge speaker">Jenny Richmond</span></div>
-              <h4 class="session-title"><a href="https://wombat2025.numbat.space/program/workshops/79GEP8.html">Rethinking data science education in the age of genAI</a></h4>
-              <p class="session-desc">Evaluates "learning to learn", reframing assessments, and fostering self-regulated learning skills alongside GenAI.</p>
-            </div>
-            <div class="session-action">
-              <a href="https://jenrichmond.github.io/wombat/#/title-slide" class="btn-slide">Slides</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Day 2 - Item 4 -->
-        <div class="timeline-item">
-          <div class="time-badge">11:30 AM</div>
-          <div class="session-card">
-            <div class="session-info">
-              <div class="meta-tags"><span class="badge room">Room 8.03</span><span class="badge speaker">Michael Lydeamore</span></div>
-              <h4 class="session-title"><a href="https://wombat2025.numbat.space/program/workshops/L8QMTF.html">When laziness leads to innovation</a></h4>
-              <p class="session-desc">Showcases tools like teleport, Comment Viewer, Unilur, and gamified ggplot2 tools born out of efficient problem-solving.</p>
-            </div>
-            <div class="session-action">
-              <a href="https://slides.michaellydeamore.com/talk-procrastination/" class="btn-slide">Slides</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Day 2 - Item 5 -->
-        <div class="timeline-item">
-          <div class="time-badge">01:00 PM</div>
-          <div class="session-card">
-            <div class="session-info">
-              <div class="meta-tags"><span class="badge room">Room 8.03</span><span class="badge speaker">Floyd Everest</span></div>
-              <h4 class="session-title"><a href="https://wombat2025.numbat.space/program/workshops/SAPKKB.html">Tidy analysis of preferential votes with prefio</a></h4>
-              <p class="session-desc">Introduces a tidy method for managing preferential datasets and ranking manipulations via the prefio R package.</p>
-            </div>
-            <div class="session-action">
-              <a href="https://fleverest.github.io/prefio-demo-WOMBAT-2025/" class="btn-slide">Slides</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Day 2 - Item 6 -->
-        <div class="timeline-item">
-          <div class="time-badge">01:20 PM</div>
-          <div class="session-card">
-            <div class="session-info">
-              <div class="meta-tags"><span class="badge room">Room 8.03</span><span class="badge speaker">Harriet Mason</span></div>
-              <h4 class="session-title"><a href="https://wombat2025.numbat.space/program/workshops/YXKDVV.html">Visualising Uncertainty with ggdibbler</a></h4>
-              <p class="session-desc">Introduces a new ggplot extension to prevent false statistical conclusions when visualising uncertainty.</p>
-            </div>
-            <div class="session-action">
-              <a href="https://harriet-mason.github.io/talk-wombat-2025/#/title-slide" class="btn-slide">Slides</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Day 2 - Item 7 -->
-        <div class="timeline-item">
-          <div class="time-badge">01:40 PM</div>
-          <div class="session-card">
-            <div class="session-info">
-              <div class="meta-tags"><span class="badge room">Room 8.03</span><span class="badge speaker">Nicholas Tierney, Cynthia Huang, Rob Hyndman</span></div>
-              <h4 class="session-title"><a href="https://wombat2025.numbat.space/program/workshops/G9CLV3.html">In conversation: Rob Hyndman &amp; Nick Tierney on Research Software</a></h4>
-              <p class="session-desc">Explores open-source software, research software engineering, reproducibility research, and statistical package design.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Day 2 - Item 8 -->
-        <div class="timeline-item">
-          <div class="time-badge">03:00 PM</div>
-          <div class="session-card">
-            <div class="session-info">
-              <div class="meta-tags"><span class="badge room">Room 8.03</span><span class="badge speaker">Saras Windecker</span></div>
-              <h4 class="session-title"><a href="https://wombat2025.numbat.space/program/workshops/YTKMW3.html">Piloting peer code review in a research consortium</a></h4>
-              <p class="session-desc">Covers challenges in reviewing research code and evaluates a peer code review pilot within the ACEFA community.</p>
-            </div>
-            <div class="session-action">
-              <a href="https://wombat2025.numbat.space/slides/Windecker_presentation.pdf" class="btn-slide">Slides</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Day 2 - Item 9 -->
-        <div class="timeline-item">
-          <div class="time-badge">03:30 PM</div>
-          <div class="session-card">
-            <div class="session-info">
-              <div class="meta-tags"><span class="badge room">Room 8.03</span><span class="badge speaker">Tyler Reysenbach</span></div>
-              <h4 class="session-title"><a href="https://wombat2025.numbat.space/program/workshops/ZHFDRZ.html">Building a new data team – balancing quick wins &amp; long term investments</a></h4>
-              <p class="session-desc">Navigating stakeholder expectations, building team credibility, and developing robust infrastructure within government.</p>
-            </div>
-            <div class="session-action">
-              <a href="https://wombat2025.numbat.space/slides/Tyler_presentation.pdf" class="btn-slide">Slides</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Day 2 - Item 10 -->
-        <div class="timeline-item">
-          <div class="time-badge">04:00 PM</div>
-          <div class="session-card">
-            <div class="session-info">
-              <div class="meta-tags"><span class="badge room">Room 8.03</span><span class="badge speaker">Ben Harrap</span></div>
-              <h4 class="session-title"><a href="https://wombat2025.numbat.space/program/workshops/W3K3VM.html">Designing data infrastructure where people come first</a></h4>
-              <p class="session-desc">Insights from re-developing the data pipeline for the Mayi Kuwayu Study on Aboriginal and Torres Strait Islander wellbeing.</p>
-            </div>
-            <div class="session-action">
-              <a href="https://benharrap.github.io/workshops/2025-09-30-WOMBAT/slides.html" class="btn-slide">Slides</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Day 2 - Item 11 -->
-        <div class="timeline-item">
-          <div class="time-badge">04:30 PM</div>
-          <div class="session-card">
-            <div class="session-info">
-              <div class="meta-tags"><span class="badge room">Room 8.03</span><span class="badge speaker">Cynthia Huang</span></div>
-              <h4 class="session-title"><a href="https://wombat2025.numbat.space/program/workshops/B8MJBL.html">Closing discussion</a></h4>
-              <p class="session-desc">A summary of the day and local data analysis space overview.</p>
-            </div>
-            <div class="session-action">
-              <a href="https://slides.mitchelloharawild.com/wombat2025-welcome/#/section-17" class="btn-slide">Slides</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-</div>
+<!-- Sticky Day Switcher -->
+  <nav id="day-switcher">
+    <button class="switcher-btn active" data-target="day-1-tutorials">Day 1 Tutorials</button>
+    <button class="switcher-btn" data-target="day-2-workshop">Day 2 Workshop</button>
+  </nav>
 ```
 
-<div>
+```{=html}
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+      const buttons = document.querySelectorAll('.switcher-btn');
+      const sections = document.querySelectorAll('section');
 
-</div>
+      // 1. Smooth scroll to section when button is clicked
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const targetId = btn.getAttribute('data-target');
+          const targetSection = document.getElementById(targetId);
+          
+          if (targetSection) {
+            // Calculate position accounting for the sticky header (approx 80px)
+            const yOffset = -90; 
+            const y = targetSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            
+            window.scrollTo({ top: y, behavior: 'smooth' });
+          }
+        });
+      });
+
+      // 2. Intersection Observer to highlight active section based on scroll position
+      const observerOptions = {
+        root: null,
+        // Adjust bounds so that section registers as 'active' when it reaches upper middle of screen
+        rootMargin: '-20% 0px -75% 0px', 
+        threshold: 0
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Remove active class from all
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to corresponding button
+            const activeBtn = document.querySelector(`.switcher-btn[data-target="${entry.target.id}"]`);
+            if (activeBtn) {
+              activeBtn.classList.add('active');
+            }
+          }
+        });
+      }, observerOptions);
+
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+    });
+</script>
+```
+
+<!-- The schedule will be announced nearer to the event. -->
+::: {.container}
+## Day 1 tutorials
+
+::::: {#tutorials}
+:::::
+
+## Day 2 workshop
+
+::::: {#workshops}
+:::::
+:::

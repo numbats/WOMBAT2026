@@ -1,0 +1,77 @@
+---
+pagetitle: 'WOMBAT 2026: Getting Started with C++ for Faster Forecasting in R'
+date: 2026-11-30 09:00:00
+time: 09:00 AM
+title: Getting Started with C++ for Faster Forecasting in R
+description: Generated summary
+speaker:
+- code: LFYJLV
+  name: Tomasz Woźniak
+  avatar_url: https://conf.nectric.com.au/media/avatars/Z7EZLP_RmpJtax.webp
+speakerlist: Tomasz Woźniak
+room: Room  8.44
+format:
+  html:
+    css: ../../css/talks.css
+
+---
+
+```{=html}
+<div class="talk-container">
+  <article class="talk-card">
+    
+    <!-- Header Section -->
+    <header class="talk-header">
+      <div class="talk-datetime">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 64 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 16-16-7.2-16-16V192z"/>
+        </svg>
+        November 30, 09:00 AM
+      </div>
+      <h1 class="talk-title">Getting Started with C++ for Faster Forecasting in R</h1>
+    </header>
+
+    <!-- Body Section -->
+    <div class="talk-body">
+      
+      <!-- Main Description -->
+      <section class="talk-description">
+        Code written in C++ runs significantly faster than code written in R, which provides the basis for many leading R packages. This design enables users to leverage the best of both worlds: the computational speed delivered by algorithms written in C++ and the convenience of data analysis in R. Fortunately, recent developments have simplified programming in C++ for R applications by automating many processes.
+
+In this session, Tomasz will guide attendees through the basics of this approach, working in RStudio, ensuring object compatibility, using basic algorithmic structures, functional programming, linear algebra, and extending R packages with C++ code. A sequence of hands-on exercises with applications to forecasting supports all this.
+      </section>
+
+      <!-- Sidebar -->
+      <div class="talk-sidebar">
+        
+        <!-- Interactive CTA -->
+        <a href="https://events.humanitix.com/wombat-2026-day-1-tutorials" class="btn-register" target="_blank" rel="noopener">
+          Register for this tutorial
+        </a>
+
+
+        <!-- Speaker Profile -->
+        <div class="speaker-profile">
+          <img src="https://conf.nectric.com.au/media/avatars/Z7EZLP_RmpJtax.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <h2 class="speaker-name">
+            Tomasz Woźniak         
+          </h2>
+          <p class="speaker-bio">
+            Tomasz Woźniak is a Bayesian econometrician developing new econometric methods for applied macroeconomic research. He has been a specialised R user for eighteen years and has recently joined The R Journal as an Associate Editor. He is the author of several R packages, available at https://bsvars.org/, that combine blazingly fast algorithms written in C++ with the convenience of data analysis in R. He works as a senior lecturer at the University of Melbourne, where he has an extensive research, teaching, and engagement portfolio.          
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </article>
+</div>
+```
+
+```{=html}
+<style>
+#title-block-header {
+  display: none !important;
+}
+</style>
+```

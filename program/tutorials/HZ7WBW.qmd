@@ -1,0 +1,75 @@
+---
+pagetitle: 'WOMBAT 2026: Modern package development with Positron + AI'
+date: 2026-11-30 12:35:00
+time: 12:35 PM
+title: Modern package development with Positron + AI
+description: Generated summary
+speaker:
+- code: NFDCVB
+  name: Hadley Wickham
+  avatar_url: https://conf.nectric.com.au/media/avatars/3ZEQF8_k3GMDrc.webp
+speakerlist: Hadley Wickham
+room: Room  8.44
+format:
+  html:
+    css: ../../css/talks.css
+
+---
+
+```{=html}
+<div class="talk-container">
+  <article class="talk-card">
+    
+    <!-- Header Section -->
+    <header class="talk-header">
+      <div class="talk-datetime">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 64 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 16-16-7.2-16-16V192z"/>
+        </svg>
+        November 30, 12:35 PM
+      </div>
+      <h1 class="talk-title">Modern package development with Positron + AI</h1>
+    </header>
+
+    <!-- Body Section -->
+    <div class="talk-body">
+      
+      <!-- Main Description -->
+      <section class="talk-description">
+        In this workshop, I'll give an update on the package development tooling that I use today. I'll show you how I use Positron with Posit Assistant (and Claude code and codex) to maintain and develop new packages. AI is both an amplifier and enabler of software engineering best practices, so I'll focus on how I use unit testing, test coverage, and refactoring to produce reliable, high-quality software than ever before.
+      </section>
+
+      <!-- Sidebar -->
+      <div class="talk-sidebar">
+        
+        <!-- Interactive CTA -->
+        <a href="https://events.humanitix.com/wombat-2026-day-1-tutorials" class="btn-register" target="_blank" rel="noopener">
+          Register for this tutorial
+        </a>
+
+
+        <!-- Speaker Profile -->
+        <div class="speaker-profile">
+          <img src="https://conf.nectric.com.au/media/avatars/3ZEQF8_k3GMDrc.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <h2 class="speaker-name">
+            Hadley Wickham         
+          </h2>
+          <p class="speaker-bio">
+            Hadley is Chief Scientist at Posit PBC, winner of the 2019 COPSS award, and a member of the R Foundation. He builds tools (both computational and cognitive) to make data science easier, faster, and more fun. His work includes packages for data science (like the tidyverse, which includes ggplot2, dplyr, and tidyr) and principled software development (e.g. roxygen2, testthat, and pkgdown). He is also a writer, educator, and speaker promoting the use of R for data science. Learn more on his website, .          
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </article>
+</div>
+```
+
+```{=html}
+<style>
+#title-block-header {
+  display: none !important;
+}
+</style>
+```

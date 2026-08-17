@@ -1,0 +1,77 @@
+---
+pagetitle: 'WOMBAT 2026: Spotting the weird ones'
+date: 2026-12-01 09:00:00
+time: 09:00 AM
+title: Spotting the weird ones
+description: Generated summary
+speaker:
+- code: GVZWMX
+  name: Rob Hyndman
+  avatar_url: https://conf.nectric.com.au/media/avatars/9RABY7_45oaFxq.webp
+speakerlist: Rob Hyndman
+room: Room  8.03
+format:
+  html:
+    css: ../../css/talks.css
+
+---
+
+```{=html}
+<div class="talk-container">
+  <article class="talk-card">
+    
+    <!-- Header Section -->
+    <header class="talk-header">
+      <div class="talk-datetime">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 64 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 16-16-7.2-16-16V192z"/>
+        </svg>
+        December 01, 09:00 AM
+      </div>
+      <h1 class="talk-title">Spotting the weird ones</h1>
+    </header>
+
+    <!-- Body Section -->
+    <div class="talk-body">
+      
+      <!-- Main Description -->
+      <section class="talk-description">
+        Data analysis is about finding the stories hidden in the mass of information that make up a data set. Usually we are interested in understanding the major patterns and the relationships that hold true for most of the data. But sometimes we need to look at the weird observations, the mavericks, the ones that don’t follow the crowd and behave differently. These observations are called ‘anomalies’. Many anomaly detection methods have been developed, but they are often based on ad hoc rules and hidden assumptions, and can lead to misleading conclusions.
+
+Instead, I will describe a principled statistical approach to identifying anomalies in diverse data sets, from simple numerical data to complex high-dimensional data objects. The ideas will be illustrated using the [{weird}](https://pkg.robjhyndman.com/weird/) package for R applied to several data analysis problems, including spotting over-priced wines, identifying errors in the records of the Old Faithful Geyser, and uncovering forgotten epidemics in 19th century France.
+      </section>
+
+      <!-- Sidebar -->
+      <div class="talk-sidebar">
+        
+        <!-- Interactive CTA -->
+
+        <a href="https://events.humanitix.com/wombat-2026-day-2-workshop" class="btn-register" target="_blank" rel="noopener">
+          Register for the workshop day
+        </a>
+
+        <!-- Speaker Profile -->
+        <div class="speaker-profile">
+          <img src="https://conf.nectric.com.au/media/avatars/9RABY7_45oaFxq.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <h2 class="speaker-name">
+            Rob Hyndman         
+          </h2>
+          <p class="speaker-bio">
+            **Rob J Hyndman** FAA FASSA holds the position of Vice-Chancellor's Distinguished Professor of Statistics in the [Department of Econometrics and Business Statistics](https://monash.edu/business/ebs) at [Monash University](https://www.monash.edu), and is an elected Fellow of both the [Australian Academy of Science](https://www.science.org.au/profile/rob-hyndman) and the [Academy of Social Sciences in Australia](https://socialsciences.org.au/academy-fellow/?sId=0032v00003JxrvjAAB). He is the author of over 230 research papers and 6 books in statistical science. In 2007, he received the [Moran medal](https://www.science.org.au/past-winners/2007-awardees#moran) from the Australian Academy of Science for his contributions to statistical research, especially in the area of statistical forecasting. In 2021, he received the [Pitman medal](https://www.statsoc.org.au/Pitman-Medal-Recipients) from the Statistical Society of Australia. For over 40 years, Rob has maintained an active consulting practice, assisting hundreds of companies and organizations around the world. He has won awards for his research, teaching, consulting and graduate supervision.          
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </article>
+</div>
+```
+
+```{=html}
+<style>
+#title-block-header {
+  display: none !important;
+}
+</style>
+```

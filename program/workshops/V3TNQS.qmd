@@ -1,0 +1,76 @@
+---
+pagetitle: 'WOMBAT 2026: Immutable by design: Trace-minimised forecasts for hierarchical
+  time series'
+date: 2026-12-01 11:30:00
+time: 11:30 AM
+title: 'Immutable by design: Trace-minimised forecasts for hierarchical time series'
+description: Generated summary
+speaker:
+- code: YHXDLY
+  name: Shanika Wickramasuriya
+  avatar_url: https://conf.nectric.com.au/media/avatars/QVZFTX_mFpHaEX.webp
+speakerlist: Shanika Wickramasuriya
+room: Room  8.03
+format:
+  html:
+    css: ../../css/talks.css
+
+---
+
+```{=html}
+<div class="talk-container">
+  <article class="talk-card">
+    
+    <!-- Header Section -->
+    <header class="talk-header">
+      <div class="talk-datetime">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 64 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 16-16-7.2-16-16V192z"/>
+        </svg>
+        December 01, 11:30 AM
+      </div>
+      <h1 class="talk-title">Immutable by design: Trace-minimised forecasts for hierarchical time series</h1>
+    </header>
+
+    <!-- Body Section -->
+    <div class="talk-body">
+      
+      <!-- Main Description -->
+      <section class="talk-description">
+        Forecast reconciliation for hierarchical time series involves generating base forecasts for each series in the hierarchy and then adjusting them to ensure coherence across the aggregation structure. In some applications, however, certain base forecasts must remain unchanged, or **immutable**, during the reconciliation process. This talk introduces a novel methodology for handling immutable forecasts by formulating reconciliation as a constrained optimisation problem that minimises the total variance of the reconciled forecast errors while satisfying equality constraints. Since it is generally not possible to preserve all base forecasts simultaneously, we derive conditions for identifying a valid set of immutable forecasts that can be maintained while ensuring coherence. An empirical application using Australian domestic tourism data demonstrates that the proposed method outperforms an existing alternative. We also briefly discuss algorithms for ensuring non-negativity of the immutable forecasts.
+      </section>
+
+      <!-- Sidebar -->
+      <div class="talk-sidebar">
+        
+        <!-- Interactive CTA -->
+
+        <a href="https://events.humanitix.com/wombat-2026-day-2-workshop" class="btn-register" target="_blank" rel="noopener">
+          Register for the workshop day
+        </a>
+
+        <!-- Speaker Profile -->
+        <div class="speaker-profile">
+          <img src="https://conf.nectric.com.au/media/avatars/QVZFTX_mFpHaEX.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <h2 class="speaker-name">
+            Shanika Wickramasuriya         
+          </h2>
+          <p class="speaker-bio">
+            Shanika Wickramasuriya is a Senior Lecturer in Econometrics and Business Statistics at Monash University. She completed her PhD in Statistics at Monash University, where she worked on optimal forecasting for hierarchical and grouped time series. After completing her PhD, she worked in the Department of Statistics at the University of Auckland before returning to Monash University in early 2024. Her research focuses on time series forecasting, particularly hierarchical and grouped time series, forecast reconciliation, and constrained forecasting. Her work has been published in leading statistical and forecasting journals, including the Journal of the American Statistical Association and the Journal of Econometrics and Business Statistics.          
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </article>
+</div>
+```
+
+```{=html}
+<style>
+#title-block-header {
+  display: none !important;
+}
+</style>
+```
