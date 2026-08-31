@@ -4,19 +4,26 @@
   padding: 2rem;
 }
 
-/* --- Sticky Day Switcher --- */
+/* --- Day Switcher, floated over the site navbar ---
+   Rather than reserving its own row in the page (the old sticky bar), this
+   is taken out of flow entirely and floated on top of #quarto-header, which
+   Quarto/Bootstrap fixes at the top of every page (.fixed-top, z-index
+   1030) and this site pins so it never scrolls away. Matching the navbar's
+   own min-height (theme.scss) and centering within it makes the buttons
+   read as part of the navbar without editing the site-wide navbar config,
+   which only Quarto's global navbar in _quarto.yml can otherwise populate.
+   z-index just needs to clear the navbar's 1030. */
 #day-switcher {
-  position: sticky;
-  top: 72px;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4.25rem;
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 1rem;
-  z-index: 1000;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-  border-bottom: 1px solid #eaeaea;
+  z-index: 1031;
 }
 
 .switcher-btn {
@@ -29,10 +36,34 @@
   color: #495057;
   cursor: pointer;
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .switcher-btn:hover {
   background: #dee2e6;
+}
+
+/* Below ~690px the full labels ("Day 1 Tutorials") no longer fit the
+   available width and wrap to a second line, which grows the button (and
+   with it #day-switcher's fixed height, clipping into the navbar). Swap to
+   the short label instead of shrinking type further -- at this width
+   there's no room left to lose to smaller, harder-to-tap text. */
+.switcher-btn-short {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .switcher-btn-full {
+    display: none;
+  }
+
+  .switcher-btn-short {
+    display: inline;
+  }
+
+  .switcher-btn {
+    padding: 0.75rem 1.25rem;
+  }
 }
 
 .switcher-btn.active {

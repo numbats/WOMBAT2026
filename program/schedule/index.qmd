@@ -115,8 +115,14 @@ format:
 ```{=html}
 <!-- Sticky Day Switcher -->
   <nav id="day-switcher">
-    <button class="switcher-btn active" data-target="day-1-tutorials">Day 1 Tutorials</button>
-    <button class="switcher-btn" data-target="day-2-workshop">Day 2 Workshop</button>
+    <button class="switcher-btn active" data-target="day-1-tutorials">
+      <span class="switcher-btn-full">Day 1 Tutorials</span>
+      <span class="switcher-btn-short">Day 1</span>
+    </button>
+    <button class="switcher-btn" data-target="day-2-workshop">
+      <span class="switcher-btn-full">Day 2 Workshop</span>
+      <span class="switcher-btn-short">Day 2</span>
+    </button>
   </nav>
 ```
 
@@ -133,8 +139,9 @@ document.addEventListener('DOMContentLoaded', () => {
           const targetSection = document.getElementById(targetId);
           
           if (targetSection) {
-            // Calculate position accounting for the sticky header (approx 80px)
-            const yOffset = -90; 
+            // Calculate position accounting for the fixed navbar (4.25rem / ~68px)
+            // the day switcher now floats over, plus a little breathing room.
+            const yOffset = -80;
             const y = targetSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
             
             window.scrollTo({ top: y, behavior: 'smooth' });
