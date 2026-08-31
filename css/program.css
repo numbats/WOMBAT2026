@@ -48,7 +48,7 @@
 }
 
 .program .stat span {
-  font-size: 0.72rem;
+  font-size: 0.9rem;
   color: #64748b;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -74,8 +74,29 @@
 }
 
 .program .day-heading .day-date {
-  font-size: 0.85rem;
+  font-size: 1.1rem;
   color: #64748b;
+}
+
+.program .day-heading .day-register {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: #d97e06;
+  text-decoration: none;
+  padding: 0.4rem 0.9rem;
+  border: 1.5px solid #fbac27;
+  border-radius: 999px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.program .day-heading .day-register:hover {
+  background: #fbac27;
+  color: #3a2704;
 }
 
 /* ---------- Day 1: track grid ---------- */
@@ -474,6 +495,12 @@
   }
   .program .person-row {
     flex-wrap: wrap;
+  }
+  .program .day-heading {
+    flex-wrap: wrap;
+  }
+  .program .day-heading .day-register {
+    margin-left: 0;
   }
   .program .person-time {
     margin-left: 44px;
