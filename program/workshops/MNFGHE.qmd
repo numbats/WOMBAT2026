@@ -7,9 +7,10 @@ description: Generated summary
 speaker:
 - code: QQRDPN
   name: Jaffie Yang
-  avatar_url: .na.character
+  avatar_url: https://conf.nectric.com.au/media/avatars/JMFNWN_096BW8V.webp
 speakerlist: Jaffie Yang
 room: Room  8.03
+image: https://conf.nectric.com.au/media/avatars/JMFNWN_096BW8V.webp
 format:
   html:
     css: ../../css/talks.css
@@ -50,12 +51,12 @@ format:
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
-          <img src="NA" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <img src="https://conf.nectric.com.au/media/avatars/JMFNWN_096BW8V.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
           <h2 class="speaker-name">
             Jaffie Yang         
           </h2>
           <p class="speaker-bio">
-            NA          
+            Jaffie is a Senior Data Scientist at National Australia Bank (NAB) and a Monash Business Analytics graduate. Her professional experience spans machine learning, data pipelines, computer vision, analytics and business intelligence across banking and consulting sectors.          
           </p>
         </div>
 

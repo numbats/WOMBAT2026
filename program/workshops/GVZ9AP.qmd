@@ -18,6 +18,7 @@ speaker:
   avatar_url: .na.character
 speakerlist: Cynthia Huang, Hadley Wickham, Damjan Vukcevic
 room: Room  8.03
+image: https://conf.nectric.com.au/media/avatars/VCASXU_BLNvx3U.webp
 format:
   html:
     css: ../../css/talks.css

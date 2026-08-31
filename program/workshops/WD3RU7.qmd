@@ -15,6 +15,7 @@ speaker:
   avatar_url: https://conf.nectric.com.au/media/avatars/NLJUE9_Ir9Ibk8.webp
 speakerlist: Renée Rosillo, Azul Garza
 room: Room  8.03
+image: https://conf.nectric.com.au/media/avatars/TPRK7Z_LPaK4QO.webp
 format:
   html:
     css: ../../css/talks.css

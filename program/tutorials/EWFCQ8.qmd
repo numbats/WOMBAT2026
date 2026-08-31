@@ -10,6 +10,7 @@ speaker:
   avatar_url: https://conf.nectric.com.au/media/avatars/TTTBDY_rgs6zaJ.webp
 speakerlist: Mitchell O'Hara-Wild
 room: Room  8.42
+image: https://conf.nectric.com.au/media/avatars/TTTBDY_rgs6zaJ.webp
 format:
   html:
     css: ../../css/talks.css

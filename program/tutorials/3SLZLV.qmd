@@ -13,6 +13,7 @@ speaker:
   avatar_url: https://conf.nectric.com.au/media/avatars/G9PNUZ_4abwGEX.webp
 speakerlist: Fonti Kar, Dianne Cook
 room: Room  8.53
+image: https://conf.nectric.com.au/media/avatars/LN38T3_4VQYAS4.webp
 format:
   html:
     css: ../../css/talks.css

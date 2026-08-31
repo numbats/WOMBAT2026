@@ -10,6 +10,7 @@ speaker:
   avatar_url: .na.character
 speakerlist: Zola Batsaikhan
 room: Room  8.03
+image: .na.character
 format:
   html:
     css: ../../css/talks.css

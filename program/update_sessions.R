@@ -104,6 +104,16 @@ write_session_qmd <- function(x, ...) {
     speaker_list <- paste(x$speakers[[1]][["name"]], collapse = ", ")
     x$speakers <- transpose(x$speakers[[1]])
   }
+  first_avatar_url <- if (is.null(speaker_tbl)) {
+    ""
+  } else {
+    speaker_tbl[["avatar_url"]][[1]]
+  }
+  image <- if (is.null(first_avatar_url) || !nzchar(first_avatar_url)) {
+    "/img/user.png"
+  } else {
+    first_avatar_url
+  }
   x$yml <- yaml::as.yaml(
     list(
       pagetitle = paste("WOMBAT 2026:", x$title),
@@ -115,6 +125,7 @@ write_session_qmd <- function(x, ...) {
       speaker = speaker,
       speakerlist = speaker_list,
       room = paste("Room ", x$room, collapse = " "),
+      image = image,
       format = list(html = list(css = "../../css/talks.css"))
     )
   )

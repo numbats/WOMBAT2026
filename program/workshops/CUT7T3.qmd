@@ -1,8 +1,8 @@
 ---
-pagetitle: 'WOMBAT 2026: Modern time series data'
+pagetitle: 'WOMBAT 2026: mixtime: Temporal data for better analytics'
 date: 2026-12-01 10:30:00
 time: 10:30 AM
-title: Modern time series data
+title: 'mixtime: Temporal data for better analytics'
 description: Generated summary
 speaker:
 - code: LDX3EG
@@ -10,6 +10,7 @@ speaker:
   avatar_url: https://conf.nectric.com.au/media/avatars/TTTBDY_rgs6zaJ.webp
 speakerlist: Mitchell O'Hara-Wild
 room: Room  8.03
+image: https://conf.nectric.com.au/media/avatars/TTTBDY_rgs6zaJ.webp
 format:
   html:
     css: ../../css/talks.css
@@ -28,7 +29,7 @@ format:
         </svg>
         December 01, 10:30 AM
       </div>
-      <h1 class="talk-title">Modern time series data</h1>
+      <h1 class="talk-title">mixtime: Temporal data for better analytics</h1>
     </header>
 
     <!-- Body Section -->
@@ -36,7 +37,9 @@ format:
       
       <!-- Main Description -->
       <section class="talk-description">
-        TBC
+        Time is inherently complex, spanning time zones, calendar systems, and many different temporal resolutions, from event data recorded with millisecond precision to annual reports that aggregate an entire year into a single point. Existing data structures for time typically support only a single granularity, forcing analysts to misrepresent temporal semantics in order to use standard analysis and visualisation tools. For example, it is common to encode monthly data as dates using the first day of the month, or to aggregate everything up to the coarsest common granularity, both of which silently discard information and increase the risk of downstream errors. Analysis across multiple granularities adds to this complexity (e.g. ABS increasing CPI reporting frequency from quarterly to monthly), which existing data types simply aren't designed to handle.
+
+The `mixtime` R package overcomes these limitations with granules: first-class extensible objects that characterise temporal semantics, connected via calendar algebra into a traversable graph that supports arithmetic and comparisons across granularities. Time points can further take different modes (linear or cyclical, durations or intervals) and be discrete time spans or continuous time instants. Each combination of properties determines which operations are valid. This talk shows how mixtime's semantic-preserving design enables better tools for exploratory time series analysis. I'll showcase new additions to the `ggtime` package built directly on this foundation: `scale_x_mixtime()` for correctly positioning mixed-granularity observations, `geom_time_line()` for connecting them, and `coord_calendar()` for arranging timelines in calendar layouts. I will close with a broader look at other analysis tasks that `mixtime` facilitates with safer semantic-preserving operations.
       </section>
 
       <!-- Sidebar -->

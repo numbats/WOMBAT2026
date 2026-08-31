@@ -10,6 +10,7 @@ speaker:
   avatar_url: https://conf.nectric.com.au/media/avatars/DEAJHL_aYXQPiN.webp
 speakerlist: Priya Dingorkar
 room: Room  8.03
+image: https://conf.nectric.com.au/media/avatars/DEAJHL_aYXQPiN.webp
 format:
   html:
     css: ../../css/talks.css

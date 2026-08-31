@@ -11,6 +11,7 @@ speaker:
   avatar_url: https://conf.nectric.com.au/media/avatars/N3WKQK_dmD8aHb.webp
 speakerlist: Dean Marchiori
 room: Room  8.42
+image: https://conf.nectric.com.au/media/avatars/N3WKQK_dmD8aHb.webp
 format:
   html:
     css: ../../css/talks.css

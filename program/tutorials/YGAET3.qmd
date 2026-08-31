@@ -1,15 +1,16 @@
 ---
-pagetitle: 'WOMBAT 2026: Advanced Reproducibility'
+pagetitle: 'WOMBAT 2026: Modern reproducibility practices for agentic analytics'
 date: 2026-11-30 12:35:00
 time: 12:35 PM
-title: Advanced Reproducibility
+title: Modern reproducibility practices for agentic analytics
 description: Generated summary
 speaker:
 - code: 9UW7JH
   name: Michael Lydeamore
-  avatar_url: .na.character
+  avatar_url: https://conf.nectric.com.au/media/avatars/7HGSUA_2Gu7vQm.webp
 speakerlist: Michael Lydeamore
 room: Room  8.43
+image: https://conf.nectric.com.au/media/avatars/7HGSUA_2Gu7vQm.webp
 format:
   html:
     css: ../../css/talks.css
@@ -28,7 +29,7 @@ format:
         </svg>
         November 30, 12:35 PM
       </div>
-      <h1 class="talk-title">Advanced Reproducibility</h1>
+      <h1 class="talk-title">Modern reproducibility practices for agentic analytics</h1>
     </header>
 
     <!-- Body Section -->
@@ -36,7 +37,7 @@ format:
       
       <!-- Main Description -->
       <section class="talk-description">
-        TBC
+        Coding agents can dramatically accelerate analytical work—but only when we can trust their output, prevent them from interfering with one another, and reproduce their results. In this hands-on workshop, participants will use a realistic Melbourne foot-traffic forecasting project to explore practical workflows for working safely with coding agents. You’ll learn how to run agents in parallel using git worktrees, diagnose regressions, configure permissions and guardrails, and create reproducible environments with lockfiles and containers. The emphasis is on moving beyond one-off AI assistance towards reliable, auditable and collaborative agentic workflows.
       </section>
 
       <!-- Sidebar -->
@@ -50,12 +51,12 @@ format:
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
-          <img src="NA" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <img src="https://conf.nectric.com.au/media/avatars/7HGSUA_2Gu7vQm.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
           <h2 class="speaker-name">
             Michael Lydeamore         
           </h2>
           <p class="speaker-bio">
-            NA          
+            Dr Michael Lydeamore is a Senior Lecturer in Econometrics and Business Statistics at Monash University, where he teaches data science and reproducible and collaborative practices. He is a statistician and infectious disease modeller whose work combines real-world data, computational methods and open-source software to inform public health and policy. Michael previously led COVID-19 modelling and forecasting for the Victorian Department of Health and holds honorary appointments with Alfred Health and Safer Care Victoria. He is particularly interested in practical tools that make analytical work more reliable, transparent and reusable.          
           </p>
         </div>
 

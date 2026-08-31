@@ -10,6 +10,7 @@ speaker:
   avatar_url: https://conf.nectric.com.au/media/avatars/VCASXU_BLNvx3U.webp
 speakerlist: Cynthia Huang
 room: Room  8.53
+image: https://conf.nectric.com.au/media/avatars/VCASXU_BLNvx3U.webp
 format:
   html:
     css: ../../css/talks.css

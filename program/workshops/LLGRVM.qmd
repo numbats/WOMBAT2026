@@ -12,6 +12,7 @@ speaker:
   avatar_url: https://conf.nectric.com.au/media/avatars/J98GMK_ZDcz3EX.webp
 speakerlist: Thiyanga Talagala
 room: Room  8.03
+image: https://conf.nectric.com.au/media/avatars/J98GMK_ZDcz3EX.webp
 format:
   html:
     css: ../../css/talks.css

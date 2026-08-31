@@ -11,6 +11,7 @@ speaker:
   avatar_url: https://conf.nectric.com.au/media/avatars/QVZFTX_mFpHaEX.webp
 speakerlist: Shanika Wickramasuriya
 room: Room  8.03
+image: https://conf.nectric.com.au/media/avatars/QVZFTX_mFpHaEX.webp
 format:
   html:
     css: ../../css/talks.css

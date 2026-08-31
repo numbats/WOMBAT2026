@@ -1,15 +1,16 @@
 ---
-pagetitle: 'WOMBAT 2026: Reproducibility with targets'
+pagetitle: 'WOMBAT 2026: A Gentle Introduction to Targets'
 date: 2026-11-30 09:00:00
 time: 09:00 AM
-title: Reproducibility with targets
+title: A Gentle Introduction to Targets
 description: Generated summary
 speaker:
 - code: 97P7PG
-  name: Nicholas Tierney
-  avatar_url: .na.character
-speakerlist: Nicholas Tierney
+  name: Nick Tierney
+  avatar_url: https://conf.nectric.com.au/media/avatars/FLUHHT_UtCG6vC.webp
+speakerlist: Nick Tierney
 room: Room  8.43
+image: https://conf.nectric.com.au/media/avatars/FLUHHT_UtCG6vC.webp
 format:
   html:
     css: ../../css/talks.css
@@ -28,7 +29,7 @@ format:
         </svg>
         November 30, 09:00 AM
       </div>
-      <h1 class="talk-title">Reproducibility with targets</h1>
+      <h1 class="talk-title">A Gentle Introduction to Targets</h1>
     </header>
 
     <!-- Body Section -->
@@ -36,7 +37,17 @@ format:
       
       <!-- Main Description -->
       <section class="talk-description">
-        TBC
+        Data analysis is an iterative process. Data cleaning, exploratory data analysis (EDA), and model fitting are rarely run without a hitch from start to finish. Each step takes time, and often requires revisiting earlier steps to correct for newly discovered problems. For example, in performing EDA, you can unearth a text issue that requires revisiting data cleaning. When you are finally done with the analysis, you will need to reproduce it to check it all works as expected.
+
+To reproduce the analysis, there is a temptation to run the code again from the top, which may take a long time. You can save time by saving model outputs, but if you make a change to an earlier data cleaning step, you’ll need to update everything that depends on that. You can write code to manage these dependencies, but this is a hard problem. Fortunately, &quot;pipeline tools&quot; are an existing approach to manage these dependencies. They take care of the details of watching which files and relevant code changes, and only run the necessary parts. The {targets} R package is one popular pipeline approach, providing extensive documentation and user support. However, it presents a different coding practice that might not be familiar.
+
+In this interactive workshop, I will gently introduce the ideas behind {targets}, and will live code a data analysis using {targets} from scratch, warts and all. I encourage questions throughout the live coding workshop, so you can understand the process and see how this could benefit your own work.
+
+I have three goals in this workshop:
+
+1. To convince you {targets} is worth learning, and that you can use it
+2. For you to be able to start using {targets} after 45 minutes
+3. For you to feel more confident writing functions
       </section>
 
       <!-- Sidebar -->
@@ -50,12 +61,12 @@ format:
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
-          <img src="NA" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <img src="https://conf.nectric.com.au/media/avatars/FLUHHT_UtCG6vC.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
           <h2 class="speaker-name">
-            Nicholas Tierney         
+            Nick Tierney         
           </h2>
           <p class="speaker-bio">
-            NA          
+            Dr. Nicholas (Nick) Tierney is a statistician, [Research Software Engineer](https://researchsoftware.org/), and freelance consultant with a PhD in Statistics who specializes in data analytics, R package development, and teaching. Previously, he worked with [Prof. Nick Golding](https://www.thekids.org.au/contact-us/our-people/g/nick-golding/) at [The Kids Research Institute Australia](https://www.thekids.org.au/) and was a Research Fellow at Monash University with [Professor Dianne Cook](https://www.dicook.org/), where he developed tools for exploratory data analysis including [visdat](https://docs.ropensci.org/visdat/), [naniar](https://naniar.njtierney.com/), and [brolgar](https://brolgar.njtierney.com/) (more at his [github page](https://github.com/njtierney)). Nick actively writes about R related projects at his blog, [&quot;credibly curious&quot;](https://www.njtierney.com/). When not coding, Nick enjoys outdoor adventures and hiked the entire Pacific Crest Trail in 2023, documenting his journey at [njt.micro.blog](https://njt.micro.blog/).          
           </p>
         </div>
 

@@ -10,6 +10,7 @@ speaker:
   avatar_url: https://conf.nectric.com.au/media/avatars/3ZEQF8_k3GMDrc.webp
 speakerlist: Hadley Wickham
 room: Room  8.44
+image: https://conf.nectric.com.au/media/avatars/3ZEQF8_k3GMDrc.webp
 format:
   html:
     css: ../../css/talks.css

@@ -6,13 +6,13 @@ listing:
       - "../tutorials/*.qmd"
     type: default
     sort: ["date", "room"]
-    fields: [title, time, speakerlist, room]
+    fields: [title, time, speakerlist, room, image]
   - id: workshops
     contents:
       - "../workshops/*.qmd"
     type: default
     sort: "date"
-    fields: [title, time, speakerlist, room]
+    fields: [title, time, speakerlist, room, image]
 format:
   html:
     css: [../../css/schedule.css]

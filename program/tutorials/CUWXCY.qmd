@@ -10,6 +10,7 @@ speaker:
   avatar_url: https://conf.nectric.com.au/media/avatars/Z7EZLP_RmpJtax.webp
 speakerlist: Tomasz Woźniak
 room: Room  8.44
+image: https://conf.nectric.com.au/media/avatars/Z7EZLP_RmpJtax.webp
 format:
   html:
     css: ../../css/talks.css

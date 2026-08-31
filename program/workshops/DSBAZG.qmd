@@ -10,6 +10,7 @@ speaker:
   avatar_url: https://conf.nectric.com.au/media/avatars/9RABY7_45oaFxq.webp
 speakerlist: Rob Hyndman
 room: Room  8.03
+image: https://conf.nectric.com.au/media/avatars/9RABY7_45oaFxq.webp
 format:
   html:
     css: ../../css/talks.css
