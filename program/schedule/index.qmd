@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <!-- The schedule will be announced nearer to the event. -->
 ::: {.container}
-## Day 1 tutorials
+## Day 1: Tutorials
 
 ::: {.tutorial-table}
 
@@ -246,7 +246,7 @@ Development
 
 :::
 
-## Day 2 workshop
+## Day 2: Workshop
 
 ::: {.session-block .session-single}
 ::::: {#group-welcome}
