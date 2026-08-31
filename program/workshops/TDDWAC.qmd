@@ -7,10 +7,10 @@ description: Generated summary
 speaker:
 - code: T8R89U
   name: Zola Batsaikhan
-  avatar_url: .na.character
+  avatar_url: https://conf.nectric.com.au/media/avatars/WT38WZ_rebbBBv.webp
 speakerlist: Zola Batsaikhan
 room: Room  8.03
-image: .na.character
+image: https://conf.nectric.com.au/media/avatars/WT38WZ_rebbBBv.webp
 format:
   html:
     css: ../../css/talks.css
@@ -55,12 +55,12 @@ slides_url: ~
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
-          <img src="NA" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <img src="https://conf.nectric.com.au/media/avatars/WT38WZ_rebbBBv.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
           <h2 class="speaker-name">
             Zola Batsaikhan
           </h2>
           <div class="speaker-bio">
-            <p>NA</p>
+            <p>TBC</p>
 
           </div>
         </div>

@@ -7,10 +7,10 @@ description: Generated summary
 speaker:
 - code: HHDWB3
   name: Maliny Po
-  avatar_url: .na.character
+  avatar_url: https://conf.nectric.com.au/media/avatars/FFS8EF_ziAKw9R.webp
 speakerlist: Maliny Po
 room: Room  8.03
-image: .na.character
+image: https://conf.nectric.com.au/media/avatars/FFS8EF_ziAKw9R.webp
 format:
   html:
     css: ../../css/talks.css
@@ -55,12 +55,12 @@ slides_url: ~
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
-          <img src="NA" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <img src="https://conf.nectric.com.au/media/avatars/FFS8EF_ziAKw9R.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
           <h2 class="speaker-name">
             Maliny Po
           </h2>
           <div class="speaker-bio">
-            <p>NA</p>
+            <p>TBC</p>
 
           </div>
         </div>
