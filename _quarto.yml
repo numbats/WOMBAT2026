@@ -17,12 +17,12 @@ website:
   search: false
   favicon: img/wombat/wombat-pixelart.svg
   open-graph:
-    title: "WOMBAT 2026 – Data Science & Analytics Workshop"
-    description: |
-      The Annual Workshop Organised by the Monash Business Analytics Team in Melbourne, Australia.
-    #image: img/opengraph-banner.png 
-    #image-width: 1207
-    #image-height: 802
+    image: /img/opengraph-banner.jpg
+    image-width: 1200
+    image-height: 630
+  twitter-card:
+    image: /img/opengraph-banner.jpg
+    card-style: summary_large_image
 
   # announcement: 
   #   icon: megaphone-fill
@@ -40,10 +40,6 @@ website:
     right:
       - text: Schedule
         href: program/schedule
-      # - text: Day 1 - Tutorials
-      #   href: program/tutorials.qmd
-      # - text: Day 2 - Workshop
-      #   href: program/workshops.qmd
       - text: Contact
         href: contact.qmd
       - text: About

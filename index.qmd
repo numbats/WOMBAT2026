@@ -73,6 +73,8 @@ listing:
 format:
   html:
     css: [css/hero.css, css/program.css, css/community.css]
+    include-in-header:
+      - partials/event-jsonld.html
     theme:
       light:
         - css/keynote.scss
@@ -150,7 +152,7 @@ science.*]{.hero-desc}
     title:       'WOMBAT 2026',
     description: 'Workshop Organised by the Monash Business Analytics Team. Learn and discuss open-source tools for business analytics and data science.',
     location:    'Melbourne, Australia',
-    url:         'https://wombat.numbat.space',
+    url:         'https://wombat2026.numbat.space',
     startDate:   '20261130',   // YYYYMMDD (all-day)
     endDate:     '20261202',   // iCal end is exclusive, so +1 day after last day
     startDateHuman: '2026-11-30',
