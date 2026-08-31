@@ -14,13 +14,14 @@ image: https://conf.nectric.com.au/media/avatars/TTTBDY_rgs6zaJ.webp
 format:
   html:
     css: ../../css/talks.css
+slides_url: ~
 
 ---
 
 ```{=html}
 <div class="talk-container">
   <article class="talk-card">
-    
+
     <!-- Header Section -->
     <header class="talk-header">
       <div class="talk-datetime">
@@ -34,38 +35,38 @@ format:
 
     <!-- Body Section -->
     <div class="talk-body">
-      
+
       <!-- Main Description -->
       <section class="talk-description">
-        Modern time-series datasets are hard to explore: they contain a large number of frequently observed series, each with many patterns of its own. This workshop introduces exploratory techniques to uncover meaningful temporal patterns in time series data.
+        <p>Modern time-series datasets are hard to explore: they contain a large number of frequently observed series, each with many patterns of its own. This workshop introduces exploratory techniques to uncover meaningful temporal patterns in time series data.</p>
+<p>Time series data can be tricky to represent correctly, especially when the data spans multiple timezones and granularities. The correct representation of time is essential for accurate analysis, and we'll see how to avoid common errors in mixed-granularity operations such as temporal aggregation.</p>
+<p>Next we'll explore how to compare patterns across many series using feature-based statistical summaries. Visualising these features reveals common temporal patterns at scale, allowing us to quantify and cluster the dynamics of entire collections of time series.</p>
+<p>Finally we'll visually explore individual time series in detail, using simple plot helpers to quickly create charts that highlight common time series patterns. We'll also leverage the flexibility of the grammar of time series graphics to uncover more complex patterns, such as visualising seasonality  across time zones and using calendar plots to reveal holiday effects.</p>
+<p>This practical workshop features live demonstrations and hands-on exercises using real-world data, built around tidy time series tools that extend the tidyverse and ggplot2: <code>feasts</code>, and the new packages <code>mixtime</code> and <code>ggtime</code>. Participants will leave with practical skills to accurately explore and visualise time series data in R.</p>
 
-Time series data can be tricky to represent correctly, especially when the data spans multiple timezones and granularities. The correct representation of time is essential for accurate analysis, and we'll see how to avoid common errors in mixed-granularity operations such as temporal aggregation.
 
-Next we'll explore how to compare patterns across many series using feature-based statistical summaries. Visualising these features reveals common temporal patterns at scale, allowing us to quantify and cluster the dynamics of entire collections of time series.
+        <div class="talk-cta">
+          <a href="https://events.humanitix.com/wombat-2026-day-1-tutorials" class="btn-register" target="_blank" rel="noopener">
+            Register for this tutorial
+          </a>
 
-Finally we'll visually explore individual time series in detail, using simple plot helpers to quickly create charts that highlight common time series patterns. We'll also leverage the flexibility of the grammar of time series graphics to uncover more complex patterns, such as visualising seasonality  across time zones and using calendar plots to reveal holiday effects.
 
-This practical workshop features live demonstrations and hands-on exercises using real-world data, built around tidy time series tools that extend the tidyverse and ggplot2: `feasts`, and the new packages `mixtime` and `ggtime`. Participants will leave with practical skills to accurately explore and visualise time series data in R.
+        </div>
       </section>
 
       <!-- Sidebar -->
       <div class="talk-sidebar">
-        
-        <!-- Interactive CTA -->
-        <a href="https://events.humanitix.com/wombat-2026-day-1-tutorials" class="btn-register" target="_blank" rel="noopener">
-          Register for this tutorial
-        </a>
-
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
           <img src="https://conf.nectric.com.au/media/avatars/TTTBDY_rgs6zaJ.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
           <h2 class="speaker-name">
-            Mitchell O'Hara-Wild         
+            Mitchell O'Hara-Wild
           </h2>
-          <p class="speaker-bio">
-            Mitchell O’Hara-Wild (he/him) is a PhD candidate at Monash University with over 10 years of experience in time series forecasting, open source software development, and teaching statistics. His recent research focuses on semantic vector types that preserve the structure of probabilistic, temporal, and graph data for safer statistical analysis, including the distributional, mixtime, and graphvec R packages. These semantics are demonstrated in practice by the fable forecasting package, which combines these vectors to facilitate probabilistic forecasting workflows at scale.          
-          </p>
+          <div class="speaker-bio">
+            <p>Mitchell O’Hara-Wild (he/him) is a PhD candidate at Monash University with over 10 years of experience in time series forecasting, open source software development, and teaching statistics. His recent research focuses on semantic vector types that preserve the structure of probabilistic, temporal, and graph data for safer statistical analysis, including the distributional, mixtime, and graphvec R packages. These semantics are demonstrated in practice by the fable forecasting package, which combines these vectors to facilitate probabilistic forecasting workflows at scale.</p>
+
+          </div>
         </div>
 
       </div>

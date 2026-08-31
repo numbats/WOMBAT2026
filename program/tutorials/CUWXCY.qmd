@@ -14,13 +14,14 @@ image: https://conf.nectric.com.au/media/avatars/Z7EZLP_RmpJtax.webp
 format:
   html:
     css: ../../css/talks.css
+slides_url: ~
 
 ---
 
 ```{=html}
 <div class="talk-container">
   <article class="talk-card">
-    
+
     <!-- Header Section -->
     <header class="talk-header">
       <div class="talk-datetime">
@@ -34,32 +35,35 @@ format:
 
     <!-- Body Section -->
     <div class="talk-body">
-      
+
       <!-- Main Description -->
       <section class="talk-description">
-        Code written in C++ runs significantly faster than code written in R, which provides the basis for many leading R packages. This design enables users to leverage the best of both worlds: the computational speed delivered by algorithms written in C++ and the convenience of data analysis in R. Fortunately, recent developments have simplified programming in C++ for R applications by automating many processes.
+        <p>Code written in C++ runs significantly faster than code written in R, which provides the basis for many leading R packages. This design enables users to leverage the best of both worlds: the computational speed delivered by algorithms written in C++ and the convenience of data analysis in R. Fortunately, recent developments have simplified programming in C++ for R applications by automating many processes.</p>
+<p>In this session, Tomasz will guide attendees through the basics of this approach, working in RStudio, ensuring object compatibility, using basic algorithmic structures, functional programming, linear algebra, and extending R packages with C++ code. A sequence of hands-on exercises with applications to forecasting supports all this.</p>
 
-In this session, Tomasz will guide attendees through the basics of this approach, working in RStudio, ensuring object compatibility, using basic algorithmic structures, functional programming, linear algebra, and extending R packages with C++ code. A sequence of hands-on exercises with applications to forecasting supports all this.
+
+        <div class="talk-cta">
+          <a href="https://events.humanitix.com/wombat-2026-day-1-tutorials" class="btn-register" target="_blank" rel="noopener">
+            Register for this tutorial
+          </a>
+
+
+        </div>
       </section>
 
       <!-- Sidebar -->
       <div class="talk-sidebar">
-        
-        <!-- Interactive CTA -->
-        <a href="https://events.humanitix.com/wombat-2026-day-1-tutorials" class="btn-register" target="_blank" rel="noopener">
-          Register for this tutorial
-        </a>
-
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
           <img src="https://conf.nectric.com.au/media/avatars/Z7EZLP_RmpJtax.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
           <h2 class="speaker-name">
-            Tomasz Woźniak         
+            Tomasz Woźniak
           </h2>
-          <p class="speaker-bio">
-            Tomasz Woźniak is a Bayesian econometrician developing new econometric methods for applied macroeconomic research. He has been a specialised R user for eighteen years and has recently joined The R Journal as an Associate Editor. He is the author of several R packages, available at https://bsvars.org/, that combine blazingly fast algorithms written in C++ with the convenience of data analysis in R. He works as a senior lecturer at the University of Melbourne, where he has an extensive research, teaching, and engagement portfolio.          
-          </p>
+          <div class="speaker-bio">
+            <p>Tomasz Woźniak is a Bayesian econometrician developing new econometric methods for applied macroeconomic research. He has been a specialised R user for eighteen years and has recently joined The R Journal as an Associate Editor. He is the author of several R packages, available at https://bsvars.org/, that combine blazingly fast algorithms written in C++ with the convenience of data analysis in R. He works as a senior lecturer at the University of Melbourne, where he has an extensive research, teaching, and engagement portfolio.</p>
+
+          </div>
         </div>
 
       </div>

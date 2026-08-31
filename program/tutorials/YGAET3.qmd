@@ -14,13 +14,14 @@ image: https://conf.nectric.com.au/media/avatars/7HGSUA_2Gu7vQm.webp
 format:
   html:
     css: ../../css/talks.css
+slides_url: ~
 
 ---
 
 ```{=html}
 <div class="talk-container">
   <article class="talk-card">
-    
+
     <!-- Header Section -->
     <header class="talk-header">
       <div class="talk-datetime">
@@ -34,30 +35,34 @@ format:
 
     <!-- Body Section -->
     <div class="talk-body">
-      
+
       <!-- Main Description -->
       <section class="talk-description">
-        Coding agents can dramatically accelerate analytical work—but only when we can trust their output, prevent them from interfering with one another, and reproduce their results. In this hands-on workshop, participants will use a realistic Melbourne foot-traffic forecasting project to explore practical workflows for working safely with coding agents. You’ll learn how to run agents in parallel using git worktrees, diagnose regressions, configure permissions and guardrails, and create reproducible environments with lockfiles and containers. The emphasis is on moving beyond one-off AI assistance towards reliable, auditable and collaborative agentic workflows.
+        <p>Coding agents can dramatically accelerate analytical work—but only when we can trust their output, prevent them from interfering with one another, and reproduce their results. In this hands-on workshop, participants will use a realistic Melbourne foot-traffic forecasting project to explore practical workflows for working safely with coding agents. You’ll learn how to run agents in parallel using git worktrees, diagnose regressions, configure permissions and guardrails, and create reproducible environments with lockfiles and containers. The emphasis is on moving beyond one-off AI assistance towards reliable, auditable and collaborative agentic workflows.</p>
+
+
+        <div class="talk-cta">
+          <a href="https://events.humanitix.com/wombat-2026-day-1-tutorials" class="btn-register" target="_blank" rel="noopener">
+            Register for this tutorial
+          </a>
+
+
+        </div>
       </section>
 
       <!-- Sidebar -->
       <div class="talk-sidebar">
-        
-        <!-- Interactive CTA -->
-        <a href="https://events.humanitix.com/wombat-2026-day-1-tutorials" class="btn-register" target="_blank" rel="noopener">
-          Register for this tutorial
-        </a>
-
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
           <img src="https://conf.nectric.com.au/media/avatars/7HGSUA_2Gu7vQm.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
           <h2 class="speaker-name">
-            Michael Lydeamore         
+            Michael Lydeamore
           </h2>
-          <p class="speaker-bio">
-            Dr Michael Lydeamore is a Senior Lecturer in Econometrics and Business Statistics at Monash University, where he teaches data science and reproducible and collaborative practices. He is a statistician and infectious disease modeller whose work combines real-world data, computational methods and open-source software to inform public health and policy. Michael previously led COVID-19 modelling and forecasting for the Victorian Department of Health and holds honorary appointments with Alfred Health and Safer Care Victoria. He is particularly interested in practical tools that make analytical work more reliable, transparent and reusable.          
-          </p>
+          <div class="speaker-bio">
+            <p>Dr Michael Lydeamore is a Senior Lecturer in Econometrics and Business Statistics at Monash University, where he teaches data science and reproducible and collaborative practices. He is a statistician and infectious disease modeller whose work combines real-world data, computational methods and open-source software to inform public health and policy. Michael previously led COVID-19 modelling and forecasting for the Victorian Department of Health and holds honorary appointments with Alfred Health and Safer Care Victoria. He is particularly interested in practical tools that make analytical work more reliable, transparent and reusable.</p>
+
+          </div>
         </div>
 
       </div>

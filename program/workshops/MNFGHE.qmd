@@ -14,13 +14,14 @@ image: https://conf.nectric.com.au/media/avatars/JMFNWN_096BW8V.webp
 format:
   html:
     css: ../../css/talks.css
+slides_url: ~
 
 ---
 
 ```{=html}
 <div class="talk-container">
   <article class="talk-card">
-    
+
     <!-- Header Section -->
     <header class="talk-header">
       <div class="talk-datetime">
@@ -34,30 +35,34 @@ format:
 
     <!-- Body Section -->
     <div class="talk-body">
-      
+
       <!-- Main Description -->
       <section class="talk-description">
-        TBA
+        <p>TBA</p>
+
+
+        <div class="talk-cta">
+
+          <a href="https://events.humanitix.com/wombat-2026-day-2-workshop" class="btn-register" target="_blank" rel="noopener">
+            Register for the workshop day
+          </a>
+
+        </div>
       </section>
 
       <!-- Sidebar -->
       <div class="talk-sidebar">
-        
-        <!-- Interactive CTA -->
-
-        <a href="https://events.humanitix.com/wombat-2026-day-2-workshop" class="btn-register" target="_blank" rel="noopener">
-          Register for the workshop day
-        </a>
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
           <img src="https://conf.nectric.com.au/media/avatars/JMFNWN_096BW8V.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
           <h2 class="speaker-name">
-            Jaffie Yang         
+            Jaffie Yang
           </h2>
-          <p class="speaker-bio">
-            Jaffie is a Senior Data Scientist at National Australia Bank (NAB) and a Monash Business Analytics graduate. Her professional experience spans machine learning, data pipelines, computer vision, analytics and business intelligence across banking and consulting sectors.          
-          </p>
+          <div class="speaker-bio">
+            <p>Jaffie is a Senior Data Scientist at National Australia Bank (NAB) and a Monash Business Analytics graduate. Her professional experience spans machine learning, data pipelines, computer vision, analytics and business intelligence across banking and consulting sectors.</p>
+
+          </div>
         </div>
 
       </div>

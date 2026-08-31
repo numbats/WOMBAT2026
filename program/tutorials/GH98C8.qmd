@@ -14,13 +14,14 @@ image: https://conf.nectric.com.au/media/avatars/VCASXU_BLNvx3U.webp
 format:
   html:
     css: ../../css/talks.css
+slides_url: ~
 
 ---
 
 ```{=html}
 <div class="talk-container">
   <article class="talk-card">
-    
+
     <!-- Header Section -->
     <header class="talk-header">
       <div class="talk-datetime">
@@ -34,37 +35,41 @@ format:
 
     <!-- Body Section -->
     <div class="talk-body">
-      
+
       <!-- Main Description -->
       <section class="talk-description">
-        This course provides an introduction to scientific and technical publishing using Quarto. We will cover the basic syntax of Quarto documents, including R/python code chunks, selected formats (pdf, presentations and websites), customization options. Additionally, we will discuss ways to leverage agentic assistance (e.g. via Claude Code) in the creation and editing of Quarto documents.
+        <p>This course provides an introduction to scientific and technical publishing using Quarto. We will cover the basic syntax of Quarto documents, including R/python code chunks, selected formats (pdf, presentations and websites), customization options. Additionally, we will discuss ways to leverage agentic assistance (e.g. via Claude Code) in the creation and editing of Quarto documents.</p>
+<p>By the end of the workshop participants will:</p>
+<ul>
+<li>Understand the basics of the Quarto publishing framework and related tools including pandoc, knitr, jupyter, typst, LaTex and markdown</li>
+<li>Render pdf and html outputs using Quarto with format templates (e.g. Typst, LaTex and revealjs)</li>
+<li>Set up and render a Quarto website with multiple webpages, navigation bar and search</li>
+<li>Understand how to access, install and personalize AI skills for Quarto.</li>
+</ul>
 
-By the end of the workshop participants will:
 
-- Understand the basics of the Quarto publishing framework and related tools including pandoc, knitr, jupyter, typst, LaTex and markdown
-- Render pdf and html outputs using Quarto with format templates (e.g. Typst, LaTex and revealjs)
-- Set up and render a Quarto website with multiple webpages, navigation bar and search
-- Understand how to access, install and personalize AI skills for Quarto.
+        <div class="talk-cta">
+          <a href="https://events.humanitix.com/wombat-2026-day-1-tutorials" class="btn-register" target="_blank" rel="noopener">
+            Register for this tutorial
+          </a>
+
+
+        </div>
       </section>
 
       <!-- Sidebar -->
       <div class="talk-sidebar">
-        
-        <!-- Interactive CTA -->
-        <a href="https://events.humanitix.com/wombat-2026-day-1-tutorials" class="btn-register" target="_blank" rel="noopener">
-          Register for this tutorial
-        </a>
-
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
           <img src="https://conf.nectric.com.au/media/avatars/VCASXU_BLNvx3U.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
           <h2 class="speaker-name">
-            Cynthia Huang         
+            Cynthia Huang
           </h2>
-          <p class="speaker-bio">
-            Cynthia Huang is a Post-Doctoral Research Fellow at LMU Munich. She uses Quarto extensively for research and teaching. Her research focuses on leveraging generative AI and LLMs for data preparation and data visualisation.          
-          </p>
+          <div class="speaker-bio">
+            <p>Cynthia Huang is a Post-Doctoral Research Fellow at LMU Munich. She uses Quarto extensively for research and teaching. Her research focuses on leveraging generative AI and LLMs for data preparation and data visualisation.</p>
+
+          </div>
         </div>
 
       </div>

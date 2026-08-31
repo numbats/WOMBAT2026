@@ -22,13 +22,14 @@ image: https://conf.nectric.com.au/media/avatars/VCASXU_BLNvx3U.webp
 format:
   html:
     css: ../../css/talks.css
+slides_url: ~
 
 ---
 
 ```{=html}
 <div class="talk-container">
   <article class="talk-card">
-    
+
     <!-- Header Section -->
     <header class="talk-header">
       <div class="talk-datetime">
@@ -42,50 +43,56 @@ format:
 
     <!-- Body Section -->
     <div class="talk-body">
-      
+
       <!-- Main Description -->
       <section class="talk-description">
-        Artificial intelligence is reshaping how we think about software, data analysis, and the relationship between developers and users. In this conversation hosted by Dr. Cynthia Huang with Dr. Hadley Wickham and Assoc. Prof. Damjan Vukcevic, we explore what AI means for data-driven work, how it may change the way we build and use tools, and what it asks of us as mentors, leaders, and collaborators in data and development.
+        <p>Artificial intelligence is reshaping how we think about software, data analysis, and the relationship between developers and users. In this conversation hosted by Dr. Cynthia Huang with Dr. Hadley Wickham and Assoc. Prof. Damjan Vukcevic, we explore what AI means for data-driven work, how it may change the way we build and use tools, and what it asks of us as mentors, leaders, and collaborators in data and development.</p>
+
+
+        <div class="talk-cta">
+
+          <a href="https://events.humanitix.com/wombat-2026-day-2-workshop" class="btn-register" target="_blank" rel="noopener">
+            Register for the workshop day
+          </a>
+
+        </div>
       </section>
 
       <!-- Sidebar -->
       <div class="talk-sidebar">
-        
-        <!-- Interactive CTA -->
-
-        <a href="https://events.humanitix.com/wombat-2026-day-2-workshop" class="btn-register" target="_blank" rel="noopener">
-          Register for the workshop day
-        </a>
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
           <img src="https://conf.nectric.com.au/media/avatars/VCASXU_BLNvx3U.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
           <h2 class="speaker-name">
-            Cynthia Huang         
+            Cynthia Huang
           </h2>
-          <p class="speaker-bio">
-            Cynthia Huang is a Post-Doctoral Research Fellow at LMU Munich. She uses Quarto extensively for research and teaching. Her research focuses on leveraging generative AI and LLMs for data preparation and data visualisation.          
-          </p>
+          <div class="speaker-bio">
+            <p>Cynthia Huang is a Post-Doctoral Research Fellow at LMU Munich. She uses Quarto extensively for research and teaching. Her research focuses on leveraging generative AI and LLMs for data preparation and data visualisation.</p>
+
+          </div>
         </div>
         <!-- Speaker Profile -->
         <div class="speaker-profile">
           <img src="https://conf.nectric.com.au/media/avatars/3ZEQF8_k3GMDrc.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
           <h2 class="speaker-name">
-            Hadley Wickham         
+            Hadley Wickham
           </h2>
-          <p class="speaker-bio">
-            Hadley is Chief Scientist at Posit PBC, winner of the 2019 COPSS award, and a member of the R Foundation. He builds tools (both computational and cognitive) to make data science easier, faster, and more fun. His work includes packages for data science (like the tidyverse, which includes ggplot2, dplyr, and tidyr) and principled software development (e.g. roxygen2, testthat, and pkgdown). He is also a writer, educator, and speaker promoting the use of R for data science. Learn more on his website, .          
-          </p>
+          <div class="speaker-bio">
+            <p>Hadley is Chief Scientist at Posit PBC, winner of the 2019 COPSS award, and a member of the R Foundation. He builds tools (both computational and cognitive) to make data science easier, faster, and more fun. His work includes packages for data science (like the tidyverse, which includes ggplot2, dplyr, and tidyr) and principled software development (e.g. roxygen2, testthat, and pkgdown). He is also a writer, educator, and speaker promoting the use of R for data science. Learn more on his website, .</p>
+
+          </div>
         </div>
         <!-- Speaker Profile -->
         <div class="speaker-profile">
           <img src="NA" alt="Mitchell O’Hara-Wild" class="speaker-img">
           <h2 class="speaker-name">
-            Damjan Vukcevic         
+            Damjan Vukcevic
           </h2>
-          <p class="speaker-bio">
-            TBC          
-          </p>
+          <div class="speaker-bio">
+            <p>TBC</p>
+
+          </div>
         </div>
 
       </div>

@@ -14,13 +14,14 @@ image: https://conf.nectric.com.au/media/avatars/DEAJHL_aYXQPiN.webp
 format:
   html:
     css: ../../css/talks.css
+slides_url: ~
 
 ---
 
 ```{=html}
 <div class="talk-container">
   <article class="talk-card">
-    
+
     <!-- Header Section -->
     <header class="talk-header">
       <div class="talk-datetime">
@@ -34,30 +35,34 @@ format:
 
     <!-- Body Section -->
     <div class="talk-body">
-      
+
       <!-- Main Description -->
       <section class="talk-description">
-        In this six-minute talk, Priya will share a practical perspective on how Artificial Intelligence is being used in her day-to-day work. She will explore how AI supports data analysis, helps uncover meaningful insights, improves efficiency, and enables better business decision-making. The session will provide a simple, real-world view of how AI is moving from a buzzword to a valuable tool in the workplace.
+        <p>In this six-minute talk, Priya will share a practical perspective on how Artificial Intelligence is being used in her day-to-day work. She will explore how AI supports data analysis, helps uncover meaningful insights, improves efficiency, and enables better business decision-making. The session will provide a simple, real-world view of how AI is moving from a buzzword to a valuable tool in the workplace.</p>
+
+
+        <div class="talk-cta">
+
+          <a href="https://events.humanitix.com/wombat-2026-day-2-workshop" class="btn-register" target="_blank" rel="noopener">
+            Register for the workshop day
+          </a>
+
+        </div>
       </section>
 
       <!-- Sidebar -->
       <div class="talk-sidebar">
-        
-        <!-- Interactive CTA -->
-
-        <a href="https://events.humanitix.com/wombat-2026-day-2-workshop" class="btn-register" target="_blank" rel="noopener">
-          Register for the workshop day
-        </a>
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
           <img src="https://conf.nectric.com.au/media/avatars/DEAJHL_aYXQPiN.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
           <h2 class="speaker-name">
-            Priya Dingorkar         
+            Priya Dingorkar
           </h2>
-          <p class="speaker-bio">
-            Priya Dingorkar is a Data Analytics and AI professional with a background in data science, business analytics, machine learning, statistical modelling, forecasting, and data visualisation. She holds an undergraduate degree in Computer Engineering and a Master of Business Analytics from Monash University, giving her a strong blend of technical, analytical, and business expertise. Priya brings these skills together to transform data into meaningful insights and explore how AI and analytics can be applied to real-world business challenges, improve efficiency, and support smarter decision-making.          
-          </p>
+          <div class="speaker-bio">
+            <p>Priya Dingorkar is a Data Analytics and AI professional with a background in data science, business analytics, machine learning, statistical modelling, forecasting, and data visualisation. She holds an undergraduate degree in Computer Engineering and a Master of Business Analytics from Monash University, giving her a strong blend of technical, analytical, and business expertise. Priya brings these skills together to transform data into meaningful insights and explore how AI and analytics can be applied to real-world business challenges, improve efficiency, and support smarter decision-making.</p>
+
+          </div>
         </div>
 
       </div>

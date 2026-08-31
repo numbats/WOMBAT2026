@@ -14,13 +14,14 @@ image: .na.character
 format:
   html:
     css: ../../css/talks.css
+slides_url: ~
 
 ---
 
 ```{=html}
 <div class="talk-container">
   <article class="talk-card">
-    
+
     <!-- Header Section -->
     <header class="talk-header">
       <div class="talk-datetime">
@@ -34,30 +35,34 @@ format:
 
     <!-- Body Section -->
     <div class="talk-body">
-      
+
       <!-- Main Description -->
       <section class="talk-description">
-        TBA
+        <p>TBA</p>
+
+
+        <div class="talk-cta">
+
+          <a href="https://events.humanitix.com/wombat-2026-day-2-workshop" class="btn-register" target="_blank" rel="noopener">
+            Register for the workshop day
+          </a>
+
+        </div>
       </section>
 
       <!-- Sidebar -->
       <div class="talk-sidebar">
-        
-        <!-- Interactive CTA -->
-
-        <a href="https://events.humanitix.com/wombat-2026-day-2-workshop" class="btn-register" target="_blank" rel="noopener">
-          Register for the workshop day
-        </a>
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
           <img src="NA" alt="Mitchell O’Hara-Wild" class="speaker-img">
           <h2 class="speaker-name">
-            Maliny Po         
+            Maliny Po
           </h2>
-          <p class="speaker-bio">
-            NA          
-          </p>
+          <div class="speaker-bio">
+            <p>NA</p>
+
+          </div>
         </div>
 
       </div>

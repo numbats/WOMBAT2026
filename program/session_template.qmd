@@ -5,7 +5,7 @@
 ```{=html}
 <div class="talk-container">
   <article class="talk-card">
-    
+
     <!-- Header Section -->
     <header class="talk-header">
       <div class="talk-datetime">
@@ -19,38 +19,45 @@
 
     <!-- Body Section -->
     <div class="talk-body">
-      
+
       <!-- Main Description -->
       <section class="talk-description">
-        {{abstract}}
+        {{{abstract}}}
+
+        <div class="talk-cta">
+          {{#is_tutorial}}
+          <a href="https://events.humanitix.com/wombat-2026-day-1-tutorials" class="btn-register" target="_blank" rel="noopener">
+            Register for this tutorial
+          </a>
+          {{/is_tutorial}}
+
+          {{#is_workshop}}
+          <a href="https://events.humanitix.com/wombat-2026-day-2-workshop" class="btn-register" target="_blank" rel="noopener">
+            Register for the workshop day
+          </a>
+          {{/is_workshop}}
+
+          {{#slides_url}}
+          <a href="{{slides_url}}" class="btn-slides" target="_blank" rel="noopener">
+            View slides
+          </a>
+          {{/slides_url}}
+        </div>
       </section>
 
       <!-- Sidebar -->
       <div class="talk-sidebar">
-        
-        <!-- Interactive CTA -->
-        {{#is_tutorial}}
-        <a href="https://events.humanitix.com/wombat-2026-day-1-tutorials" class="btn-register" target="_blank" rel="noopener">
-          Register for this tutorial
-        </a>
-        {{/is_tutorial}}
-
-        {{#is_workshop}}
-        <a href="https://events.humanitix.com/wombat-2026-day-2-workshop" class="btn-register" target="_blank" rel="noopener">
-          Register for the workshop day
-        </a>
-        {{/is_workshop}}
 
         {{#speakers}}
         <!-- Speaker Profile -->
         <div class="speaker-profile">
           <img src="{{avatar_url}}" alt="Mitchell O’Hara-Wild" class="speaker-img">
           <h2 class="speaker-name">
-            {{name}}         
+            {{name}}
           </h2>
-          <p class="speaker-bio">
-            {{biography}}          
-          </p>
+          <div class="speaker-bio">
+            {{{biography}}}
+          </div>
         </div>
         {{/speakers}}
 

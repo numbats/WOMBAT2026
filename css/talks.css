@@ -85,6 +85,39 @@
   font-weight: 600;
 }
 
+.talk-description ol,
+.talk-description ul {
+  margin: 0 0 1.5rem;
+  padding-left: 1.25rem;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #475569;
+}
+
+.talk-description li {
+  margin-bottom: 0.5rem;
+}
+
+.talk-description a,
+.speaker-bio a {
+  color: #288dfa;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.talk-description a:hover,
+.speaker-bio a:hover {
+  color: #0f345c;
+}
+
+.speaker-bio p {
+  margin: 0 0 0.75rem;
+}
+
+.speaker-bio p:last-child {
+  margin-bottom: 0;
+}
+
 /* Sidebar (Speaker & CTA) */
 .talk-sidebar {
   display: flex;
@@ -138,7 +171,14 @@
   margin: 0;
 }
 
-/* CTA Button */
+/* CTA Buttons */
+.talk-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
 .btn-register {
   display: flex;
   align-items: center;
@@ -160,14 +200,32 @@
   box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
 }
 
+.btn-slides {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #0f345c;
+  text-decoration: none;
+  padding: 1.25rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: 2px solid #0f345c;
+  transition: all 0.2s ease;
+}
+
+.btn-slides:hover {
+  background: #0f345c;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
 /* Responsive Design */
 @media (max-width: 900px) {
   .talk-body {
     grid-template-columns: 1fr;
     gap: 3rem;
-  }
-  .talk-sidebar {
-    grid-row: 1; /* Move speaker & CTA above text on mobile */
   }
 }
 

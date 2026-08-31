@@ -44,7 +44,7 @@ escape_html <- function(x) {
 }
 
 speakers_tidy <- map_dfr(speakers$results, recurse_tibble) |>
-  mutate(biography = escape_html(biography)) |>
+  mutate(biography = escape_html(biography) |> gsub("\r\n", "\n", x = _) |> map_chr(commonmark::markdown_html)) |>
   unnest(submissions) |>
   nest(.key = "speakers", .by = submissions)
 
@@ -55,7 +55,7 @@ sessions_tidy <- map_dfr(sessions$slots, recurse_tibble) |>
     duration,
     time = format(start, "%B %d, %I:%M %p"),
     title = submission$title |> escape_html(),
-    abstract = submission$abstract |> escape_html(),
+    abstract = submission$abstract |> escape_html() |> gsub("\r\n", "\n", x = _) |> map_chr(commonmark::markdown_html),
     submissions = submission$code,
     room = room$name |> unlist()
   ) |>
@@ -77,6 +77,7 @@ write_session_qmd <- function(x, ...) {
   # Generate short summary
   if (file.exists(path)) {
     x$description <- rmarkdown::yaml_front_matter(path)$description
+    x$slides_url <- rmarkdown::yaml_front_matter(path)$slides_url
   }
   if (is.null(x$description)) {
     # chat <- ellmer::chat_google_gemini(
@@ -126,7 +127,8 @@ write_session_qmd <- function(x, ...) {
       speakerlist = speaker_list,
       room = paste("Room ", x$room, collapse = " "),
       image = image,
-      format = list(html = list(css = "../../css/talks.css"))
+      format = list(html = list(css = "../../css/talks.css")),
+      slides_url = x$slides_url
     )
   )
   x$is_tutorial <- is_tutorial

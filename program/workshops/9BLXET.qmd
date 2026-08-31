@@ -14,13 +14,14 @@ image: /img/user.png
 format:
   html:
     css: ../../css/talks.css
+slides_url: ~
 
 ---
 
 ```{=html}
 <div class="talk-container">
   <article class="talk-card">
-    
+
     <!-- Header Section -->
     <header class="talk-header">
       <div class="talk-datetime">
@@ -34,30 +35,33 @@ format:
 
     <!-- Body Section -->
     <div class="talk-body">
-      
+
       <!-- Main Description -->
       <section class="talk-description">
-        A summary of the day, with some information on other events and organisations in the local data analysis space.
+        <p>A summary of the day, with some information on other events and organisations in the local data analysis space.</p>
+
+
+        <div class="talk-cta">
+
+          <a href="https://events.humanitix.com/wombat-2026-day-2-workshop" class="btn-register" target="_blank" rel="noopener">
+            Register for the workshop day
+          </a>
+
+        </div>
       </section>
 
       <!-- Sidebar -->
       <div class="talk-sidebar">
-        
-        <!-- Interactive CTA -->
-
-        <a href="https://events.humanitix.com/wombat-2026-day-2-workshop" class="btn-register" target="_blank" rel="noopener">
-          Register for the workshop day
-        </a>
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
           <img src="" alt="Mitchell O’Hara-Wild" class="speaker-img">
           <h2 class="speaker-name">
-                     
+            
           </h2>
-          <p class="speaker-bio">
-                      
-          </p>
+          <div class="speaker-bio">
+            
+          </div>
         </div>
 
       </div>
