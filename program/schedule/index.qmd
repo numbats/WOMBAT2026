@@ -5,51 +5,61 @@ listing:
     contents:
       - "../tutorials/SLTKXH.qmd"
     type: default
+    template: session-card.ejs
     fields: [title, time, speakerlist, room, image]
   - id: tut-reproducibility-pm
     contents:
       - "../tutorials/YGAET3.qmd"
     type: default
+    template: session-card.ejs
     fields: [title, time, speakerlist, room, image]
   - id: tut-publishing-am
     contents:
       - "../tutorials/GH98C8.qmd"
     type: default
+    template: session-card.ejs
     fields: [title, time, speakerlist, room, image]
   - id: tut-publishing-pm
     contents:
       - "../tutorials/3SLZLV.qmd"
     type: default
+    template: session-card.ejs
     fields: [title, time, speakerlist, room, image]
   - id: tut-analysis-am
     contents:
       - "../tutorials/CN3WGS.qmd"
     type: default
+    template: session-card.ejs
     fields: [title, time, speakerlist, room, image]
   - id: tut-analysis-pm
     contents:
       - "../tutorials/EWFCQ8.qmd"
     type: default
+    template: session-card.ejs
     fields: [title, time, speakerlist, room, image]
   - id: tut-development-am
     contents:
       - "../tutorials/CUWXCY.qmd"
     type: default
+    template: session-card.ejs
     fields: [title, time, speakerlist, room, image]
   - id: tut-development-pm
     contents:
       - "../tutorials/HZ7WBW.qmd"
     type: default
+    template: session-card.ejs
     fields: [title, time, speakerlist, room, image]
   - id: group-welcome
     contents:
       - "../workshops/XMNJDY.qmd"
     type: default
+    template: session-card.ejs
     fields: [title, time, room]
   - id: group-keynote
     contents:
       - "../workshops/DSBAZG.qmd"
     type: default
+    template: session-card.ejs
     fields: [title, time, speakerlist, room, image]
   - id: group-timeseries
     contents:
@@ -57,6 +67,7 @@ listing:
       - "../workshops/LLGRVM.qmd"
       - "../workshops/V3TNQS.qmd"
     type: default
+    template: session-card.ejs
     sort: "date"
     fields: [title, time, speakerlist, room, image]
   - id: group-showcase
@@ -65,29 +76,34 @@ listing:
       - "../workshops/TDDWAC.qmd"
       - "../workshops/MNFGHE.qmd"
     type: default
+    template: session-card.ejs
     sort: "date"
     fields: [title, time, speakerlist, room, image]
   - id: group-conversation
     contents:
       - "../workshops/GVZ9AP.qmd"
     type: default
+    template: session-card.ejs
     fields: [title, time, speakerlist, room, image]
   - id: group-ai
     contents:
       - "../workshops/KAMAAS.qmd"
       - "../workshops/PXBGKN.qmd"
     type: default
+    template: session-card.ejs
     sort: "date"
     fields: [title, time, speakerlist, room, image]
   - id: group-forecasting
     contents:
       - "../workshops/WD3RU7.qmd"
     type: default
+    template: session-card.ejs
     fields: [title, time, speakerlist, room, image]
   - id: group-closing
     contents:
       - "../workshops/9BLXET.qmd"
     type: default
+    template: session-card.ejs
     fields: [title, time, room]
 format:
   html:

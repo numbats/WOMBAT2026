@@ -211,23 +211,35 @@ h2 {
   position: absolute;
   top: 1.25rem;
   right: 1.25rem;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   margin: 0;
   z-index: 2;
 }
 
+.quarto-post .thumbnail.speaker-avatars {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
 .quarto-post .thumbnail-image {
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #ffffff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+}
+
+.quarto-post .thumbnail.speaker-avatars .thumbnail-image + .thumbnail-image {
+  margin-left: -16px;
 }
 
 .quarto-post .body {
-  padding-right: 3.5rem;
+  padding-right: 6rem;
 }
 
 .quarto-post:hover {

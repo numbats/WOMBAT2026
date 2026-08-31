@@ -1,0 +1,61 @@
+<%
+const speakersFor = (item) => {
+  if (!item.speaker) return [];
+  const list = Array.isArray(item.speaker) ? item.speaker : [item.speaker];
+  return list.filter((sp) => sp && sp.avatar_url);
+};
+
+const metaFields = ['time', 'speakerlist', 'room'];
+%>
+
+::: {.list .quarto-listing-default}
+
+<% for (const item of items) { %>
+<%
+const speakers = speakersFor(item);
+%>
+
+::: {.quarto-post}
+
+<% if (speakers.length > 0) { %>
+
+```{=html}
+<div class="thumbnail speaker-avatars"><a href="<%- item.path %>" class="no-external">
+<% for (const speaker of speakers) { %>
+<img src="<%- speaker.avatar_url %>" class="thumbnail-image" alt="<%= speaker.name ? speaker.name : '' %>" loading="lazy">
+<% } %>
+</a></div>
+```
+
+<% } %>
+
+::: {.body}
+
+<h3 class="no-anchor listing-title"><a href="<%- item.path %>" class="no-external"><%= item.title %></a></h3>
+
+:::
+
+::: {.metadata}
+
+```{=html}
+<a href="<%- item.path %>" class="no-external">
+```
+
+<% for (const field of metaFields) { %>
+<% const value = item[field]; %>
+<% if (value && String(value).trim() !== '') { %>
+<div class="metadata-value listing-<%= field %>"><%= value %></div>
+<% } %>
+<% } %>
+
+```{=html}
+</a>
+```
+
+:::
+
+:::
+
+<% } %>
+
+:::
