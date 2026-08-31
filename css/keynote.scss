@@ -3,7 +3,7 @@
 /*-- scss:defaults --*/
 @import "theme.scss";
 
-$primary-color: $secondary;
+$primary-color: $primary;
 $bg-gradient-start: lighten($primary, 40%);
 $bg-gradient-end: lighten($primary, 40%);
 $bg-gradient: linear-gradient(
