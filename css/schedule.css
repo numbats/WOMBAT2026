@@ -206,19 +206,23 @@ h2 {
   gap: 0 !important;
 }
 
-/* --- Speaker avatars (right of metadata text) --- */
-.quarto-post .thumbnail {
+/* --- Speaker avatars (right of metadata text) ---
+   Nested under .metadata to out-specificity Quarto's bundled
+   `div.quarto-post .thumbnail` / `div.quarto-post .thumbnail img` rules
+   (quarto-listing.scss), which otherwise set flex-basis: 30% on the
+   wrapper and width: 100% on the image, stretching it off-square. */
+.quarto-post .metadata .thumbnail {
   display: flex;
   align-items: center;
+  flex: 0 0 auto;
   width: auto;
   height: auto;
   margin: 0;
-  flex-shrink: 0;
 }
 
-.quarto-post .thumbnail-image {
-  width: 40px;
-  height: 40px;
+.quarto-post .metadata .thumbnail-image {
+  width: 60px;
+  height: 60px;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover;
@@ -227,8 +231,8 @@ h2 {
   flex-shrink: 0;
 }
 
-.quarto-post .thumbnail-image + .thumbnail-image {
-  margin-left: -16px;
+.quarto-post .metadata .thumbnail-image + .thumbnail-image {
+  margin-left: -20px;
 }
 
 .quarto-post:hover {
