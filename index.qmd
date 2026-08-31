@@ -464,9 +464,10 @@ science.*]{.hero-desc}
 
 ```{=html}
 <section class="community-section">
-    <h2>Community @ WOMBAT</h1>
+    <h2>Community @ WOMBAT</h2>
     <p class="community-desc">
-      At WOMBAT, Community is made up in the people you meet in between. Be it with food or coffee in hand, connecting with like minded people is always encouraged and made easy in WOMBAT 2026.
+      WOMBAT isn't just about the talks. It's about the people in the room. <br>
+      Join the conversation between sessions and meet your fellow analysts.
     </p>
 
     <!-- Gallery Sub-section -->
