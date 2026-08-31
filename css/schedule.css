@@ -55,11 +55,25 @@ h2 {
   margin-bottom: 2rem;
 }
 
+/* Quarto's bundled listing CSS puts a 1em bottom padding on every listing
+   wrapper (`.quarto-listing { padding-bottom: 1em }`), meant to space a
+   listing from whatever follows it on a normal blog-index page. Here each
+   listing wrapper is a single grid cell holding one card, so that padding
+   just shows up as dead space below the card. */
+.quarto-listing {
+  padding-bottom: 0;
+}
+
 /* --- Grid Layout for Listings --- */
 .list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 1.5rem;
+  /* Stretch cards to match the tallest one in the row, so every card in
+     a row shares one height. The extra space this adds to shorter cards
+     isn't dead: .quarto-post below turns it into a gap between the title
+     and the metadata (title pinned top, metadata pinned bottom). */
+  align-items: stretch;
 }
 
 /* --- Tutorial timetable (Day 1): rows = streams, columns = AM/PM --- */
@@ -74,6 +88,9 @@ h2 {
   display: grid;
   grid-template-columns: 150px 1fr 1fr;
   gap: 1.5rem;
+  /* stretch, matching .list above: the AM and PM cards in a row share one
+     height, with the extra space landing as a gap between title and
+     metadata rather than as a mismatched card height. */
   align-items: stretch;
 }
 
@@ -101,10 +118,10 @@ h2 {
 .tutorial-row .list {
   grid-template-columns: 1fr;
   gap: 1rem;
-  height: 100%;
-}
-
-.tutorial-row .quarto-post {
+  /* Each AM/PM cell wraps its .list in a .quarto-listing div (see the
+     .quarto-listing rule above); align-items: stretch on .tutorial-row only
+     stretches that wrapper, so height: 100% is needed here to carry the
+     stretch down into the .list that actually contains the card. */
   height: 100%;
 }
 
@@ -196,10 +213,9 @@ h2 {
 /* --- Interactive Cards --- */
 .quarto-post {
   position: relative;
-  height: 100%;
   background: #ffffff;
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 1.25rem;
   box-shadow:
     0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -209,6 +225,8 @@ h2 {
     box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column !important;
+  /* Push .body and .metadata to the top and bottom of the (now
+     row-stretched) card, so the gap from stretching lands between them. */
   justify-content: space-between;
   gap: 0 !important;
 }
@@ -249,9 +267,22 @@ h2 {
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
+/* Quarto's bundled listing CSS (quarto-listing.scss) sets
+   `div.quarto-post .body { flex: 1 0 45% }` for its default horizontal card
+   layout. Since .quarto-post is flipped to flex-direction: column above,
+   that flex-grow stretches the title wrapper to fill the card's vertical
+   space, leaving a large empty gap below the title before .metadata. The
+   bundled rule's `div` type selector out-specifies a plain class selector
+   here, so !important (rather than the usual specificity-matching used
+   elsewhere in this file) is needed to pin .body back to its content size. */
+.quarto-post .body {
+  flex-grow: 0 !important;
+  flex-basis: auto !important;
+}
+
 /* --- Card Typography & Links --- */
 .listing-title {
-  margin: 0 0 1rem 0;
+  margin: 0 0 0.5rem 0 !important;
   font-size: 1.25rem;
   line-height: 1.4;
 }
@@ -290,8 +321,8 @@ h2 {
 
 .metadata {
   border-top: 1px solid #f1f5f9;
-  padding-top: 1rem;
-  margin-top: auto;
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .metadata-value {
