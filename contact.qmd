@@ -9,6 +9,7 @@ format:
 ---
 
 <section class="contact-section">
+    <h1 class="visually-hidden">Contact WOMBAT 2026</h1>
     <h2>Got a question?</h2>
     <p class="contact-desc">
       Reach out to us with any question you have!

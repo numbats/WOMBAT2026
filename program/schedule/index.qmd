@@ -112,6 +112,7 @@ format:
 ---
 
 ```{=html}
+<h1 class="visually-hidden">WOMBAT 2026 Schedule</h1>
 <!-- Sticky Day Switcher -->
   <nav id="day-switcher">
     <button class="switcher-btn active" data-target="day-1-tutorials">
