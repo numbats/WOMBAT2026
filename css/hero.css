@@ -115,6 +115,58 @@ body:has(.hero).hero-navbar-scrolled
   margin-top: 1rem;
 }
 
+/* ── Live Schedule button (swapped in for Register during the event) ───────── */
+
+.btn-live {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  border-color: #dc2626;
+  color: #dc2626 !important;
+}
+
+.btn-live:hover,
+.btn-live:focus-visible {
+  background: rgba(220, 38, 38, 0.08);
+  border-color: #b91c1c;
+  color: #b91c1c !important;
+}
+
+.btn-live .live-dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: #dc2626;
+  display: inline-block;
+  animation: live-dot-blink 1.4s ease-in-out infinite;
+}
+
+@keyframes live-dot-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+}
+
+body.event-live .btn-live {
+  display: inline-flex;
+}
+
+body.event-live #hero-register-btn {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-live,
+  .btn-live .live-dot {
+    animation: none;
+  }
+}
+
 .hero > :first-child {
   margin-top: 0;
 }

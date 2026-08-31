@@ -43,9 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1d402b1b4cf49a3a897b968390d3090d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-1d402b1b4cf49a3a897b968390d3090d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-1d402b1b4cf49a3a897b968390d3090d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-610c61d7fcda58cef450b330567d3b59.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-610c61d7fcda58cef450b330567d3b59.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-610c61d7fcda58cef450b330567d3b59.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -110,6 +110,10 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="./participation/register.html"> 
 <span class="menu-text">Register</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./live.html"> 
+<span class="menu-text">Live Program</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -290,6 +294,21 @@ Reach out to us with any question you have!
       hero.appendChild(wrap);
     });
   });
+</script>
+<script>
+(function () {
+  // Single source of truth for "is the event on today", used to reveal the
+  // Live Program navbar link (css/theme.scss) and, on the homepage, swap
+  // the hero's Register button for a Live Schedule one (css/hero.css).
+  var startDateHuman = '2026-11-30';
+  var endDateHuman = '2026-12-01';
+  var pad = function (n) { return String(n).padStart(2, '0'); };
+  var today = new Date();
+  var todayHuman = today.getFullYear() + '-' + pad(today.getMonth() + 1) + '-' + pad(today.getDate());
+  if (todayHuman >= startDateHuman && todayHuman <= endDateHuman) {
+    document.body.classList.add('event-live');
+  }
+})();
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

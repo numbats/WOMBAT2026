@@ -46,6 +46,10 @@
     ]
   },
   {
+    "listing": "/about/committee/index.html",
+    "items": []
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/program/tutorials/SLTKXH.html",
@@ -67,10 +71,6 @@
       "/program/workshops/TEFDRV.html",
       "/program/workshops/WD3RU7.html"
     ]
-  },
-  {
-    "listing": "/about/committee/index.html",
-    "items": []
   },
   {
     "listing": "/program/tutorials.html",
