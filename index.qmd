@@ -1,6 +1,74 @@
 ---
 title: ""
 pagetitle: "WOMBAT 2026 – Data Science & Analytics Workshop"
+listing:
+  # Program preview (homepage). Each entry pulls straight from the same
+  # tutorial/workshop source files program/schedule/ uses, so a title,
+  # speaker or time change there shows up here too. Keynote and
+  # Conversation aren't listed here -- see the comments in the Program
+  # section below for why those two stay hand-written.
+  - id: home-d1-reproducibility
+    contents:
+      - program/tutorials/SLTKXH.qmd
+      - program/tutorials/YGAET3.qmd
+    type: default
+    template: partials/day1-person-row.ejs
+    sort: "date"
+    fields: [title, time, speakerlist, room, image]
+  - id: home-d1-publishing
+    contents:
+      - program/tutorials/GH98C8.qmd
+      - program/tutorials/3SLZLV.qmd
+    type: default
+    template: partials/day1-person-row.ejs
+    sort: "date"
+    fields: [title, time, speakerlist, room, image]
+  - id: home-d1-analysis
+    contents:
+      - program/tutorials/CN3WGS.qmd
+      - program/tutorials/EWFCQ8.qmd
+    type: default
+    template: partials/day1-person-row.ejs
+    sort: "date"
+    fields: [title, time, speakerlist, room, image]
+  - id: home-d1-development
+    contents:
+      - program/tutorials/CUWXCY.qmd
+      - program/tutorials/HZ7WBW.qmd
+    type: default
+    template: partials/day1-person-row.ejs
+    sort: "date"
+    fields: [title, time, speakerlist, room, image]
+  - id: home-d2-timeseries
+    contents:
+      - program/workshops/CUT7T3.qmd
+      - program/workshops/LLGRVM.qmd
+      - program/workshops/V3TNQS.qmd
+    type: default
+    template: partials/day2-person-card.ejs
+    sort: "date"
+    fields: [title, time, speakerlist, room, image]
+  - id: home-d2-showcase
+    contents:
+      - program/workshops/LDBUTX.qmd
+      - program/workshops/TDDWAC.qmd
+      - program/workshops/MNFGHE.qmd
+    type: default
+    template: partials/day2-person-card.ejs
+    sort: "date"
+    fields: [title, time, speakerlist, room, image]
+  - id: home-d2-ai
+    contents:
+      - program/workshops/KAMAAS.qmd
+      - program/workshops/PXBGKN.qmd
+      - program/workshops/TEFDRV.qmd
+      - program/workshops/WD3RU7.qmd
+    type: default
+    template: partials/day2-person-card.ejs
+    sort: "date"
+    fields: [title, time, speakerlist, room, image]
+    template-params:
+      grid: true
 format:
   html:
     include-in-header:
@@ -202,11 +270,196 @@ science.*]{.hero-desc}
 # Program
 
 ::: {.program}
+
 ```{=html}
-<div class="banner">
-  Program details will be announced soon!
+<div class="stat-strip">
+  <div class="stat"><b>2</b><span>Days</span></div>
+  <div class="stat"><b>8</b><span>Tutorials</span></div>
+  <div class="stat"><b>12</b><span>Talks</span></div>
+  <div class="stat"><b>21</b><span>Speakers</span></div>
 </div>
 ```
+
+```{=html}
+<div class="day-heading"><span class="day-num">Day 1</span><span class="day-date">Mon 30 Nov &middot; Tutorials</span></div>
+```
+
+::: {.track-grid}
+
+::: {.track-card}
+::: {.track-head}
+```{=html}
+<div class="track-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 3v12"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="6" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg></div>
+```
+##### Reproducibility {.no-anchor}
+:::
+
+::::: {#home-d1-reproducibility}
+:::::
+:::
+
+::: {.track-card}
+::: {.track-head}
+```{=html}
+<div class="track-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v18H6.5A2.5 2.5 0 0 0 4 22.5z"/><path d="M4 4.5v16"/></svg></div>
+```
+##### Publishing {.no-anchor}
+:::
+
+::::: {#home-d1-publishing}
+:::::
+:::
+
+::: {.track-card}
+::: {.track-head}
+```{=html}
+<div class="track-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20V10M12 20V4M20 20v-7"/></svg></div>
+```
+##### Analysis {.no-anchor}
+:::
+
+::::: {#home-d1-analysis}
+:::::
+:::
+
+::: {.track-card}
+::: {.track-head}
+```{=html}
+<div class="track-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m8 6-5 6 5 6M16 6l5 6-5 6"/></svg></div>
+```
+##### Development {.no-anchor}
+:::
+
+::::: {#home-d1-development}
+:::::
+:::
+
+:::
+
+```{=html}
+<div class="day-heading"><span class="day-num">Day 2</span><span class="day-date">Tue 1 Dec &middot; Workshop</span></div>
+```
+
+::: {.day2-stack}
+
+::: {.day2-block}
+::: {.day2-label}
+```{=html}
+<div class="track-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2 9 9l-7 1 5 5-1.5 7L12 18.5 18.5 22 17 15l5-5-7-1z"/></svg></div>
+```
+##### Keynote {.no-anchor}
+:::
+
+<!-- Hand-written, not a listing: this points back up to the Keynote
+     section already on this page rather than duplicating it, so it isn't
+     a good fit for the per-item listing templates below. Source:
+     program/workshops/DSBAZG.qmd -- keep the name/photo/time in sync with
+     that file if the keynote changes. -->
+```{=html}
+<div class="people-row">
+  <a href="#keynote" class="person-card">
+    <div class="person-time">9:00 AM</div>
+    <div class="pc-row">
+      <div class="avatar-slot">
+        <img src="https://conf.nectric.com.au/media/avatars/9RABY7_45oaFxq.webp" alt="Rob Hyndman" class="avatar" loading="lazy">
+      </div>
+      <div class="person-main">
+        <div class="person-name">Rob Hyndman</div>
+        <div class="person-title">Spotting the weird ones (details above)</div>
+      </div>
+    </div>
+  </a>
+</div>
+```
+:::
+
+::: {.day2-block}
+::: {.day2-label}
+```{=html}
+<div class="track-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 17 9 9l4 4 8-10"/><path d="M15 3h6v6"/></svg></div>
+```
+##### Time Series {.no-anchor}
+:::
+
+::::: {#home-d2-timeseries}
+:::::
+:::
+
+::: {.day2-block}
+::: {.day2-label}
+```{=html}
+<div class="track-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v3M12 18v3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M3 12h3M18 12h3M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/><circle cx="12" cy="12" r="4"/></svg></div>
+```
+##### Showcase {.no-anchor}
+:::
+
+::::: {#home-d2-showcase}
+:::::
+:::
+
+::: {.day2-block}
+::: {.day2-label}
+```{=html}
+<div class="track-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-4-1L3 20l1-4.5A8.38 8.38 0 0 1 3.5 11 8.5 8.5 0 1 1 21 11.5z"/></svg></div>
+```
+##### Conversation {.no-anchor}
+:::
+
+<!-- Hand-written, not a listing: one session shared by a host and two
+     guests doesn't map onto the "one card per speaker" listing templates
+     below, so this panel is written out directly. Source:
+     program/workshops/GVZ9AP.qmd -- keep names/photos/time/roles in sync
+     with that file if the conversation's line-up changes. -->
+```{=html}
+<div class="conv-panel">
+  <div class="person-time">1:30 PM</div>
+  <div class="conv-people">
+    <div class="conv-side conv-host">
+      <img src="https://conf.nectric.com.au/media/avatars/VCASXU_BLNvx3U.webp" alt="Cynthia Huang" class="avatar conv-avatar" loading="lazy">
+      <div>
+        <div class="person-name">Cynthia Huang</div>
+        <span class="conv-role host-role">Host</span>
+      </div>
+    </div>
+    <div class="conv-link" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H9l-4 3v-3H5a2 2 0 0 1-2-2z"/><path d="M21 11v3a2 2 0 0 1-2 2h-1v3l-3-3"/></svg>
+      <span>with</span>
+    </div>
+    <div class="conv-side conv-guests">
+      <div class="avatar-group">
+        <img src="https://conf.nectric.com.au/media/avatars/3ZEQF8_k3GMDrc.webp" alt="Hadley Wickham" class="avatar conv-avatar" loading="lazy">
+        <img src="https://conf.nectric.com.au/media/avatars/EVHPNU_jMTr35E.webp" alt="Damjan Vukcevic" class="avatar conv-avatar avatar-overlap" loading="lazy">
+      </div>
+      <div>
+        <div class="person-name">Hadley Wickham &amp; Damjan Vukcevic</div>
+        <span class="conv-role guest-role">Guests</span>
+      </div>
+    </div>
+  </div>
+</div>
+```
+:::
+
+::: {.day2-block}
+::: {.day2-label}
+```{=html}
+<div class="track-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.5 4.5l2 2M19.5 4.5l-2 2M4.5 19.5l2-2M19.5 19.5l-2-2"/></svg></div>
+```
+##### Artificial Intelligence {.no-anchor}
+:::
+
+::::: {#home-d2-ai}
+:::::
+:::
+
+:::
+
+```{=html}
+<div class="program-cta">
+  <a href="program/schedule/" class="btn-program">View the full schedule &rarr;</a>
+</div>
+```
+
 :::
 
 ```{=html}

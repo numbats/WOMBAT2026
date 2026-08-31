@@ -1,0 +1,43 @@
+<%
+// One .person-row per tutorial slot (AM/PM) in a Day 1 track card. A slot
+// with two co-presenters gets two overlapping photos via avatar-slot, same
+// fixed-width column a one-photo slot uses, so every row's name/title
+// lines up regardless of how many photos it's carrying.
+//
+// The row is a <div>, not an <a> -- wrapping every field in one <a> was
+// tripping up Pandoc's raw-HTML-block parsing when this rendered output
+// got run back through it (Quarto re-parses a listing template's output as
+// markdown). Bootstrap's .stretched-link on a plain, empty anchor makes
+// the whole row clickable instead.
+//
+// Every output line below starts at column 0 -- 4+ spaces of leading
+// indentation reads as a Markdown indented code block instead of raw HTML.
+const speakersFor = (item) => {
+  if (!item.speaker) return [];
+  const list = Array.isArray(item.speaker) ? item.speaker : [item.speaker];
+  return list.filter((sp) => sp && sp.avatar_url);
+};
+%>
+<% for (const item of items) { %>
+<% const speakers = speakersFor(item); %>
+<% const names = speakers.map((sp) => sp.name).join(' & '); %>
+<div class="person-row">
+<div class="avatar-slot">
+<% if (speakers.length > 1) { %>
+<div class="avatar-group">
+<% speakers.forEach((sp, i) => { %>
+<img src="<%- sp.avatar_url %>" alt="<%= sp.name %>" class="avatar<%= i > 0 ? ' avatar-overlap' : '' %>" loading="lazy">
+<% }) %>
+</div>
+<% } else if (speakers.length === 1) { %>
+<img src="<%- speakers[0].avatar_url %>" alt="<%= speakers[0].name %>" class="avatar" loading="lazy">
+<% } %>
+</div>
+<div class="person-main">
+<div class="person-name"><%= names %></div>
+<div class="person-title"><%= item.title %></div>
+</div>
+<div class="person-time"><%= item.time %></div>
+<a href="<%- item.path %>" class="stretched-link" aria-label="<%= names %>: <%= item.title %>, <%= item.time %>"></a>
+</div>
+<% } %>

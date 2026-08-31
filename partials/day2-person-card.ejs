@@ -1,0 +1,52 @@
+<%
+// One .person-card per talk in a Day 2 track (Time Series, Showcase,
+// Artificial Intelligence). Always uses the fixed-width photo column
+// (avatar-slot) so a co-presented talk's two overlapping photos still hand
+// off to the name/title at the same x as every single-photo card beside it.
+//
+// The wrapper is a plain wrapping row by default; set `template-params:
+// { grid: true }` on a listing (as the AI group does) to lay its cards out
+// as a 2x2 grid instead.
+//
+// The card is a <div>, not an <a> -- wrapping every field in one <a> was
+// tripping up Pandoc's raw-HTML-block parsing when this rendered output
+// got run back through it (Quarto re-parses a listing template's output as
+// markdown). Bootstrap's .stretched-link on a plain, empty anchor makes
+// the whole card clickable instead.
+//
+// Every output line below starts at column 0 -- 4+ spaces of leading
+// indentation reads as a Markdown indented code block instead of raw HTML.
+const speakersFor = (item) => {
+  if (!item.speaker) return [];
+  const list = Array.isArray(item.speaker) ? item.speaker : [item.speaker];
+  return list.filter((sp) => sp && sp.avatar_url);
+};
+const isGrid = Boolean(templateParams && templateParams.grid);
+%>
+<div class="people-row<%= isGrid ? ' grid-2' : '' %>">
+<% for (const item of items) { %>
+<% const speakers = speakersFor(item); %>
+<% const names = speakers.map((sp) => sp.name).join(' & '); %>
+<div class="person-card">
+<div class="person-time"><%= item.time %></div>
+<div class="pc-row">
+<div class="avatar-slot">
+<% if (speakers.length > 1) { %>
+<div class="avatar-group">
+<% speakers.forEach((sp, i) => { %>
+<img src="<%- sp.avatar_url %>" alt="<%= sp.name %>" class="avatar<%= i > 0 ? ' avatar-overlap' : '' %>" loading="lazy">
+<% }) %>
+</div>
+<% } else if (speakers.length === 1) { %>
+<img src="<%- speakers[0].avatar_url %>" alt="<%= speakers[0].name %>" class="avatar" loading="lazy">
+<% } %>
+</div>
+<div class="person-main">
+<div class="person-name"><%= names %></div>
+<div class="person-title"><%= item.title %></div>
+</div>
+</div>
+<a href="<%- item.path %>" class="stretched-link" aria-label="<%= names %>: <%= item.title %>, <%= item.time %>"></a>
+</div>
+<% } %>
+</div>
