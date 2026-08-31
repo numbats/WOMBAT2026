@@ -102,10 +102,18 @@
   box-shadow: 0 4px 10px rgba(13, 110, 253, 0.3);
 }
 
-/* --- Section Headers --- */
-section {
-  padding-top: 2rem;
-  margin-bottom: 4rem;
+/* --- Section Headers ---
+   Scoped to the two day-level sections only: `### heading` subsections
+   (Keynote, Time Series Session, ...) are also <section> elements, and a
+   blanket `section` selector here was stacking this padding/margin on top
+   of .session-block's own spacing, producing excessive gaps above each
+   subsection. No padding-top here: .container already pads the top of
+   day-1, and day-1's own margin-bottom already spaces day-2 from it, so
+   adding padding-top on top of either just doubled up the gap above each
+   "Day N" heading. */
+#day-1-tutorials,
+#day-2-workshop {
+  margin-bottom: 3rem;
 }
 
 h2 {
