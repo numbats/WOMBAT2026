@@ -16,7 +16,7 @@ description: "About WOMBAT, the annual data science and analytics workshop organ
 :::
 
 ::: {.g-col-6 .margin_img}
-![](/img/michael-jerrard-mnHs4boXT_0-unsplash.jpg){.block_img width="100%"}
+![](/img/michael-jerrard-mnHs4boXT_0-unsplash.jpg){.block_img width="100%" fig-alt="A wild wombat foraging among ferns and grass"}
 :::
 
 <div></div>
