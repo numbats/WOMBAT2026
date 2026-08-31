@@ -128,7 +128,9 @@ format:
 <script>
 document.addEventListener('DOMContentLoaded', () => {
       const buttons = document.querySelectorAll('.switcher-btn');
-      const sections = document.querySelectorAll('section');
+      const sections = Array.from(buttons)
+        .map(btn => document.getElementById(btn.getAttribute('data-target')))
+        .filter(Boolean);
 
       // 1. Smooth scroll to section when button is clicked
       buttons.forEach(btn => {
@@ -253,7 +255,7 @@ Development
 :::::
 :::
 
-::: {.session-block .session-single .session-keynote}
+::: {.session-block .session-single}
 ### Keynote
 
 ::::: {#group-keynote}
