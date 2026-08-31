@@ -62,10 +62,6 @@ h2 {
   gap: 1.5rem;
 }
 
-#day-2-workshop .list {
-  grid-template-columns: repeat(2, minmax(480px, 1fr));
-}
-
 /* --- Tutorial stream columns (Day 1) --- */
 .tutorial-streams {
   display: grid;
@@ -99,6 +95,66 @@ h2 {
   .tutorial-streams {
     grid-template-columns: 1fr;
   }
+}
+
+/* --- Day 2 session groups --- */
+.session-block {
+  margin-bottom: 2.5rem;
+}
+
+.session-block > h3 {
+  text-align: center;
+  font-size: 1.15rem;
+  color: #0f345c;
+  margin-bottom: 1rem;
+}
+
+.session-grid-3 .list {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 900px) {
+  .session-grid-3 .list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.session-single .list {
+  grid-template-columns: 1fr;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.session-keynote .quarto-post {
+  border: 2px solid #fbac27;
+}
+
+.session-deemphasized {
+  margin-bottom: 1rem;
+  opacity: 0.65;
+}
+
+.session-deemphasized .list {
+  grid-template-columns: 1fr;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.session-deemphasized .quarto-post {
+  box-shadow: none;
+  border: 1px dashed #e2e8f0;
+  padding: 0.75rem 1rem;
+  background: transparent;
+}
+
+.session-deemphasized .listing-title {
+  font-size: 1rem;
+}
+
+.session-deemphasized .metadata {
+  border-top: none;
+  padding-top: 0.25rem;
+  margin-top: 0.25rem;
 }
 
 /* --- Interactive Cards --- */

@@ -29,12 +29,54 @@ listing:
     type: default
     sort: "date"
     fields: [title, time, speakerlist, room, image]
-  - id: workshops
+  - id: group-welcome
     contents:
-      - "../workshops/*.qmd"
+      - "../workshops/XMNJDY.qmd"
+    type: default
+    fields: [title, time, room]
+  - id: group-keynote
+    contents:
+      - "../workshops/DSBAZG.qmd"
+    type: default
+    fields: [title, time, speakerlist, room, image]
+  - id: group-timeseries
+    contents:
+      - "../workshops/CUT7T3.qmd"
+      - "../workshops/LLGRVM.qmd"
+      - "../workshops/V3TNQS.qmd"
     type: default
     sort: "date"
     fields: [title, time, speakerlist, room, image]
+  - id: group-showcase
+    contents:
+      - "../workshops/LDBUTX.qmd"
+      - "../workshops/TDDWAC.qmd"
+      - "../workshops/MNFGHE.qmd"
+    type: default
+    sort: "date"
+    fields: [title, time, speakerlist, room, image]
+  - id: group-conversation
+    contents:
+      - "../workshops/GVZ9AP.qmd"
+    type: default
+    fields: [title, time, speakerlist, room, image]
+  - id: group-ai
+    contents:
+      - "../workshops/KAMAAS.qmd"
+      - "../workshops/PXBGKN.qmd"
+    type: default
+    sort: "date"
+    fields: [title, time, speakerlist, room, image]
+  - id: group-forecasting
+    contents:
+      - "../workshops/WD3RU7.qmd"
+    type: default
+    fields: [title, time, speakerlist, room, image]
+  - id: group-closing
+    contents:
+      - "../workshops/9BLXET.qmd"
+    type: default
+    fields: [title, time, room]
 format:
   html:
     css: [../../css/schedule.css]
@@ -138,6 +180,53 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ## Day 2 workshop
 
-::::: {#workshops}
+::: {.session-block .session-deemphasized}
+::::: {#group-welcome}
 :::::
+:::
+
+::: {.session-block .session-single .session-keynote}
+### Keynote
+
+::::: {#group-keynote}
+:::::
+:::
+
+::: {.session-block}
+### Time Series Session
+
+::::: {.session-grid-3 #group-timeseries}
+:::::
+:::
+
+::: {.session-block}
+### Showcase
+
+::::: {.session-grid-3 #group-showcase}
+:::::
+:::
+
+::: {.session-block .session-single}
+### Conversation
+
+::::: {#group-conversation}
+:::::
+:::
+
+::: {.session-block}
+### AI Sessions
+
+::::: {.session-grid-3 #group-ai}
+:::::
+:::
+
+::: {.session-block .session-single}
+::::: {#group-forecasting}
+:::::
+:::
+
+::: {.session-block .session-deemphasized}
+::::: {#group-closing}
+:::::
+:::
 :::
