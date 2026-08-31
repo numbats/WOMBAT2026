@@ -9,7 +9,7 @@
 <meta name="dcterms.date" content="2026-11-30">
 <meta name="description" content="Generated summary">
 
-<title>WOMBAT 2026: Reproducibility with targets – WOMBAT 2026 – Data Science &amp; Analytics Workshop</title>
+<title>WOMBAT 2026: A Gentle Introduction to Targets – WOMBAT 2026 – Data Science &amp; Analytics Workshop</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -45,9 +45,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-9e1cc88f78388d8707da7f5286a7203d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-9e1cc88f78388d8707da7f5286a7203d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-9e1cc88f78388d8707da7f5286a7203d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-ea8dbb62659f89e5e883f7c889473e4b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-ea8dbb62659f89e5e883f7c889473e4b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-ea8dbb62659f89e5e883f7c889473e4b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -68,6 +68,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../css/talks.css">
 <meta property="og:title" content="WOMBAT 2026 – Data Science &amp; Analytics Workshop">
 <meta property="og:description" content="The Annual Workshop Organised by the Monash Business Analytics Team in Melbourne, Australia.">
+<meta property="og:image" content="https://conf.nectric.com.au/media/avatars/FLUHHT_UtCG6vC.webp">
 <meta property="og:site_name" content="WOMBAT 2026 – Data Science &amp; Analytics Workshop">
 </head>
 
@@ -129,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Reproducibility with targets</h1>
+<h1 class="title">A Gentle Introduction to Targets</h1>
 </div>
 
 <div>
@@ -159,7 +160,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="talk-container">
   <article class="talk-card">
-    
+
     <!-- Header Section -->
     <header class="talk-header">
       <div class="talk-datetime">
@@ -168,35 +169,47 @@ ul.task-list li input[type="checkbox"] {
         </svg>
         November 30, 09:00 AM
       </div>
-      <h1 class="talk-title">Reproducibility with targets</h1>
+      <h1 class="talk-title">A Gentle Introduction to Targets</h1>
     </header>
 
     <!-- Body Section -->
     <div class="talk-body">
-      
+
       <!-- Main Description -->
       <section class="talk-description">
-        TBC
+        <p>Data analysis is an iterative process. Data cleaning, exploratory data analysis (EDA), and model fitting are rarely run without a hitch from start to finish. Each step takes time, and often requires revisiting earlier steps to correct for newly discovered problems. For example, in performing EDA, you can unearth a text issue that requires revisiting data cleaning. When you are finally done with the analysis, you will need to reproduce it to check it all works as expected.</p>
+<p>To reproduce the analysis, there is a temptation to run the code again from the top, which may take a long time. You can save time by saving model outputs, but if you make a change to an earlier data cleaning step, you’ll need to update everything that depends on that. You can write code to manage these dependencies, but this is a hard problem. Fortunately, "pipeline tools" are an existing approach to manage these dependencies. They take care of the details of watching which files and relevant code changes, and only run the necessary parts. The {targets} R package is one popular pipeline approach, providing extensive documentation and user support. However, it presents a different coding practice that might not be familiar.</p>
+<p>In this interactive workshop, I will gently introduce the ideas behind {targets}, and will live code a data analysis using {targets} from scratch, warts and all. I encourage questions throughout the live coding workshop, so you can understand the process and see how this could benefit your own work.</p>
+<p>I have three goals in this workshop:</p>
+<ol>
+<li>To convince you {targets} is worth learning, and that you can use it</li>
+<li>For you to be able to start using {targets} after 45 minutes</li>
+<li>For you to feel more confident writing functions</li>
+</ol>
+
+
+        <div class="talk-cta">
+          <a href="https://events.humanitix.com/wombat-2026-day-1-tutorials" class="btn-register" target="_blank" rel="noopener">
+            Register for this tutorial
+          </a>
+
+
+        </div>
       </section>
 
       <!-- Sidebar -->
       <div class="talk-sidebar">
-        
-        <!-- Interactive CTA -->
-        <a href="https://events.humanitix.com/wombat-2026-day-1-tutorials" class="btn-register" target="_blank" rel="noopener">
-          Register for this tutorial
-        </a>
-
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
-          <img src="NA" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <img src="https://conf.nectric.com.au/media/avatars/FLUHHT_UtCG6vC.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
           <h2 class="speaker-name">
-            Nicholas Tierney         
+            Nick Tierney
           </h2>
-          <p class="speaker-bio">
-            NA          
-          </p>
+          <div class="speaker-bio">
+            <p>Dr. Nicholas (Nick) Tierney is a statistician, <a href="https://researchsoftware.org/">Research Software Engineer</a>, and freelance consultant with a PhD in Statistics who specializes in data analytics, R package development, and teaching. Previously, he worked with <a href="https://www.thekids.org.au/contact-us/our-people/g/nick-golding/">Prof. Nick Golding</a> at <a href="https://www.thekids.org.au/">The Kids Research Institute Australia</a> and was a Research Fellow at Monash University with <a href="https://www.dicook.org/">Professor Dianne Cook</a>, where he developed tools for exploratory data analysis including <a href="https://docs.ropensci.org/visdat/">visdat</a>, <a href="https://naniar.njtierney.com/">naniar</a>, and <a href="https://brolgar.njtierney.com/">brolgar</a> (more at his <a href="https://github.com/njtierney">github page</a>). Nick actively writes about R related projects at his blog, <a href="https://www.njtierney.com/">"credibly curious"</a>. When not coding, Nick enjoys outdoor adventures and hiked the entire Pacific Crest Trail in 2023, documenting his journey at <a href="https://njt.micro.blog/">njt.micro.blog</a>.</p>
+
+          </div>
         </div>
 
       </div>

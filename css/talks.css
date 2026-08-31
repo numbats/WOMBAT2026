@@ -85,6 +85,45 @@
   font-weight: 600;
 }
 
+.talk-description ol,
+.talk-description ul {
+  margin: 0 0 1.5rem;
+  padding-left: 1.25rem;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #475569;
+}
+
+.talk-description li {
+  margin-bottom: 0.5rem;
+}
+
+.talk-description a,
+.speaker-bio a {
+  color: #1d6fae;
+  font-weight: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(29, 111, 174, 0.35);
+  text-underline-offset: 2px;
+  transition:
+    color 0.15s ease,
+    text-decoration-color 0.15s ease;
+}
+
+.talk-description a:hover,
+.speaker-bio a:hover {
+  color: #0f345c;
+  text-decoration-color: currentColor;
+}
+
+.speaker-bio p {
+  margin: 0 0 0.75rem;
+}
+
+.speaker-bio p:last-child {
+  margin-bottom: 0;
+}
+
 /* Sidebar (Speaker & CTA) */
 .talk-sidebar {
   display: flex;
@@ -110,6 +149,7 @@
 .speaker-img {
   width: 120px;
   height: 120px;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #ffffff;
@@ -138,8 +178,15 @@
   margin: 0;
 }
 
-/* CTA Button */
-.btn-register {
+/* CTA Buttons */
+.talk-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.talk-cta .btn-register {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -154,10 +201,31 @@
   box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.2);
 }
 
-.btn-register:hover {
+.talk-cta .btn-register:hover {
   background: #d69422;
   transform: translateY(-2px);
   box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
+}
+
+.talk-cta .btn-slides {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #0f345c;
+  text-decoration: none;
+  padding: 1.25rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: 2px solid #0f345c;
+  transition: all 0.2s ease;
+}
+
+.talk-cta .btn-slides:hover {
+  background: #0f345c;
+  color: #ffffff;
+  transform: translateY(-2px);
 }
 
 /* Responsive Design */
@@ -165,9 +233,6 @@
   .talk-body {
     grid-template-columns: 1fr;
     gap: 3rem;
-  }
-  .talk-sidebar {
-    grid-row: 1; /* Move speaker & CTA above text on mobile */
   }
 }
 

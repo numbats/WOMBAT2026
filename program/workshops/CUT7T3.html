@@ -9,7 +9,7 @@
 <meta name="dcterms.date" content="2026-12-01">
 <meta name="description" content="Generated summary">
 
-<title>WOMBAT 2026: Modern time series data – WOMBAT 2026 – Data Science &amp; Analytics Workshop</title>
+<title>WOMBAT 2026: mixtime: Temporal data for better analytics – WOMBAT 2026 – Data Science &amp; Analytics Workshop</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -45,9 +45,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-9e1cc88f78388d8707da7f5286a7203d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-9e1cc88f78388d8707da7f5286a7203d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-9e1cc88f78388d8707da7f5286a7203d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-ea8dbb62659f89e5e883f7c889473e4b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-ea8dbb62659f89e5e883f7c889473e4b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-ea8dbb62659f89e5e883f7c889473e4b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -68,6 +68,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../css/talks.css">
 <meta property="og:title" content="WOMBAT 2026 – Data Science &amp; Analytics Workshop">
 <meta property="og:description" content="The Annual Workshop Organised by the Monash Business Analytics Team in Melbourne, Australia.">
+<meta property="og:image" content="https://conf.nectric.com.au/media/avatars/TTTBDY_rgs6zaJ.webp">
 <meta property="og:site_name" content="WOMBAT 2026 – Data Science &amp; Analytics Workshop">
 </head>
 
@@ -129,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Modern time series data</h1>
+<h1 class="title">mixtime: Temporal data for better analytics</h1>
 </div>
 
 <div>
@@ -159,7 +160,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="talk-container">
   <article class="talk-card">
-    
+
     <!-- Header Section -->
     <header class="talk-header">
       <div class="talk-datetime">
@@ -168,35 +169,40 @@ ul.task-list li input[type="checkbox"] {
         </svg>
         December 01, 10:30 AM
       </div>
-      <h1 class="talk-title">Modern time series data</h1>
+      <h1 class="talk-title">mixtime: Temporal data for better analytics</h1>
     </header>
 
     <!-- Body Section -->
     <div class="talk-body">
-      
+
       <!-- Main Description -->
       <section class="talk-description">
-        TBC
+        <p>Time is inherently complex, spanning time zones, calendar systems, and many different temporal resolutions, from event data recorded with millisecond precision to annual reports that aggregate an entire year into a single point. Existing data structures for time typically support only a single granularity, forcing analysts to misrepresent temporal semantics in order to use standard analysis and visualisation tools. For example, it is common to encode monthly data as dates using the first day of the month, or to aggregate everything up to the coarsest common granularity, both of which silently discard information and increase the risk of downstream errors. Analysis across multiple granularities adds to this complexity (e.g. ABS increasing CPI reporting frequency from quarterly to monthly), which existing data types simply aren't designed to handle.</p>
+<p>The <code>mixtime</code> R package overcomes these limitations with granules: first-class extensible objects that characterise temporal semantics, connected via calendar algebra into a traversable graph that supports arithmetic and comparisons across granularities. Time points can further take different modes (linear or cyclical, durations or intervals) and be discrete time spans or continuous time instants. Each combination of properties determines which operations are valid. This talk shows how mixtime's semantic-preserving design enables better tools for exploratory time series analysis. I'll showcase new additions to the <code>ggtime</code> package built directly on this foundation: <code>scale_x_mixtime()</code> for correctly positioning mixed-granularity observations, <code>geom_time_line()</code> for connecting them, and <code>coord_calendar()</code> for arranging timelines in calendar layouts. I will close with a broader look at other analysis tasks that <code>mixtime</code> facilitates with safer semantic-preserving operations.</p>
+
+
+        <div class="talk-cta">
+
+          <a href="https://events.humanitix.com/wombat-2026-day-2-workshop" class="btn-register" target="_blank" rel="noopener">
+            Register for the workshop day
+          </a>
+
+        </div>
       </section>
 
       <!-- Sidebar -->
       <div class="talk-sidebar">
-        
-        <!-- Interactive CTA -->
-
-        <a href="https://events.humanitix.com/wombat-2026-day-2-workshop" class="btn-register" target="_blank" rel="noopener">
-          Register for the workshop day
-        </a>
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
           <img src="https://conf.nectric.com.au/media/avatars/TTTBDY_rgs6zaJ.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
           <h2 class="speaker-name">
-            Mitchell O'Hara-Wild         
+            Mitchell O'Hara-Wild
           </h2>
-          <p class="speaker-bio">
-            Mitchell O’Hara-Wild (he/him) is a PhD candidate at Monash University with over 10 years of experience in time series forecasting, open source software development, and teaching statistics. His recent research focuses on semantic vector types that preserve the structure of probabilistic, temporal, and graph data for safer statistical analysis, including the distributional, mixtime, and graphvec R packages. These semantics are demonstrated in practice by the fable forecasting package, which combines these vectors to facilitate probabilistic forecasting workflows at scale.          
-          </p>
+          <div class="speaker-bio">
+            <p>Mitchell O’Hara-Wild (he/him) is a PhD candidate at Monash University with over 10 years of experience in time series forecasting, open source software development, and teaching statistics. His recent research focuses on semantic vector types that preserve the structure of probabilistic, temporal, and graph data for safer statistical analysis, including the distributional, mixtime, and graphvec R packages. These semantics are demonstrated in practice by the fable forecasting package, which combines these vectors to facilitate probabilistic forecasting workflows at scale.</p>
+
+          </div>
         </div>
 
       </div>

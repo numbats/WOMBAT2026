@@ -4,19 +4,56 @@
   padding: 2rem;
 }
 
-/* --- Sticky Day Switcher --- */
+/* --- Card sizing tokens ---
+   Day 1 and Day 2 share every card rule below; only these values differ,
+   with Day 2 (a lot more sections on one page) using tighter numbers so it
+   stays scannable. Scoping the overrides to #day-2-workshop here, rather
+   than repeating each selector with adjusted values, keeps the two days on
+   one set of rules. */
+:root {
+  --card-padding: 1.25rem;
+  --card-gap: 1.5rem;
+  --block-margin: 2.5rem;
+  --block-heading-size: 1.15rem;
+  --block-heading-margin: 1rem;
+  --title-size: 1.25rem;
+  --title-margin: 0.5rem;
+  --metadata-spacing: 0.5rem;
+  --metadata-value-size: 0.9rem;
+}
+
+#day-2-workshop {
+  --card-padding: 0.85rem 1rem;
+  --card-gap: 1rem;
+  --block-margin: 1.5rem;
+  --block-heading-size: 1.05rem;
+  --block-heading-margin: 0.5rem;
+  --title-size: 1.05rem;
+  --title-margin: 0.3rem;
+  --metadata-spacing: 0.35rem;
+  --metadata-value-size: 0.82rem;
+}
+
+/* --- Day Switcher, floated over the site navbar ---
+   Rather than reserving its own row in the page (the old sticky bar), this
+   is taken out of flow entirely and floated on top of #quarto-header, which
+   Quarto/Bootstrap fixes at the top of every page (.fixed-top, z-index
+   1030) and this site pins so it never scrolls away. Matching the navbar's
+   own min-height (theme.scss) and centering within it makes the buttons
+   read as part of the navbar without editing the site-wide navbar config,
+   which only Quarto's global navbar in _quarto.yml can otherwise populate.
+   z-index just needs to clear the navbar's 1030. */
 #day-switcher {
-  position: sticky;
-  top: 72px;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4.25rem;
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 1rem;
-  z-index: 1000;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-  border-bottom: 1px solid #eaeaea;
+  z-index: 1031;
 }
 
 .switcher-btn {
@@ -29,10 +66,34 @@
   color: #495057;
   cursor: pointer;
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .switcher-btn:hover {
   background: #dee2e6;
+}
+
+/* Below ~690px the full labels ("Day 1 Tutorials") no longer fit the
+   available width and wrap to a second line, which grows the button (and
+   with it #day-switcher's fixed height, clipping into the navbar). Swap to
+   the short label instead of shrinking type further -- at this width
+   there's no room left to lose to smaller, harder-to-tap text. */
+.switcher-btn-short {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .switcher-btn-full {
+    display: none;
+  }
+
+  .switcher-btn-short {
+    display: inline;
+  }
+
+  .switcher-btn {
+    padding: 0.75rem 1.25rem;
+  }
 }
 
 .switcher-btn.active {
@@ -41,10 +102,18 @@
   box-shadow: 0 4px 10px rgba(13, 110, 253, 0.3);
 }
 
-/* --- Section Headers --- */
-section {
-  padding-top: 2rem;
-  margin-bottom: 4rem;
+/* --- Section Headers ---
+   Scoped to the two day-level sections only: `### heading` subsections
+   (Keynote, Time Series Session, ...) are also <section> elements, and a
+   blanket `section` selector here was stacking this padding/margin on top
+   of .session-block's own spacing, producing excessive gaps above each
+   subsection. No padding-top here: .container already pads the top of
+   day-1, and day-1's own margin-bottom already spaces day-2 from it, so
+   adding padding-top on top of either just doubled up the gap above each
+   "Day N" heading. */
+#day-1-tutorials,
+#day-2-workshop {
+  margin-bottom: 3rem;
 }
 
 h2 {
@@ -55,23 +124,139 @@ h2 {
   margin-bottom: 2rem;
 }
 
+/* Quarto's bundled listing CSS puts a 1em bottom padding on every listing
+   wrapper (`.quarto-listing { padding-bottom: 1em }`), meant to space a
+   listing from whatever follows it on a normal blog-index page. Here each
+   listing wrapper is a single grid cell holding one card, so that padding
+   just shows up as dead space below the card. */
+.quarto-listing {
+  padding-bottom: 0;
+}
+
 /* --- Grid Layout for Listings --- */
 .list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 1.5rem;
+  gap: var(--card-gap);
+  /* Stretch cards to match the tallest one in the row, so every card in
+     a row shares one height. The extra space this adds to shorter cards
+     isn't dead: .quarto-post below turns it into a gap between the title
+     and the metadata (title pinned top, metadata pinned bottom). */
+  align-items: stretch;
 }
 
-#day-2-workshop .list {
-  grid-template-columns: repeat(2, minmax(480px, 1fr));
+/* --- Tutorial timetable (Day 1): rows = streams, columns = AM/PM --- */
+.tutorial-table {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tutorial-table-header,
+.tutorial-row {
+  display: grid;
+  grid-template-columns: 150px 1fr 1fr;
+  gap: 1.5rem;
+  /* stretch, matching .list above: the AM and PM cards in a row share one
+     height, with the extra space landing as a gap between title and
+     metadata rather than as a mismatched card height. */
+  align-items: stretch;
+}
+
+.tutorial-table-header {
+  padding-bottom: 0.25rem;
+}
+
+.tutorial-col-header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.tutorial-row-label {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #0f345c;
+}
+
+.tutorial-row .list {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  /* Each AM/PM cell wraps its .list in a .quarto-listing div (see the
+     .quarto-listing rule above); align-items: stretch on .tutorial-row only
+     stretches that wrapper, so height: 100% is needed here to carry the
+     stretch down into the .list that actually contains the card. */
+  height: 100%;
+}
+
+@media (max-width: 800px) {
+  .tutorial-table-header {
+    display: none;
+  }
+
+  .tutorial-row {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .tutorial-row-label {
+    font-size: 1rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid #e2e8f0;
+  }
+}
+
+/* --- Day 2 session groups --- */
+.session-block {
+  margin-bottom: var(--block-margin);
+}
+
+.session-block > h3 {
+  text-align: center;
+  font-size: var(--block-heading-size);
+  color: #0f345c;
+  margin-bottom: var(--block-heading-margin);
+}
+
+.session-grid-3 .list {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.session-grid-2 .list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .session-grid-3 .list,
+  .session-grid-2 .list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.session-single .list {
+  grid-template-columns: 1fr;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.session-keynote .quarto-post {
+  border: 2px solid #fbac27;
 }
 
 /* --- Interactive Cards --- */
 .quarto-post {
-  height: 100%;
+  position: relative;
   background: #ffffff;
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: var(--card-padding);
   box-shadow:
     0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -81,8 +266,36 @@ h2 {
     box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column !important;
+  /* Push .body and .metadata to the top and bottom of the (now
+     row-stretched) card, so the gap from stretching lands between them. */
   justify-content: space-between;
   gap: 0 !important;
+}
+
+/* --- Speaker avatars (right of metadata text) ---
+   Nested under .metadata to out-specificity Quarto's bundled
+   `div.quarto-post .thumbnail` / `div.quarto-post .thumbnail img` rules
+   (quarto-listing.scss), which otherwise set flex-basis: 30% on the
+   wrapper and width: 100% on the image, stretching it off-square. */
+.quarto-post .metadata .thumbnail {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  margin: 0;
+  gap: 0.4rem;
+}
+
+.quarto-post .metadata .thumbnail-image {
+  width: 80px;
+  height: 80px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
 }
 
 .quarto-post:hover {
@@ -92,10 +305,23 @@ h2 {
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
+/* Quarto's bundled listing CSS (quarto-listing.scss) sets
+   `div.quarto-post .body { flex: 1 0 45% }` for its default horizontal card
+   layout. Since .quarto-post is flipped to flex-direction: column above,
+   that flex-grow stretches the title wrapper to fill the card's vertical
+   space, leaving a large empty gap below the title before .metadata. The
+   bundled rule's `div` type selector out-specifies a plain class selector
+   here, so !important (rather than the usual specificity-matching used
+   elsewhere in this file) is needed to pin .body back to its content size. */
+.quarto-post .body {
+  flex-grow: 0 !important;
+  flex-basis: auto !important;
+}
+
 /* --- Card Typography & Links --- */
 .listing-title {
-  margin: 0 0 1rem 0;
-  font-size: 1.25rem;
+  margin: 0 0 var(--title-margin) 0 !important;
+  font-size: var(--title-size);
   line-height: 1.4;
 }
 
@@ -115,19 +341,30 @@ h2 {
 }
 
 /* --- Metadata Formatting --- */
-.metadata a {
+.metadata a.metadata-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
   text-decoration: none;
   color: inherit;
 }
 
+.metadata-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+}
+
 .metadata {
   border-top: 1px solid #f1f5f9;
-  padding-top: 1rem;
-  margin-top: auto;
+  padding-top: var(--metadata-spacing);
+  margin-top: var(--metadata-spacing);
 }
 
 .metadata-value {
-  font-size: 0.9rem;
+  font-size: var(--metadata-value-size);
   color: #64748b;
   margin-bottom: 0.25rem;
   display: flex;
