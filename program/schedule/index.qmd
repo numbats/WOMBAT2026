@@ -1,33 +1,45 @@
 ---
 pagetitle: "Schedule"
 listing:
-  - id: stream-reproducibility
+  - id: tut-reproducibility-am
     contents:
       - "../tutorials/SLTKXH.qmd"
+    type: default
+    fields: [title, time, speakerlist, room, image]
+  - id: tut-reproducibility-pm
+    contents:
       - "../tutorials/YGAET3.qmd"
     type: default
-    sort: "date"
     fields: [title, time, speakerlist, room, image]
-  - id: stream-publishing
+  - id: tut-publishing-am
     contents:
       - "../tutorials/GH98C8.qmd"
+    type: default
+    fields: [title, time, speakerlist, room, image]
+  - id: tut-publishing-pm
+    contents:
       - "../tutorials/3SLZLV.qmd"
     type: default
-    sort: "date"
     fields: [title, time, speakerlist, room, image]
-  - id: stream-analysis
+  - id: tut-analysis-am
     contents:
       - "../tutorials/CN3WGS.qmd"
+    type: default
+    fields: [title, time, speakerlist, room, image]
+  - id: tut-analysis-pm
+    contents:
       - "../tutorials/EWFCQ8.qmd"
     type: default
-    sort: "date"
     fields: [title, time, speakerlist, room, image]
-  - id: stream-development
+  - id: tut-development-am
     contents:
       - "../tutorials/CUWXCY.qmd"
+    type: default
+    fields: [title, time, speakerlist, room, image]
+  - id: tut-development-pm
+    contents:
       - "../tutorials/HZ7WBW.qmd"
     type: default
-    sort: "date"
     fields: [title, time, speakerlist, room, image]
   - id: group-welcome
     contents:
@@ -146,33 +158,66 @@ document.addEventListener('DOMContentLoaded', () => {
 ::: {.container}
 ## Day 1 tutorials
 
-::: {.tutorial-streams}
+::: {.tutorial-table}
 
-::: {.stream-column}
-### Reproducibility {.stream-heading}
+::: {.tutorial-table-header}
+::: {.tutorial-row-label}
+:::
 
-::::: {#stream-reproducibility}
+::: {.tutorial-col-header}
+Morning
+:::
+
+::: {.tutorial-col-header}
+Afternoon
+:::
+:::
+
+::: {.tutorial-row}
+::: {.tutorial-row-label}
+Reproducibility
+:::
+
+::::: {#tut-reproducibility-am}
+:::::
+
+::::: {#tut-reproducibility-pm}
 :::::
 :::
 
-::: {.stream-column}
-### Publishing {.stream-heading}
+::: {.tutorial-row}
+::: {.tutorial-row-label}
+Publishing
+:::
 
-::::: {#stream-publishing}
+::::: {#tut-publishing-am}
+:::::
+
+::::: {#tut-publishing-pm}
 :::::
 :::
 
-::: {.stream-column}
-### Analysis {.stream-heading}
+::: {.tutorial-row}
+::: {.tutorial-row-label}
+Analysis
+:::
 
-::::: {#stream-analysis}
+::::: {#tut-analysis-am}
+:::::
+
+::::: {#tut-analysis-pm}
 :::::
 :::
 
-::: {.stream-column}
-### Development {.stream-heading}
+::: {.tutorial-row}
+::: {.tutorial-row-label}
+Development
+:::
 
-::::: {#stream-development}
+::::: {#tut-development-am}
+:::::
+
+::::: {#tut-development-pm}
 :::::
 :::
 
