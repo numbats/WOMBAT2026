@@ -185,65 +185,52 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ::: {.tutorial-table}
 
-::: {.tutorial-table-header}
-::: {.tutorial-row-label}
-:::
-
-::: {.tutorial-col-header}
-Morning
-:::
-
-::: {.tutorial-col-header}
-Afternoon
-:::
-:::
+::: {.session-block}
+### Reproducibility
 
 ::: {.tutorial-row}
-::: {.tutorial-row-label}
-Reproducibility
-:::
-
 ::::: {#tut-reproducibility-am}
 :::::
 
 ::::: {#tut-reproducibility-pm}
 :::::
 :::
-
-::: {.tutorial-row}
-::: {.tutorial-row-label}
-Publishing
 :::
 
+::: {.session-block}
+### Publishing
+
+::: {.tutorial-row}
 ::::: {#tut-publishing-am}
 :::::
 
 ::::: {#tut-publishing-pm}
 :::::
 :::
-
-::: {.tutorial-row}
-::: {.tutorial-row-label}
-Analysis
 :::
 
+::: {.session-block}
+### Analysis
+
+::: {.tutorial-row}
 ::::: {#tut-analysis-am}
 :::::
 
 ::::: {#tut-analysis-pm}
 :::::
 :::
-
-::: {.tutorial-row}
-::: {.tutorial-row-label}
-Development
 :::
 
+::: {.session-block}
+### Development
+
+::: {.tutorial-row}
 ::::: {#tut-development-am}
 :::::
 
 ::::: {#tut-development-pm}
 :::::
+:::
 :::
 
 :::
