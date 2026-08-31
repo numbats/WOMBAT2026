@@ -87,18 +87,12 @@ listing:
     type: default
     template: session-card.ejs
     fields: [title, time, speakerlist, room, image]
-  - id: group-ai
+  - id: group-talks
     contents:
       - "../workshops/KAMAAS.qmd"
       - "../workshops/PXBGKN.qmd"
-    type: default
-    template: session-card.ejs
-    sort: "date"
-    fields: [title, time, speakerlist, room, image]
-  - id: group-talks
-    contents:
-      - "../workshops/WD3RU7.qmd"
       - "../workshops/TEFDRV.qmd"
+      - "../workshops/WD3RU7.qmd"
     type: default
     template: session-card.ejs
     sort: "date"
@@ -254,7 +248,7 @@ Development
 
 ## Day 2 workshop
 
-::: {.session-block .session-deemphasized}
+::: {.session-block .session-single}
 ::::: {#group-welcome}
 :::::
 :::
@@ -267,7 +261,7 @@ Development
 :::
 
 ::: {.session-block}
-### Time Series Session
+### Time Series
 
 ::::: {.session-grid-3 #group-timeseries}
 :::::
@@ -288,20 +282,13 @@ Development
 :::
 
 ::: {.session-block}
-### AI Sessions
-
-::::: {.session-grid-2 #group-ai}
-:::::
-:::
-
-::: {.session-block}
-### Talks
+### Artificial Intelligence
 
 ::::: {.session-grid-2 #group-talks}
 :::::
 :::
 
-::: {.session-block .session-deemphasized}
+::: {.session-block .session-single}
 ::::: {#group-closing}
 :::::
 :::
