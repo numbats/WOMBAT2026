@@ -409,6 +409,14 @@
   border: 1px solid #e2e8f0;
   border-radius: 10px;
   padding: 0.75rem 0.85rem;
+  transition:
+    box-shadow 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.program .conv-panel:hover {
+  border-color: #288dfa;
+  box-shadow: 0 4px 14px -6px rgba(0, 0, 0, 0.2);
 }
 
 .program .conv-panel > .person-time {
