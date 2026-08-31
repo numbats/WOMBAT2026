@@ -206,18 +206,20 @@ h2 {
   gap: 0 !important;
 }
 
-/* --- Speaker avatars (below title, normal flow) --- */
+/* --- Speaker avatars (right of metadata text) --- */
 .quarto-post .thumbnail {
   display: flex;
   align-items: center;
   width: auto;
   height: auto;
-  margin: 0.75rem 0 1rem;
+  margin: 0;
+  flex-shrink: 0;
 }
 
 .quarto-post .thumbnail-image {
   width: 40px;
   height: 40px;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #ffffff;
@@ -259,9 +261,20 @@ h2 {
 }
 
 /* --- Metadata Formatting --- */
-.metadata a {
+.metadata a.metadata-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
   text-decoration: none;
   color: inherit;
+}
+
+.metadata-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
 }
 
 .metadata {

@@ -21,24 +21,13 @@ const speakers = speakersFor(item);
 
 <h3 class="no-anchor listing-title"><a href="<%- item.path %>" class="no-external"><%= item.title %></a></h3>
 
-<% if (speakers.length > 0) { %>
-
-```{=html}
-<div class="thumbnail speaker-avatars"><a href="<%- item.path %>" class="no-external">
-<% for (const speaker of speakers) { %>
-<img src="<%- speaker.avatar_url %>" class="thumbnail-image" alt="<%= speaker.name ? speaker.name : '' %>" loading="lazy">
-<% } %>
-</a></div>
-```
-
-<% } %>
-
 :::
 
 ::: {.metadata}
 
 ```{=html}
-<a href="<%- item.path %>" class="no-external">
+<a href="<%- item.path %>" class="no-external metadata-row">
+<div class="metadata-text">
 ```
 
 <% for (const field of metaFields) { %>
@@ -46,6 +35,22 @@ const speakers = speakersFor(item);
 <% if (value && String(value).trim() !== '') { %>
 <div class="metadata-value listing-<%= field %>"><%= value %></div>
 <% } %>
+<% } %>
+
+```{=html}
+</div>
+```
+
+<% if (speakers.length > 0) { %>
+
+```{=html}
+<div class="thumbnail speaker-avatars">
+<% for (const speaker of speakers) { %>
+<img src="<%- speaker.avatar_url %>" class="thumbnail-image" alt="<%= speaker.name ? speaker.name : '' %>" loading="lazy">
+<% } %>
+</div>
+```
+
 <% } %>
 
 ```{=html}
