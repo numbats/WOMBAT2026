@@ -4,6 +4,36 @@
   padding: 2rem;
 }
 
+/* --- Card sizing tokens ---
+   Day 1 and Day 2 share every card rule below; only these values differ,
+   with Day 2 (a lot more sections on one page) using tighter numbers so it
+   stays scannable. Scoping the overrides to #day-2-workshop here, rather
+   than repeating each selector with adjusted values, keeps the two days on
+   one set of rules. */
+:root {
+  --card-padding: 1.25rem;
+  --card-gap: 1.5rem;
+  --block-margin: 2.5rem;
+  --block-heading-size: 1.15rem;
+  --block-heading-margin: 1rem;
+  --title-size: 1.25rem;
+  --title-margin: 0.5rem;
+  --metadata-spacing: 0.5rem;
+  --metadata-value-size: 0.9rem;
+}
+
+#day-2-workshop {
+  --card-padding: 0.85rem 1rem;
+  --card-gap: 1rem;
+  --block-margin: 1.5rem;
+  --block-heading-size: 1.05rem;
+  --block-heading-margin: 0.5rem;
+  --title-size: 1.05rem;
+  --title-margin: 0.3rem;
+  --metadata-spacing: 0.35rem;
+  --metadata-value-size: 0.82rem;
+}
+
 /* --- Day Switcher, floated over the site navbar ---
    Rather than reserving its own row in the page (the old sticky bar), this
    is taken out of flow entirely and floated on top of #quarto-header, which
@@ -99,7 +129,7 @@ h2 {
 .list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 1.5rem;
+  gap: var(--card-gap);
   /* Stretch cards to match the tallest one in the row, so every card in
      a row shares one height. The extra space this adds to shorter cards
      isn't dead: .quarto-post below turns it into a gap between the title
@@ -176,14 +206,14 @@ h2 {
 
 /* --- Day 2 session groups --- */
 .session-block {
-  margin-bottom: 2.5rem;
+  margin-bottom: var(--block-margin);
 }
 
 .session-block > h3 {
   text-align: center;
-  font-size: 1.15rem;
+  font-size: var(--block-heading-size);
   color: #0f345c;
-  margin-bottom: 1rem;
+  margin-bottom: var(--block-heading-margin);
 }
 
 .session-grid-3 .list {
@@ -246,7 +276,7 @@ h2 {
   position: relative;
   background: #ffffff;
   border-radius: 12px;
-  padding: 1.25rem;
+  padding: var(--card-padding);
   box-shadow:
     0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -313,8 +343,8 @@ h2 {
 
 /* --- Card Typography & Links --- */
 .listing-title {
-  margin: 0 0 0.5rem 0 !important;
-  font-size: 1.25rem;
+  margin: 0 0 var(--title-margin) 0 !important;
+  font-size: var(--title-size);
   line-height: 1.4;
 }
 
@@ -352,12 +382,12 @@ h2 {
 
 .metadata {
   border-top: 1px solid #f1f5f9;
-  padding-top: 0.5rem;
-  margin-top: 0.5rem;
+  padding-top: var(--metadata-spacing);
+  margin-top: var(--metadata-spacing);
 }
 
 .metadata-value {
-  font-size: 0.9rem;
+  font-size: var(--metadata-value-size);
   color: #64748b;
   margin-bottom: 0.25rem;
   display: flex;
