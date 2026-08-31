@@ -39,7 +39,7 @@ slides_url: ~
     </header>
 
     <!-- Body Section -->
-    <div class="talk-body">
+    <div class="talk-body talk-body--stacked">
 
       <!-- Main Description -->
       <section class="talk-description">
@@ -57,8 +57,8 @@ slides_url: ~
         </div>
       </section>
 
-      <!-- Sidebar -->
-      <div class="talk-sidebar">
+      <!-- Speakers -->
+      <div class="talk-speakers-grid">
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">

@@ -92,6 +92,7 @@ write_session_qmd <- function(x, ...) {
   speaker_tbl <- x$speakers[[1]]
   speaker <- NULL
   speaker_list <- NULL
+  x$multi_speaker <- !is.null(speaker_tbl) && nrow(speaker_tbl) > 1
   if (is.null(speaker_tbl)) {
     speaker <- list(
       code = "",

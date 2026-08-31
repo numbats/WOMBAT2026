@@ -18,7 +18,7 @@
     </header>
 
     <!-- Body Section -->
-    <div class="talk-body">
+    <div class="talk-body{{#multi_speaker}} talk-body--stacked{{/multi_speaker}}">
 
       <!-- Main Description -->
       <section class="talk-description">
@@ -45,6 +45,27 @@
         </div>
       </section>
 
+      {{#multi_speaker}}
+      <!-- Speakers -->
+      <div class="talk-speakers-grid">
+
+        {{#speakers}}
+        <!-- Speaker Profile -->
+        <div class="speaker-profile">
+          <img src="{{avatar_url}}" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <h2 class="speaker-name">
+            {{name}}
+          </h2>
+          <div class="speaker-bio">
+            {{{biography}}}
+          </div>
+        </div>
+        {{/speakers}}
+
+      </div>
+      {{/multi_speaker}}
+
+      {{^multi_speaker}}
       <!-- Sidebar -->
       <div class="talk-sidebar">
 
@@ -62,6 +83,7 @@
         {{/speakers}}
 
       </div>
+      {{/multi_speaker}}
 
     </div>
   </article>
