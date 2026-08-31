@@ -142,8 +142,15 @@ h2 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.session-grid-2 .list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 820px;
+  margin: 0 auto;
+}
+
 @media (max-width: 900px) {
-  .session-grid-3 .list {
+  .session-grid-3 .list,
+  .session-grid-2 .list {
     grid-template-columns: 1fr;
   }
 }
@@ -221,8 +228,8 @@ h2 {
 }
 
 .quarto-post .metadata .thumbnail-image {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover;

@@ -1,8 +1,8 @@
 ---
-pagetitle: 'WOMBAT 2026: Accessible AI'
+pagetitle: 'WOMBAT 2026: TBC (Accessible AI)'
 date: 2026-12-01 15:00:00
 time: 03:00 PM
-title: Accessible AI
+title: TBC (Accessible AI)
 description: Generated summary
 speaker:
 - code: HHDWB3
@@ -30,7 +30,7 @@ slides_url: ~
         </svg>
         December 01, 03:00 PM
       </div>
-      <h1 class="talk-title">Accessible AI</h1>
+      <h1 class="talk-title">TBC (Accessible AI)</h1>
     </header>
 
     <!-- Body Section -->

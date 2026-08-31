@@ -1,8 +1,8 @@
 ---
-pagetitle: 'WOMBAT 2026: Industry AI integration'
+pagetitle: 'WOMBAT 2026: TBC (Industry AI)'
 date: 2026-12-01 13:10:00
 time: 01:10 PM
-title: Industry AI integration
+title: TBC (Industry AI)
 description: Generated summary
 speaker:
 - code: T8R89U
@@ -30,7 +30,7 @@ slides_url: ~
         </svg>
         December 01, 01:10 PM
       </div>
-      <h1 class="talk-title">Industry AI integration</h1>
+      <h1 class="talk-title">TBC (Industry AI)</h1>
     </header>
 
     <!-- Body Section -->

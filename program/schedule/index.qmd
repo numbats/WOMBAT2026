@@ -93,11 +93,13 @@ listing:
     template: session-card.ejs
     sort: "date"
     fields: [title, time, speakerlist, room, image]
-  - id: group-forecasting
+  - id: group-talks
     contents:
       - "../workshops/WD3RU7.qmd"
+      - "../workshops/TEFDRV.qmd"
     type: default
     template: session-card.ejs
+    sort: "date"
     fields: [title, time, speakerlist, room, image]
   - id: group-closing
     contents:
@@ -281,8 +283,10 @@ Development
 :::::
 :::
 
-::: {.session-block .session-single}
-::::: {#group-forecasting}
+::: {.session-block}
+### Talks
+
+::::: {.session-grid-2 #group-talks}
 :::::
 :::
 

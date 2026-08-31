@@ -15,7 +15,7 @@ speaker:
   avatar_url: https://conf.nectric.com.au/media/avatars/3ZEQF8_k3GMDrc.webp
 - code: UZXXFD
   name: Damjan Vukcevic
-  avatar_url: .na.character
+  avatar_url: https://conf.nectric.com.au/media/avatars/EVHPNU_jMTr35E.webp
 speakerlist: Cynthia Huang, Hadley Wickham, Damjan Vukcevic
 room: Room  8.03
 image: https://conf.nectric.com.au/media/avatars/VCASXU_BLNvx3U.webp
@@ -85,7 +85,7 @@ slides_url: ~
         </div>
         <!-- Speaker Profile -->
         <div class="speaker-profile">
-          <img src="NA" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <img src="https://conf.nectric.com.au/media/avatars/EVHPNU_jMTr35E.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
           <h2 class="speaker-name">
             Damjan Vukcevic
           </h2>

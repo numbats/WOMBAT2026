@@ -1,7 +1,7 @@
 ---
 pagetitle: 'WOMBAT 2026: Modern reproducibility practices for agentic analytics'
-date: 2026-11-30 12:35:00
-time: 12:35 PM
+date: 2026-11-30 13:30:00
+time: 01:30 PM
 title: Modern reproducibility practices for agentic analytics
 description: Generated summary
 speaker:
@@ -28,7 +28,7 @@ slides_url: ~
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           <path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 64 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 16-16-7.2-16-16V192z"/>
         </svg>
-        November 30, 12:35 PM
+        November 30, 01:30 PM
       </div>
       <h1 class="talk-title">Modern reproducibility practices for agentic analytics</h1>
     </header>
