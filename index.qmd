@@ -161,7 +161,7 @@ science.*]{.hero-desc}
 
       <!-- Toggle Trigger for Bio -->
       <button class="expand-toggle" aria-expanded="false" aria-controls="bio-details">
-        <span class="toggle-text">Read more</span>
+        <span class="toggle-text">Read bio</span>
         <svg class="chevron-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M6 9l6 6 6-6"/></svg>
       </button>
 
