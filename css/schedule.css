@@ -206,22 +206,13 @@ h2 {
   gap: 0 !important;
 }
 
-/* --- Speaker avatar corner badge --- */
+/* --- Speaker avatars (below title, normal flow) --- */
 .quarto-post .thumbnail {
-  position: absolute;
-  top: 1.25rem;
-  right: 1.25rem;
-  width: 40px;
-  height: 40px;
-  margin: 0;
-  z-index: 2;
-}
-
-.quarto-post .thumbnail.speaker-avatars {
   display: flex;
   align-items: center;
   width: auto;
   height: auto;
+  margin: 0.75rem 0 1rem;
 }
 
 .quarto-post .thumbnail-image {
@@ -234,12 +225,8 @@ h2 {
   flex-shrink: 0;
 }
 
-.quarto-post .thumbnail.speaker-avatars .thumbnail-image + .thumbnail-image {
+.quarto-post .thumbnail-image + .thumbnail-image {
   margin-left: -16px;
-}
-
-.quarto-post .body {
-  padding-right: 6rem;
 }
 
 .quarto-post:hover {

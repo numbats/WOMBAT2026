@@ -17,6 +17,10 @@ const speakers = speakersFor(item);
 
 ::: {.quarto-post}
 
+::: {.body}
+
+<h3 class="no-anchor listing-title"><a href="<%- item.path %>" class="no-external"><%= item.title %></a></h3>
+
 <% if (speakers.length > 0) { %>
 
 ```{=html}
@@ -28,10 +32,6 @@ const speakers = speakersFor(item);
 ```
 
 <% } %>
-
-::: {.body}
-
-<h3 class="no-anchor listing-title"><a href="<%- item.path %>" class="no-external"><%= item.title %></a></h3>
 
 :::
 
