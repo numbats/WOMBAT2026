@@ -247,10 +247,6 @@ h2 {
   margin: 0 auto;
 }
 
-.session-keynote .quarto-post {
-  border: 2px solid #fbac27;
-}
-
 /* --- Interactive Cards --- */
 .quarto-post {
   position: relative;

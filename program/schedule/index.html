@@ -594,7 +594,9 @@ window.Quarto = {
 <script>
 document.addEventListener('DOMContentLoaded', () => {
       const buttons = document.querySelectorAll('.switcher-btn');
-      const sections = document.querySelectorAll('section');
+      const sections = Array.from(buttons)
+        .map(btn => document.getElementById(btn.getAttribute('data-target')))
+        .filter(Boolean);
 
       // 1. Smooth scroll to section when button is clicked
       buttons.forEach(btn => {
@@ -644,7 +646,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <!-- The schedule will be announced nearer to the event. -->
 <div class="container">
 <section id="day-1-tutorials" class="level2">
-<h2 data-anchor-id="day-1-tutorials">Day 1 tutorials</h2>
+<h2 data-anchor-id="day-1-tutorials">Day 1: Tutorials</h2>
 <div class="tutorial-table">
 <div class="tutorial-table-header">
 <div class="tutorial-row-label">
@@ -938,7 +940,7 @@ Room 8.44
 </div>
 </section>
 <section id="day-2-workshop" class="level2">
-<h2 data-anchor-id="day-2-workshop">Day 2 workshop</h2>
+<h2 data-anchor-id="day-2-workshop">Day 2: Workshop</h2>
 <div class="session-block session-single">
 <div id="listing-group-welcome" class="quarto-listing quarto-listing-container-custom">
 <div class="list quarto-listing-default">
@@ -965,7 +967,7 @@ Room 8.03
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </div>
-<section id="keynote" class="level3 session-block session-single session-keynote">
+<section id="keynote" class="level3 session-block session-single">
 <h3 data-anchor-id="keynote">Keynote</h3>
 <div id="listing-group-keynote" class="quarto-listing quarto-listing-container-custom">
 <div class="list quarto-listing-default">

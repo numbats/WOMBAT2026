@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <link href="./img/wombat/wombat-pixelart.svg" rel="icon" type="image/svg+xml">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -43,9 +45,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4eba2b32ae021c84744ab4fe9aca0187.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-4eba2b32ae021c84744ab4fe9aca0187.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-4eba2b32ae021c84744ab4fe9aca0187.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-cfcc85f400cda1a0a675a923a78f29b4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-cfcc85f400cda1a0a675a923a78f29b4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-cfcc85f400cda1a0a675a923a78f29b4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -61,8 +63,234 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-home-d1-reproducibility .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-time','listing-speakerlist','listing-room','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-pagetitle","listing-date","listing-time","listing-title","listing-description","listing-speaker","listing-speakerlist","listing-room","listing-image","listing-slides_url","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-home-d1-reproducibility'] = new List('listing-home-d1-reproducibility', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-home-d1-publishing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-time','listing-speakerlist','listing-room','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-pagetitle","listing-date","listing-time","listing-title","listing-description","listing-speaker","listing-speakerlist","listing-room","listing-image","listing-slides_url","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-home-d1-publishing'] = new List('listing-home-d1-publishing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-home-d1-analysis .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-time','listing-speakerlist','listing-room','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-pagetitle","listing-date","listing-time","listing-title","listing-description","listing-speaker","listing-speakerlist","listing-room","listing-image","listing-slides_url","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-home-d1-analysis'] = new List('listing-home-d1-analysis', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-home-d1-development .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-time','listing-speakerlist','listing-room','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-pagetitle","listing-date","listing-time","listing-title","listing-description","listing-speaker","listing-speakerlist","listing-room","listing-image","listing-slides_url","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-home-d1-development'] = new List('listing-home-d1-development', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-home-d2-timeseries .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-time','listing-speakerlist','listing-room','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-pagetitle","listing-date","listing-time","listing-title","listing-description","listing-speaker","listing-speakerlist","listing-room","listing-image","listing-slides_url","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-home-d2-timeseries'] = new List('listing-home-d2-timeseries', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-home-d2-showcase .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-time','listing-speakerlist','listing-room','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-pagetitle","listing-date","listing-time","listing-title","listing-description","listing-speaker","listing-speakerlist","listing-room","listing-image","listing-slides_url","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-home-d2-showcase'] = new List('listing-home-d2-showcase', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-home-d2-ai .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-time','listing-speakerlist','listing-room','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-pagetitle","listing-date","listing-time","listing-title","listing-description","listing-speaker","listing-speakerlist","listing-room","listing-image","listing-slides_url","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-home-d2-ai'] = new List('listing-home-d2-ai', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script type="text/javascript" src="https://conf.nectric.com.au/wombat-2025/schedule/widget/v2.en.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="css/hero.css">
 <link rel="stylesheet" href="css/program.css">
@@ -267,7 +495,7 @@ https://conf.posit.co/2026/
 
       <!-- Toggle Trigger for Bio -->
       <button class="expand-toggle" aria-expanded="false" aria-controls="bio-details">
-        <span class="toggle-text">Read more</span>
+        <span class="toggle-text">Read bio</span>
         <svg class="chevron-icon" viewbox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M6 9l6 6 6-6"></path></svg>
       </button>
 
@@ -307,14 +535,508 @@ https://conf.posit.co/2026/
 <section id="program" class="level1">
 <h1>Program</h1>
 <div class="program">
-<div class="banner">
-  Program details will be announced soon!
+<div class="stat-strip">
+  <div class="stat"><b>2</b><span>Days</span></div>
+  <div class="stat"><b>8</b><span>Tutorials</span></div>
+  <div class="stat"><b>12</b><span>Talks</span></div>
+  <div class="stat"><b>21</b><span>Speakers</span></div>
+</div>
+<div class="day-heading"><span class="day-num">Day 1 Tutorials ·</span><span class="day-date">Mon 30 Nov</span><a href="https://events.humanitix.com/wombat-2026-day-1-tutorials" class="day-register" target="_blank" rel="noopener">Register for tutorials →</a></div>
+<div class="track-grid">
+<div class="track-card">
+<div class="track-head">
+<div class="track-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 3v12"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="6" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg></div>
+<section id="reproducibility" class="level5 no-anchor">
+<h5 class="no-anchor" data-anchor-id="reproducibility">Reproducibility</h5>
+</section>
+</div>
+<div id="listing-home-d1-reproducibility" class="quarto-listing quarto-listing-container-custom">
+<div class="person-row">
+<div class="avatar-slot">
+<p><img src="https://conf.nectric.com.au/media/avatars/FLUHHT_UtCG6vC.webp" alt="Nick Tierney" class="avatar" loading="lazy"></p>
+</div>
+<div class="person-main">
+<div class="person-name">
+Nick Tierney
+</div>
+<div class="person-title">
+A Gentle Introduction to Targets
+</div>
+</div>
+<div class="person-time">
+09:00 AM
+</div>
+<p><a href="./program/tutorials/SLTKXH.html" class="stretched-link" aria-label="Nick Tierney: A Gentle Introduction to Targets, 09:00 AM"></a></p>
+</div>
+<div class="person-row">
+<div class="avatar-slot">
+<p><img src="https://conf.nectric.com.au/media/avatars/7HGSUA_2Gu7vQm.webp" alt="Michael Lydeamore" class="avatar" loading="lazy"></p>
+</div>
+<div class="person-main">
+<div class="person-name">
+Michael Lydeamore
+</div>
+<div class="person-title">
+Modern reproducibility practices for agentic analytics
+</div>
+</div>
+<div class="person-time">
+01:30 PM
+</div>
+<p><a href="./program/tutorials/YGAET3.html" class="stretched-link" aria-label="Michael Lydeamore: Modern reproducibility practices for agentic analytics, 01:30 PM"></a></p>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</div>
+<div class="track-card">
+<div class="track-head">
+<div class="track-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v18H6.5A2.5 2.5 0 0 0 4 22.5z"></path><path d="M4 4.5v16"></path></svg></div>
+<section id="publishing" class="level5 no-anchor">
+<h5 class="no-anchor" data-anchor-id="publishing">Publishing</h5>
+</section>
+</div>
+<div id="listing-home-d1-publishing" class="quarto-listing quarto-listing-container-custom">
+<div class="person-row">
+<div class="avatar-slot">
+<p><img src="https://conf.nectric.com.au/media/avatars/VCASXU_BLNvx3U.webp" alt="Cynthia Huang" class="avatar" loading="lazy"></p>
+</div>
+<div class="person-main">
+<div class="person-name">
+Cynthia Huang
+</div>
+<div class="person-title">
+Introduction to Publishing with Quarto
+</div>
+</div>
+<div class="person-time">
+09:00 AM
+</div>
+<p><a href="./program/tutorials/GH98C8.html" class="stretched-link" aria-label="Cynthia Huang: Introduction to Publishing with Quarto, 09:00 AM"></a></p>
+</div>
+<div class="person-row">
+<div class="avatar-slot">
+<div class="avatar-group">
+<p><img src="https://conf.nectric.com.au/media/avatars/LN38T3_4VQYAS4.webp" alt="Fonti Kar" class="avatar" loading="lazy"></p>
+<p><img src="https://conf.nectric.com.au/media/avatars/G9PNUZ_4abwGEX.webp" alt="Dianne Cook" class="avatar avatar-overlap" loading="lazy"></p>
+</div>
+</div>
+<div class="person-main">
+<div class="person-name">
+Fonti Kar &amp; Dianne Cook
+</div>
+<div class="person-title">
+Publishing your software
+</div>
+</div>
+<div class="person-time">
+01:30 PM
+</div>
+<p><a href="./program/tutorials/3SLZLV.html" class="stretched-link" aria-label="Fonti Kar &amp; Dianne Cook: Publishing your software, 01:30 PM"></a></p>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</div>
+<div class="track-card">
+<div class="track-head">
+<div class="track-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20V10M12 20V4M20 20v-7"></path></svg></div>
+<section id="analysis" class="level5 no-anchor">
+<h5 class="no-anchor" data-anchor-id="analysis">Analysis</h5>
+</section>
+</div>
+<div id="listing-home-d1-analysis" class="quarto-listing quarto-listing-container-custom">
+<div class="person-row">
+<div class="avatar-slot">
+<p><img src="https://conf.nectric.com.au/media/avatars/N3WKQK_dmD8aHb.webp" alt="Dean Marchiori" class="avatar" loading="lazy"></p>
+</div>
+<div class="person-main">
+<div class="person-name">
+Dean Marchiori
+</div>
+<div class="person-title">
+Surviving Survival Analysis: A Hands-On Introduction with R
+</div>
+</div>
+<div class="person-time">
+09:00 AM
+</div>
+<p><a href="./program/tutorials/CN3WGS.html" class="stretched-link" aria-label="Dean Marchiori: Surviving Survival Analysis: A Hands-On Introduction with R, 09:00 AM"></a></p>
+</div>
+<div class="person-row">
+<div class="avatar-slot">
+<p><img src="https://conf.nectric.com.au/media/avatars/TTTBDY_rgs6zaJ.webp" alt="Mitchell O'Hara-Wild" class="avatar" loading="lazy"></p>
+</div>
+<div class="person-main">
+<div class="person-name">
+Mitchell O’Hara-Wild
+</div>
+<div class="person-title">
+Exploratory Time Series Analysis
+</div>
+</div>
+<div class="person-time">
+01:30 PM
+</div>
+<p><a href="./program/tutorials/EWFCQ8.html" class="stretched-link" aria-label="Mitchell O'Hara-Wild: Exploratory Time Series Analysis, 01:30 PM"></a></p>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</div>
+<div class="track-card">
+<div class="track-head">
+<div class="track-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m8 6-5 6 5 6M16 6l5 6-5 6"></path></svg></div>
+<section id="development" class="level5 no-anchor">
+<h5 class="no-anchor" data-anchor-id="development">Development</h5>
+</section>
+</div>
+<div id="listing-home-d1-development" class="quarto-listing quarto-listing-container-custom">
+<div class="person-row">
+<div class="avatar-slot">
+<p><img src="https://conf.nectric.com.au/media/avatars/Z7EZLP_RmpJtax.webp" alt="Tomasz Woźniak" class="avatar" loading="lazy"></p>
+</div>
+<div class="person-main">
+<div class="person-name">
+Tomasz Woźniak
+</div>
+<div class="person-title">
+Getting Started with C++ for Faster Forecasting in R
+</div>
+</div>
+<div class="person-time">
+09:00 AM
+</div>
+<p><a href="./program/tutorials/CUWXCY.html" class="stretched-link" aria-label="Tomasz Woźniak: Getting Started with C++ for Faster Forecasting in R, 09:00 AM"></a></p>
+</div>
+<div class="person-row">
+<div class="avatar-slot">
+<p><img src="https://conf.nectric.com.au/media/avatars/3ZEQF8_k3GMDrc.webp" alt="Hadley Wickham" class="avatar" loading="lazy"></p>
+</div>
+<div class="person-main">
+<div class="person-name">
+Hadley Wickham
+</div>
+<div class="person-title">
+Modern package development with Positron + AI
+</div>
+</div>
+<div class="person-time">
+01:30 PM
+</div>
+<p><a href="./program/tutorials/HZ7WBW.html" class="stretched-link" aria-label="Hadley Wickham: Modern package development with Positron + AI, 01:30 PM"></a></p>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</div>
+</div>
+<div class="day-heading"><span class="day-num">Day 2 Workshop ·</span><span class="day-date">Tue 1 Dec</span><a href="https://events.humanitix.com/wombat-2026-day-2-workshop" class="day-register" target="_blank" rel="noopener">Register for main day →</a></div>
+<div class="day2-stack">
+<div class="day2-block">
+<div class="day2-label">
+<div class="track-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2 9 9l-7 1 5 5-1.5 7L12 18.5 18.5 22 17 15l5-5-7-1z"></path></svg></div>
+<section id="keynote-1" class="level5 no-anchor">
+<h5 class="no-anchor" data-anchor-id="keynote-1">Keynote</h5>
+</section>
+</div>
+<!-- Hand-written, not a listing: this points back up to the Keynote
+     section already on this page rather than duplicating it, so it isn't
+     a good fit for the per-item listing templates below. Source:
+     program/workshops/DSBAZG.qmd -- keep the name/photo/time in sync with
+     that file if the keynote changes. -->
+<div class="people-row">
+  <a href="#keynote" class="person-card">
+    <div class="person-time">9:00 AM</div>
+    <div class="pc-row">
+      <div class="avatar-slot">
+        <img src="https://conf.nectric.com.au/media/avatars/9RABY7_45oaFxq.webp" alt="Rob Hyndman" class="avatar" loading="lazy">
+      </div>
+      <div class="person-main">
+        <div class="person-name">Rob Hyndman</div>
+        <div class="person-title">Spotting the weird ones (details above)</div>
+      </div>
+    </div>
+  </a>
+</div>
+</div>
+<div class="day2-block">
+<div class="day2-label">
+<div class="track-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 17 9 9l4 4 8-10"></path><path d="M15 3h6v6"></path></svg></div>
+<section id="time-series" class="level5 no-anchor">
+<h5 class="no-anchor" data-anchor-id="time-series">Time Series</h5>
+</section>
+</div>
+<div id="listing-home-d2-timeseries" class="quarto-listing quarto-listing-container-custom">
+<div class="people-row">
+<div class="person-card">
+<div class="person-time">
+10:30 AM
+</div>
+<div class="pc-row">
+<div class="avatar-slot">
+<p><img src="https://conf.nectric.com.au/media/avatars/TTTBDY_rgs6zaJ.webp" alt="Mitchell O'Hara-Wild" class="avatar" loading="lazy"></p>
+</div>
+<div class="person-main">
+<div class="person-name">
+Mitchell O’Hara-Wild
+</div>
+<div class="person-title">
+mixtime: Temporal data for better analytics
+</div>
+</div>
+</div>
+<p><a href="./program/workshops/CUT7T3.html" class="stretched-link" aria-label="Mitchell O'Hara-Wild: mixtime: Temporal data for better analytics, 10:30 AM"></a></p>
+</div>
+<div class="person-card">
+<div class="person-time">
+11:00 AM
+</div>
+<div class="pc-row">
+<div class="avatar-slot">
+<p><img src="https://conf.nectric.com.au/media/avatars/J98GMK_ZDcz3EX.webp" alt="Thiyanga Talagala" class="avatar" loading="lazy"></p>
+</div>
+<div class="person-main">
+<div class="person-name">
+Thiyanga Talagala
+</div>
+<div class="person-title">
+The Future of Animals is in Our Hands: My Role as a Data Scientist in Wildlife Conservation
+</div>
+</div>
+</div>
+<p><a href="./program/workshops/LLGRVM.html" class="stretched-link" aria-label="Thiyanga Talagala: The Future of Animals is in Our Hands: My Role as a Data Scientist in Wildlife Conservation, 11:00 AM"></a></p>
+</div>
+<div class="person-card">
+<div class="person-time">
+11:30 AM
+</div>
+<div class="pc-row">
+<div class="avatar-slot">
+<p><img src="https://conf.nectric.com.au/media/avatars/QVZFTX_mFpHaEX.webp" alt="Shanika Wickramasuriya" class="avatar" loading="lazy"></p>
+</div>
+<div class="person-main">
+<div class="person-name">
+Shanika Wickramasuriya
+</div>
+<div class="person-title">
+Immutable by design: Trace-minimised forecasts for hierarchical time series
+</div>
+</div>
+</div>
+<p><a href="./program/workshops/V3TNQS.html" class="stretched-link" aria-label="Shanika Wickramasuriya: Immutable by design: Trace-minimised forecasts for hierarchical time series, 11:30 AM"></a></p>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</div>
+<div class="day2-block">
+<div class="day2-label">
+<div class="track-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v3M12 18v3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M3 12h3M18 12h3M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"></path><circle cx="12" cy="12" r="4"></circle></svg></div>
+<section id="showcase" class="level5 no-anchor">
+<h5 class="no-anchor" data-anchor-id="showcase">Showcase</h5>
+</section>
+</div>
+<div id="listing-home-d2-showcase" class="quarto-listing quarto-listing-container-custom">
+<div class="people-row">
+<div class="person-card">
+<div class="person-time">
+01:00 PM
+</div>
+<div class="pc-row">
+<div class="avatar-slot">
+<p><img src="https://conf.nectric.com.au/media/avatars/DEAJHL_aYXQPiN.webp" alt="Priya Dingorkar" class="avatar" loading="lazy"></p>
+</div>
+<div class="person-main">
+<div class="person-name">
+Priya Dingorkar
+</div>
+<div class="person-title">
+How AI Is Used in My Job: From Data to Better Business Decisions
+</div>
+</div>
+</div>
+<p><a href="./program/workshops/LDBUTX.html" class="stretched-link" aria-label="Priya Dingorkar: How AI Is Used in My Job: From Data to Better Business Decisions, 01:00 PM"></a></p>
+</div>
+<div class="person-card">
+<div class="person-time">
+01:10 PM
+</div>
+<div class="pc-row">
+<div class="avatar-slot">
+<p><img src="https://conf.nectric.com.au/media/avatars/WT38WZ_rebbBBv.webp" alt="Zola Batsaikhan" class="avatar" loading="lazy"></p>
+</div>
+<div class="person-main">
+<div class="person-name">
+Zola Batsaikhan
+</div>
+<div class="person-title">
+TBC (Industry AI)
+</div>
+</div>
+</div>
+<p><a href="./program/workshops/TDDWAC.html" class="stretched-link" aria-label="Zola Batsaikhan: TBC (Industry AI), 01:10 PM"></a></p>
+</div>
+<div class="person-card">
+<div class="person-time">
+01:20 PM
+</div>
+<div class="pc-row">
+<div class="avatar-slot">
+<p><img src="https://conf.nectric.com.au/media/avatars/JMFNWN_096BW8V.webp" alt="Jaffie Yang" class="avatar" loading="lazy"></p>
+</div>
+<div class="person-main">
+<div class="person-name">
+Jaffie Yang
+</div>
+<div class="person-title">
+TBC (Industry AI)
+</div>
+</div>
+</div>
+<p><a href="./program/workshops/MNFGHE.html" class="stretched-link" aria-label="Jaffie Yang: TBC (Industry AI), 01:20 PM"></a></p>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</div>
+<div class="day2-block">
+<div class="day2-label">
+<div class="track-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-4-1L3 20l1-4.5A8.38 8.38 0 0 1 3.5 11 8.5 8.5 0 1 1 21 11.5z"></path></svg></div>
+<section id="conversation" class="level5 no-anchor">
+<h5 class="no-anchor" data-anchor-id="conversation">Conversation</h5>
+</section>
+</div>
+<!-- Hand-written, not a listing: one session shared by a host and two
+     guests doesn't map onto the "one card per speaker" listing templates
+     below, so this panel is written out directly. Source:
+     program/workshops/GVZ9AP.qmd -- keep names/photos/time/roles in sync
+     with that file if the conversation's line-up changes. -->
+<div class="conv-panel">
+  <div class="person-time">1:30 PM</div>
+  <div class="conv-people">
+    <div class="conv-side conv-host">
+      <img src="https://conf.nectric.com.au/media/avatars/VCASXU_BLNvx3U.webp" alt="Cynthia Huang" class="avatar conv-avatar" loading="lazy">
+      <div>
+        <div class="person-name">Cynthia Huang</div>
+        <span class="conv-role host-role">Host</span>
+      </div>
+    </div>
+    <div class="conv-link" aria-hidden="true">
+      <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H9l-4 3v-3H5a2 2 0 0 1-2-2z"></path><path d="M21 11v3a2 2 0 0 1-2 2h-1v3l-3-3"></path></svg>
+      <span>with</span>
+    </div>
+    <div class="conv-side conv-guests">
+      <div class="avatar-group">
+        <img src="https://conf.nectric.com.au/media/avatars/3ZEQF8_k3GMDrc.webp" alt="Hadley Wickham" class="avatar conv-avatar" loading="lazy">
+        <img src="https://conf.nectric.com.au/media/avatars/EVHPNU_jMTr35E.webp" alt="Damjan Vukcevic" class="avatar conv-avatar avatar-overlap" loading="lazy">
+      </div>
+      <div>
+        <div class="person-name">Hadley Wickham &amp; Damjan Vukcevic</div>
+        <span class="conv-role guest-role">Guests</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="day2-block">
+<div class="day2-label">
+<div class="track-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="7" y="7" width="10" height="10" rx="1.5"></rect><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.5 4.5l2 2M19.5 4.5l-2 2M4.5 19.5l2-2M19.5 19.5l-2-2"></path></svg></div>
+<section id="artificial-intelligence" class="level5 no-anchor">
+<h5 class="no-anchor" data-anchor-id="artificial-intelligence">Artificial Intelligence</h5>
+</section>
+</div>
+<div id="listing-home-d2-ai" class="quarto-listing quarto-listing-container-custom">
+<div class="people-row grid-2">
+<div class="person-card">
+<div class="person-time">
+03:00 PM
+</div>
+<div class="pc-row">
+<div class="avatar-slot">
+<p><img src="https://conf.nectric.com.au/media/avatars/FFS8EF_ziAKw9R.webp" alt="Maliny Po" class="avatar" loading="lazy"></p>
+</div>
+<div class="person-main">
+<div class="person-name">
+Maliny Po
+</div>
+<div class="person-title">
+TBC (Accessible AI)
+</div>
+</div>
+</div>
+<p><a href="./program/workshops/KAMAAS.html" class="stretched-link" aria-label="Maliny Po: TBC (Accessible AI), 03:00 PM"></a></p>
+</div>
+<div class="person-card">
+<div class="person-time">
+03:15 PM
+</div>
+<div class="pc-row">
+<div class="avatar-slot">
+<p><img src="https://conf.nectric.com.au/media/avatars/EQDFSL_RUqnifG.webp" alt="Janith Wanniarachchi" class="avatar" loading="lazy"></p>
+</div>
+<div class="person-main">
+<div class="person-name">
+Janith Wanniarachchi
+</div>
+<div class="person-title">
+TBC (Accessible AI)
+</div>
+</div>
+</div>
+<p><a href="./program/workshops/PXBGKN.html" class="stretched-link" aria-label="Janith Wanniarachchi: TBC (Accessible AI), 03:15 PM"></a></p>
+</div>
+<div class="person-card">
+<div class="person-time">
+03:30 PM
+</div>
+<div class="pc-row">
+<div class="avatar-slot">
+<p><img src="https://conf.nectric.com.au/media/avatars/VARU8L_oY9DRLG.webp" alt="Yeasmin Khandakar" class="avatar" loading="lazy"></p>
+</div>
+<div class="person-main">
+<div class="person-name">
+Yeasmin Khandakar
+</div>
+<div class="person-title">
+TBC (Workplace AI)
+</div>
+</div>
+</div>
+<p><a href="./program/workshops/TEFDRV.html" class="stretched-link" aria-label="Yeasmin Khandakar: TBC (Workplace AI), 03:30 PM"></a></p>
+</div>
+<div class="person-card">
+<div class="person-time">
+04:00 PM
+</div>
+<div class="pc-row">
+<div class="avatar-slot">
+<div class="avatar-group">
+<p><img src="https://conf.nectric.com.au/media/avatars/TPRK7Z_LPaK4QO.webp" alt="Renée Rosillo" class="avatar" loading="lazy"></p>
+<p><img src="https://conf.nectric.com.au/media/avatars/NLJUE9_Ir9Ibk8.webp" alt="Azul Garza" class="avatar avatar-overlap" loading="lazy"></p>
+</div>
+</div>
+<div class="person-main">
+<div class="person-name">
+Renée Rosillo &amp; Azul Garza
+</div>
+<div class="person-title">
+From Idea to Production: Building an Agentic Forecasting Ecosystem in the Open
+</div>
+</div>
+</div>
+<p><a href="./program/workshops/WD3RU7.html" class="stretched-link" aria-label="Renée Rosillo &amp; Azul Garza: From Idea to Production: Building an Agentic Forecasting Ecosystem in the Open, 04:00 PM"></a></p>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</div>
+</div>
+<div class="program-cta">
+  <a href="program/schedule/" class="btn-program">View the full schedule →</a>
 </div>
 </div>
 <section class="community-section">
     <h2 data-anchor-id="program">Community @ WOMBAT</h2>
     <p class="community-desc">
-      At WOMBAT, Community is made up in the people you meet in between. Be it with food or coffee in hand, connecting with like minded people is always encouraged and made easy in WOMBAT 2026.
+      WOMBAT isn't just about the talks. It's about the people in the room. <br>
+      Join the conversation between sessions and meet your fellow analysts.
     </p>
 
     <!-- Gallery Sub-section -->
@@ -384,6 +1106,7 @@ The WOMBAT tutorials offer practical, hands-on training in key topics for data a
 
 The main day of WOMBAT features a diverse workshop program designed to highlight the latest data analysis tools and techniques. The workshop includes a keynote presentation, followed by invited talks from leading data analysts from academia, government, and industry. More details about the workshop will be shared nearer to the event.
  -->
+
 
 
 </section>
