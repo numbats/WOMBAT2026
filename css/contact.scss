@@ -25,7 +25,7 @@
 .contact-section .btn-primary {
   display: inline-block;
   background-color: $primary;
-  color: #fff;
+  color: #3a2704;
   text-decoration: none;
   padding: 1rem 2.5rem;
   border-radius: 50px;
@@ -38,6 +38,7 @@
 
 .contact-section .btn-primary:hover {
   background-color: darken($primary, 30%);
+  color: #ffffff;
   transform: scale(1.02);
 }
 

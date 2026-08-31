@@ -101,7 +101,7 @@ science.*]{.hero-desc}
 
 ```{=html}
 <div class="btn-group save-the-date-dropdown" role="group">
-  <a href="participation/register.html" class="btn btn-primary btn-lg" style="color: white; margin-right: 0.5rem; border-radius: 0.5rem">
+  <a href="participation/register.html" class="btn btn-primary btn-lg" style="color: #3a2704; margin-right: 0.5rem; border-radius: 0.5rem">
     Register
   </a>
   <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="background: none; border-radius: 0.5rem">
