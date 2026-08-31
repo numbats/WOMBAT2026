@@ -236,6 +236,12 @@
   line-height: 1.35;
 }
 
+.program .person-row .person-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .program .person-time {
   margin-left: auto;
   flex: 0 0 auto;
