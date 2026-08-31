@@ -13,7 +13,9 @@
 :root {
   --card-padding: 1.25rem;
   --card-gap: 1.5rem;
-  --block-margin: 2.5rem;
+  /* Shared with Day 2 (not overridden below) so the gap between session
+     blocks reads the same on both days. */
+  --block-margin: 1.5rem;
   --block-heading-size: 1.15rem;
   --block-heading-margin: 1rem;
   --title-size: 1.25rem;
@@ -25,7 +27,6 @@
 #day-2-workshop {
   --card-padding: 0.85rem 1rem;
   --card-gap: 1rem;
-  --block-margin: 1.5rem;
   --block-heading-size: 1.05rem;
   --block-heading-margin: 0.5rem;
   --title-size: 1.05rem;
@@ -49,6 +50,12 @@
   left: 50%;
   transform: translateX(-50%);
   height: 4.25rem;
+  /* #day-switcher is a direct child of #quarto-content, which Quarto's own
+     CSS gives padding-top: 14px at >=992px (to push normal page content
+     below the fixed navbar once the mobile breadcrumb bar is hidden). That
+     padding has no business here -- it just pushes the centered buttons
+     down inside this fixed-position bar -- so it's zeroed out below. */
+  padding-top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -145,43 +152,22 @@ h2 {
   align-items: stretch;
 }
 
-/* --- Tutorial timetable (Day 1): rows = streams, columns = AM/PM --- */
+/* --- Tutorial timetable (Day 1): rows = streams, columns = AM/PM ---
+   Each row is a .session-block (shared with Day 2), whose own
+   margin-bottom already spaces rows apart, so no gap is added here. */
 .tutorial-table {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 
-.tutorial-table-header,
 .tutorial-row {
   display: grid;
-  grid-template-columns: 150px 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
   /* stretch, matching .list above: the AM and PM cards in a row share one
      height, with the extra space landing as a gap between title and
      metadata rather than as a mismatched card height. */
   align-items: stretch;
-}
-
-.tutorial-table-header {
-  padding-bottom: 0.25rem;
-}
-
-.tutorial-col-header {
-  text-align: center;
-  font-weight: 700;
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #64748b;
-}
-
-.tutorial-row-label {
-  display: flex;
-  align-items: center;
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: #0f345c;
 }
 
 .tutorial-row .list {
@@ -195,20 +181,10 @@ h2 {
 }
 
 @media (max-width: 800px) {
-  .tutorial-table-header {
-    display: none;
-  }
-
   .tutorial-row {
     grid-template-columns: 1fr;
     gap: 0.75rem;
     margin-bottom: 1rem;
-  }
-
-  .tutorial-row-label {
-    font-size: 1rem;
-    padding-bottom: 0.25rem;
-    border-bottom: 2px solid #e2e8f0;
   }
 }
 

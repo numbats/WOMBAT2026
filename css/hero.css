@@ -115,6 +115,41 @@ body:has(.hero).hero-navbar-scrolled
   margin-top: 1rem;
 }
 
+.hero-note {
+  display: block;
+  max-width: 34rem;
+  margin: 3.5rem auto 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.hero-note-label {
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.55);
+  margin-bottom: 0.35rem;
+}
+
+/* Each sentence-group sits on its own line: the confusion + disambiguation
+   pair together, then the MoCaO attribution below. */
+.hero-note em {
+  display: block;
+}
+
+.hero-note em + em {
+  margin-top: 0.35rem;
+}
+
+.hero-note a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 /* ── Live Schedule button (swapped in for Register during the event) ───────── */
 
 .btn-live {

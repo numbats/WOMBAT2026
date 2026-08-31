@@ -131,6 +131,25 @@
   gap: 2rem;
 }
 
+/* Body Section (multi-speaker layout: full-width description, speakers below) */
+.talk-body--stacked {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.talk-speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+@media (max-width: 700px) {
+  .talk-speakers-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Speaker Profile */
 .speaker-profile {
   background: #f8fafc;
