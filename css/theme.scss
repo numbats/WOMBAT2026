@@ -54,6 +54,10 @@ $content-pad: clamp(1rem, 2vw, 2rem) !default;
   width: 100%;
 }
 
+#quarto-header .navbar .navbar-brand {
+  font-weight: 700;
+}
+
 #quarto-header .navbar {
   min-height: 4.25rem;
   // Glass style is the default for all non-hero pages.
