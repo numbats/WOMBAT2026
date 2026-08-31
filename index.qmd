@@ -281,7 +281,7 @@ science.*]{.hero-desc}
 ```
 
 ```{=html}
-<div class="day-heading"><span class="day-num">Day 1</span><span class="day-date">Mon 30 Nov &middot; Tutorials</span></div>
+<div class="day-heading"><span class="day-num">Day 1 Tutorials &middot;</span><span class="day-date">Mon 30 Nov</span><a href="https://events.humanitix.com/wombat-2026-day-1-tutorials" class="day-register" target="_blank" rel="noopener">Register for tutorials &rarr;</a></div>
 ```
 
 ::: {.track-grid}
@@ -337,7 +337,7 @@ science.*]{.hero-desc}
 :::
 
 ```{=html}
-<div class="day-heading"><span class="day-num">Day 2</span><span class="day-date">Tue 1 Dec &middot; Workshop</span></div>
+<div class="day-heading"><span class="day-num">Day 2 Workshop &middot;</span><span class="day-date">Tue 1 Dec</span><a href="https://events.humanitix.com/wombat-2026-day-2-workshop" class="day-register" target="_blank" rel="noopener">Register for main day &rarr;</a></div>
 ```
 
 ::: {.day2-stack}
