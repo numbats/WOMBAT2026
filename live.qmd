@@ -1,0 +1,19 @@
+---
+pagetitle: "Live Program"
+format:
+  html:
+    css: [css/live.css]
+---
+
+::: {.container .live-header}
+# Live Program
+
+Browse the upcoming talks, updated real time during the event.
+:::
+
+```{=html}
+<div class="live-widget-wrap">
+  <div class="pretalx-schedule" data-event-url="https://conf.nectric.com.au/wombat-2026/"></div>
+  <script defer src="https://conf.nectric.com.au/wombat-2026/schedule/widget/v2.en.js"></script>
+</div>
+```

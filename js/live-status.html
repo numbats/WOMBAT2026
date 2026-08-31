@@ -1,0 +1,15 @@
+<script>
+(function () {
+  // Single source of truth for "is the event on today", used to reveal the
+  // Live Program navbar link (css/theme.scss) and, on the homepage, swap
+  // the hero's Register button for a Live Schedule one (css/hero.css).
+  var startDateHuman = '2026-11-30';
+  var endDateHuman = '2026-12-01';
+  var pad = function (n) { return String(n).padStart(2, '0'); };
+  var today = new Date();
+  var todayHuman = today.getFullYear() + '-' + pad(today.getMonth() + 1) + '-' + pad(today.getDate());
+  if (todayHuman >= startDateHuman && todayHuman <= endDateHuman) {
+    document.body.classList.add('event-live');
+  }
+})();
+</script>

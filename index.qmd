@@ -71,9 +71,6 @@ listing:
       grid: true
 format:
   html:
-    include-in-header:
-      - text: |
-          <script type="text/javascript" src="https://conf.nectric.com.au/wombat-2025/schedule/widget/v2.en.js"></script>
     css: [css/hero.css, css/program.css, css/community.css]
     theme:
       light:
@@ -101,8 +98,11 @@ science.*]{.hero-desc}
 
 ```{=html}
 <div class="btn-group save-the-date-dropdown" role="group">
-  <a href="participation/register.html" class="btn btn-primary btn-lg" style="color: #3a2704; margin-right: 0.5rem; border-radius: 0.5rem">
+  <a href="participation/register.html" id="hero-register-btn" class="btn btn-primary btn-lg" style="color: #3a2704; margin-right: 0.5rem; border-radius: 0.5rem">
     Register
+  </a>
+  <a href="live.html" id="hero-live-btn" class="btn btn-lg btn-live" style="margin-right: 0.5rem; border-radius: 0.5rem">
+    <span class="live-dot"></span> Live Program
   </a>
   <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="background: none; border-radius: 0.5rem">
     Add to calendar
@@ -189,6 +189,10 @@ science.*]{.hero-desc}
   document.getElementById('cal-google').href  = googleURL;
   document.getElementById('cal-outlook').href = outlookURL;
   document.getElementById('cal-ical').href    = icsDataURI;
+
+  // The Register → Live Schedule swap itself is handled by the shared
+  // body.event-live class from js/live-status.html (see css/hero.css),
+  // so the event dates only need to live in one place.
 })();
 </script>
 ```

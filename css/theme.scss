@@ -116,6 +116,66 @@ footer.footer .nav-footer > * {
 //   border-color: var(--bs-primary);
 // }
 
+// The "Live Program" link only matters once the event is actually on, so
+// it stays hidden the rest of the year (like the hero's .btn-live, which
+// this mirrors) and is revealed by the same body.event-live class, set by
+// js/live-status.html comparing the visitor's local date to the event dates.
+.navbar .navbar-nav .nav-link[href$="live.html"],
+.navbar .navbar-nav .nav-link[href$="live.qmd"] {
+  display: none;
+  align-items: center;
+  gap: 0.4rem;
+  margin-left: 0.5rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 0.5rem;
+  border: 1px solid #dc2626;
+  background: transparent;
+  color: #dc2626 !important;
+  font-weight: 600;
+}
+
+.navbar .navbar-nav .nav-link[href$="live.html"]::before,
+.navbar .navbar-nav .nav-link[href$="live.qmd"]::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: #dc2626;
+  display: inline-block;
+  animation: live-dot-blink 1.4s ease-in-out infinite;
+}
+
+.navbar .navbar-nav .nav-link[href$="live.html"]:hover,
+.navbar .navbar-nav .nav-link[href$="live.qmd"]:hover,
+.navbar .navbar-nav .nav-link[href$="live.html"]:focus-visible,
+.navbar .navbar-nav .nav-link[href$="live.qmd"]:focus-visible {
+  background: rgba(220, 38, 38, 0.08);
+  border-color: #b91c1c;
+  color: #b91c1c !important;
+}
+
+body.event-live .navbar .navbar-nav .nav-link[href$="live.html"],
+body.event-live .navbar .navbar-nav .nav-link[href$="live.qmd"] {
+  display: inline-flex;
+}
+
+@keyframes live-dot-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navbar .navbar-nav .nav-link[href$="live.html"]::before,
+  .navbar .navbar-nav .nav-link[href$="live.qmd"]::before {
+    animation: none;
+  }
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

@@ -54,6 +54,8 @@ website:
             href: about/committee
       - text: Register
         href: participation/register.qmd
+      - text: Live Program
+        href: live.qmd
   page-footer: 
     left: "Workshop Organised by the Monash Business Analytics Team"
     right: 
@@ -75,6 +77,7 @@ format:
       - plausible.html
       - js/hero-navbar.html
       - js/hero-wave.html
+      - js/live-status.html
 
 # editor: visual
 

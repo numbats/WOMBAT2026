@@ -1,0 +1,32 @@
+.live-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.live-header h1 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.live-header p {
+  color: #666;
+  font-size: 1.1rem;
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+/* pretalx's widget lays its schedule out in day-wide columns, so let it use
+   more of the viewport than the site's usual reading-width container. */
+.live-widget-wrap {
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 0 1rem 2rem;
+}
+
+.pretalx-schedule {
+  min-height: 60vh;
+}
