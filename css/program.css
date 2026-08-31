@@ -117,7 +117,7 @@
   display: flex;
   align-items: center;
   gap: 0.65rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .program .track-icon {
@@ -151,13 +151,30 @@
   display: flex;
   align-items: flex-start;
   gap: 0.65rem;
-  padding: 0.6rem 0;
-  border-top: 1px solid #e2e8f0;
+  /* Horizontal padding + matching negative margin cancel out, so the
+     photo/name/time keep the same x-position as before -- they just add
+     room for the hover border/background to show without shifting any
+     content or overflowing the track-card's own 1.4rem padding. */
+  padding: 0.6rem 0.75rem;
+  margin-inline: -0.75rem;
+  border: 1px solid transparent;
+  border-top-color: #e2e8f0;
+  border-radius: 10px;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
 .program .person-row:first-of-type {
-  border-top: none;
-  padding-top: 0;
+  border-top-color: transparent;
+}
+
+/* Same lift/highlight treatment as Day 2's .person-card:hover below. */
+.program .person-row:hover {
+  background: #ffffff;
+  border-color: #288dfa;
+  box-shadow: 0 4px 14px -6px rgba(0, 0, 0, 0.2);
 }
 
 .program .person-row:hover .person-name {
