@@ -66,6 +66,41 @@ h2 {
   grid-template-columns: repeat(2, minmax(480px, 1fr));
 }
 
+/* --- Tutorial stream columns (Day 1) --- */
+.tutorial-streams {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.stream-column .stream-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f345c;
+  text-align: center;
+  margin: 0 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.stream-column .list {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .tutorial-streams {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .tutorial-streams {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* --- Interactive Cards --- */
 .quarto-post {
   position: relative;

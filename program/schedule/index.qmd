@@ -1,11 +1,33 @@
 ---
 pagetitle: "Schedule"
 listing:
-  - id: tutorials
+  - id: stream-reproducibility
     contents:
-      - "../tutorials/*.qmd"
+      - "../tutorials/SLTKXH.qmd"
+      - "../tutorials/YGAET3.qmd"
     type: default
-    sort: ["date", "room"]
+    sort: "date"
+    fields: [title, time, speakerlist, room, image]
+  - id: stream-publishing
+    contents:
+      - "../tutorials/GH98C8.qmd"
+      - "../tutorials/3SLZLV.qmd"
+    type: default
+    sort: "date"
+    fields: [title, time, speakerlist, room, image]
+  - id: stream-analysis
+    contents:
+      - "../tutorials/CN3WGS.qmd"
+      - "../tutorials/EWFCQ8.qmd"
+    type: default
+    sort: "date"
+    fields: [title, time, speakerlist, room, image]
+  - id: stream-development
+    contents:
+      - "../tutorials/CUWXCY.qmd"
+      - "../tutorials/HZ7WBW.qmd"
+    type: default
+    sort: "date"
     fields: [title, time, speakerlist, room, image]
   - id: workshops
     contents:
@@ -82,8 +104,37 @@ document.addEventListener('DOMContentLoaded', () => {
 ::: {.container}
 ## Day 1 tutorials
 
-::::: {#tutorials}
+::: {.tutorial-streams}
+
+::: {.stream-column}
+### Reproducibility {.stream-heading}
+
+::::: {#stream-reproducibility}
 :::::
+:::
+
+::: {.stream-column}
+### Publishing {.stream-heading}
+
+::::: {#stream-publishing}
+:::::
+:::
+
+::: {.stream-column}
+### Analysis {.stream-heading}
+
+::::: {#stream-analysis}
+:::::
+:::
+
+::: {.stream-column}
+### Development {.stream-heading}
+
+::::: {#stream-development}
+:::::
+:::
+
+:::
 
 ## Day 2 workshop
 
