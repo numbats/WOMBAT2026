@@ -1,11 +1,16 @@
 <%
+// template-params.fields lets a listing entry (e.g. the deemphasized
+// welcome/closing cards) restrict which metadata rows and speaker avatars
+// show up, since the fields: config on a custom-template listing is only
+// used to shape the item data quarto passes in, not what this template
+// renders. Listings that don't set it get the full default set.
+const metaFields = (templateParams && templateParams.fields) || ['time', 'speakerlist', 'room'];
+
 const speakersFor = (item) => {
-  if (!item.speaker) return [];
+  if (!metaFields.includes('speakerlist') || !item.speaker) return [];
   const list = Array.isArray(item.speaker) ? item.speaker : [item.speaker];
   return list.filter((sp) => sp && sp.avatar_url);
 };
-
-const metaFields = ['time', 'speakerlist', 'room'];
 %>
 
 ::: {.list .quarto-listing-default}

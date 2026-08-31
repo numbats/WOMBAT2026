@@ -55,6 +55,8 @@ listing:
     type: default
     template: session-card.ejs
     fields: [title, time, room]
+    template-params:
+      fields: [time, room]
   - id: group-keynote
     contents:
       - "../workshops/DSBAZG.qmd"
@@ -107,6 +109,8 @@ listing:
     type: default
     template: session-card.ejs
     fields: [title, time, room]
+    template-params:
+      fields: [time, room]
 format:
   html:
     css: [../../css/schedule.css]
