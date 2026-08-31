@@ -1,9 +1,9 @@
 ---
-pagetitle: 'WOMBAT 2026: Welcome'
+pagetitle: 'Welcome'
 date: 2026-12-01 08:45:00
 time: 08:45 AM
 title: Welcome
-description: Generated summary
+description: "The opening welcome to WOMBAT 2026: an overview of the day, safety information, and housekeeping, from Mitchell O'Hara-Wild."
 speaker:
 - code: LDX3EG
   name: Mitchell O'Hara-Wild

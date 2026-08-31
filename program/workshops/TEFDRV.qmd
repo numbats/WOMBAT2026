@@ -1,9 +1,9 @@
 ---
-pagetitle: 'WOMBAT 2026: TBC (Workplace AI)'
+pagetitle: 'TBC (Workplace AI)'
 date: 2026-12-01 15:30:00
 time: 03:30 PM
 title: TBC (Workplace AI)
-description: Generated summary
+description: "A Workplace AI talk at WOMBAT 2026 from Yeasmin Khandakar. Full details to be announced."
 speaker:
 - code: 7MMCTT
   name: Yeasmin Khandakar

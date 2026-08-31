@@ -1,9 +1,9 @@
 ---
-pagetitle: 'WOMBAT 2026: Modern package development with Positron + AI'
+pagetitle: 'Modern package development with Positron + AI'
 date: 2026-11-30 13:30:00
 time: 01:30 PM
 title: Modern package development with Positron + AI
-description: Generated summary
+description: "Hadley Wickham on modern R package development with Positron and AI coding assistants, covering testing and refactoring, at WOMBAT 2026."
 speaker:
 - code: NFDCVB
   name: Hadley Wickham

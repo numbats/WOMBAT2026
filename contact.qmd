@@ -1,5 +1,6 @@
 ---
 pagetitle: "Contact us"
+description: "Get in touch with the organisers of WOMBAT 2026, the annual data science and analytics workshop in Melbourne, Australia."
 format:
   html:
     theme:

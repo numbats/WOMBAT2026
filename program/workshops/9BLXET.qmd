@@ -1,9 +1,9 @@
 ---
-pagetitle: 'WOMBAT 2026: Closing discussion'
+pagetitle: 'Closing discussion'
 date: 2026-12-01 16:30:00
 time: 04:30 PM
 title: Closing discussion
-description: Generated summary
+description: "The closing discussion at WOMBAT 2026: a summary of the day plus pointers to other events and organisations in the data analysis space."
 speaker:
   code: ''
   name: ''

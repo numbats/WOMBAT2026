@@ -1,6 +1,7 @@
 ---
 title: ""
 pagetitle: "WOMBAT 2026 – Data Science & Analytics Workshop"
+description: "WOMBAT 2026 is the annual data science and analytics workshop run by the Monash Business Analytics Team, 30 Nov – 1 Dec 2026 in Melbourne, Australia."
 listing:
   # Program preview (homepage). Each entry pulls straight from the same
   # tutorial/workshop source files program/schedule/ uses, so a title,
@@ -86,7 +87,7 @@ https://conf.posit.co/2026/
 -->
 
 ::: {.hero}
-# WOMBAT
+# WOMBAT 2026
 
 [**W**orkshop **O**rganised by the **M**onash **B**usiness **A**nalytics
 **T**eam]{.hero-tagline}
@@ -138,7 +139,7 @@ science.*]{.hero-desc}
 
 <p class="hero-note">
   <span class="hero-note-label">Note</span>
-  <em>There are two WOMBATs in Melbourne this year, a week apart, with the same name.<br>This one is about data analytics; the other is about mathematical optimisation.</em>
+  <em>There are two annual WOMBAT events, both in Melbourne, a week apart.<br>This one is about data analytics; the other is about mathematical optimisation.</em>
   <em>It is unrelated to the <a href="https://wombat.mocao.org/" target="_blank" rel="noopener">Workshop on Optimisation, Metric Bounds, Approximation and Transversality</a>, the annual meeting organised by the MoCaO special interest group.</em>
 </p>
 
@@ -204,7 +205,7 @@ science.*]{.hero-desc}
 ```
 :::
 
-# Keynote
+## Keynote
 
 ```{=html}
 
@@ -277,7 +278,7 @@ science.*]{.hero-desc}
 </script>
 ```
 
-# Program
+## Program
 
 ::: {.program}
 

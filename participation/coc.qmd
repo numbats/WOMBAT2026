@@ -1,5 +1,6 @@
 ---
 pagetitle: "Code of Conduct"
+description: "The Code of Conduct for WOMBAT 2026, the annual data science and analytics workshop run by the Monash Business Analytics Team."
 ---
 
 <style>

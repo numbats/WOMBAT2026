@@ -1,11 +1,10 @@
 ---
-pagetitle: 'WOMBAT 2026: The Future of Animals is in Our Hands: My Role as a Data
-  Scientist in Wildlife Conservation'
+pagetitle: 'The Future of Animals is in Our Hands: My Role as a Data Scientist in Wildlife Conservation'
 date: 2026-12-01 11:00:00
 time: 11:00 AM
 title: 'The Future of Animals is in Our Hands: My Role as a Data Scientist in Wildlife
   Conservation'
-description: Generated summary
+description: "Thiyanga Talagala on using data science and forecasting to analyse animal movement and protect Sri Lanka's wildlife, at WOMBAT 2026."
 speaker:
 - code: XYV8YH
   name: Thiyanga Talagala

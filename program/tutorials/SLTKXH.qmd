@@ -1,9 +1,9 @@
 ---
-pagetitle: 'WOMBAT 2026: A Gentle Introduction to Targets'
+pagetitle: 'A Gentle Introduction to Targets'
 date: 2026-11-30 09:00:00
 time: 09:00 AM
 title: A Gentle Introduction to Targets
-description: Generated summary
+description: "Nick Tierney's WOMBAT 2026 workshop gently introduces the {targets} R package for building reproducible data analysis pipelines."
 speaker:
 - code: 97P7PG
   name: Nick Tierney

@@ -1,9 +1,9 @@
 ---
-pagetitle: 'WOMBAT 2026: Exploratory Time Series Analysis'
+pagetitle: 'Exploratory Time Series Analysis'
 date: 2026-11-30 13:30:00
 time: 01:30 PM
 title: Exploratory Time Series Analysis
-description: Generated summary
+description: "A WOMBAT 2026 workshop on exploratory techniques for uncovering patterns in time series data, presented by Mitchell O'Hara-Wild."
 speaker:
 - code: LDX3EG
   name: Mitchell O'Hara-Wild

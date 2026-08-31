@@ -1,5 +1,6 @@
 ---
 pagetitle: "Live Program"
+description: "Browse the live, real-time schedule of talks and tutorials at WOMBAT 2026 in Melbourne, Australia."
 format:
   html:
     css: [css/live.css]

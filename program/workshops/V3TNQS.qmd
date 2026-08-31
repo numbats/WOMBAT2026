@@ -1,10 +1,9 @@
 ---
-pagetitle: 'WOMBAT 2026: Immutable by design: Trace-minimised forecasts for hierarchical
-  time series'
+pagetitle: 'Immutable by design: Trace-minimised forecasts for hierarchical time series'
 date: 2026-12-01 11:30:00
 time: 11:30 AM
 title: 'Immutable by design: Trace-minimised forecasts for hierarchical time series'
-description: Generated summary
+description: "Shanika Wickramasuriya presents a new method for trace-minimised, immutable forecast reconciliation in hierarchical time series, at WOMBAT 2026."
 speaker:
 - code: YHXDLY
   name: Shanika Wickramasuriya

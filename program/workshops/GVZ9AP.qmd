@@ -1,11 +1,10 @@
 ---
-pagetitle: 'WOMBAT 2026: In conversation: Hadley Wickham &amp; Damjan Vukcevic on Analysis
-  Workflows, hosted by Cynthia Huang'
+pagetitle: 'In conversation: Hadley Wickham &amp; Damjan Vukcevic on Analysis Workflows, hosted by Cynthia Huang'
 date: 2026-12-01 13:30:00
 time: 01:30 PM
 title: 'In conversation: Hadley Wickham &amp; Damjan Vukcevic on Analysis Workflows, hosted
   by Cynthia Huang'
-description: Generated summary
+description: "Hadley Wickham and Damjan Vukcevic discuss how AI is reshaping data analysis and software, hosted by Cynthia Huang, at WOMBAT 2026."
 speaker:
 - code: N8BLXD
   name: Cynthia Huang

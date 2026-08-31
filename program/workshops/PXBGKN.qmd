@@ -1,9 +1,9 @@
 ---
-pagetitle: 'WOMBAT 2026: TBC (Accessible AI)'
+pagetitle: 'TBC (Accessible AI)'
 date: 2026-12-01 15:15:00
 time: 03:15 PM
 title: TBC (Accessible AI)
-description: Generated summary
+description: "An Accessible AI talk at WOMBAT 2026 from Janith Wanniarachchi. Full details to be announced."
 speaker:
 - code: 8GXHNJ
   name: Janith Wanniarachchi

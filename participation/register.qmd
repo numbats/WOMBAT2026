@@ -1,5 +1,6 @@
 ---
 pagetitle: "Registration details"
+description: "Register for WOMBAT 2026 tutorials and the main workshop day, 30 Nov – 1 Dec 2026 in Melbourne, Australia."
 format:
   html:
     theme:

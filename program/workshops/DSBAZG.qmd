@@ -1,9 +1,9 @@
 ---
-pagetitle: 'WOMBAT 2026: Spotting the weird ones'
+pagetitle: 'Spotting the weird ones'
 date: 2026-12-01 09:00:00
 time: 09:00 AM
 title: Spotting the weird ones
-description: Generated summary
+description: "Rob Hyndman presents a principled statistical approach to anomaly detection in diverse datasets, using the {weird} R package, at WOMBAT 2026."
 speaker:
 - code: GVZWMX
   name: Rob Hyndman

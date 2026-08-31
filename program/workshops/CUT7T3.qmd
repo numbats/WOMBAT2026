@@ -1,9 +1,9 @@
 ---
-pagetitle: 'WOMBAT 2026: mixtime: Temporal data for better analytics'
+pagetitle: 'mixtime: Temporal data for better analytics'
 date: 2026-12-01 10:30:00
 time: 10:30 AM
 title: 'mixtime: Temporal data for better analytics'
-description: Generated summary
+description: "Mitchell O'Hara-Wild introduces mixtime, an R package for representing and analysing data across multiple time granularities, at WOMBAT 2026."
 speaker:
 - code: LDX3EG
   name: Mitchell O'Hara-Wild

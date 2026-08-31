@@ -1,9 +1,9 @@
 ---
-pagetitle: 'WOMBAT 2026: Using an LLM Wiki for project delivery'
+pagetitle: 'Using an LLM Wiki for project delivery'
 date: 2026-12-01 13:10:00
 time: 01:10 PM
 title: Using an LLM Wiki for project delivery
-description: Generated summary
+description: "Zola Batsaikhan on building an LLM Wiki as a centralised knowledge layer for project delivery, at WOMBAT 2026."
 speaker:
 - code: T8R89U
   name: Zola Batsaikhan

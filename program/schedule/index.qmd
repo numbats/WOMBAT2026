@@ -1,5 +1,6 @@
 ---
 pagetitle: "Schedule"
+description: "The full schedule of tutorials and workshop talks at WOMBAT 2026, 30 Nov – 1 Dec 2026 in Melbourne, Australia."
 listing:
   - id: tut-reproducibility-am
     contents:

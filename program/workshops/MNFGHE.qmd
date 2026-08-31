@@ -1,9 +1,9 @@
 ---
-pagetitle: 'WOMBAT 2026: TBC (Industry AI)'
+pagetitle: 'TBC (Industry AI)'
 date: 2026-12-01 13:20:00
 time: 01:20 PM
 title: TBC (Industry AI)
-description: Generated summary
+description: "An Industry AI talk at WOMBAT 2026 from Jaffie Yang, Senior Data Scientist at NAB. Full details to be announced."
 speaker:
 - code: QQRDPN
   name: Jaffie Yang

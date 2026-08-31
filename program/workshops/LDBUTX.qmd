@@ -1,9 +1,9 @@
 ---
-pagetitle: 'WOMBAT 2026: How AI Is Used in My Job: From Data to Better Business Decisions'
+pagetitle: 'How AI Is Used in My Job: From Data to Better Business Decisions'
 date: 2026-12-01 13:00:00
 time: 01:00 PM
 title: 'How AI Is Used in My Job: From Data to Better Business Decisions'
-description: Generated summary
+description: "Priya Dingorkar shares a practical, real-world view of how AI supports data analysis and business decision-making, at WOMBAT 2026."
 speaker:
 - code: XRXPCG
   name: Priya Dingorkar

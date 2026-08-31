@@ -1,9 +1,9 @@
 ---
-pagetitle: 'WOMBAT 2026: TBC (Accessible AI)'
+pagetitle: 'TBC (Accessible AI)'
 date: 2026-12-01 15:00:00
 time: 03:00 PM
 title: TBC (Accessible AI)
-description: Generated summary
+description: "An Accessible AI talk at WOMBAT 2026 from Maliny Po. Full details to be announced."
 speaker:
 - code: HHDWB3
   name: Maliny Po

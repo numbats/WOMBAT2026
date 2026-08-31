@@ -1,9 +1,9 @@
 ---
-pagetitle: 'WOMBAT 2026: Modern reproducibility practices for agentic analytics'
+pagetitle: 'Modern reproducibility practices for agentic analytics'
 date: 2026-11-30 13:30:00
 time: 01:30 PM
 title: Modern reproducibility practices for agentic analytics
-description: Generated summary
+description: "A hands-on WOMBAT 2026 workshop on working safely with coding agents: git worktrees, guardrails, and reproducible environments, with Michael Lydeamore."
 speaker:
 - code: 9UW7JH
   name: Michael Lydeamore

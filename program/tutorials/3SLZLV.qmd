@@ -1,9 +1,9 @@
 ---
-pagetitle: 'WOMBAT 2026: Publishing your software'
+pagetitle: 'Publishing your software'
 date: 2026-11-30 13:30:00
 time: 01:30 PM
 title: Publishing your software
-description: Generated summary
+description: "Fonti Kar and Dianne Cook's WOMBAT 2026 tutorial helps research software developers draft a publication describing their R package."
 speaker:
 - code: HXZANU
   name: Fonti Kar

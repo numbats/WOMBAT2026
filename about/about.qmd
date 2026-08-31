@@ -1,5 +1,6 @@
 ---
 pagetitle: "About WOMBAT"
+description: "About WOMBAT, the annual data science and analytics workshop organised by the Monash Business Analytics Team in Melbourne, Australia."
 ---
 
 ::: grid

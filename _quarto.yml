@@ -73,6 +73,7 @@ format:
       #dark: darkly
     page-layout: custom
     toc: false
+    canonical-url: true
     include-after-body:
       - plausible.html
       - js/hero-navbar.html

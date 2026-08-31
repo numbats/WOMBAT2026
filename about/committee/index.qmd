@@ -1,5 +1,6 @@
 ---
 pagetitle: "Organising Committee"
+description: "Meet the organising committee behind WOMBAT 2026, the annual data science and analytics workshop in Melbourne, Australia."
 aliases:
   - /about/committee.html
 listing:

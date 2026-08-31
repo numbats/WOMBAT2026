@@ -1,11 +1,10 @@
 ---
-pagetitle: 'WOMBAT 2026: From Idea to Production: Building an Agentic Forecasting
-  Ecosystem in the Open'
+pagetitle: 'From Idea to Production: Building an Agentic Forecasting Ecosystem in the Open'
 date: 2026-12-01 16:00:00
 time: 04:00 PM
 title: 'From Idea to Production: Building an Agentic Forecasting Ecosystem in the
   Open'
-description: Generated summary
+description: "Renee Rosillo and Azul Garza on building TimeCopilot, an open-source agentic forecasting framework, at WOMBAT 2026."
 speaker:
 - code: 8QQEVH
   name: Renée Rosillo
