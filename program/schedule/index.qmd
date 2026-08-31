@@ -279,7 +279,7 @@ Development
 ::: {.session-block}
 ### AI Sessions
 
-::::: {.session-grid-3 #group-ai}
+::::: {.session-grid-2 #group-ai}
 :::::
 :::
 
