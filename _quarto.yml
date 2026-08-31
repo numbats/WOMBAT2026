@@ -11,7 +11,7 @@ project:
     browser: false # setting it for my convenience cause I prefer to refresh the same tab
 
 website:
-  title: "WOMBAT 2026 – Data Science & Analytics Workshop"
+  title: "WOMBAT 2026"
   site-url: "https://wombat2026.numbat.space"
   sidebar: false
   search: false

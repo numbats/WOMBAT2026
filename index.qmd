@@ -1,7 +1,11 @@
 ---
 title: ""
-pagetitle: "WOMBAT 2026 – Data Science & Analytics Workshop"
+pagetitle: "Data Science & Analytics Workshop"
 description: "WOMBAT 2026 is the annual data science and analytics workshop run by the Monash Business Analytics Team, 30 Nov – 1 Dec 2026 in Melbourne, Australia."
+open-graph:
+  title: "WOMBAT 2026 – Data Science & Analytics Workshop"
+twitter-card:
+  title: "WOMBAT 2026 – Data Science & Analytics Workshop"
 listing:
   # Program preview (homepage). Each entry pulls straight from the same
   # tutorial/workshop source files program/schedule/ uses, so a title,
