@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="About WOMBAT, the annual open-source data science and analytics workshop run by the Monash Business Analytics Team since 2016.">
+<meta name="description" content="A brief history of past WOMBAT workshops, organised annually by the Monash Business Analytics Team.">
 
-<title>About WOMBAT – WOMBAT 2026</title>
+<title>Past Events – WOMBAT 2026</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -32,6 +32,8 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <link href="../img/wombat/wombat-pixelart.svg" rel="icon" type="image/svg+xml">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -62,17 +64,75 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-past-events .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<meta property="og:title" content="About WOMBAT">
-<meta property="og:description" content="About WOMBAT, the annual open-source data science and analytics workshop run by the Monash Business Analytics Team since 2016.">
+    const options = {
+      valueNames: ['listing-year','listing-theme','listing-dates','listing-location','listing-url',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-year","listing-theme","listing-dates","listing-location","listing-url"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-past-events'] = new List('listing-past-events', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta property="og:title" content="Past Events">
+<meta property="og:description" content="A brief history of past WOMBAT workshops, organised annually by the Monash Business Analytics Team.">
 <meta property="og:image" content="https://wombat2026.numbat.space/img/opengraph-banner.jpg">
 <meta property="og:site_name" content="WOMBAT 2026">
-<meta name="twitter:title" content="About WOMBAT">
-<meta name="twitter:description" content="About WOMBAT, the annual open-source data science and analytics workshop run by the Monash Business Analytics Team since 2016.">
+<meta name="twitter:title" content="Past Events">
+<meta name="twitter:description" content="A brief history of past WOMBAT workshops, organised annually by the Monash Business Analytics Team.">
 <meta name="twitter:image" content="https://wombat2026.numbat.space/img/opengraph-banner.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://wombat2026.numbat.space/about/about.html">
+<link rel="canonical" href="https://wombat2026.numbat.space/about/past-events.html">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -144,34 +204,150 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="grid">
 <div id="about_banner" class="g-col-12 title">
-<section id="about-wombat" class="level1">
-<h1>About WOMBAT</h1>
+<section id="past-wombat-events" class="level1">
+<h1>Past WOMBAT Events</h1>
 </section>
 </div>
-<div class="g-col-12">
-<ul class="about-facts">
-  <li><i class="bi bi-calendar-event" aria-hidden="true"></i> Running since 2016</li>
-  <li><i class="bi bi-geo-alt" aria-hidden="true"></i> Melbourne, Australia</li>
-  <li><i class="bi bi-clock-history" aria-hidden="true"></i> Tutorials + talks, over two days</li>
-  <li><i class="bi bi-code-slash" aria-hidden="true"></i> Free &amp; open-source tools</li>
-</ul>
+<div class="g-col-12 block_text">
+<p>WOMBAT has run regularly since 2016, each year organised by the Monash Business Analytics Team around a new theme.</p>
+<p>Visit the websites from previous events to see the program, slides, and recordings.</p>
 </div>
-<section id="what-is-wombat" class="level3 g-col-12 g-col-md-7 block_text">
-<h3 data-anchor-id="what-is-wombat">What is WOMBAT?</h3>
-<p>WOMBAT (the <strong>W</strong>orkshop <strong>O</strong>rganised by the <strong>M</strong>onash <strong>B</strong>usiness <strong>A</strong>nalytics <strong>T</strong>eam) is an annual event for open-source tools in business analytics and data science. Each year it brings together analysts, students and researchers from academia, industry and government to learn from each other and see what’s new in the open-source ecosystem.</p>
-<p>Each year’s program is built around a fresh theme chosen by that year’s organisers, so the format and focus shift a little from one WOMBAT to the next.</p>
-</section>
-<div class="g-col-12 g-col-md-5 margin_img">
-<p><img src="../img/michael-jerrard-mnHs4boXT_0-unsplash.jpg" class="block_img img-fluid" style="width:100.0%" alt="A wild wombat foraging among ferns and grass"></p>
+<div id="listing-past-events" class="g-col-12 quarto-listing quarto-listing-container-custom">
+<div class="events">
+  <div class="event_columns">
+    
+      <a class="event_card" href="https://wombat.numbat.space/2025" aria-label="WOMBAT 2025: Designing Data Driven Discoveries">
+        <div class="event_card_year">2025</div>
+        <div class="event_card_body">
+          <h3 class="event_card_theme">Designing Data Driven Discoveries</h3>
+          <ul class="event_card_meta">
+            <li>
+              <i class="bi bi-calendar3" aria-hidden="true"></i>
+              29–30 September 2025
+            </li>
+            <li>
+              <i class="bi bi-geo-alt" aria-hidden="true"></i>
+              Monash University, Melbourne CBD
+            </li>
+          </ul>
+          <span class="event_card_link">
+            Visit site
+            <i class="bi bi-arrow-right" aria-hidden="true"></i>
+          </span>
+        </div>
+      </a>
+    
+      <a class="event_card" href="https://wombat.numbat.space/2024" aria-label="WOMBAT 2024: Open the World with Open Source">
+        <div class="event_card_year">2024</div>
+        <div class="event_card_body">
+          <h3 class="event_card_theme">Open the World with Open Source</h3>
+          <ul class="event_card_meta">
+            <li>
+              <i class="bi bi-calendar3" aria-hidden="true"></i>
+              22–23 October 2024
+            </li>
+            <li>
+              <i class="bi bi-geo-alt" aria-hidden="true"></i>
+              Monash University, Melbourne CBD
+            </li>
+          </ul>
+          <span class="event_card_link">
+            Visit site
+            <i class="bi bi-arrow-right" aria-hidden="true"></i>
+          </span>
+        </div>
+      </a>
+    
+      <a class="event_card" href="https://wombat.numbat.space/2022" aria-label="WOMBAT 2022: Communicating with Data">
+        <div class="event_card_year">2022</div>
+        <div class="event_card_body">
+          <h3 class="event_card_theme">Communicating with Data</h3>
+          <ul class="event_card_meta">
+            <li>
+              <i class="bi bi-calendar3" aria-hidden="true"></i>
+              6–7 December 2022
+            </li>
+            <li>
+              <i class="bi bi-geo-alt" aria-hidden="true"></i>
+              Royal South Yarra Lawn Tennis Club, Toorak
+            </li>
+          </ul>
+          <span class="event_card_link">
+            Visit site
+            <i class="bi bi-arrow-right" aria-hidden="true"></i>
+          </span>
+        </div>
+      </a>
+    
+      <a class="event_card" href="https://wombat.numbat.space/2019" aria-label="WOMBAT 2019: Making Data Analysis Easier">
+        <div class="event_card_year">2019</div>
+        <div class="event_card_body">
+          <h3 class="event_card_theme">Making Data Analysis Easier</h3>
+          <ul class="event_card_meta">
+            <li>
+              <i class="bi bi-calendar3" aria-hidden="true"></i>
+              28–29 November 2019
+            </li>
+            <li>
+              <i class="bi bi-geo-alt" aria-hidden="true"></i>
+              State Library Victoria, Melbourne
+            </li>
+          </ul>
+          <span class="event_card_link">
+            Visit site
+            <i class="bi bi-arrow-right" aria-hidden="true"></i>
+          </span>
+        </div>
+      </a>
+    
+      <a class="event_card" href="https://wombat.numbat.space/2017" aria-label="WOMBAT 2017: Reproducible Data Analysis">
+        <div class="event_card_year">2017</div>
+        <div class="event_card_body">
+          <h3 class="event_card_theme">Reproducible Data Analysis</h3>
+          <ul class="event_card_meta">
+            <li>
+              <i class="bi bi-calendar3" aria-hidden="true"></i>
+              29 May – 2 June 2017
+            </li>
+            <li>
+              <i class="bi bi-geo-alt" aria-hidden="true"></i>
+              NAB, 700 Bourke St, Melbourne
+            </li>
+          </ul>
+          <span class="event_card_link">
+            Visit site
+            <i class="bi bi-arrow-right" aria-hidden="true"></i>
+          </span>
+        </div>
+      </a>
+    
+      <a class="event_card" href="https://wombat.numbat.space/2016" aria-label="WOMBAT 2016: Making Data Analysis Easier">
+        <div class="event_card_year">2016</div>
+        <div class="event_card_body">
+          <h3 class="event_card_theme">Making Data Analysis Easier</h3>
+          <ul class="event_card_meta">
+            <li>
+              <i class="bi bi-calendar3" aria-hidden="true"></i>
+              18–19 February 2016
+            </li>
+            <li>
+              <i class="bi bi-geo-alt" aria-hidden="true"></i>
+              Melbourne Zoo
+            </li>
+          </ul>
+          <span class="event_card_link">
+            Visit site
+            <i class="bi bi-arrow-right" aria-hidden="true"></i>
+          </span>
+        </div>
+      </a>
+    
+  </div>
 </div>
-<section id="what-to-expect" class="level3 g-col-12 block_text">
-<h3 data-anchor-id="what-to-expect">What to expect</h3>
-<p>A typical WOMBAT runs across two days: a hands-on tutorial day, where attendees learn a tool or technique directly from the people who build it, followed by a day of invited talks and a keynote covering the wider open-source data science landscape. Recent years have also opened parts of the program up virtually, so people who can’t make it to Melbourne can still take part.</p>
-<p>WOMBAT is organised by the Monash Business Analytics Team, with support from sponsors and the wider open-source community.<br>
-See the <a href="../about/committee">Organising Committee</a> page for who’s behind this year’s event.</p>
-<p>See the <a href="../about/past-events.html">Past Events</a> page for themes, dates, locations, and links to each year’s site.</p>
-</section>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
+</div>
+
 
 
 
