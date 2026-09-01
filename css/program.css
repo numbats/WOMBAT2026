@@ -107,6 +107,7 @@
 }
 
 .program .track-card {
+  min-width: 0;
   background: #f8fafc;
   border: 1px solid #e2e8f0;
   border-radius: 14px;
@@ -524,17 +525,11 @@
   .program .track-grid {
     grid-template-columns: 1fr;
   }
-  .program .person-row {
-    flex-wrap: wrap;
-  }
   .program .day-heading {
     flex-wrap: wrap;
   }
   .program .day-heading .day-register {
     margin-left: 0;
-  }
-  .program .person-time {
-    margin-left: 44px;
   }
   .program .day2-block {
     flex-direction: column;
