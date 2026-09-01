@@ -48,6 +48,8 @@ website:
             href: participation/coc.qmd
           - text: Organising Committee
             href: about/committee
+          - text: Past Events
+            href: about/past-events.qmd
       - text: Register
         href: participation/register.qmd
       - text: Live Program

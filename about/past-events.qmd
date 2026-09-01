@@ -1,0 +1,23 @@
+---
+pagetitle: "Past Events"
+description: "A brief history of past WOMBAT workshops, organised annually by the Monash Business Analytics Team."
+listing:
+  - id: past-events
+    template: past-events.ejs
+    contents: past-events.yml
+---
+
+::: grid
+::: {#about_banner .g-col-12 .title}
+# Past WOMBAT Events
+:::
+
+::: {.g-col-12 .block_text}
+WOMBAT has run regularly since 2016, each year organised by the Monash Business Analytics Team around a new theme.
+
+Visit the websites from previous events to see the program, slides, and recordings.
+:::
+
+::: {#past-events .g-col-12}
+:::
+:::
