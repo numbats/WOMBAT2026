@@ -220,7 +220,7 @@ science.*]{.hero-desc}
     <!-- Left/Top Column: Speaker Profile -->
     <div class="profile-section">
       <div class="avatar-wrapper">
-        <img src="img/keynote.png" alt="Rob J Hyndman" class="avatar">
+        <img src="img/keynote.jpg" alt="Rob J Hyndman" class="avatar">
       </div>
       <div class="speaker-info">
         <h2 class="speaker-name" data-anchor-id="keynote">Rob J Hyndman</h2>
