@@ -1,6 +1,6 @@
 ---
 pagetitle: "About WOMBAT"
-description: "About WOMBAT, the annual data science and analytics workshop organised by the Monash Business Analytics Team in Melbourne, Australia."
+description: "About WOMBAT, the annual open-source data science and analytics workshop run by the Monash Business Analytics Team since 2016."
 ---
 
 ::: grid
@@ -8,16 +8,37 @@ description: "About WOMBAT, the annual data science and analytics workshop organ
 # About WOMBAT
 :::
 
-::: {.g-col-6 .block_text}
-### Previous WOMBAT events
-
-...
-
+::: {.g-col-12}
+```{=html}
+<ul class="about-facts">
+  <li><i class="bi bi-calendar-event" aria-hidden="true"></i> Running since 2016</li>
+  <li><i class="bi bi-geo-alt" aria-hidden="true"></i> Melbourne, Australia</li>
+  <li><i class="bi bi-clock-history" aria-hidden="true"></i> Tutorials + talks, over two days</li>
+  <li><i class="bi bi-code-slash" aria-hidden="true"></i> Free & open-source tools</li>
+</ul>
+```
 :::
 
-::: {.g-col-6 .margin_img}
+::: {.g-col-12 .g-col-md-7 .block_text}
+### What is WOMBAT?
+
+WOMBAT (the **W**orkshop **O**rganised by the **M**onash **B**usiness **A**nalytics **T**eam) is an annual event for open-source tools in business analytics and data science. Each year it brings together analysts, students and researchers from academia, industry and government to learn from each other and see what's new in the open-source ecosystem.
+
+Each year's program is built around a fresh theme chosen by that year's organisers, so the format and focus shift a little from one WOMBAT to the next.
+:::
+
+::: {.g-col-12 .g-col-md-5 .margin_img}
 ![](/img/michael-jerrard-mnHs4boXT_0-unsplash.jpg){.block_img width="100%" fig-alt="A wild wombat foraging among ferns and grass"}
 :::
 
-<div></div>
+::: {.g-col-12 .block_text}
+### What to expect
+
+A typical WOMBAT runs across two days: a hands-on tutorial day, where attendees learn a tool or technique directly from the people who build it, followed by a day of invited talks and a keynote covering the wider open-source data science landscape. Recent years have also opened parts of the program up virtually, so people who can't make it to Melbourne can still take part.
+
+WOMBAT is organised by the Monash Business Analytics Team, with support from sponsors and the wider open-source community.  
+See the [Organising Committee](/about/committee) page for who's behind this year's event.
+
+See the [Past Events](/about/past-events.qmd) page for themes, dates, locations, and links to each year's site.
+:::
 :::
