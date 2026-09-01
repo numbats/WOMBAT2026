@@ -1,16 +1,17 @@
 ---
-pagetitle: 'Welcome'
+pagetitle: Welcome
 date: 2026-12-01 08:45:00
 time: 08:45 AM
 title: Welcome
-description: "The opening welcome to WOMBAT 2026: an overview of the day, safety information, and housekeeping, from Mitchell O'Hara-Wild."
+description: 'The opening welcome to WOMBAT 2026: an overview of the day, safety information,
+  and housekeeping, from Mitchell O''Hara-Wild.'
 speaker:
 - code: LDX3EG
   name: Mitchell O'Hara-Wild
-  avatar_url: https://conf.nectric.com.au/media/avatars/TTTBDY_rgs6zaJ.webp
+  avatar_url: /img/speakers/LDX3EG.webp
 speakerlist: Mitchell O'Hara-Wild
 room: Room  8.03
-image: https://conf.nectric.com.au/media/avatars/TTTBDY_rgs6zaJ.webp
+image: /img/speakers/LDX3EG.webp
 format:
   html:
     css: ../../css/talks.css
@@ -50,12 +51,13 @@ slides_url: ~
         </div>
       </section>
 
+
       <!-- Sidebar -->
       <div class="talk-sidebar">
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
-          <img src="https://conf.nectric.com.au/media/avatars/TTTBDY_rgs6zaJ.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <img src="/img/speakers/LDX3EG.webp" alt="Mitchell O'Hara-Wild" class="speaker-img">
           <h2 class="speaker-name">
             Mitchell O'Hara-Wild
           </h2>

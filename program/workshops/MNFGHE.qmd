@@ -1,16 +1,17 @@
 ---
-pagetitle: 'TBC (Industry AI)'
+pagetitle: TBC (Industry AI)
 date: 2026-12-01 13:20:00
 time: 01:20 PM
 title: TBC (Industry AI)
-description: "An Industry AI talk at WOMBAT 2026 from Jaffie Yang, Senior Data Scientist at NAB. Full details to be announced."
+description: An Industry AI talk at WOMBAT 2026 from Jaffie Yang, Senior Data Scientist
+  at NAB. Full details to be announced.
 speaker:
 - code: QQRDPN
   name: Jaffie Yang
-  avatar_url: https://conf.nectric.com.au/media/avatars/JMFNWN_096BW8V.webp
+  avatar_url: /img/speakers/QQRDPN.webp
 speakerlist: Jaffie Yang
 room: Room  8.03
-image: https://conf.nectric.com.au/media/avatars/JMFNWN_096BW8V.webp
+image: /img/speakers/QQRDPN.webp
 format:
   html:
     css: ../../css/talks.css
@@ -50,12 +51,13 @@ slides_url: ~
         </div>
       </section>
 
+
       <!-- Sidebar -->
       <div class="talk-sidebar">
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
-          <img src="https://conf.nectric.com.au/media/avatars/JMFNWN_096BW8V.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <img src="/img/speakers/QQRDPN.webp" alt="Jaffie Yang" class="speaker-img">
           <h2 class="speaker-name">
             Jaffie Yang
           </h2>

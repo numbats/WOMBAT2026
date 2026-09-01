@@ -1,16 +1,17 @@
 ---
-pagetitle: 'TBC (Accessible AI)'
+pagetitle: TBC (Accessible AI)
 date: 2026-12-01 15:15:00
 time: 03:15 PM
 title: TBC (Accessible AI)
-description: "An Accessible AI talk at WOMBAT 2026 from Janith Wanniarachchi. Full details to be announced."
+description: An Accessible AI talk at WOMBAT 2026 from Janith Wanniarachchi. Full
+  details to be announced.
 speaker:
 - code: 8GXHNJ
   name: Janith Wanniarachchi
-  avatar_url: https://conf.nectric.com.au/media/avatars/EQDFSL_RUqnifG.webp
+  avatar_url: /img/speakers/8GXHNJ.webp
 speakerlist: Janith Wanniarachchi
 room: Room  8.03
-image: https://conf.nectric.com.au/media/avatars/EQDFSL_RUqnifG.webp
+image: /img/speakers/8GXHNJ.webp
 format:
   html:
     css: ../../css/talks.css
@@ -50,12 +51,13 @@ slides_url: ~
         </div>
       </section>
 
+
       <!-- Sidebar -->
       <div class="talk-sidebar">
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
-          <img src="https://conf.nectric.com.au/media/avatars/EQDFSL_RUqnifG.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <img src="/img/speakers/8GXHNJ.webp" alt="Janith Wanniarachchi" class="speaker-img">
           <h2 class="speaker-name">
             Janith Wanniarachchi
           </h2>

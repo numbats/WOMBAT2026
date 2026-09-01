@@ -4,17 +4,18 @@ date: 2026-12-01 16:00:00
 time: 04:00 PM
 title: 'From Idea to Production: Building an Agentic Forecasting Ecosystem in the
   Open'
-description: "Renee Rosillo and Azul Garza on building TimeCopilot, an open-source agentic forecasting framework, at WOMBAT 2026."
+description: Renee Rosillo and Azul Garza on building TimeCopilot, an open-source
+  agentic forecasting framework, at WOMBAT 2026.
 speaker:
 - code: 8QQEVH
   name: Renée Rosillo
-  avatar_url: https://conf.nectric.com.au/media/avatars/TPRK7Z_LPaK4QO.webp
+  avatar_url: /img/speakers/8QQEVH.webp
 - code: VPUL9A
   name: Azul Garza
-  avatar_url: https://conf.nectric.com.au/media/avatars/NLJUE9_Ir9Ibk8.webp
+  avatar_url: /img/speakers/VPUL9A.webp
 speakerlist: Renée Rosillo, Azul Garza
 room: Room  8.03
-image: https://conf.nectric.com.au/media/avatars/TPRK7Z_LPaK4QO.webp
+image: /img/speakers/8QQEVH.webp
 format:
   html:
     css: ../../css/talks.css
@@ -61,7 +62,7 @@ slides_url: ~
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
-          <img src="https://conf.nectric.com.au/media/avatars/TPRK7Z_LPaK4QO.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <img src="/img/speakers/8QQEVH.webp" alt="Renée Rosillo" class="speaker-img">
           <h2 class="speaker-name">
             Renée Rosillo
           </h2>
@@ -72,7 +73,7 @@ slides_url: ~
         </div>
         <!-- Speaker Profile -->
         <div class="speaker-profile">
-          <img src="https://conf.nectric.com.au/media/avatars/NLJUE9_Ir9Ibk8.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <img src="/img/speakers/VPUL9A.webp" alt="Azul Garza" class="speaker-img">
           <h2 class="speaker-name">
             Azul Garza
           </h2>
@@ -83,6 +84,7 @@ slides_url: ~
         </div>
 
       </div>
+
 
     </div>
   </article>

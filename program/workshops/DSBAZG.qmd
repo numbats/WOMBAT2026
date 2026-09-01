@@ -1,16 +1,17 @@
 ---
-pagetitle: 'Spotting the weird ones'
+pagetitle: Spotting the weird ones
 date: 2026-12-01 09:00:00
 time: 09:00 AM
 title: Spotting the weird ones
-description: "Rob Hyndman presents a principled statistical approach to anomaly detection in diverse datasets, using the {weird} R package, at WOMBAT 2026."
+description: Rob Hyndman presents a principled statistical approach to anomaly detection
+  in diverse datasets, using the {weird} R package, at WOMBAT 2026.
 speaker:
 - code: GVZWMX
   name: Rob Hyndman
-  avatar_url: https://conf.nectric.com.au/media/avatars/9RABY7_45oaFxq.webp
+  avatar_url: /img/speakers/GVZWMX.webp
 speakerlist: Rob Hyndman
 room: Room  8.03
-image: https://conf.nectric.com.au/media/avatars/9RABY7_45oaFxq.webp
+image: /img/speakers/GVZWMX.webp
 format:
   html:
     css: ../../css/talks.css
@@ -51,12 +52,13 @@ slides_url: ~
         </div>
       </section>
 
+
       <!-- Sidebar -->
       <div class="talk-sidebar">
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
-          <img src="https://conf.nectric.com.au/media/avatars/9RABY7_45oaFxq.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <img src="/img/speakers/GVZWMX.webp" alt="Rob Hyndman" class="speaker-img">
           <h2 class="speaker-name">
             Rob Hyndman
           </h2>

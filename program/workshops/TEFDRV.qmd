@@ -1,16 +1,17 @@
 ---
-pagetitle: 'TBC (Workplace AI)'
+pagetitle: TBC (Workplace AI)
 date: 2026-12-01 15:30:00
 time: 03:30 PM
 title: TBC (Workplace AI)
-description: "A Workplace AI talk at WOMBAT 2026 from Yeasmin Khandakar. Full details to be announced."
+description: A Workplace AI talk at WOMBAT 2026 from Yeasmin Khandakar. Full details
+  to be announced.
 speaker:
 - code: 7MMCTT
   name: Yeasmin Khandakar
-  avatar_url: https://conf.nectric.com.au/media/avatars/VARU8L_oY9DRLG.webp
+  avatar_url: /img/speakers/7MMCTT.webp
 speakerlist: Yeasmin Khandakar
 room: Room  8.03
-image: https://conf.nectric.com.au/media/avatars/VARU8L_oY9DRLG.webp
+image: /img/speakers/7MMCTT.webp
 format:
   html:
     css: ../../css/talks.css
@@ -50,12 +51,13 @@ slides_url: ~
         </div>
       </section>
 
+
       <!-- Sidebar -->
       <div class="talk-sidebar">
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
-          <img src="https://conf.nectric.com.au/media/avatars/VARU8L_oY9DRLG.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <img src="/img/speakers/7MMCTT.webp" alt="Yeasmin Khandakar" class="speaker-img">
           <h2 class="speaker-name">
             Yeasmin Khandakar
           </h2>

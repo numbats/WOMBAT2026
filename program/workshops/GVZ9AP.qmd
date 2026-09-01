@@ -4,20 +4,21 @@ date: 2026-12-01 13:30:00
 time: 01:30 PM
 title: 'In conversation: Hadley Wickham &amp; Damjan Vukcevic on Analysis Workflows, hosted
   by Cynthia Huang'
-description: "Hadley Wickham and Damjan Vukcevic discuss how AI is reshaping data analysis and software, hosted by Cynthia Huang, at WOMBAT 2026."
+description: Hadley Wickham and Damjan Vukcevic discuss how AI is reshaping data analysis
+  and software, hosted by Cynthia Huang, at WOMBAT 2026.
 speaker:
 - code: N8BLXD
   name: Cynthia Huang
-  avatar_url: https://conf.nectric.com.au/media/avatars/VCASXU_BLNvx3U.webp
+  avatar_url: /img/speakers/N8BLXD.webp
 - code: NFDCVB
   name: Hadley Wickham
-  avatar_url: https://conf.nectric.com.au/media/avatars/3ZEQF8_k3GMDrc.webp
+  avatar_url: /img/speakers/NFDCVB.webp
 - code: UZXXFD
   name: Damjan Vukcevic
-  avatar_url: https://conf.nectric.com.au/media/avatars/EVHPNU_jMTr35E.webp
+  avatar_url: /img/speakers/UZXXFD.webp
 speakerlist: Cynthia Huang, Hadley Wickham, Damjan Vukcevic
 room: Room  8.03
-image: https://conf.nectric.com.au/media/avatars/VCASXU_BLNvx3U.webp
+image: /img/speakers/N8BLXD.webp
 format:
   html:
     css: ../../css/talks.css
@@ -62,7 +63,7 @@ slides_url: ~
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
-          <img src="https://conf.nectric.com.au/media/avatars/VCASXU_BLNvx3U.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <img src="/img/speakers/N8BLXD.webp" alt="Cynthia Huang" class="speaker-img">
           <h2 class="speaker-name">
             Cynthia Huang
           </h2>
@@ -73,7 +74,7 @@ slides_url: ~
         </div>
         <!-- Speaker Profile -->
         <div class="speaker-profile">
-          <img src="https://conf.nectric.com.au/media/avatars/3ZEQF8_k3GMDrc.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <img src="/img/speakers/NFDCVB.webp" alt="Hadley Wickham" class="speaker-img">
           <h2 class="speaker-name">
             Hadley Wickham
           </h2>
@@ -84,7 +85,7 @@ slides_url: ~
         </div>
         <!-- Speaker Profile -->
         <div class="speaker-profile">
-          <img src="https://conf.nectric.com.au/media/avatars/EVHPNU_jMTr35E.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <img src="/img/speakers/UZXXFD.webp" alt="Damjan Vukcevic" class="speaker-img">
           <h2 class="speaker-name">
             Damjan Vukcevic
           </h2>
@@ -95,6 +96,7 @@ slides_url: ~
         </div>
 
       </div>
+
 
     </div>
   </article>

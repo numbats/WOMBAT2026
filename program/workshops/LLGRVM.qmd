@@ -4,14 +4,15 @@ date: 2026-12-01 11:00:00
 time: 11:00 AM
 title: 'The Future of Animals is in Our Hands: My Role as a Data Scientist in Wildlife
   Conservation'
-description: "Thiyanga Talagala on using data science and forecasting to analyse animal movement and protect Sri Lanka's wildlife, at WOMBAT 2026."
+description: Thiyanga Talagala on using data science and forecasting to analyse animal
+  movement and protect Sri Lanka's wildlife, at WOMBAT 2026.
 speaker:
 - code: XYV8YH
   name: Thiyanga Talagala
-  avatar_url: https://conf.nectric.com.au/media/avatars/J98GMK_ZDcz3EX.webp
+  avatar_url: /img/speakers/XYV8YH.webp
 speakerlist: Thiyanga Talagala
 room: Room  8.03
-image: https://conf.nectric.com.au/media/avatars/J98GMK_ZDcz3EX.webp
+image: /img/speakers/XYV8YH.webp
 format:
   html:
     css: ../../css/talks.css
@@ -51,12 +52,13 @@ slides_url: ~
         </div>
       </section>
 
+
       <!-- Sidebar -->
       <div class="talk-sidebar">
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
-          <img src="https://conf.nectric.com.au/media/avatars/J98GMK_ZDcz3EX.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <img src="/img/speakers/XYV8YH.webp" alt="Thiyanga Talagala" class="speaker-img">
           <h2 class="speaker-name">
             Thiyanga Talagala
           </h2>

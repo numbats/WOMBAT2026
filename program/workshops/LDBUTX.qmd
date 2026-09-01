@@ -3,14 +3,15 @@ pagetitle: 'How AI Is Used in My Job: From Data to Better Business Decisions'
 date: 2026-12-01 13:00:00
 time: 01:00 PM
 title: 'How AI Is Used in My Job: From Data to Better Business Decisions'
-description: "Priya Dingorkar shares a practical, real-world view of how AI supports data analysis and business decision-making, at WOMBAT 2026."
+description: Priya Dingorkar shares a practical, real-world view of how AI supports
+  data analysis and business decision-making, at WOMBAT 2026.
 speaker:
 - code: XRXPCG
   name: Priya Dingorkar
-  avatar_url: https://conf.nectric.com.au/media/avatars/DEAJHL_aYXQPiN.webp
+  avatar_url: /img/speakers/XRXPCG.webp
 speakerlist: Priya Dingorkar
 room: Room  8.03
-image: https://conf.nectric.com.au/media/avatars/DEAJHL_aYXQPiN.webp
+image: /img/speakers/XRXPCG.webp
 format:
   html:
     css: ../../css/talks.css
@@ -50,12 +51,13 @@ slides_url: ~
         </div>
       </section>
 
+
       <!-- Sidebar -->
       <div class="talk-sidebar">
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
-          <img src="https://conf.nectric.com.au/media/avatars/DEAJHL_aYXQPiN.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <img src="/img/speakers/XRXPCG.webp" alt="Priya Dingorkar" class="speaker-img">
           <h2 class="speaker-name">
             Priya Dingorkar
           </h2>

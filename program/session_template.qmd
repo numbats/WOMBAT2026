@@ -52,7 +52,7 @@
         {{#speakers}}
         <!-- Speaker Profile -->
         <div class="speaker-profile">
-          <img src="{{avatar_url}}" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <img src="{{avatar_url}}" alt="{{name}}" class="speaker-img">
           <h2 class="speaker-name">
             {{name}}
           </h2>
@@ -72,7 +72,7 @@
         {{#speakers}}
         <!-- Speaker Profile -->
         <div class="speaker-profile">
-          <img src="{{avatar_url}}" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <img src="{{avatar_url}}" alt="{{name}}" class="speaker-img">
           <h2 class="speaker-name">
             {{name}}
           </h2>

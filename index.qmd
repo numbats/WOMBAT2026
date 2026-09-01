@@ -378,7 +378,7 @@ science.*]{.hero-desc}
     <div class="person-time">9:00 AM</div>
     <div class="pc-row">
       <div class="avatar-slot">
-        <img src="https://conf.nectric.com.au/media/avatars/9RABY7_45oaFxq.webp" alt="Rob Hyndman" class="avatar" loading="lazy">
+        <img src="img/speakers/GVZWMX.webp" alt="Rob Hyndman" class="avatar" loading="lazy">
       </div>
       <div class="person-main">
         <div class="person-name">Rob Hyndman</div>
@@ -432,7 +432,7 @@ science.*]{.hero-desc}
   <div class="person-time">1:30 PM</div>
   <div class="conv-people">
     <div class="conv-side conv-host">
-      <img src="https://conf.nectric.com.au/media/avatars/VCASXU_BLNvx3U.webp" alt="Cynthia Huang" class="avatar conv-avatar" loading="lazy">
+      <img src="img/speakers/N8BLXD.webp" alt="Cynthia Huang" class="avatar conv-avatar" loading="lazy">
       <div>
         <div class="person-name">Cynthia Huang</div>
         <span class="conv-role host-role">Host</span>
@@ -444,8 +444,8 @@ science.*]{.hero-desc}
     </div>
     <div class="conv-side conv-guests">
       <div class="avatar-group">
-        <img src="https://conf.nectric.com.au/media/avatars/3ZEQF8_k3GMDrc.webp" alt="Hadley Wickham" class="avatar conv-avatar" loading="lazy">
-        <img src="https://conf.nectric.com.au/media/avatars/EVHPNU_jMTr35E.webp" alt="Damjan Vukcevic" class="avatar conv-avatar avatar-overlap" loading="lazy">
+        <img src="img/speakers/NFDCVB.webp" alt="Hadley Wickham" class="avatar conv-avatar" loading="lazy">
+        <img src="img/speakers/UZXXFD.webp" alt="Damjan Vukcevic" class="avatar conv-avatar avatar-overlap" loading="lazy">
       </div>
       <div>
         <div class="person-name">Hadley Wickham &amp; Damjan Vukcevic</div>

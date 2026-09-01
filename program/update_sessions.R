@@ -43,6 +43,33 @@ escape_html <- function(x) {
     gsub("<[^>]*>", "", x = _) # Remove HTML tags
 }
 
+# Speaker photos are hosted on the conference platform. Mirror them into the
+# repo so pages don't depend on a third-party host staying up (and so
+# og:image keeps working if it ever changes/blocks hotlinking). Downloads are
+# skipped once a copy exists locally, so re-running this script is cheap.
+avatar_dir <- "img/speakers"
+if (!dir.exists(avatar_dir)) dir.create(avatar_dir, recursive = TRUE)
+
+localise_avatar <- function(url, code) {
+  if (is.null(url) || is.na(url) || !nzchar(url)) {
+    return("/img/user.png")
+  }
+  ext <- tools::file_ext(sub("\\?.*$", "", url))
+  if (!nzchar(ext)) ext <- "jpg"
+  dest <- file.path(avatar_dir, paste0(code, ".", ext))
+  if (!file.exists(dest)) {
+    ok <- tryCatch({
+      download.file(url, dest, mode = "wb", quiet = TRUE)
+      TRUE
+    }, error = function(e) {
+      warning("Failed to download avatar for ", code, ": ", conditionMessage(e))
+      FALSE
+    })
+    if (!ok) return(url) # fall back to hotlinking rather than a dead image
+  }
+  paste0("/", dest)
+}
+
 speakers_tidy <- map_dfr(speakers$results, recurse_tibble) |>
   mutate(biography = escape_html(biography) |> gsub("\r\n", "\n", x = _) |> map_chr(commonmark::markdown_html)) |>
   unnest(submissions) |>
@@ -74,10 +101,16 @@ write_session_qmd <- function(x, ...) {
 
   x <- as.list(x)
 
-  # Generate short summary
+  # Preserve hand-edited fields across re-runs. These were already run through
+  # HTML-escaping (via the whisker template) the last time this script wrote
+  # them, so undo that before it happens again -- otherwise re-running the
+  # script repeatedly double-escapes entities (e.g. "&amp;" -> "&amp;amp;").
+  x$pagetitle <- NULL
   if (file.exists(path)) {
-    x$description <- rmarkdown::yaml_front_matter(path)$description
-    x$slides_url <- rmarkdown::yaml_front_matter(path)$slides_url
+    front <- rmarkdown::yaml_front_matter(path)
+    if (!is.null(front$description)) x$description <- escape_html(front$description)
+    x$slides_url <- front$slides_url
+    if (!is.null(front$pagetitle)) x$pagetitle <- escape_html(front$pagetitle)
   }
   if (is.null(x$description)) {
     # chat <- ellmer::chat_google_gemini(
@@ -97,28 +130,24 @@ write_session_qmd <- function(x, ...) {
     speaker <- list(
       code = "",
       name = "",
-      avatar_url = ""
+      avatar_url = "/img/user.png"
     )
     speaker_list <- c(" ")
     x$speakers <- speaker
   } else {
-    speaker <- transpose(x$speakers[[1]][c("code", "name", "avatar_url")])
-    speaker_list <- paste(x$speakers[[1]][["name"]], collapse = ", ")
-    x$speakers <- transpose(x$speakers[[1]])
+    speaker_tbl$avatar_url <- map2_chr(speaker_tbl$avatar_url, speaker_tbl$code, localise_avatar)
+    speaker <- transpose(speaker_tbl[c("code", "name", "avatar_url")])
+    speaker_list <- paste(speaker_tbl[["name"]], collapse = ", ")
+    x$speakers <- transpose(speaker_tbl)
   }
-  first_avatar_url <- if (is.null(speaker_tbl)) {
-    ""
+  image <- if (is.null(speaker_tbl)) {
+    "/img/user.png"
   } else {
     speaker_tbl[["avatar_url"]][[1]]
   }
-  image <- if (is.null(first_avatar_url) || !nzchar(first_avatar_url)) {
-    "/img/user.png"
-  } else {
-    first_avatar_url
-  }
   x$yml <- yaml::as.yaml(
     list(
-      pagetitle = paste("WOMBAT 2026:", x$title),
+      pagetitle = x$pagetitle %||% x$title,
       date = format(x$start),
       time = format(x$start, "%I:%M %p"),
       title = x$title,

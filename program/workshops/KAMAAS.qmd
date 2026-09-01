@@ -1,16 +1,17 @@
 ---
-pagetitle: 'TBC (Accessible AI)'
+pagetitle: TBC (Accessible AI)
 date: 2026-12-01 15:00:00
 time: 03:00 PM
 title: TBC (Accessible AI)
-description: "An Accessible AI talk at WOMBAT 2026 from Maliny Po. Full details to be announced."
+description: An Accessible AI talk at WOMBAT 2026 from Maliny Po. Full details to
+  be announced.
 speaker:
 - code: HHDWB3
   name: Maliny Po
-  avatar_url: https://conf.nectric.com.au/media/avatars/FFS8EF_ziAKw9R.webp
+  avatar_url: /img/speakers/HHDWB3.webp
 speakerlist: Maliny Po
 room: Room  8.03
-image: https://conf.nectric.com.au/media/avatars/FFS8EF_ziAKw9R.webp
+image: /img/speakers/HHDWB3.webp
 format:
   html:
     css: ../../css/talks.css
@@ -50,12 +51,13 @@ slides_url: ~
         </div>
       </section>
 
+
       <!-- Sidebar -->
       <div class="talk-sidebar">
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
-          <img src="https://conf.nectric.com.au/media/avatars/FFS8EF_ziAKw9R.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <img src="/img/speakers/HHDWB3.webp" alt="Maliny Po" class="speaker-img">
           <h2 class="speaker-name">
             Maliny Po
           </h2>

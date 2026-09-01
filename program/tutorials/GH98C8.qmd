@@ -1,16 +1,17 @@
 ---
-pagetitle: 'Introduction to Publishing with Quarto'
+pagetitle: Introduction to Publishing with Quarto
 date: 2026-11-30 09:00:00
 time: 09:00 AM
 title: Introduction to Publishing with Quarto
-description: "Cynthia Huang introduces scientific and technical publishing with Quarto, including agentic assistance for authoring, at WOMBAT 2026."
+description: Cynthia Huang introduces scientific and technical publishing with Quarto,
+  including agentic assistance for authoring, at WOMBAT 2026.
 speaker:
 - code: N8BLXD
   name: Cynthia Huang
-  avatar_url: https://conf.nectric.com.au/media/avatars/VCASXU_BLNvx3U.webp
+  avatar_url: /img/speakers/N8BLXD.webp
 speakerlist: Cynthia Huang
 room: Room  8.53
-image: https://conf.nectric.com.au/media/avatars/VCASXU_BLNvx3U.webp
+image: /img/speakers/N8BLXD.webp
 format:
   html:
     css: ../../css/talks.css
@@ -57,12 +58,13 @@ slides_url: ~
         </div>
       </section>
 
+
       <!-- Sidebar -->
       <div class="talk-sidebar">
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
-          <img src="https://conf.nectric.com.au/media/avatars/VCASXU_BLNvx3U.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <img src="/img/speakers/N8BLXD.webp" alt="Cynthia Huang" class="speaker-img">
           <h2 class="speaker-name">
             Cynthia Huang
           </h2>

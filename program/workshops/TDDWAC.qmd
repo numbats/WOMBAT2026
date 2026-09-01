@@ -1,16 +1,17 @@
 ---
-pagetitle: 'Using an LLM Wiki for project delivery'
+pagetitle: Using an LLM Wiki for project delivery
 date: 2026-12-01 13:10:00
 time: 01:10 PM
 title: Using an LLM Wiki for project delivery
-description: "Zola Batsaikhan on building an LLM Wiki as a centralised knowledge layer for project delivery, at WOMBAT 2026."
+description: Zola Batsaikhan on building an LLM Wiki as a centralised knowledge layer
+  for project delivery, at WOMBAT 2026.
 speaker:
 - code: T8R89U
   name: Zola Batsaikhan
-  avatar_url: https://conf.nectric.com.au/media/avatars/WT38WZ_FpevfUJ.webp
+  avatar_url: /img/speakers/T8R89U.webp
 speakerlist: Zola Batsaikhan
 room: Room  8.03
-image: https://conf.nectric.com.au/media/avatars/WT38WZ_FpevfUJ.webp
+image: /img/speakers/T8R89U.webp
 format:
   html:
     css: ../../css/talks.css
@@ -50,12 +51,13 @@ slides_url: ~
         </div>
       </section>
 
+
       <!-- Sidebar -->
       <div class="talk-sidebar">
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
-          <img src="https://conf.nectric.com.au/media/avatars/WT38WZ_FpevfUJ.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <img src="/img/speakers/T8R89U.webp" alt="Zola Batsaikhan" class="speaker-img">
           <h2 class="speaker-name">
             Zola Batsaikhan
           </h2>

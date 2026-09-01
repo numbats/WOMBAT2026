@@ -3,14 +3,15 @@ pagetitle: 'Immutable by design: Trace-minimised forecasts for hierarchical time
 date: 2026-12-01 11:30:00
 time: 11:30 AM
 title: 'Immutable by design: Trace-minimised forecasts for hierarchical time series'
-description: "Shanika Wickramasuriya presents a new method for trace-minimised, immutable forecast reconciliation in hierarchical time series, at WOMBAT 2026."
+description: Shanika Wickramasuriya presents a new method for trace-minimised, immutable
+  forecast reconciliation in hierarchical time series, at WOMBAT 2026.
 speaker:
 - code: YHXDLY
   name: Shanika Wickramasuriya
-  avatar_url: https://conf.nectric.com.au/media/avatars/QVZFTX_mFpHaEX.webp
+  avatar_url: /img/speakers/YHXDLY.webp
 speakerlist: Shanika Wickramasuriya
 room: Room  8.03
-image: https://conf.nectric.com.au/media/avatars/QVZFTX_mFpHaEX.webp
+image: /img/speakers/YHXDLY.webp
 format:
   html:
     css: ../../css/talks.css
@@ -50,12 +51,13 @@ slides_url: ~
         </div>
       </section>
 
+
       <!-- Sidebar -->
       <div class="talk-sidebar">
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
-          <img src="https://conf.nectric.com.au/media/avatars/QVZFTX_mFpHaEX.webp" alt="Mitchell O’Hara-Wild" class="speaker-img">
+          <img src="/img/speakers/YHXDLY.webp" alt="Shanika Wickramasuriya" class="speaker-img">
           <h2 class="speaker-name">
             Shanika Wickramasuriya
           </h2>
