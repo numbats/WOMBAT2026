@@ -1,5 +1,5 @@
 ---
-pagetitle: 'In conversation: Hadley Wickham &amp; Damjan Vukcevic on Analysis Workflows, hosted by Cynthia Huang'
+pagetitle: 'In Conversation: Wickham &amp; Vukcevic'
 date: 2026-12-01 13:30:00
 time: 01:30 PM
 title: 'In conversation: Hadley Wickham &amp; Damjan Vukcevic on Analysis Workflows, hosted

@@ -1,5 +1,5 @@
 ---
-pagetitle: 'Immutable by design: Trace-minimised forecasts for hierarchical time series'
+pagetitle: Trace-Minimised Forecast Reconciliation
 date: 2026-12-01 11:30:00
 time: 11:30 AM
 title: 'Immutable by design: Trace-minimised forecasts for hierarchical time series'

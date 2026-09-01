@@ -1,5 +1,5 @@
 ---
-pagetitle: 'The Future of Animals is in Our Hands: My Role as a Data Scientist in Wildlife Conservation'
+pagetitle: Data Science for Wildlife Conservation
 date: 2026-12-01 11:00:00
 time: 11:00 AM
 title: 'The Future of Animals is in Our Hands: My Role as a Data Scientist in Wildlife

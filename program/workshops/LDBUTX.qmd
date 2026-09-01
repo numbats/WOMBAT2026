@@ -1,5 +1,5 @@
 ---
-pagetitle: 'How AI Is Used in My Job: From Data to Better Business Decisions'
+pagetitle: How AI Supports Better Business Decisions
 date: 2026-12-01 13:00:00
 time: 01:00 PM
 title: 'How AI Is Used in My Job: From Data to Better Business Decisions'

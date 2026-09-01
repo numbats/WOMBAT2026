@@ -1,5 +1,5 @@
 ---
-pagetitle: 'Surviving Survival Analysis: A Hands-On Introduction with R'
+pagetitle: Surviving Survival Analysis
 date: 2026-11-30 09:00:00
 time: 09:00 AM
 title: 'Surviving Survival Analysis: A Hands-On Introduction with R'
