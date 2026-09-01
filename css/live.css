@@ -20,14 +20,29 @@
 }
 
 /* pretalx's widget lays its schedule out in day-wide columns, so let it use
-   more of the viewport than the site's usual reading-width container. */
+   more of the viewport than the site's usual reading-width container.
+   .live-widget-bleed breaks out of #quarto-content's 1200px cap (same
+   full-bleed technique as .hero in hero.css); .live-widget-wrap then
+   re-centers the widget within that full-viewport band up to its own,
+   wider cap. */
+.live-widget-bleed {
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
+}
+
 .live-widget-wrap {
   max-width: 1400px;
   margin: 2rem auto;
   padding: 0 1rem 2rem;
+  box-sizing: border-box;
 }
 
 pretalx-schedule {
   display: block;
   min-height: 60vh;
+  /* The widget's own stylesheet sets this custom property with a rule
+     scoped to `html, body`, which never matches inside its shadow root -
+     so without redeclaring it here (where it inherits through the shadow
+     boundary), every element that reads it renders unstyled. */
+  --pretalx-clr-primary: #fbac27;
 }
