@@ -1,0 +1,26 @@
+# Tells numbats/WOMBAT to resync its /2026/ submodule right after this repo
+# publishes to gh-pages, instead of waiting for its weekly fallback poll.
+#
+# Requires a WOMBAT_HUB_TOKEN secret in this repo: a token able to send a
+# repository_dispatch to numbats/WOMBAT (a fine-grained PAT scoped to just
+# that repo, "Contents: read and write", is enough). See
+# https://github.com/numbats/WOMBAT/blob/main/docs/source-repo-workflow.yml
+# for the full setup steps this was copied from.
+name: Notify WOMBAT hub
+
+on:
+  push:
+    branches: [gh-pages]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch update to numbats/WOMBAT
+        env:
+          GH_TOKEN: ${{ secrets.WOMBAT_HUB_TOKEN }}
+        run: |
+          gh api repos/numbats/WOMBAT/dispatches \
+            -f event_type=gh-pages-updated \
+            -f "client_payload[repo]=${{ github.repository }}" \
+            -f "client_payload[sha]=${{ github.sha }}"
