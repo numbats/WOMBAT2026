@@ -98,7 +98,7 @@ https://conf.posit.co/2026/
 [**W**orkshop **O**rganised by the **M**onash **B**usiness **A**nalytics
 **T**eam]{.hero-tagline}
 
-[30 Nov -- 1 Dec 2026 · Melbourne, Australia]{.hero-call}
+[30 Nov -- 1 Dec · Melbourne, Australia]{.hero-call}
 
 [*Learn and discuss open-source tools for business analytics and data
 science.*]{.hero-desc}
