@@ -26,7 +26,18 @@
   color: #ffffff;
 }
 
-.talk-datetime {
+/* Date/time and location pills sit side by side above the title; wrapping
+   here (rather than relying on the pills' own inline-flex to wrap) keeps
+   the gap between them consistent whether they're on one line or two. */
+.talk-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.talk-datetime,
+.talk-location {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -38,10 +49,10 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   backdrop-filter: blur(4px);
-  margin-bottom: 1.5rem;
 }
 
-.talk-datetime svg {
+.talk-datetime svg,
+.talk-location svg {
   width: 16px;
   height: 16px;
   fill: currentColor;
