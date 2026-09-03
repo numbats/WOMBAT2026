@@ -352,6 +352,31 @@ h2 {
   color: #334155;
 }
 
+/* --- Tutorial room: in-person vs hybrid icon ---
+   Only tutorials set `online:` in their frontmatter (see
+   session-card.ejs), so this only ever applies to Day 1 rooms; Day 2 rooms
+   render as plain text, unaffected. Wraps rather than truncating the
+   suffix, since the sentence is long relative to a Day 1 card's width. */
+.metadata-value.listing-room {
+  flex-wrap: wrap;
+  row-gap: 0.15rem;
+}
+
+.room-format-icon {
+  margin-right: 0.35rem;
+  flex-shrink: 0;
+}
+
+.metadata-value.listing-room .bi-broadcast {
+  color: #288dfa;
+}
+
+.room-format-suffix {
+  margin-left: 0.3rem;
+  font-style: italic;
+  opacity: 0.85;
+}
+
 /* Hide empty/no matching states */
 .d-none {
   display: none !important;

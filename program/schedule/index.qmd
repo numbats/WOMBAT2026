@@ -7,49 +7,49 @@ listing:
       - "../tutorials/SLTKXH.qmd"
     type: default
     template: session-card.ejs
-    fields: [title, time, speakerlist, room, image]
+    fields: [title, time, speakerlist, room, online, image]
   - id: tut-reproducibility-pm
     contents:
       - "../tutorials/YGAET3.qmd"
     type: default
     template: session-card.ejs
-    fields: [title, time, speakerlist, room, image]
+    fields: [title, time, speakerlist, room, online, image]
   - id: tut-publishing-am
     contents:
       - "../tutorials/GH98C8.qmd"
     type: default
     template: session-card.ejs
-    fields: [title, time, speakerlist, room, image]
+    fields: [title, time, speakerlist, room, online, image]
   - id: tut-publishing-pm
     contents:
       - "../tutorials/3SLZLV.qmd"
     type: default
     template: session-card.ejs
-    fields: [title, time, speakerlist, room, image]
+    fields: [title, time, speakerlist, room, online, image]
   - id: tut-analysis-am
     contents:
       - "../tutorials/CN3WGS.qmd"
     type: default
     template: session-card.ejs
-    fields: [title, time, speakerlist, room, image]
+    fields: [title, time, speakerlist, room, online, image]
   - id: tut-analysis-pm
     contents:
       - "../tutorials/EWFCQ8.qmd"
     type: default
     template: session-card.ejs
-    fields: [title, time, speakerlist, room, image]
+    fields: [title, time, speakerlist, room, online, image]
   - id: tut-development-am
     contents:
       - "../tutorials/CUWXCY.qmd"
     type: default
     template: session-card.ejs
-    fields: [title, time, speakerlist, room, image]
+    fields: [title, time, speakerlist, room, online, image]
   - id: tut-development-pm
     contents:
       - "../tutorials/HZ7WBW.qmd"
     type: default
     template: session-card.ejs
-    fields: [title, time, speakerlist, room, image]
+    fields: [title, time, speakerlist, room, online, image]
   - id: group-welcome
     contents:
       - "../workshops/XMNJDY.qmd"

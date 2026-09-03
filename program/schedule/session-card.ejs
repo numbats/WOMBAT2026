@@ -38,7 +38,17 @@ const speakers = speakersFor(item);
 <% for (const field of metaFields) { %>
 <% const value = item[field]; %>
 <% if (value && String(value).trim() !== '') { %>
+<% /* Tutorials carry an `online` boolean (see program/tutorials/*.qmd);
+      Day 2 sessions don't set it, so item.online is undefined there and
+      the room renders plain, as before. */ %>
+<% if (field === 'room' && item.online !== undefined) { %>
+<% const isOnline = item.online === true || item.online === 'true'; %>
+<% const icon = isOnline ? 'bi-broadcast' : 'bi-geo-alt'; %>
+<% const suffix = isOnline ? 'and online (hybrid format)' : '(in-person only)'; %>
+<div class="metadata-value listing-room"><i class="bi <%= icon %> room-format-icon" aria-hidden="true"></i> <%= value %> <span class="room-format-suffix"><%= suffix %></span></div>
+<% } else { %>
 <div class="metadata-value listing-<%= field %>"><%= value %></div>
+<% } %>
 <% } %>
 <% } %>
 
