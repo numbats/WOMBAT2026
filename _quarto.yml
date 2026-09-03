@@ -3,6 +3,7 @@ project:
   resources:
     - "CNAME"
     - "*.pdf"
+    - ".github/workflows/notify-wombat-hub.yml"
   render:
     - "*.qmd"
     - "!*_template.qmd"
