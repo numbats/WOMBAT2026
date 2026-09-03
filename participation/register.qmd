@@ -14,11 +14,13 @@ format:
   <h2 data-anchor-id="registration">Registration</h2>
   
   <div class="banner">
-    Registration for WOMBAT are open now!
+    Registration for WOMBAT is open now!
   </div>
-  
-  <p class="intro-text">
-    Attendance will be limited to 20 participants (in-person and online) for each of the 8 tutorials on Day 1, and 100 participants (in-person only) for Day 2’s workshop. We will also have a rich collection of hex stickers available for all to choose from to decorate your laptop!
+
+  <!-- We will also have a rich collection of hex stickers available for all to choose from to decorate your laptop! -->
+
+  <p class="pricing-deadline">
+    Early-bird pricing ends 11 October 2026.
   </p>
 
   <div class="event-cards">
@@ -26,8 +28,34 @@ format:
     <section id="tutorials" class="event-card">
       <h4 data-anchor-id="tutorials">Tutorials</h4>
       <p>
-        The WOMBAT tutorials offerings feature practical, hands-on training in key topics for data analysis by experts in the field. Each tutorial consists of three hours of content with a 30-minute catered tea break, offered in both morning (AM) and afternoon (PM) sessions, and each tutorial is limited to 20 in-person participants.
+        Hands-on training in key data analysis topics from expert instructors. Each 3-hour tutorial includes a 30-minute catered tea break, offered in morning (AM) and afternoon (PM) sessions.
       </p>
+      <div class="pricing" role="group" aria-label="Day 1 tutorial pricing, per tutorial">
+        <div class="price-tier price-tier--early">
+          <span class="price-tier-label">Early-bird</span>
+          <div class="price-amount">
+            <span class="price-value">$150</span>
+            <span class="price-type">General</span>
+          </div>
+          <div class="price-amount price-amount--student">
+            <span class="price-value">$75</span>
+            <span class="price-type">Student</span>
+          </div>
+        </div>
+        <div class="price-tier">
+          <span class="price-tier-label">Full price</span>
+          <div class="price-amount">
+            <span class="price-value">$170</span>
+            <span class="price-type">General</span>
+          </div>
+          <div class="price-amount price-amount--student">
+            <span class="price-value">$85</span>
+            <span class="price-type">Student</span>
+          </div>
+        </div>
+        <p class="pricing-note">per tutorial</p>
+      </div>
+      <p class="capacity-note">Limited to 20 participants per tutorial.</p>
       <a href="https://events.humanitix.com/wombat-2026-day-1-tutorials" data-original-href="https://events.humanitix.com/wombat-2026-day-1-tutorials" class="btn-register">
         Register for Day 1
       </a>
@@ -37,8 +65,34 @@ format:
     <section id="workshop" class="event-card">
       <h4 data-anchor-id="workshop">Workshop</h4>
       <p>
-        The main day of WOMBAT features a diverse workshop program designed to highlight the latest data analysis tools and techniques. The workshop features a keynote presentation, followed by invited talks from leading data analysts from academia, government, and industry.
+        The workshop features a keynote presentation and invited talks from leading data analysts in academia, government, and industry, showcasing the latest tools and techniques.
       </p>
+      <div class="pricing" role="group" aria-label="Day 2 workshop pricing">
+        <div class="price-tier price-tier--early">
+          <span class="price-tier-label">Early-bird</span>
+          <div class="price-amount">
+            <span class="price-value">$180</span>
+            <span class="price-type">General</span>
+          </div>
+          <div class="price-amount price-amount--student">
+            <span class="price-value">$80</span>
+            <span class="price-type">Student</span>
+          </div>
+        </div>
+        <div class="price-tier">
+          <span class="price-tier-label">Full price</span>
+          <div class="price-amount">
+            <span class="price-value">$200</span>
+            <span class="price-type">General</span>
+          </div>
+          <div class="price-amount price-amount--student">
+            <span class="price-value">$100</span>
+            <span class="price-type">Student</span>
+          </div>
+        </div>
+        <p class="pricing-note" aria-hidden="true">&nbsp;</p>
+      </div>
+      <p class="capacity-note">Limited to 100 in-person participants.</p>
       <a href="https://events.humanitix.com/wombat-2026-day-2-workshop" data-original-href="https://events.humanitix.com/wombat-2026-day-2-workshop" class="btn-register">
         Register for Day 2
       </a>

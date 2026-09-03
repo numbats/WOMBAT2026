@@ -18,9 +18,10 @@
   text-align: center;
 }
 
-.intro-text {
-  font-size: 1.1rem;
-  color: #4b5563;
+.pricing-deadline {
+  font-size: 1rem;
+  font-weight: 600;
+  color: darken($primary, 30%);
   text-align: center;
   margin-bottom: 2.5rem;
 }
@@ -64,6 +65,91 @@
   color: #4b5563;
   flex-grow: 1; /* Pushes the button to the bottom */
   margin-bottom: 1.5rem;
+}
+
+/* Pricing */
+.pricing {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.price-tier {
+  flex: 1 1 0;
+  min-width: 8rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 0.9rem 0.75rem;
+  text-align: center;
+  background: #f9fafb;
+}
+
+.price-tier--early {
+  border-color: $primary;
+  background: rgba($primary, 0.1);
+}
+
+.price-tier-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+  margin-bottom: 0.6rem;
+}
+
+.price-tier--early .price-tier-label {
+  color: darken($primary, 25%);
+}
+
+.price-amount {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0.35rem;
+}
+
+.price-amount + .price-amount {
+  margin-top: 0.25rem;
+  padding-top: 0.25rem;
+  border-top: 1px dashed #e5e7eb;
+}
+
+.price-value {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.price-amount--student .price-value {
+  font-size: 1.05rem;
+  color: #4b5563;
+}
+
+.price-type {
+  font-size: 0.7rem;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.pricing-note {
+  flex-basis: 100%;
+  margin: -0.75rem 0 0;
+  color: #6b7280;
+  font-size: 0.85rem;
+  text-align: right;
+  font-style: italic;
+}
+
+.event-card .capacity-note {
+  flex-grow: 0;
+  color: #6b7280;
+  font-size: 0.85rem;
+  text-align: center;
+  margin: 0 0 1rem;
 }
 
 /* Button Styling */
