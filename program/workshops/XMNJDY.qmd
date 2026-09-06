@@ -11,6 +11,7 @@ speaker:
   avatar_url: /img/speakers/LDX3EG.webp
 speakerlist: Mitchell O'Hara-Wild
 room: Room  8.03
+online: ~
 image: /img/speakers/LDX3EG.webp
 format:
   html:

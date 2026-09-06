@@ -11,6 +11,7 @@ speaker:
   avatar_url: /img/speakers/YHXDLY.webp
 speakerlist: Shanika Wickramasuriya
 room: Room  8.03
+online: ~
 image: /img/speakers/YHXDLY.webp
 format:
   html:

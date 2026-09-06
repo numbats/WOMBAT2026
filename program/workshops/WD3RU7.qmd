@@ -15,6 +15,7 @@ speaker:
   avatar_url: /img/speakers/VPUL9A.webp
 speakerlist: Renée Rosillo, Azul Garza
 room: Room  8.03
+online: ~
 image: /img/speakers/8QQEVH.webp
 format:
   html:

@@ -11,6 +11,7 @@ speaker:
   avatar_url: /img/speakers/QQRDPN.webp
 speakerlist: Jaffie Yang
 room: Room  8.03
+online: ~
 image: /img/speakers/QQRDPN.webp
 format:
   html:

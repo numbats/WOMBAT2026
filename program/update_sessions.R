@@ -106,12 +106,18 @@ write_session_qmd <- function(x, ...) {
   # them, so undo that before it happens again -- otherwise re-running the
   # script repeatedly double-escapes entities (e.g. "&amp;" -> "&amp;amp;").
   x$pagetitle <- NULL
+  # `online` (hybrid vs in-person only) isn't part of the pretalx data --
+  # it's curated by hand per session, so preserve it like the fields above.
+  x$online <- NULL
   if (file.exists(path)) {
     front <- rmarkdown::yaml_front_matter(path)
     if (!is.null(front$description)) x$description <- escape_html(front$description)
     x$slides_url <- front$slides_url
     if (!is.null(front$pagetitle)) x$pagetitle <- escape_html(front$pagetitle)
+    x$online <- front$online
   }
+  x$has_location <- !is.null(x$online)
+  x$room_label <- paste("Room", x$room)
   if (is.null(x$description)) {
     # chat <- ellmer::chat_google_gemini(
     #   system_prompt = "Briefly summarise the key session topics in a plain text from the following abstract. The summary should start with a background details sentence, followed a sentence detailing the key topics of the session in passive voice."
@@ -156,10 +162,18 @@ write_session_qmd <- function(x, ...) {
       speaker = speaker,
       speakerlist = speaker_list,
       room = paste("Room ", x$room, collapse = " "),
+      online = x$online,
       image = image,
       format = list(html = list(css = "../../css/talks.css")),
       slides_url = x$slides_url
-    )
+    ),
+    # Render logical online as bare true/false (matching the existing
+    # hand-edited convention) instead of yaml::as.yaml's default yes/no.
+    handlers = list(logical = function(x) {
+      v <- ifelse(x, "true", "false")
+      class(v) <- "verbatim"
+      v
+    })
   )
   x$is_tutorial <- is_tutorial
   x$is_workshop <- !is_tutorial

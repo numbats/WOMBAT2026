@@ -12,6 +12,7 @@ speaker:
   avatar_url: /img/speakers/XYV8YH.webp
 speakerlist: Thiyanga Talagala
 room: Room  8.03
+online: ~
 image: /img/speakers/XYV8YH.webp
 format:
   html:

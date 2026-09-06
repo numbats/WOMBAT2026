@@ -11,6 +11,7 @@ speaker:
   avatar_url: /img/user.png
 speakerlist: ' '
 room: Room  8.03
+online: ~
 image: /img/user.png
 format:
   html:

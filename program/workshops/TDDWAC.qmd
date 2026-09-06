@@ -11,6 +11,7 @@ speaker:
   avatar_url: /img/speakers/T8R89U.webp
 speakerlist: Zola Batsaikhan
 room: Room  8.03
+online: ~
 image: /img/speakers/T8R89U.webp
 format:
   html:

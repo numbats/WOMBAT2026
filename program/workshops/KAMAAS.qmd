@@ -11,6 +11,7 @@ speaker:
   avatar_url: /img/speakers/HHDWB3.webp
 speakerlist: Maliny Po
 room: Room  8.03
+online: ~
 image: /img/speakers/HHDWB3.webp
 format:
   html:

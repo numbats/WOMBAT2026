@@ -11,6 +11,7 @@ speaker:
   avatar_url: /img/speakers/7MMCTT.webp
 speakerlist: Yeasmin Khandakar
 room: Room  8.03
+online: ~
 image: /img/speakers/7MMCTT.webp
 format:
   html:

@@ -11,7 +11,7 @@ speaker:
   avatar_url: /img/speakers/LFYJLV.webp
 speakerlist: Tomasz Woźniak
 room: Room  8.44
-online: false
+online: true
 image: /img/speakers/LFYJLV.webp
 format:
   html:
@@ -34,10 +34,10 @@ slides_url: ~
           November 30, 09:00 AM
         </div>
         <div class="talk-location">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-            <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+            <path d="M634.9 154.9C457.2-8.1 182.8-8.1 5.1 154.9c-6.5 6-6.9 16.1-.9 22.6l34.4 37.4c6 6.5 16.1 6.9 22.6.9c145.5-133.9 371.2-133.9 516.7 0c6.5 6 16.6 5.6 22.6-.9l34.4-37.4c6-6.5 5.6-16.6-.9-22.6zM320 320c-49.7 0-90.3 38.9-92.9 87.9c-.3 6.2 4.6 11.9 10.9 11.9h164.1c6.3 0 11.2-5.7 10.9-11.9c-2.7-49-43.3-87.9-92.9-87.9zM461.1 244.5c-77.5-71.4-198.7-71.4-276.2 0c-6.9 6.4-7.4 17.3-.9 24.2l34.2 36.6c6.4 6.9 17.1 7.4 24 1.1c46.3-42.4 118.3-42.4 164.6 0c6.9 6.3 17.6 5.8 24-1.1l34.2-36.6c6.5-6.9 6-17.8-.9-24.2z"/>
           </svg>
-          Room 8.44
+          Room 8.44 + online
         </div>
       </div>
       <h1 class="talk-title">Getting Started with C++ for Faster Forecasting in R</h1>

@@ -11,6 +11,7 @@ speaker:
   avatar_url: /img/speakers/XRXPCG.webp
 speakerlist: Priya Dingorkar
 room: Room  8.03
+online: ~
 image: /img/speakers/XRXPCG.webp
 format:
   html:
