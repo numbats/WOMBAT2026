@@ -254,34 +254,38 @@ ul.task-list li input[type="checkbox"] {
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const hero = document.querySelector(".hero");
+    const heroTitle = hero ? hero.querySelector("h1") : null;
     const header = document.querySelector("#quarto-header");
 
     if (!hero || !header) return;
 
     document.body.classList.add("has-hero-navbar");
 
+    // Trigger the navbar's glass background as soon as it starts overlapping
+    // the "WOMBAT 2026" hero heading, rather than waiting for the whole hero
+    // band to scroll away.
+    const target = heroTitle || hero;
+
+    let ticking = false;
     const updateState = () => {
-      const heroRect = hero.getBoundingClientRect();
+      ticking = false;
+      const headerHeight = header.getBoundingClientRect().height;
+      const targetRect = target.getBoundingClientRect();
       document.body.classList.toggle(
         "hero-navbar-scrolled",
-        heroRect.bottom <= 0,
+        targetRect.top <= headerHeight,
       );
     };
 
+    const requestUpdate = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(updateState);
+    };
+
     updateState();
-
-    if ("IntersectionObserver" in window) {
-      const observer = new IntersectionObserver(updateState, {
-        root: null,
-        threshold: 0,
-        rootMargin: "0px 0px -1px 0px",
-      });
-
-      observer.observe(hero);
-    } else {
-      window.addEventListener("scroll", updateState, { passive: true });
-      window.addEventListener("resize", updateState);
-    }
+    window.addEventListener("scroll", requestUpdate, { passive: true });
+    window.addEventListener("resize", requestUpdate);
   });
 </script>
 <script>

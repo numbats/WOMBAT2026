@@ -23,6 +23,15 @@ body.has-hero-navbar #quarto-header .navbar {
   border-color: transparent;
 }
 
+body.has-hero-navbar.hero-navbar-scrolled #quarto-header .navbar,
+body:has(.hero).hero-navbar-scrolled #quarto-header .navbar {
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 0.35rem 1rem rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-color: transparent;
+}
+
 body.has-hero-navbar #quarto-header .navbar-brand-container > .navbar-brand {
   opacity: 0;
   max-width: 0;
@@ -34,15 +43,6 @@ body.has-hero-navbar #quarto-header .navbar-brand-container > .navbar-brand {
   transition:
     opacity 0.2s ease,
     max-width 0.2s ease;
-}
-
-body.has-hero-navbar.hero-navbar-scrolled #quarto-header .navbar,
-body:has(.hero).hero-navbar-scrolled #quarto-header .navbar {
-  background: rgba(255, 255, 255, 0.72);
-  box-shadow: 0 0.35rem 1rem rgba(0, 0, 0, 0.08);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.35);
 }
 
 body.has-hero-navbar.hero-navbar-scrolled
