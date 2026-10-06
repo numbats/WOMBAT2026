@@ -20,7 +20,7 @@ format:
   <!-- We will also have a rich collection of hex stickers available for all to choose from to decorate your laptop! -->
 
   <p class="pricing-deadline">
-    Early-bird pricing ends 11 October 2026.
+    Early-bird pricing ends 18 October 2026.
   </p>
 
   <div class="event-cards">
