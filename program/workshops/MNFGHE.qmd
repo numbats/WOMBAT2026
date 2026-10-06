@@ -1,10 +1,10 @@
 ---
-pagetitle: TBC (Industry AI)
+pagetitle: So… Can AI Do My Job Yet?
 date: 2026-12-01 13:20:00
 time: 01:20 PM
-title: TBC (Industry AI)
-description: An Industry AI talk at WOMBAT 2026 from Jaffie Yang, Senior Data Scientist
-  at NAB. Full details to be announced.
+title: So… Can AI Do My Job Yet?
+description: Jaffie Yang, Senior Data Scientist at NAB, reflects on working alongside AI as
+  a data scientist and where humans still matter, at WOMBAT 2026.
 speaker:
 - code: QQRDPN
   name: Jaffie Yang
@@ -32,7 +32,7 @@ slides_url: ~
         </svg>
         December 01, 01:20 PM
       </div>
-      <h1 class="talk-title">TBC (Industry AI)</h1>
+      <h1 class="talk-title">So… Can AI Do My Job Yet?</h1>
     </header>
 
     <!-- Body Section -->
@@ -40,7 +40,8 @@ slides_url: ~
 
       <!-- Main Description -->
       <section class="talk-description">
-        <p>TBA</p>
+        <p>AI can write the code, explain the error, suggest the next step — and do it all with remarkable confidence. But does that mean it can do the job?</p>
+<p>In this talk, Jaffie shares what working alongside AI actually looks like as a data scientist: how it has changed the way she explores problems, challenges her own thinking and gets from “I have a question” to “I have something I can test.” Along the way, she reflects on what she’s happy to hand over to AI, what she definitely isn’t, and where the human still earns their seat at the table.</p>
 
 
         <div class="talk-cta">

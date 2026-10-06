@@ -1,10 +1,10 @@
 ---
-pagetitle: How AI Supports Better Business Decisions
+pagetitle: 'AI at Work: Data Insights, Privacy and Judgement'
 date: 2026-12-01 13:00:00
 time: 01:00 PM
-title: 'How AI Is Used in My Job: From Data to Better Business Decisions'
-description: Priya Dingorkar shares a practical, real-world view of how AI supports
-  data analysis and business decision-making, at WOMBAT 2026.
+title: 'AI at Work: Practical Data Insights, Privacy and Human Judgement'
+description: Priya Dingorkar shares practical examples of using AI responsibly for data analysis
+  and business decisions, keeping human judgement central, at WOMBAT 2026.
 speaker:
 - code: XRXPCG
   name: Priya Dingorkar
@@ -32,7 +32,7 @@ slides_url: ~
         </svg>
         December 01, 01:00 PM
       </div>
-      <h1 class="talk-title">How AI Is Used in My Job: From Data to Better Business Decisions</h1>
+      <h1 class="talk-title">AI at Work: Practical Data Insights, Privacy and Human Judgement</h1>
     </header>
 
     <!-- Body Section -->
@@ -40,7 +40,7 @@ slides_url: ~
 
       <!-- Main Description -->
       <section class="talk-description">
-        <p>In this six-minute talk, Priya will share a practical perspective on how Artificial Intelligence is being used in her day-to-day work. She will explore how AI supports data analysis, helps uncover meaningful insights, improves efficiency, and enables better business decision-making. The session will provide a simple, real-world view of how AI is moving from a buzzword to a valuable tool in the workplace.</p>
+        <p>In this six-minute talk, Priya will share practical examples of how AI supports her day-to-day work in data analysis, from cleaning and exploring data to building dashboards and generating insights for business decisions. She will also discuss how AI is used within a protected environment to maintain data privacy and security, while keeping human judgement at the centre of decision-making. The key takeaway: AI is not just a buzzword - it can be a practical, responsible tool for working more efficiently and turning data into meaningful insights.</p>
 
 
         <div class="talk-cta">
@@ -63,7 +63,7 @@ slides_url: ~
             Priya Dingorkar
           </h2>
           <div class="speaker-bio">
-            <p>Priya Dingorkar is a Data Analytics and AI professional with a background in data science, business analytics, machine learning, statistical modelling, forecasting, and data visualisation. She holds an undergraduate degree in Computer Engineering and a Master of Business Analytics from Monash University, giving her a strong blend of technical, analytical, and business expertise. Priya brings these skills together to transform data into meaningful insights and explore how AI and analytics can be applied to real-world business challenges, improve efficiency, and support smarter decision-making.</p>
+            <p>Priya Dingorkar is a Senior Analyst at National Australia Bank (NAB), with a background in data analytics, data science, business analytics, machine learning, statistical modelling, forecasting, and data visualisation. She holds an undergraduate degree in Computer Engineering and a Master of Business Analytics from Monash University, bringing together strong technical, analytical, and business expertise. Priya uses data and AI to solve real-world business challenges, uncover meaningful insights, improve efficiency, and support better decision-making.</p>
 
           </div>
         </div>
