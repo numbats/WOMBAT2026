@@ -13,6 +13,10 @@ speakerlist: Zola Batsaikhan
 room: Room  8.03
 online: ~
 image: /img/speakers/T8R89U.webp
+open-graph:
+  image: /img/social/TDDWAC.png
+twitter-card:
+  image: /img/social/TDDWAC.png
 format:
   html:
     css: ../../css/talks.css

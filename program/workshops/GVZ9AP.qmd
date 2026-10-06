@@ -20,6 +20,10 @@ speakerlist: Cynthia Huang, Hadley Wickham, Damjan Vukcevic
 room: Room  8.03
 online: ~
 image: /img/speakers/N8BLXD.webp
+open-graph:
+  image: /img/social/GVZ9AP.png
+twitter-card:
+  image: /img/social/GVZ9AP.png
 format:
   html:
     css: ../../css/talks.css

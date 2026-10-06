@@ -13,6 +13,10 @@ speakerlist: Jaffie Yang
 room: Room  8.03
 online: ~
 image: /img/speakers/QQRDPN.webp
+open-graph:
+  image: /img/social/MNFGHE.png
+twitter-card:
+  image: /img/social/MNFGHE.png
 format:
   html:
     css: ../../css/talks.css

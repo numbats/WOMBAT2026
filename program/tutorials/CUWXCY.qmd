@@ -13,6 +13,10 @@ speakerlist: Tomasz Woźniak
 room: Room  8.44
 online: true
 image: /img/speakers/LFYJLV.webp
+open-graph:
+  image: /img/social/CUWXCY.png
+twitter-card:
+  image: /img/social/CUWXCY.png
 format:
   html:
     css: ../../css/talks.css

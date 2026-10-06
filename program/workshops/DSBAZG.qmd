@@ -13,6 +13,10 @@ speakerlist: Rob Hyndman
 room: Room  8.03
 online: ~
 image: /img/speakers/GVZWMX.webp
+open-graph:
+  image: /img/social/DSBAZG.png
+twitter-card:
+  image: /img/social/DSBAZG.png
 format:
   html:
     css: ../../css/talks.css

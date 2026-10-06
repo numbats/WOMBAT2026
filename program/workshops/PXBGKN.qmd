@@ -13,6 +13,10 @@ speakerlist: Janith Wanniarachchi
 room: Room  8.03
 online: ~
 image: /img/speakers/8GXHNJ.webp
+open-graph:
+  image: /img/social/PXBGKN.png
+twitter-card:
+  image: /img/social/PXBGKN.png
 format:
   html:
     css: ../../css/talks.css

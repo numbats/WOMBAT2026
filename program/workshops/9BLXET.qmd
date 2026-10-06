@@ -13,6 +13,10 @@ speakerlist: ' '
 room: Room  8.03
 online: ~
 image: /img/user.png
+open-graph:
+  image: /img/social/9BLXET.png
+twitter-card:
+  image: /img/social/9BLXET.png
 format:
   html:
     css: ../../css/talks.css

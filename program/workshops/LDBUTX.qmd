@@ -13,6 +13,10 @@ speakerlist: Priya Dingorkar
 room: Room  8.03
 online: ~
 image: /img/speakers/XRXPCG.webp
+open-graph:
+  image: /img/social/LDBUTX.png
+twitter-card:
+  image: /img/social/LDBUTX.png
 format:
   html:
     css: ../../css/talks.css

@@ -13,6 +13,10 @@ speakerlist: Yeasmin Khandakar
 room: Room  8.03
 online: ~
 image: /img/speakers/7MMCTT.webp
+open-graph:
+  image: /img/social/TEFDRV.png
+twitter-card:
+  image: /img/social/TEFDRV.png
 format:
   html:
     css: ../../css/talks.css

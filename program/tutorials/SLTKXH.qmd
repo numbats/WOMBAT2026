@@ -13,6 +13,10 @@ speakerlist: Nick Tierney
 room: Room  8.43
 online: false
 image: /img/speakers/97P7PG.webp
+open-graph:
+  image: /img/social/SLTKXH.png
+twitter-card:
+  image: /img/social/SLTKXH.png
 format:
   html:
     css: ../../css/talks.css

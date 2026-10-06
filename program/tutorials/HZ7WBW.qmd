@@ -13,6 +13,10 @@ speakerlist: Hadley Wickham
 room: Room  8.44
 online: false
 image: /img/speakers/NFDCVB.webp
+open-graph:
+  image: /img/social/HZ7WBW.png
+twitter-card:
+  image: /img/social/HZ7WBW.png
 format:
   html:
     css: ../../css/talks.css

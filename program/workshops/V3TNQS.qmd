@@ -13,6 +13,10 @@ speakerlist: Shanika Wickramasuriya
 room: Room  8.03
 online: ~
 image: /img/speakers/YHXDLY.webp
+open-graph:
+  image: /img/social/V3TNQS.png
+twitter-card:
+  image: /img/social/V3TNQS.png
 format:
   html:
     css: ../../css/talks.css

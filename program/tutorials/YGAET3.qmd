@@ -13,6 +13,10 @@ speakerlist: Michael Lydeamore
 room: Room  8.43
 online: true
 image: /img/speakers/9UW7JH.webp
+open-graph:
+  image: /img/social/YGAET3.png
+twitter-card:
+  image: /img/social/YGAET3.png
 format:
   html:
     css: ../../css/talks.css

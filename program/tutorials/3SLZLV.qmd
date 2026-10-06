@@ -16,6 +16,10 @@ speakerlist: Fonti Kar, Dianne Cook
 room: Room  8.53
 online: true
 image: /img/speakers/HXZANU.webp
+open-graph:
+  image: /img/social/3SLZLV.png
+twitter-card:
+  image: /img/social/3SLZLV.png
 format:
   html:
     css: ../../css/talks.css

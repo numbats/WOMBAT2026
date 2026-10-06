@@ -151,6 +151,7 @@ write_session_qmd <- function(x, ...) {
   } else {
     speaker_tbl[["avatar_url"]][[1]]
   }
+  social_card <- paste0("/img/social/", x$submissions, ".png")
   x$yml <- yaml::as.yaml(
     list(
       pagetitle = x$pagetitle %||% x$title,
@@ -164,6 +165,10 @@ write_session_qmd <- function(x, ...) {
       room = paste("Room ", x$room, collapse = " "),
       online = x$online,
       image = image,
+      # `image` is the speaker avatar shown in the schedule listing; link
+      # previews use the session's social card (program/social_cards.R).
+      `open-graph` = list(image = social_card),
+      `twitter-card` = list(image = social_card),
       format = list(html = list(css = "../../css/talks.css")),
       slides_url = x$slides_url
     ),

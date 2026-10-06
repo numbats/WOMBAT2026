@@ -13,6 +13,10 @@ speakerlist: Dean Marchiori
 room: Room  8.42
 online: true
 image: /img/speakers/W8FBAS.webp
+open-graph:
+  image: /img/social/CN3WGS.png
+twitter-card:
+  image: /img/social/CN3WGS.png
 format:
   html:
     css: ../../css/talks.css

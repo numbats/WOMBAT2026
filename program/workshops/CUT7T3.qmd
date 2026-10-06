@@ -13,6 +13,10 @@ speakerlist: Mitchell O'Hara-Wild
 room: Room  8.03
 online: ~
 image: /img/speakers/LDX3EG.webp
+open-graph:
+  image: /img/social/CUT7T3.png
+twitter-card:
+  image: /img/social/CUT7T3.png
 format:
   html:
     css: ../../css/talks.css

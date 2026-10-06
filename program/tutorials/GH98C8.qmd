@@ -13,6 +13,10 @@ speakerlist: Cynthia Huang
 room: Room  8.53
 online: false
 image: /img/speakers/N8BLXD.webp
+open-graph:
+  image: /img/social/GH98C8.png
+twitter-card:
+  image: /img/social/GH98C8.png
 format:
   html:
     css: ../../css/talks.css

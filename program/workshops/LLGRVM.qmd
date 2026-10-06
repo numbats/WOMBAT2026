@@ -14,6 +14,10 @@ speakerlist: Thiyanga Talagala
 room: Room  8.03
 online: ~
 image: /img/speakers/XYV8YH.webp
+open-graph:
+  image: /img/social/LLGRVM.png
+twitter-card:
+  image: /img/social/LLGRVM.png
 format:
   html:
     css: ../../css/talks.css

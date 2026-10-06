@@ -13,6 +13,10 @@ speakerlist: Maliny Po
 room: Room  8.03
 online: ~
 image: /img/speakers/HHDWB3.webp
+open-graph:
+  image: /img/social/KAMAAS.png
+twitter-card:
+  image: /img/social/KAMAAS.png
 format:
   html:
     css: ../../css/talks.css
