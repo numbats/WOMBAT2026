@@ -1,0 +1,76 @@
+# Details for the social media cards (program/social_cards.R) that aren't in
+# the pretalx data. Everything here is optional: a session without an entry
+# gets the default kind ("Tutorial" on day 1, "Talk" on day 2), its pretalx
+# title and speakers in pretalx order; a speaker without an entry gets no role.
+
+# Short label shown in the orange line above the title.
+kinds:
+  tutorials: Tutorial
+  workshops: Talk
+
+sessions:
+  DSBAZG:
+    kind: Keynote
+  GVZ9AP:
+    kind: In conversation
+    # The pretalx title repeats the speakers' names, which the card already shows.
+    title: Analysis Workflows
+    # Left to right, top row first. The host always goes in the bottom hexagon.
+    order: [UZXXFD, NFDCVB, N8BLXD]
+    host: N8BLXD
+  LDBUTX:
+    kind: Showcase
+  TDDWAC:
+    kind: Showcase
+  MNFGHE:
+    kind: Showcase
+  XMNJDY:
+    kind: Workshop
+  9BLXET:
+    kind: Workshop
+
+# Keyed by pretalx speaker code. `position` is the photo's crop focus as
+# "x% y%" (CSS object-position), defaulting to "50% 35%".
+speakers:
+  NFDCVB:
+    role: Chief Scientist, Posit
+    position: 30% 30%
+  GVZWMX:
+    role: Distinguished Professor of Statistics, Monash
+    position: 50% 30%
+  ZYA7T8:
+    role: Professor of Statistics, Monash
+  HXZANU:
+    role: Lecturer, Monash Business School
+  N8BLXD:
+    role: Postdoctoral Fellow, LMU Munich
+  UZXXFD:
+    role: Associate Professor, Monash
+  W8FBAS:
+    role: Principal Data Scientist, Wave Data Labs
+  LFYJLV:
+    role: Bayesian Econometrician
+  LDX3EG:
+    role: PhD Candidate, Monash
+  97P7PG:
+    role: Statistician and Research Software Engineer
+  9UW7JH:
+    role: Senior Lecturer, Monash
+  HHDWB3:
+    role: PhD Student, Monash
+  XRXPCG:
+    role: Senior Analyst, NAB
+  XYV8YH:
+    role: Senior Lecturer, University of Sri Jayewardenepura
+  QQRDPN:
+    role: Senior Data Scientist, NAB
+  T8R89U:
+    role: AI and Data Consultant
+  7MMCTT:
+    role: Senior Data Scientist
+  YHXDLY:
+    role: Senior Lecturer, Monash
+  8QQEVH:
+    role: Co-Founder, TimeCopilot
+  VPUL9A:
+    role: Co-Founder, TimeCopilot
