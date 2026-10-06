@@ -1,10 +1,10 @@
 ---
-pagetitle: TBC (Accessible AI)
+pagetitle: Exposing AI by Explaining Explainers
 date: 2026-12-01 15:15:00
 time: 03:15 PM
-title: TBC (Accessible AI)
-description: An Accessible AI talk at WOMBAT 2026 from Janith Wanniarachchi. Full
-  details to be announced.
+title: Exposing AI by Explaining Explainers
+description: Janith Wanniarachchi introduces rosella, an R package and Shiny app
+  for visualising model behaviour alongside explainable AI methods, at WOMBAT 2026.
 speaker:
 - code: 8GXHNJ
   name: Janith Wanniarachchi
@@ -32,7 +32,7 @@ slides_url: ~
         </svg>
         December 01, 03:15 PM
       </div>
-      <h1 class="talk-title">TBC (Accessible AI)</h1>
+      <h1 class="talk-title">Exposing AI by Explaining Explainers</h1>
     </header>
 
     <!-- Body Section -->
@@ -40,7 +40,7 @@ slides_url: ~
 
       <!-- Main Description -->
       <section class="talk-description">
-        <p>TBA</p>
+        <p>Understanding the behaviour of complex machine learning models has become a challenge in the modern day. Explainable AI (XAI) methods were introduced to provide insights into model predictions, however explaining these explanations can be difficult without proper visualisation methods. In addition, settling the disagreements between these explainers can be difficult based purely on numerical values without a proper visual indicator of the question each method is answering. To fill this gap we have built rosella, an R package offering an interactive Shiny app that visualises model behaviour in the data space alongside XAI explanations. Designed for developers, educators, and students, and based on layered approach towards XAI visualisation, rosella makes model decisions more accessible and interpretable.</p>
 
 
         <div class="talk-cta">
@@ -63,7 +63,7 @@ slides_url: ~
             Janith Wanniarachchi
           </h2>
           <div class="speaker-bio">
-            <p>TBC</p>
+            <p>Janith Wanniarachchi is a third year PhD student working on building data visualisation tools to make explainable AI more accessible to educators. After working in the industry as a R/Shiny Developer at Appsilon, he has built R packages such as kultarr, kumquat and sillysplines during his PhD. In his free time, he can be found dancing to latin music or taking care of his flower garden.</p>
 
           </div>
         </div>
