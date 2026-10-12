@@ -13,7 +13,7 @@ project:
 
 website:
   title: "WOMBAT 2026"
-  site-url: "https://wombat2026.numbat.space"
+  site-url: "https://wombat.numbat.space"
   sidebar: false
   search: false
   favicon: img/wombat/wombat-pixelart.svg
