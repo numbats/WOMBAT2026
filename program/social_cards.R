@@ -253,7 +253,7 @@ card_svg <- function(s) {
     out,
     sprintf('<line x1="%d" x2="%d" y1="%.1f" y2="%.1f" stroke="%s" stroke-opacity="0.3"/>', pad[["side"]], W - pad[["side"]], rule_y, rule_y, muted),
     svg_text(pad[["side"]], footer_base, "Learn and discuss open-source tools for business analytics and data science", "pt_400", 18, muted),
-    svg_text(W - pad[["side"]], footer_base, "wombat2026.numbat.space", "pt_700", 18, anchor = "end")
+    svg_text(W - pad[["side"]], footer_base, "wombat.numbat.space", "pt_700", 18, anchor = "end")
   )
   main_top <- pad[["top"]]
   main_bottom <- rule_y - 22
