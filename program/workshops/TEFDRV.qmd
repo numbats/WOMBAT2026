@@ -3,8 +3,8 @@ pagetitle: Operationalising AI with Adaptive Governance
 date: 2026-12-01 15:30:00
 time: 03:30 PM
 title: 'Beyond the Algorithm: Operationalising AI and Adaptive Governance in Infrastructure'
-description: Yeasmin Khandakar on taking AI from development to deployment under strict governance
-  in critical infrastructure at Transurban, at WOMBAT 2026.
+description: Yeasmin Khandakar on taking AI from development to deployment under strict
+  governance in critical infrastructure at Transurban, at WOMBAT 2026.
 speaker:
 - code: 7MMCTT
   name: Yeasmin Khandakar

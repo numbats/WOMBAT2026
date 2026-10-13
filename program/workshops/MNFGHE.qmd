@@ -3,8 +3,8 @@ pagetitle: So… Can AI Do My Job Yet?
 date: 2026-12-01 13:20:00
 time: 01:20 PM
 title: So… Can AI Do My Job Yet?
-description: Jaffie Yang, Senior Data Scientist at NAB, reflects on working alongside AI as
-  a data scientist and where humans still matter, at WOMBAT 2026.
+description: Jaffie Yang, Senior Data Scientist at NAB, reflects on working alongside
+  AI as a data scientist and where humans still matter, at WOMBAT 2026.
 speaker:
 - code: QQRDPN
   name: Jaffie Yang

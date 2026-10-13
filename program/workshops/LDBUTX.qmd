@@ -3,8 +3,9 @@ pagetitle: 'AI at Work: Data Insights, Privacy and Judgement'
 date: 2026-12-01 13:00:00
 time: 01:00 PM
 title: 'AI at Work: Practical Data Insights, Privacy and Human Judgement'
-description: Priya Dingorkar shares practical examples of using AI responsibly for data analysis
-  and business decisions, keeping human judgement central, at WOMBAT 2026.
+description: Priya Dingorkar shares practical examples of using AI responsibly for
+  data analysis and business decisions, keeping human judgement central, at WOMBAT
+  2026.
 speaker:
 - code: XRXPCG
   name: Priya Dingorkar
