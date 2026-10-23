@@ -60,6 +60,7 @@ slides_url: ~
 <li>Set up and render a Quarto website with multiple webpages, navigation bar and search</li>
 <li>Understand how to access, install and personalize AI skills for Quarto.</li>
 </ul>
+<p><em>Funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under the National Research Data Infrastructure – NFDI 27/2 - 460037581 - BERD@NFDI</em></p>
 
 
         <div class="talk-cta">
