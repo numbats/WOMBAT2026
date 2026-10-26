@@ -18,14 +18,6 @@
   text-align: center;
 }
 
-.pricing-deadline {
-  font-size: 1rem;
-  font-weight: 600;
-  color: darken($primary, 30%);
-  text-align: center;
-  margin-bottom: 2.5rem;
-}
-
 /* Interactive Cards Layout */
 .event-cards {
   display: flex;
@@ -85,11 +77,6 @@
   background: #f9fafb;
 }
 
-.price-tier--early {
-  border-color: $primary;
-  background: rgba($primary, 0.1);
-}
-
 .price-tier-label {
   display: block;
   font-size: 0.7rem;
@@ -98,10 +85,6 @@
   letter-spacing: 0.05em;
   color: #6b7280;
   margin-bottom: 0.6rem;
-}
-
-.price-tier--early .price-tier-label {
-  color: darken($primary, 25%);
 }
 
 .price-amount {

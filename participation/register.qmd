@@ -19,10 +19,6 @@ format:
 
   <!-- We will also have a rich collection of hex stickers available for all to choose from to decorate your laptop! -->
 
-  <p class="pricing-deadline">
-    Early-bird pricing ends 18 October 2026.
-  </p>
-
   <div class="event-cards">
     <!-- Day 1: Tutorials Card -->
     <section id="tutorials" class="event-card">
@@ -31,19 +27,8 @@ format:
         Hands-on training in key data analysis topics from expert instructors. Each 3-hour tutorial includes a 30-minute catered tea break, offered in morning (AM) and afternoon (PM) sessions.
       </p>
       <div class="pricing" role="group" aria-label="Day 1 tutorial pricing, per tutorial">
-        <div class="price-tier price-tier--early">
-          <span class="price-tier-label">Early-bird</span>
-          <div class="price-amount">
-            <span class="price-value">$150</span>
-            <span class="price-type">General</span>
-          </div>
-          <div class="price-amount price-amount--student">
-            <span class="price-value">$75</span>
-            <span class="price-type">Student</span>
-          </div>
-        </div>
         <div class="price-tier">
-          <span class="price-tier-label">Full price</span>
+          <span class="price-tier-label">Registration</span>
           <div class="price-amount">
             <span class="price-value">$170</span>
             <span class="price-type">General</span>
@@ -68,19 +53,8 @@ format:
         The workshop features a keynote presentation and invited talks from leading data analysts in academia, government, and industry, showcasing the latest tools and techniques.
       </p>
       <div class="pricing" role="group" aria-label="Day 2 workshop pricing">
-        <div class="price-tier price-tier--early">
-          <span class="price-tier-label">Early-bird</span>
-          <div class="price-amount">
-            <span class="price-value">$180</span>
-            <span class="price-type">General</span>
-          </div>
-          <div class="price-amount price-amount--student">
-            <span class="price-value">$80</span>
-            <span class="price-type">Student</span>
-          </div>
-        </div>
         <div class="price-tier">
-          <span class="price-tier-label">Full price</span>
+          <span class="price-tier-label">Registration</span>
           <div class="price-amount">
             <span class="price-value">$200</span>
             <span class="price-type">General</span>
