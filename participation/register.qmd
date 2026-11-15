@@ -72,6 +72,10 @@ format:
       </a>
     </section>
   </div>
+
+  <p class="group-note">
+    Group discounts are available for bookings of 5 or more registrations across the tutorials and workshop.
+    <a href="mailto:buseco-ebs.wombat@monash.edu?subject=WOMBAT%202026%20group%20booking">Email us</a> for details.
+  </p>
 </section>
 ```
-
