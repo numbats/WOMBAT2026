@@ -161,11 +161,41 @@
 }
 
 
-/* Group discount note */
-.group-note {
-  text-align: center;
-  color: #6b7280;
-  font-size: 0.95rem;
-  margin: 1.5rem auto 0;
-  max-width: 40rem;
+/* Group bookings card (full width) */
+.event-card.group-card {
+  flex: 1 1 100%;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem 2rem;
+  padding: 1.5rem 2rem;
+}
+
+.group-card-text {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.group-card h4 {
+  margin-bottom: 0.5rem;
+}
+
+.group-card p {
+  margin: 0;
+  text-wrap: pretty;
+}
+
+.group-card .btn-register {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .event-card.group-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .group-card .btn-register {
+    white-space: normal;
+  }
 }
