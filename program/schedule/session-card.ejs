@@ -59,7 +59,7 @@ const speakers = speakersFor(item);
 <% if (speakers.length > 0) { %>
 
 ```{=html}
-<div class="thumbnail speaker-avatars">
+<div class="thumbnail speaker-avatars<%= speakers.length > 1 ? ' multi-speaker' : '' %>">
 <% for (const speaker of speakers) { %>
 <img src="<%- speaker.avatar_url %>" class="thumbnail-image" alt="<%= speaker.name ? speaker.name : '' %>" loading="lazy">
 <% } %>
