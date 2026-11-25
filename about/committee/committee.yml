@@ -1,5 +1,5 @@
 - name: Mitchell O'Hara-Wild
-  role: General chair (tutorials)
+  role: General chair
   thumbnail: https://avatars.githubusercontent.com/u/16127127?v=4
   social:
   - github: https://github.com/mitchelloharawild
@@ -8,7 +8,7 @@
   - linkedin: https://www.linkedin.com/in/mitchelloharawild
 
 - name: Krisanat Anukarnsakulchularp
-  role: General chair (workshop)
+  role: Program chair
   thumbnail: https://numbat.space/people/current/anukarnsakulchularp-krisanat/avatar.png
   social:
   - github: https://github.com/KrisanatA
@@ -21,7 +21,7 @@
   - linkedin: https://www.linkedin.com/in/malinypo
 
 - name: Janith Wanniarachchi
-  role: Webmaster
+  role: Webmaster & AV lead
   thumbnail: https://avatars.githubusercontent.com/u/8599256?v=4
   social:
   - github: https://github.com/janithwanni
