@@ -6,13 +6,13 @@ title: Closing discussion
 description: 'The closing discussion at WOMBAT 2026: a summary of the day plus pointers
   to other events and organisations in the data analysis space.'
 speaker:
-  code: ''
-  name: ''
-  avatar_url: /img/user.png
-speakerlist: ' '
+- code: GVN9FL
+  name: Krisanat Anukarnsakulchularp
+  avatar_url: /img/speakers/GVN9FL.webp
+speakerlist: Krisanat Anukarnsakulchularp
 room: Room  8.03
 online: ~
-image: /img/user.png
+image: /img/speakers/GVN9FL.webp
 open-graph:
   image: /img/social/9BLXET.png
 twitter-card:
@@ -62,12 +62,13 @@ slides_url: ~
 
         <!-- Speaker Profile -->
         <div class="speaker-profile">
-          <img src="/img/user.png" alt="" class="speaker-img">
+          <img src="/img/speakers/GVN9FL.webp" alt="Krisanat Anukarnsakulchularp" class="speaker-img">
           <h2 class="speaker-name">
-            
+            Krisanat Anukarnsakulchularp
           </h2>
           <div class="speaker-bio">
-            
+            <p>Krisanat Anukarnsakulchularp is a PhD student in Statistics at Monash University. His research focuses on network analysis, specifically building tools that support the exploration and understanding of spatio-temporal network data. He is the author of the R package animbook, which uses animation to visualise changes in performance measures and demographic affiliations. Krisanat also works as a teaching associate in Monash’s Master of Business Analytics program.</p>
+
           </div>
         </div>
 
