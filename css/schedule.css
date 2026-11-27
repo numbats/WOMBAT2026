@@ -270,6 +270,16 @@ h2 {
   flex-shrink: 0;
 }
 
+/* Venue photo (used instead of speaker avatars, e.g. the social). */
+.quarto-post .metadata .card-photo-image {
+  width: 140px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+}
+
 .quarto-post:hover {
   transform: translateY(-8px);
   box-shadow:

@@ -484,6 +484,34 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-group-social .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-time','listing-room','listing-card_image','listing-card_image_alt',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-pagetitle","listing-date","listing-time","listing-title","listing-description","listing-room","listing-card_image","listing-card_image_alt","listing-image","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-group-social'] = new List('listing-group-social', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -711,7 +739,7 @@ Nick Tierney
 <a href="../../program/tutorials/YGAET3.html" class="no-external metadata-row">
 <div class="metadata-text">
 <div class="metadata-value listing-time">
-01:30 PM
+02:30 PM
 </div>
 <div class="metadata-value listing-speakerlist">
 Michael Lydeamore
@@ -1368,6 +1396,36 @@ Renée Rosillo, Azul Garza
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </div>
+<section id="social" class="level3 session-block session-single">
+<h3 data-anchor-id="social">Social</h3>
+<div id="listing-group-social" class="quarto-listing quarto-listing-container-custom">
+<div class="list quarto-listing-default">
+<div class="quarto-post">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../program/social.html" class="no-external">Post-workshop social</a>
+</h3>
+</div>
+<div class="metadata">
+<a href="../../program/social.html" class="no-external metadata-row">
+<div class="metadata-text">
+<div class="metadata-value listing-time">
+06:00 PM
+</div>
+<div class="metadata-value listing-room">
+The Waterside, 508 Flinders St
+</div>
+</div>
+<div class="thumbnail card-photo">
+<img src="../../img/waterside.webp" class="card-photo-image" alt="The Waterside Hotel on Flinders Street" loading="lazy">
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
 </section>
 </div>
 
