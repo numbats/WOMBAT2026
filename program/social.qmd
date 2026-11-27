@@ -52,6 +52,13 @@ format:
         </div>
       </section>
 
+      <!-- Sidebar -->
+      <div class="talk-sidebar">
+        <figure class="venue-photo">
+          <img src="/img/waterside.webp" alt="The Waterside Hotel on Flinders Street">
+        </figure>
+      </div>
+
     </div>
   </article>
 </div>
@@ -61,6 +68,16 @@ format:
 <style>
 #title-block-header {
   display: none !important;
+}
+.venue-photo {
+  margin: 0;
+}
+.venue-photo img {
+  display: block;
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 </style>
 ```
