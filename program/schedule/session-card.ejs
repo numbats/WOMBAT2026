@@ -66,6 +66,14 @@ const speakers = speakersFor(item);
 </div>
 ```
 
+<% } else if (item.card_image) { %>
+
+```{=html}
+<div class="thumbnail card-photo">
+<img src="<%- item.card_image %>" class="card-photo-image" alt="<%= item.card_image_alt ? item.card_image_alt : '' %>" loading="lazy">
+</div>
+```
+
 <% } %>
 
 ```{=html}

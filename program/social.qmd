@@ -1,0 +1,66 @@
+---
+pagetitle: Post-workshop social
+date: 2026-12-01 18:00:00
+time: 06:00 PM
+title: Post-workshop social
+description: 'Join us after WOMBAT 2026 for drinks and conversation at The Waterside
+  (508 Flinders Street, Melbourne) from 6:00 to 8:00 PM on Tuesday 1 December.'
+room: The Waterside, 508 Flinders St
+card_image: /img/waterside.webp
+card_image_alt: The Waterside Hotel on Flinders Street
+image: /img/waterside.webp
+format:
+  html:
+    css: ../css/talks.css
+---
+
+```{=html}
+<div class="talk-container">
+  <article class="talk-card">
+
+    <!-- Header Section -->
+    <header class="talk-header">
+      <div class="talk-datetime">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z"/>
+        </svg>
+        December 01, 06:00 PM &ndash; 08:00 PM
+      </div>
+      <h1 class="talk-title">Post-workshop social</h1>
+    </header>
+
+    <!-- Body Section -->
+    <div class="talk-body">
+
+      <section class="talk-description">
+        <p>Keep the conversation going after the workshop! Join fellow attendees, speakers and organisers for drinks and a chat at <strong>The Waterside</strong> after the closing discussion.</p>
+
+        <p>We have the <strong>Level 1 Magic Tables</strong> reserved from <strong>6:00 PM to 8:00 PM</strong> on Tuesday 1 December. Space is limited to around 50 people, and walk-ins to the venue are always welcome.</p>
+
+        <p>
+          <strong>The Waterside</strong><br>
+          508 Flinders Street (corner of King Street)<br>
+          Melbourne VIC 3000
+        </p>
+
+        <p>The main entrance is at 508 Flinders Street, and there is an accessible entrance on King Street.</p>
+
+        <div class="talk-cta">
+          <a href="https://www.google.com/maps/search/?api=1&query=The+Waterside+Hotel+508+Flinders+Street+Melbourne+VIC+3000" class="btn-register" target="_blank" rel="noopener">
+            Open in maps
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </article>
+</div>
+```
+
+```{=html}
+<style>
+#title-block-header {
+  display: none !important;
+}
+</style>
+```

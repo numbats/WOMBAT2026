@@ -106,6 +106,14 @@ listing:
     fields: [title, time, room]
     template-params:
       fields: [time, room]
+  - id: group-social
+    contents:
+      - "../social.qmd"
+    type: default
+    template: session-card.ejs
+    fields: [title, time, room, card_image, card_image_alt]
+    template-params:
+      fields: [time, room]
 format:
   html:
     css: [../../css/schedule.css]
@@ -281,6 +289,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ::: {.session-block .session-single}
 ::::: {#group-closing}
+:::::
+:::
+
+::: {.session-block .session-single}
+### Social
+
+::::: {#group-social}
 :::::
 :::
 :::

@@ -470,6 +470,32 @@ science.*]{.hero-desc}
 :::::
 :::
 
+::: {.day2-block}
+::: {.day2-label}
+```{=html}
+<div class="track-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22h8M12 15v7M5 3h14l-1.5 7a5.5 5.5 0 0 1-11 0z"/></svg></div>
+```
+##### Social {.no-anchor}
+:::
+
+<!-- Hand-written, not a listing: the social has no speaker, so it doesn't
+     fit the person-card listing templates. Source: program/social.qmd --
+     keep the time/venue in sync with that file. -->
+```{=html}
+<div class="people-row">
+  <a href="program/social.html" class="person-card">
+    <div class="person-time">6:00 PM</div>
+    <div class="pc-row">
+      <div class="person-main">
+        <div class="person-name">Post-workshop social</div>
+        <div class="person-title">Drinks at The Waterside, 508 Flinders St (6&ndash;8 PM)</div>
+      </div>
+    </div>
+  </a>
+</div>
+```
+:::
+
 :::
 
 ```{=html}
