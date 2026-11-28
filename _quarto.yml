@@ -51,8 +51,6 @@ website:
             href: about/committee
           - text: Past Events
             href: about/past-events.qmd
-      - text: Register
-        href: participation/register.qmd
       - text: Live Program
         href: live.qmd
   page-footer: 

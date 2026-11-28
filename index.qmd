@@ -105,8 +105,8 @@ science.*]{.hero-desc}
 
 ```{=html}
 <div class="btn-group save-the-date-dropdown" role="group">
-  <a href="participation/register.html" id="hero-register-btn" class="btn btn-primary btn-lg" style="color: #3a2704; margin-right: 0.5rem; border-radius: 0.5rem">
-    Register
+  <a href="program/schedule" id="hero-register-btn" class="btn btn-primary btn-lg" style="color: #3a2704; margin-right: 0.5rem; border-radius: 0.5rem">
+    View the schedule
   </a>
   <a href="live.html" id="hero-live-btn" class="btn btn-lg btn-live" style="margin-right: 0.5rem; border-radius: 0.5rem">
     <span class="live-dot"></span> Live Program
@@ -142,6 +142,10 @@ science.*]{.hero-desc}
     </li>
   </ul>
 </div>
+
+<p class="hero-closed">
+  Registration has closed &mdash; we can't wait to see you at WOMBAT!
+</p>
 
 <p class="hero-note">
   <span class="hero-note-label">Note</span>
@@ -298,7 +302,7 @@ science.*]{.hero-desc}
 ```
 
 ```{=html}
-<div class="day-heading"><span class="day-num">Day 1 Tutorials &middot;</span><span class="day-date">Mon 30 Nov</span><a href="https://events.humanitix.com/wombat-2026-day-1-tutorials" class="day-register" target="_blank" rel="noopener">Register for tutorials &rarr;</a></div>
+<div class="day-heading"><span class="day-num">Day 1 Tutorials &middot;</span><span class="day-date">Mon 30 Nov</span><span class="day-register day-register--closed">Registration closed</span></div>
 ```
 
 ::: {.track-grid}
@@ -354,7 +358,7 @@ science.*]{.hero-desc}
 :::
 
 ```{=html}
-<div class="day-heading"><span class="day-num">Day 2 Workshop &middot;</span><span class="day-date">Tue 1 Dec</span><a href="https://events.humanitix.com/wombat-2026-day-2-workshop" class="day-register" target="_blank" rel="noopener">Register for main day &rarr;</a></div>
+<div class="day-heading"><span class="day-num">Day 2 Workshop &middot;</span><span class="day-date">Tue 1 Dec</span><span class="day-register day-register--closed">Registration closed</span></div>
 ```
 
 ::: {.day2-stack}

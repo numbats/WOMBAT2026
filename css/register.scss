@@ -199,3 +199,20 @@
     white-space: normal;
   }
 }
+
+/* Registration closed */
+.closed-message {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #4b5563;
+  max-width: 700px;
+  margin: 1.5rem auto 2rem;
+  text-wrap: pretty;
+}
+
+.btn-register.btn-register--closed,
+.btn-register.btn-register--closed:hover {
+  background-color: #e5e7eb;
+  color: #6b7280;
+  cursor: default;
+}

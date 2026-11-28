@@ -275,3 +275,14 @@
     font-size: 2rem;
   }
 }
+
+/* Shown in place of the register button once registration has closed */
+.talk-cta .registration-closed-note {
+  margin: 0;
+  padding: 1rem 1.5rem;
+  background: #fff4c2;
+  border-left: 4px solid #fbac27;
+  border-radius: 8px;
+  color: #3a2704;
+  font-weight: 500;
+}
