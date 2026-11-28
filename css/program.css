@@ -99,6 +99,14 @@
   color: #3a2704;
 }
 
+.program .day-heading .day-register--closed,
+.program .day-heading .day-register--closed:hover {
+  color: #64748b;
+  background: none;
+  border-color: #cbd5e1;
+  cursor: default;
+}
+
 /* ---------- Day 1: track grid ---------- */
 .program .track-grid {
   display: grid;

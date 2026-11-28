@@ -713,3 +713,11 @@ body.event-live #hero-register-btn {
     height: 4.4rem;
   }
 }
+
+/* ── Registration closed message ─────────────────────────────────────────── */
+
+.hero-closed {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #3a2704;
+}
